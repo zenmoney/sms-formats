@@ -10,9 +10,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from sms_format import (
     DeletedSmsFormat,
-    ValidationError,
-    parse_format_file,
-    parse_senders,
+)
+from sms_format_repository import (
+    find_format_by_id,
+    find_format_by_name,
+    list_senders,
+    parse_name_with_id,
 )
 
 
@@ -113,20 +116,6 @@ def get_last_change_iso(file_path):
     return output.strip()
 
 
-def parse_name_with_id(raw):
-    last_underscore = raw.rfind("_")
-    if last_underscore == -1:
-        return {"name": raw, "id": None}
-    name = raw[:last_underscore]
-    id_part = raw[last_underscore + 1 :]
-    if id_part == "":
-        return {"name": name, "id": None}
-    try:
-        return {"name": name, "id": int(id_part)}
-    except ValueError:
-        return {"name": name, "id": id_part}
-
-
 def main():
     args = parse_args(sys.argv[1:])
     since = args.get("--since")
@@ -165,7 +154,7 @@ def main():
             if change.get("status") == "D":
                 base = format_file[:-4]
                 format_id = parse_name_with_id(base)["id"]
-                if isinstance(format_id, int):
+                if format_id:
                     deleted_formats.append(
                         DeletedSmsFormat(
                             id=str(format_id),
@@ -175,7 +164,6 @@ def main():
                 continue
             format_files.add(path_str)
 
-    cwd = Path.cwd()
     formats_out = []
 
     for file_path in format_files:
@@ -184,25 +172,24 @@ def main():
             continue
         bank_dir = parts[1]
         bank_id = parse_name_with_id(bank_dir)["id"]
-        if not isinstance(bank_id, int):
+        if not bank_id:
             continue
 
         format_file = parts[3]
         base = format_file[:-4]
         format_name = parse_name_with_id(base)["name"]
         format_id = parse_name_with_id(base)["id"]
-        format_id_value = format_id if isinstance(format_id, int) else None
 
-        full_path = cwd / file_path
-        try:
-            parsed = parse_format_file(str(full_path))
-        except ValidationError as e:
-            fail(str(e))
-        except Exception as e:
-            fail(str(e) or f"Invalid format file: {full_path}")
+        parsed = None
+        if format_id is not None:
+            parsed = find_format_by_id(format_id, str(bank_id))
+        if not parsed:
+            parsed = find_format_by_name(format_name, str(bank_id))
+        if not parsed:
+            fail(f"Format not found for companyId={bank_id}, name={format_name}")
 
         parsed.name = format_name
-        parsed.id = format_id_value
+        parsed.id = format_id
         parsed.company_id = str(bank_id)
         parsed.changed = get_last_change_iso(file_path)
         formats_out.append(parsed.to_diff_dict())
@@ -214,12 +201,9 @@ def main():
             continue
         bank_dir = parts[1]
         bank_id = parse_name_with_id(bank_dir)["id"]
-        if not isinstance(bank_id, int):
+        if not bank_id:
             continue
-        full_path = cwd / file_path
-        if not full_path.exists():
-            continue
-        senders_list = parse_senders(str(full_path))
+        senders_list = list_senders(str(bank_id))
         senders_out.append(
             {
                 "companyId": str(bank_id),
