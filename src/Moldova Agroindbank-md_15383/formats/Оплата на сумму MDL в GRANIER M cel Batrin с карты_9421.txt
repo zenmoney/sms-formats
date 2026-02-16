@@ -1,4 +1,4 @@
-^(?=.*"[^"]+"\s+\S+\.\S+)Оплата\s+на\s+сумм\w*\s+([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,5})\s+в\s+((?:"[^"]+"\s+\S+\.\S+(?:\s+\S+)*?))\s+с\s+карт\w*\s*\*+(\d{4})\s+прошла\s+успешно\.\s+Доступный\s+остаток:\s+(-?[0-9][\d\s.,]*\d)(?=\s|$)\s*([A-Za-z]{1,5})\.\s*║$
+Оплата на сумму (?<outcome>[\d.]+)\s(?<instrument>\w+)\sв\s(?<payee>".+?".+?)\sс\sкарты\s\*\*\*+(?<syncid>\d{4}).+?Доступный остаток:\s(?<avbalance>[\d.]+)\s(?<accinstrument>\w+)\.
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
