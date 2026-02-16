@@ -287,7 +287,7 @@ def validate_format_name(format_name, fmt, file_path=""):
     return errors
 
 
-def validate_cross_match(formats_with_regex, bank_label):
+def validate_cross_match(formats_with_regex):
     """formats_with_regex: list of (SmsFormat, compiled_regex, file_path).
     Returns list of ValidationErrors for cross-match.
     """

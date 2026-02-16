@@ -30,7 +30,7 @@ def fail(message):
     sys.exit(1)
 
 
-def run_git(command, env=None):
+def run_git_or_raise(command, env=None):
     import os
     import subprocess
 
@@ -43,8 +43,15 @@ def run_git(command, env=None):
         env=full_env,
     )
     if result.returncode != 0:
-        fail(f"Git command failed: {command}\n{result.stderr or result.stdout}")
+        raise RuntimeError(f"Git command failed: {command}\n{result.stderr or result.stdout}")
     return (result.stdout or "").strip()
+
+
+def run_git(command, env=None):
+    try:
+        return run_git_or_raise(command, env=env)
+    except RuntimeError as exc:
+        fail(str(exc))
 
 
 def validate_changed(changed):
@@ -64,6 +71,13 @@ def validate_changed(changed):
 
 
 def commit_file(file_paths, message, changed):
+    try:
+        commit_file_or_raise(file_paths, message, changed)
+    except RuntimeError as exc:
+        fail(str(exc))
+
+
+def commit_file_or_raise(file_paths, message, changed):
     import subprocess
 
     env = {
@@ -80,7 +94,7 @@ def commit_file(file_paths, message, changed):
             pp = cwd / pp
         relative_paths.append(str(pp.relative_to(cwd)))
     quoted = " ".join(f'"{p}"' for p in relative_paths)
-    run_git(f"git add -A --ignore-errors -- {quoted}", env=env)
+    run_git_or_raise(f"git add -A --ignore-errors -- {quoted}", env=env)
     # Skip commit if nothing is staged (prevents hard failure on no-op updates).
     staged_check = subprocess.run(
         f"git diff --cached --quiet -- {quoted}",
@@ -89,9 +103,9 @@ def commit_file(file_paths, message, changed):
     if staged_check.returncode == 0:
         return
     if staged_check.returncode not in (0, 1):
-        fail("Failed to check staged changes before commit")
+        raise RuntimeError("Failed to check staged changes before commit")
     safe_message = message.replace('"', '\\"')
-    run_git(f'git commit -m "{safe_message}"', env=env)
+    run_git_or_raise(f'git commit -m "{safe_message}"', env=env)
 
 
 def main():

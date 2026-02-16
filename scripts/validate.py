@@ -135,8 +135,7 @@ def run_validation():
                 )
             )
 
-        bank_label = f"{bank_name}_{bank_id or ''}"
-        errors.extend(validate_cross_match(formats_with_regex, bank_label))
+        errors.extend(validate_cross_match(formats_with_regex))
 
     return errors
 
