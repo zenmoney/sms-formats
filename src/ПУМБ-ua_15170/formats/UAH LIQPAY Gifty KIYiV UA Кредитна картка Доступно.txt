@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)([A-Z]{3})\s+(.*?)\s+(\d{2}-\d{2}-\d{4})\s+\d{2}:\d{2}.*?Кредитна картка:\s*\*(\d{4}).*?Доступно:\s*(-?\d[\d\s.,]*[.,]\d{2})([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+1349.00UAH LIQPAY*Gifty KIYiV UA 10-02-2026 19:25 Кредитна картка: *8787 Доступно: 74722.98UAH ║ Купівля
