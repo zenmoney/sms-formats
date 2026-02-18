@@ -1086,8 +1086,7 @@ async def validate_regex_flexibility_with_llm(
 
         CORRECT approach is to use generalized patterns WITHOUT introducing new literals:
         - Instead of concrete currency literals, use a generic token pattern based on observed token shape:
-          use [A-Z]{3} only when currency is ISO-like in this SMS template; otherwise use a non-literal class
-          such as [^\s.,]{1,3}.
+          use [A-Z]{3} only when currency is ISO-like in this SMS template; otherwise, prefer (.+?)
         - Instead of concrete merchant literals, use a generic text capture (for example: (.+?) with a delimiter
           that is explicitly present in this SMS template).
         - Instead of concrete amount literals, use a numeric pattern (for example: (\d[\d\s.,]*))

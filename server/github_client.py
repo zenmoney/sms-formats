@@ -78,18 +78,18 @@ class GitHubClient:
         comment = issue.create_comment(body=body)
         return {"id": comment.id}
 
-    async def find_or_create_issue_and_comment(
-        self, title: str, comment_body: str, issue_body: str = ""
+    async def find_or_create_issue(
+        self, title: str, issue_body: str = ""
     ) -> Dict[str, Any]:
         issue = await self.find_open_issue_by_title(title)
         if issue is None:
             issue = await self.create_issue(
                 title=title,
-                body=comment_body if comment_body else issue_body,
+                body=issue_body,
             )
             return issue
         issue_number = int(issue["number"])
-        await self.add_issue_comment(issue_number=issue_number, body=comment_body)
+        await self.add_issue_comment(issue_number=issue_number, body=issue_body)
         return issue
 
     async def find_open_pr(self, head_branch: str, base_branch: str) -> Optional[Dict[str, Any]]:

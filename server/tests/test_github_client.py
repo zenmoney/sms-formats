@@ -23,10 +23,9 @@ def test_find_or_create_issue_writes_message_to_body_on_create(monkeypatch):
     monkeypatch.setattr(client, "add_issue_comment", _add_issue_comment)
 
     issue = asyncio.run(
-        client.find_or_create_issue_and_comment(
+        client.find_or_create_issue(
             title="Unknown sender for Bank",
-            comment_body="Sender:\nSENDER\n\nText:\ntext",
-            issue_body="Fallback body",
+            issue_body="Sender:\nSENDER\n\nText:\ntext",
         )
     )
 
@@ -60,10 +59,9 @@ def test_find_or_create_issue_adds_comment_when_issue_exists(monkeypatch):
     monkeypatch.setattr(client, "add_issue_comment", _add_issue_comment)
 
     issue = asyncio.run(
-        client.find_or_create_issue_and_comment(
+        client.find_or_create_issue(
             title="Unknown format for Bank: msg",
-            comment_body="Sender:\nSENDER\n\nText:\ntext",
-            issue_body="Fallback body",
+            issue_body="Sender:\nSENDER\n\nText:\ntext",
         )
     )
 

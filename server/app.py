@@ -95,16 +95,15 @@ async def ingest_sms(payload: SmsRequest):
     except (RuntimeError, ValueError) as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     github_repo = github_client.repo
-    base_branch = os.environ.get("GITHUB_BASE_BRANCH", "main").strip() or "main"
+    base_branch = os.environ.get("GITHUB_BASE_BRANCH", "develop").strip() or "main"
 
     key = _build_serialization_key(payload)
     async with queue.acquire(key):
         if not payload.sms.company_id:
             title = f"Unknown sender for {payload.sms.company_name}"
-            await github_client.find_or_create_issue_and_comment(
+            await github_client.find_or_create_issue(
                 title=title,
-                comment_body=_sms_report(payload.sms.sender, payload.sms.text),
-                issue_body="Automatic report from SMS webhook server.",
+                issue_body=_sms_report(payload.sms.sender, payload.sms.text),
             )
             return SmsResponse(status="unknown_sender")
 

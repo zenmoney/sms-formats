@@ -83,23 +83,24 @@ def run_generation_flow(
         else:
             _run(["git", "checkout", base_branch], cwd=repo_path)
             _run(["git", "checkout", "-b", branch_name], cwd=repo_path)
-
+        print(f"run generator {sms_text}")
         python_bin = os.environ.get("PYTHON_BIN", "python3")
         generator_run = subprocess.run(
             [
                 python_bin,
                 "scripts/generate_sms_format.py",
-                "--save",
                 "--company",
                 company_id,
             ],
             cwd=str(repo_path),
             check=False,
             text=True,
-            # capture_output=True,
+            capture_output=True,
             input=sms_text,
         )
+        print(f"run generator end {generator_run.returncode} ${generator_run.stdout}")
         outcome = _parse_generator_output(generator_run)
+        print(f"generator outcome: {outcome}")
         if outcome.status == "duplicate":
             return "duplicate", None, None
         if outcome.status in {"otp", "transaction", "failed_transaction"}:
@@ -152,9 +153,8 @@ async def process_known_company_sms(
 
     issue_title = f"Unknown format for {company_name}: {clean_issue_suffix(text)}"
     message = f"Sender:\n{sender}\n\nText:\n{text}"
-    await github_client.find_or_create_issue_and_comment(
+    await github_client.find_or_create_issue(
         title=issue_title,
-        comment_body=message,
-        issue_body="Automatic report from SMS webhook server.",
+        issue_body=message,
     )
     return "failed"
