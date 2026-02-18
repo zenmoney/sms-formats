@@ -1,0 +1,7 @@
+Плажет\s+(\d[\d\s.,]*)\s+(\S+)\s+в\s+(.+?)\.\s+Баланс\s+(-?\d[\d\s.,]*)\s+(\S+)\.
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Плажет 100 руб в Пятерочка. Баланс 9000 руб.
