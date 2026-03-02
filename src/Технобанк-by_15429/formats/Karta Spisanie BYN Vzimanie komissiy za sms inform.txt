@@ -1,0 +1,7 @@
+Karta\s+5\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-?(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.*?)\s+([A-Z0-9 ]+?)\.\s+Dostupno\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;comment;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 5.0640 02.03.2026 11:05:59 Spisanie -1.90  BYN Vzimanie komissiy za sms-informirovanie TECHNO BLR OK. Dostupno 257.40 BYN
