@@ -1,7 +1,0 @@
-^.*popolnen na ([\d\s.,]*\d).*v koshelke. ([\d\s.,]*\d).*
-
------COLUMNS-----
-income;av_balance
-
------EXAMPLE-----
-Vash QIWI Wallet popolnen na 100,00 rub. r. Summa v koshelke: 5100,00 rub. 27.06.2014 17:30 r.

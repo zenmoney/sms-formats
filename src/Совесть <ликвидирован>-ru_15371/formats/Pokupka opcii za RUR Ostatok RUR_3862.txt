@@ -1,7 +1,0 @@
-^Pokupka.*za ([\d\s.,]*\d)\s*([A-Z]{3}).*stat.*?(-?[\d\s.,]*\d).*([\d.]{10}).*
-
------COLUMNS-----
-outcome;instrument;av_balance;date#dd.MM.yyyy
-
------EXAMPLE-----
-Pokupka opcii za 299.00RUR. Ostatok   76648.72RUR;  21.08.2018;  17:32:16.

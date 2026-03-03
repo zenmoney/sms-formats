@@ -1,7 +1,0 @@
-^Platezh ([\d\s.,]*\d) ([a-zA-Z]{3}).*ispolnen.*ot ([\d.]{5}).*
-
------COLUMNS-----
-outcome;instrument;date#dd.MM
-
------EXAMPLE-----
-Platezh 5000.00 rub ot 29.09 ispolnen QIWI Bankom. P/P N 1 ot 30.09.  Plati za mobilnyj i internet bez komissii na w.qiwi.ru

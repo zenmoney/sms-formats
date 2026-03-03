@@ -1,7 +1,0 @@
-^(?:Poluchenie n|Получение н).*?([\d\s.,]*\d)\s*([A-Z]{3}).*\*(\d{4}).* (\d{2}[-./]\d{2}[-./]\d{2,4})\D.*(?:stat|стат).*?(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-outcome;instrument;syncid#cash;date#dMy;av_balance
-
------EXAMPLE-----
-Получение наличных 114,000.00 KZT, по карте *5287, 01.06.20, KAZ, AC713020, POLIKLINIKA SE. Остаток 1,538.88 KZT
