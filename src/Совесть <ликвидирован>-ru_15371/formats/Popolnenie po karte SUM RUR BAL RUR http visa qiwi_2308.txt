@@ -1,7 +1,0 @@
-^Popol.*\*(\d{4})\s+SUM:([\d\s.,]*\d)\s*([A-Z]{3})(?!.*\().*BAL.*?(-?[\d\s.,]*\d).*([\d.]{10}).*
-
------COLUMNS-----
-syncid;income;instrument;av_balance;date#dd.MM.yyyy
-
------EXAMPLE-----
-Popolnenie po karte 4281***8505 SUM:  193.00RUR BAL:  543.00RUR  24.03.2016  20:21:38 http://visa.qiwi.ru

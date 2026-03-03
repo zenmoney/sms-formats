@@ -1,7 +1,0 @@
-^Operatsiya.*?(\d{4}) SUM ([\d\s.,]*\d) ([A-Z]{3}) otmenena.*
-
------COLUMNS-----
-syncid;income;instrument
-
------EXAMPLE-----
-Operatsiya po karte 4890****2928 SUM 3.50 USD otmenena. Dengi vozvrasheny v Vash VISA QIWI Wallet

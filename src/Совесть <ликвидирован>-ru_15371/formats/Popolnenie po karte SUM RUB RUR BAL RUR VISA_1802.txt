@@ -1,7 +1,0 @@
-^Popol.*\*(\d{4}).*?(\d[\d\s.,]*)\s*([A-Z]{3})\s*\(([\d\s.,]*\d).*?\).\s*BAL.*?(-?[\d\s.,]*\d).*([\d.]{10}).*
-
------COLUMNS-----
-syncid;op_income;instrument;income;av_balance;date#dd.MM.yyyy
-
------EXAMPLE-----
-Popolnenie po karte 4890****1840 SUM: 490.00 RUB (490.00 RUR). BAL: 503.73 RUR. 22.05.2015 04:18:01. VISA
