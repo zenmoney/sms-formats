@@ -1,7 +1,0 @@
-^Oplata.*?\*(\d{4}).*?(\d[\d\s.,]*) ([A-Z]{3}) \(([\d\s.,]*\d).*?\). BAL: (-?[\d\s.,]*\d).*?([\d.]{10}) [\d:]+. (.*)
-
------COLUMNS-----
-syncid;op_outcome;instrument;outcome;balance;date#dd.MM.yyyy;payee
-
------EXAMPLE-----
-Oplata po karte 4693****2931 SUM: 700.00 RUR (700.00 RUR). BAL: 1066.74 RUR. 27.03.2013 10:28:44. ER-TELECOM -KAZAN

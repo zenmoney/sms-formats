@@ -7,6 +7,31 @@ from typing import List, Optional, Union
 
 MARKER_COLUMNS = "-----COLUMNS-----"
 MARKER_EXAMPLE = "-----EXAMPLE-----"
+_INVALID_FILENAME_CHARS_RE = re.compile(r'[\x00-\x1f\x7f<>:"/\\|?*]+')
+_WINDOWS_RESERVED_BASENAMES = {
+    "con",
+    "prn",
+    "aux",
+    "nul",
+    "com1",
+    "com2",
+    "com3",
+    "com4",
+    "com5",
+    "com6",
+    "com7",
+    "com8",
+    "com9",
+    "lpt1",
+    "lpt2",
+    "lpt3",
+    "lpt4",
+    "lpt5",
+    "lpt6",
+    "lpt7",
+    "lpt8",
+    "lpt9",
+}
 
 ALLOWED_COLUMNS = {
     "payee",
@@ -25,6 +50,17 @@ ALLOWED_COLUMNS = {
     "date",
     "syncid",
     "mcc",
+}
+
+AMOUNT_COLUMNS = {
+    "income",
+    "outcome",
+    "fee",
+    "cashback",
+    "op_income",
+    "op_outcome",
+    "balance",
+    "av_balance",
 }
 
 
@@ -101,10 +137,22 @@ class DeletedSmsFormat:
 def clean_name(name):
     if not isinstance(name, str):
         return ""
-    s = re.sub(r"['\"$]", "", name)
+    s = re.sub(r"[?*'\"$]", "", name)
     s = re.sub(r"[/\\.{}_()]", " ", s)
+    # Keep only filename-safe characters across Windows/Linux/macOS by
+    # removing forbidden path/control symbols and normalizing whitespace.
+    s = _INVALID_FILENAME_CHARS_RE.sub(" ", s)
     s = re.sub(r"\s+", " ", s)
-    return s.strip()
+    s = s.strip()
+    # Windows disallows trailing dots/spaces in file/folder names.
+    s = s.rstrip(" .")
+    if not s:
+        return ""
+    # Reserved Windows device names are forbidden even with extensions.
+    basename = s.split(".", 1)[0].strip().lower()
+    if basename in _WINDOWS_RESERVED_BASENAMES:
+        s = f"{s} file"
+    return s
 
 
 def _clean_text(text):
@@ -162,121 +210,6 @@ class ValidationError(Exception):
         if self.file_path and not self.message.startswith(self.file_path):
             return f"{self.file_path}: {self.message}"
         return self.message
-
-
-def parse_senders(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    lines = re.split(r"\r?\n", content)
-    return [line.strip() for line in lines if line.strip()]
-
-
-def parse_format_file(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    lines = content.splitlines()
-    if not lines:
-        raise ValidationError(
-            kind="invalid_format", file_path=file_path, message="Invalid format file: missing regex"
-        )
-    regex_line = lines[0].strip() if lines[0] else ""
-    if not regex_line:
-        raise ValidationError(
-            kind="invalid_format", file_path=file_path, message="Invalid format file: missing regex"
-        )
-
-    i = 1
-    if i >= len(lines) or lines[i].strip() != "":
-        raise ValidationError(
-            kind="invalid_format",
-            file_path=file_path,
-            message=f"Invalid format file: expected empty line before {MARKER_COLUMNS}",
-        )
-    while i < len(lines) and lines[i].strip() == "":
-        i += 1
-    if i >= len(lines) or lines[i].strip() != MARKER_COLUMNS:
-        raise ValidationError(
-            kind="invalid_format",
-            file_path=file_path,
-            message=f"Invalid format file: missing {MARKER_COLUMNS} section",
-        )
-    i += 1
-    if i >= len(lines):
-        raise ValidationError(
-            kind="invalid_format",
-            file_path=file_path,
-            message="Invalid format file: missing columns line",
-        )
-    columns_line = lines[i].strip()
-    columns = [c.strip() for c in columns_line.split(";")] if columns_line else []
-    i += 1
-
-    examples = []
-    if i >= len(lines) or lines[i].strip() != "":
-        raise ValidationError(
-            kind="invalid_format",
-            file_path=file_path,
-            message=f"Invalid format file: expected empty line before {MARKER_EXAMPLE}",
-        )
-    while i < len(lines) and lines[i].strip() == "":
-        i += 1
-    while i < len(lines):
-        if lines[i].strip() != MARKER_EXAMPLE:
-            raise ValidationError(
-                kind="invalid_format",
-                file_path=file_path,
-                message=f"Invalid format file: expected {MARKER_EXAMPLE}",
-            )
-        i += 1
-        example_lines = []
-        while i < len(lines) and lines[i].strip() != MARKER_EXAMPLE:
-            example_lines.append(lines[i])
-            i += 1
-        if i < len(lines) and example_lines and example_lines[-1].strip() != "":
-            raise ValidationError(
-                kind="invalid_format",
-                file_path=file_path,
-                message=f"Invalid format file: expected empty line before {MARKER_EXAMPLE}",
-            )
-        example_text = "\n".join(example_lines)
-        if not example_text.strip():
-            raise ValidationError(
-                kind="invalid_format",
-                file_path=file_path,
-                message="Invalid format file: empty example",
-            )
-        examples.append(example_text)
-
-    if not examples:
-        raise ValidationError(
-            kind="invalid_format",
-            file_path=file_path,
-            message="Invalid format file: no examples",
-        )
-
-    return SmsFormat(
-        regex=regex_line,
-        regex_group_names=columns,
-        examples=examples,
-    )
-
-
-def write_format_file(file_path, format, examples=None):
-    """Write format file from format entity (regex, regex_group_names, examples)."""
-    examples = examples if examples is not None else format.examples
-    if not examples:
-        raise ValueError("Cannot write format file with no examples")
-    regex_line = format.regex
-    columns_line = ";".join(format.regex_group_names)
-    blocks = [
-        regex_line.strip(),
-        MARKER_COLUMNS + "\n" + (columns_line.strip() if columns_line else ""),
-    ]
-    for ex in examples:
-        blocks.append(MARKER_EXAMPLE + "\n" + (ex.strip() if ex else ""))
-    content = "\n\n".join(blocks) + "\n"
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(content)
 
 
 def compile_regex(regex_line, file_path):
@@ -402,7 +335,7 @@ def validate_format_name(format_name, fmt, file_path=""):
     return errors
 
 
-def validate_cross_match(formats_with_regex, bank_label):
+def validate_cross_match(formats_with_regex):
     """formats_with_regex: list of (SmsFormat, compiled_regex, file_path).
     Returns list of ValidationErrors for cross-match.
     """
@@ -422,7 +355,7 @@ def validate_cross_match(formats_with_regex, bank_label):
                                 file_path=file_path,
                                 message=(
                                     f"example {ex_idx + 1}/{len(fmt.examples)}: "
-                                    f"{preview} — matches {other_path}",
+                                    f"{preview} — matches {other_path}"
                                 ),
                                 example_index=ex_idx,
                                 example_text=example,

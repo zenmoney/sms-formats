@@ -1,7 +1,0 @@
-^PEREV.*\sC\s.*(\d{4}).\s+([\d-]{10})\s+[\d:,]+\s+([\d\s.,]*\d).\s*([A-Z]{3}).*stat.*?(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-syncid;date#yyyy-MM-dd;outcome;instrument;av_balance
-
------EXAMPLE-----
-PEREVOD C KARTY 4052xxxxxxx32959, 2015-06-04 17:39:14, 1 000.00, KZT, , . Ostatok 1 183.59, KZT. atf24.kz - upravlyai schetami 24/7
