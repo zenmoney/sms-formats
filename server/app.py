@@ -7,8 +7,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 
 from .github_client import GitHubClient
-from .models import SmsRequest, SmsResponse
-from .repo_worker import process_known_company_sms
+from .models import DiffRequest, DiffResponse, SmsRequest, SmsResponse
+from .repo_worker import process_known_company_sms, run_diff_flow
 
 
 class KeyedExecutionQueue:
@@ -122,3 +122,32 @@ async def ingest_sms(payload: SmsRequest):
                 content=SmsResponse(status="duplicate").model_dump(),
             )
         return SmsResponse(status=status)
+
+
+@app.post("/diff/", response_model=DiffResponse)
+async def ingest_diff(payload: DiffRequest):
+    try:
+        github_client = _get_github_client()
+    except (RuntimeError, ValueError) as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    github_repo = github_client.repo
+    base_branch = os.environ.get("GITHUB_BASE_BRANCH", "main").strip() or "main"
+
+    async with queue.acquire("diff-main"):
+        try:
+            result = run_diff_flow(
+                github_client=github_client,
+                github_repo=github_repo,
+                base_branch=base_branch,
+                payload=payload.model_dump(),
+            )
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+        except RuntimeError as exc:
+            detail = str(exc)
+            if detail.startswith("invalid_diff_output:"):
+                raise HTTPException(status_code=500, detail=detail) from exc
+            raise HTTPException(status_code=400, detail=detail) from exc
+        except Exception as exc:
+            raise HTTPException(status_code=500, detail=str(exc)) from exc
+    return result
