@@ -1,4 +1,4 @@
-Перевод P2P на сумму (?<outcome>[\d.]+) (?<instrument>\w+) с карты \D+(?<syncid>\d{4}) был успешно инициирован\. Доступный остаток: (?<av_balance>[\d.]+) (?<acc_instrument>\w+)\.
+Перевод P2P на сумму ([\d\s.,]+?) (\w+) с карты \D+(\d{4}) был успешно инициирован\. Доступный остаток: ([\d\s.,]+?) (\w+)\.
 
 -----COLUMNS-----
 outcome;instrument;syncid;av_balance;acc_instrument
