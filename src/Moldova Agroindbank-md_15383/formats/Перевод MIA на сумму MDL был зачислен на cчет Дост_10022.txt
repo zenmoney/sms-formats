@@ -1,4 +1,4 @@
-Перевод MIA на сумму (?<amount>[\d.]+) (?<currency>\w+) был зачислен на cчет \d+(?<account>\d{4})\. Доступный остаток:\s(?<avbalance>[\d.]+)\s(?<accinstrument>\w+)\.
+Перевод MIA на сумму ([\d\s.,]+?) (\w+) был зачислен на cчет \d+(\d{4})\. Доступный остаток:\s([\d\s.,]+?)\s(\w+)\.
 
 -----COLUMNS-----
 income;instrument;syncid;av_balance;acc_instrument
