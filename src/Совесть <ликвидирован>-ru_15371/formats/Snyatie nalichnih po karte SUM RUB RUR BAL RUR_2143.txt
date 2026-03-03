@@ -1,7 +1,0 @@
-^Snyatie nal.*?\*(\d{4}).*SUM.*?([\d\s.,]*\d)\s*([A-Z]{3})\s+\(([\d\s.,]*\d).*?BAL.*?(-?[\d\s.,]*\d).*?([\d.]{10}).*
-
------COLUMNS-----
-syncid#cash;op_outcome;instrument;outcome;av_balance;date#dd.MM.yyyy
-
------EXAMPLE-----
-Snyatie nalichnih po karte 4693****4051 SUM: 2000.00 RUB (2000.00 RUR). BAL: 1273.92 RUR. 05.01.2016 16:08:56. 1234567890
