@@ -1,4 +1,4 @@
-.*?(?:[Сс]умма)\s+(?<outcome>[\d.]+)\s+(?<instrument>\w+).*?(?:счет)\s+\D*?\d+(?<syncid>\d{4}).*?(?:остаток):\s+(?<av_balance>[\d.]+)\s+(?<acc_instrument>\w+)
+.*?(?:[Сс]умма)\s+([\d\s.,]+?)\s+(\w+).*?(?:счет)\s+\D*?\d+(\d{4}).*?(?:остаток):\s+([\d\s.,]+?)\s+(\w+)
 
 -----COLUMNS-----
 income;instrument;syncid;av_balance;acc_instrument
