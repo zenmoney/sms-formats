@@ -5,3 +5,6 @@ outcome;instrument;payee;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Оплата на сумму 75.26 MDL в MAIB LINELLA 36 с карты ***0876 прошла успешно. Доступный остаток: 5101.6 MDL. ║
+
+-----EXAMPLE-----
+Оплата на сумму 362 MDL в "GRANIER" M.cel Batrin с карты ***4494 прошла успешно. Доступный остаток: 27832 MDL. ║
