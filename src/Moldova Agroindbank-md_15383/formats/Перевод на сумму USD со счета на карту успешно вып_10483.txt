@@ -1,4 +1,4 @@
-.*?(?:[Пп]еревод.*?на сумму)\s+(?<outcome>[\d.]+)\s+(?<instrument>\w+).*?(?:счет).*?\D(?<syncid>\d{4})\D.*?(?:остаток):\s+(?<av_balance>[\d.]+)\s+(?<acc_instrument>\w+)
+.*?(?:[Пп]еревод.*?на сумму)\s+([\d\s.,]+?)\s+(\w+).*?(?:счет).*?\D(\d{4})\D.*?(?:остаток):\s+([\d\s.,]+?)\s+(\w+)
 
 -----COLUMNS-----
 outcome;instrument;syncid;av_balance;acc_instrument
