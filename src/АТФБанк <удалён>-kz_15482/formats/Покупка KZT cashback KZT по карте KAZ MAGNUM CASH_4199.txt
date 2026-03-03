@@ -1,7 +1,0 @@
-^(?:Покуп|Pokup).*?([\d\s.,]*\d)\s*([A-Z]{3}).*\*(\d{4}).* ([\d.]{8}),(?:\s+[A-Z]{3},)?\s+(.*?)\.?\s+.(?:стат|stat).*?(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-outcome;instrument;syncid;date#dd.MM.yy;payee;av_balance
-
------EXAMPLE-----
-Покупка 17,549.00 KZT, cashback 526.47 KZT, по карте *4624, 17.08.19, KAZ, MAGNUM CASH&CARRY AF22-1. Остаток 239,183.14 KZT
