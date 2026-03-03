@@ -1,7 +1,0 @@
-^Popolnenie.*?(\d[\d\s.,]*) (\S{3}). Balans: (-?[\d\s.,]*\d).*?([\d.]{10}).*
-
------COLUMNS-----
-income;instrument;balance;date#dd.MM.yyyy
-
------EXAMPLE-----
-Popolnenie na summu: 4000,00 rub. Balans: 5053,31 rub. 20.05.2013 20:57

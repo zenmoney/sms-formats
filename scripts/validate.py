@@ -6,46 +6,23 @@ import sys
 from pathlib import Path
 
 from sms_format import (
+    SmsFormat,
     ValidationError,
     clean_name,
     compile_regex,
-    parse_format_file,
     validate_cross_match,
     validate_sms_format,
-    write_format_file,
 )
-
-
-def parse_name_with_id(raw):
-    last_underscore = raw.rfind("_")
-    if last_underscore == -1:
-        return {"name": raw, "id": None}
-    name = raw[:last_underscore]
-    id_part = raw[last_underscore + 1 :]
-    if id_part == "":
-        return {"name": name, "id": None}
-    try:
-        return {"name": name, "id": int(id_part)}
-    except ValueError:
-        return {"name": name, "id": id_part}
-
-
-def list_directories(dir_path):
-    p = Path(dir_path)
-    if not p.exists():
-        return []
-    return [d.name for d in p.iterdir() if d.is_dir()]
-
-
-def list_format_files(bank_dir):
-    formats_dir = Path(bank_dir) / "formats"
-    if not formats_dir.exists():
-        return []
-    return [
-        str(formats_dir / f.name)
-        for f in formats_dir.iterdir()
-        if f.is_file() and f.name.endswith(".txt")
-    ]
+from sms_format_repository import (
+    Company,
+    find_format_by_name,
+    get_src_dir,
+    list_companies,
+    list_formats_with_files_and_errors,
+    parse_name_with_id,
+    save_company,
+    save_format,
+)
 
 
 def _is_format_file_path(file_path):
@@ -83,16 +60,33 @@ def _print_errors(errors, src_dir, stream):
     stream.write(f"{len(errors)} error(s) in {files_with_errors} file(s)\n")
 
 
-def run_validation(src_dir):
-    """Full pass over all banks and format files. Returns list of ValidationError."""
-    errors = []
-    bank_dirs = list_directories(src_dir)
+def _company_id_from_path(file_path: str):
+    parts = Path(file_path).parts
+    if "src" not in parts:
+        return None
+    idx = parts.index("src")
+    if idx + 1 >= len(parts):
+        return None
+    company_dir = parts[idx + 1]
+    return parse_name_with_id(company_dir)["id"]
 
-    for bank_dir_name in bank_dirs:
+
+def _format_name_and_id_from_path(file_path: str):
+    stem = Path(file_path).stem
+    parsed = parse_name_with_id(stem)
+    return parsed["name"], parsed["id"], stem
+
+
+def _collect_validation_errors():
+    """Full pass over all banks and format files."""
+    errors = []
+    src_dir = get_src_dir()
+    companies = list_companies()
+
+    for company in companies:
+        bank_dir_name = f"{company.name}_{company.id}" if company.id is not None else company.name
         bank_path = src_dir / bank_dir_name
-        parsed_bank = parse_name_with_id(bank_dir_name)
-        bank_name = parsed_bank["name"]
-        bank_id = parsed_bank["id"]
+        bank_name = company.name
 
         if bank_name != clean_name(bank_name):
             errors.append(
@@ -104,18 +98,17 @@ def run_validation(src_dir):
                 )
             )
 
-        format_files = list_format_files(bank_path)
-        if not format_files:
+        format_records, parse_errors = list_formats_with_files_and_errors(company.id)
+        errors.extend(parse_errors)
+        if not format_records:
             continue
 
         formats = []
         formats_with_regex = []
-        for file_path in format_files:
+        for parsed, file_path in format_records:
             try:
-                parsed = parse_format_file(file_path)
                 compiled = compile_regex(parsed.regex, file_path)
-                base_name = Path(file_path).stem
-                format_name = parse_name_with_id(base_name)["name"]
+                format_name = parsed.name or ""
                 formats.append((file_path, format_name, parsed, compiled))
                 formats_with_regex.append((parsed, compiled, file_path))
             except ValidationError as e:
@@ -139,13 +132,12 @@ def run_validation(src_dir):
                 )
             )
 
-        bank_label = f"{bank_name}_{bank_id or ''}"
-        errors.extend(validate_cross_match(formats_with_regex, bank_label))
+        errors.extend(validate_cross_match(formats_with_regex))
 
     return errors
 
 
-def apply_fixes(errors, src_dir):
+def _apply_validation_fixes(errors):
     """
     Apply fixable corrections: delete invalid_format files; remove example_no_match and
     cross_match examples; rename format files and bank dirs for invalid_name.
@@ -181,39 +173,69 @@ def apply_fixes(errors, src_dir):
     format_renames = list(format_rename_target.items())
 
     for file_path in to_delete:
-        p = Path(file_path)
-        if p.exists():
-            p.unlink()
+        # Delete by exact path to avoid ambiguities when duplicate ids/names exist.
+        path_obj = Path(file_path)
+        if path_obj.exists():
+            path_obj.unlink()
 
     for file_path, remove_set in to_remove_examples.items():
-        p = Path(file_path)
-        if not p.exists() or file_path in to_delete:
+        if file_path in to_delete:
             continue
-        try:
-            parsed = parse_format_file(file_path)
-        except Exception:
+        company_id = _company_id_from_path(file_path)
+        format_name, format_id, old_stem = _format_name_and_id_from_path(file_path)
+        if company_id is None:
+            continue
+        parsed = find_format_by_name(format_name, str(company_id))
+        if not parsed:
             continue
         kept = [ex for ex in parsed.examples if ex not in remove_set]
         if not kept:
-            p.unlink()
+            # Delete exact file instead of name/id lookup (can be ambiguous during renames/fixes).
+            path_obj = Path(file_path)
+            if path_obj.exists():
+                path_obj.unlink()
         else:
-            write_format_file(file_path, parsed, kept)
+            updated = SmsFormat(
+                regex=parsed.regex,
+                regex_group_names=list(parsed.regex_group_names),
+                examples=kept,
+                name=parsed.name,
+                id=parsed.id,
+                company_id=parsed.company_id,
+                changed=parsed.changed,
+            )
+            save_format(updated, str(company_id), file_stem=old_stem)
 
     for old_path, new_path in format_renames:
-        old_p, new_p = Path(old_path), Path(new_path)
-        if old_p.exists() and old_path != new_path and not new_p.exists():
-            old_p.rename(new_p)
+        if old_path == new_path:
+            continue
+        company_id = _company_id_from_path(old_path)
+        if company_id is None:
+            continue
+        old_name, _old_id, _old_stem = _format_name_and_id_from_path(old_path)
+        new_stem = Path(new_path).stem
+        parsed = find_format_by_name(old_name, str(company_id))
+        if not parsed:
+            continue
+        save_format(parsed, str(company_id), file_stem=new_stem)
+        old_file = Path(old_path)
+        if old_file.exists():
+            old_file.unlink()
 
     for bank_path_str, expected_name in bank_renames:
-        bank_path = Path(bank_path_str)
-        if not bank_path.is_dir():
+        company_id = parse_name_with_id(Path(bank_path_str).name)["id"]
+        if company_id is None:
             continue
-        parsed = parse_name_with_id(bank_path.name)
-        bank_id = parsed["id"]
-        new_name = f"{expected_name}_{bank_id}" if bank_id is not None else expected_name
-        new_path = bank_path.parent / new_name
-        if str(new_path) != str(bank_path) and bank_path.exists() and not new_path.exists():
-            bank_path.rename(new_path)
+        save_company(Company(id=str(company_id), name=expected_name))
+
+
+def validate(fix: bool = False) -> list[ValidationError]:
+    """Validate repository formats and optionally apply auto-fixes."""
+    errors = _collect_validation_errors()
+    if fix and errors:
+        _apply_validation_fixes(errors)
+        errors = _collect_validation_errors()
+    return errors
 
 
 def main():
@@ -229,21 +251,17 @@ def main():
     )
     args = parser.parse_args()
 
-    src_dir = Path.cwd() / "src"
+    src_dir = get_src_dir()
     if not src_dir.exists():
         sys.stderr.write("No src/ directory found.\n")
         sys.exit(1)
 
-    bank_dirs = list_directories(src_dir)
-    if not bank_dirs:
+    companies = list_companies()
+    if not companies:
         sys.stderr.write("No banks found in src/\n")
         sys.exit(1)
 
-    errors = run_validation(src_dir)
-
-    if args.fix and errors:
-        apply_fixes(errors, src_dir)
-        errors = run_validation(src_dir)
+    errors = validate(fix=args.fix)
 
     if errors:
         _print_errors(errors, src_dir, sys.stderr)
