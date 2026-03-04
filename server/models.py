@@ -1,4 +1,4 @@
-from typing import Literal, Optional
+from typing import Any, Dict, List, Literal, Optional
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -30,14 +30,35 @@ class SmsRequest(BaseModel):
 
 
 StatusValue = Literal[
+    "ad",
     "unknown_sender",
     "duplicate",
     "otp",
+    "otp_draft",
     "transaction",
+    "transaction_draft",
     "failed_transaction",
+    "failed_transaction_draft",
     "failed",
 ]
 
 
 class SmsResponse(BaseModel):
     status: StatusValue
+
+
+class DiffPayload(BaseModel):
+    companies: List[Dict[str, Any]] = Field(default_factory=list)
+    senders: List[Dict[str, Any]] = Field(default_factory=list)
+    formats: List[Dict[str, Any]] = Field(default_factory=list)
+
+
+class DiffRequest(BaseModel):
+    diff: DiffPayload = Field(default_factory=DiffPayload)
+    lastCommitHash: Optional[str] = None
+    lastServerTimestamp: Optional[str] = None
+
+
+class DiffResponse(BaseModel):
+    diff: DiffPayload
+    commitHash: str
