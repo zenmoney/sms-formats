@@ -1,0 +1,7 @@
+(\p{Sc})(\d[\d\s.,]*)\s+spent\s+(\S+)\s+balance:\s*\p{Sc}\s*(-?\d[\d\s.,]*[.,]\d{2})\s*║.*?·\s*([^\r\n]+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;balance;payee
+
+-----EXAMPLE-----
+€25.99 spent EUR balance: €2,974.01 ║ Joint · YouTube
