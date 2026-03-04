@@ -77,8 +77,8 @@ def _format_name_and_id_from_path(file_path: str):
     return parsed["name"], parsed["id"], stem
 
 
-def run_validation():
-    """Full pass over all banks and format files. Returns list of ValidationError."""
+def _collect_validation_errors():
+    """Full pass over all banks and format files."""
     errors = []
     src_dir = get_src_dir()
     companies = list_companies()
@@ -137,7 +137,7 @@ def run_validation():
     return errors
 
 
-def apply_fixes(errors):
+def _apply_validation_fixes(errors):
     """
     Apply fixable corrections: delete invalid_format files; remove example_no_match and
     cross_match examples; rename format files and bank dirs for invalid_name.
@@ -229,6 +229,15 @@ def apply_fixes(errors):
         save_company(Company(id=str(company_id), name=expected_name))
 
 
+def validate(fix: bool = False) -> list[ValidationError]:
+    """Validate repository formats and optionally apply auto-fixes."""
+    errors = _collect_validation_errors()
+    if fix and errors:
+        _apply_validation_fixes(errors)
+        errors = _collect_validation_errors()
+    return errors
+
+
 def main():
     parser = argparse.ArgumentParser(description="Validate SMS format files.")
     parser.add_argument(
@@ -252,11 +261,7 @@ def main():
         sys.stderr.write("No banks found in src/\n")
         sys.exit(1)
 
-    errors = run_validation()
-
-    if args.fix and errors:
-        apply_fixes(errors)
-        errors = run_validation()
+    errors = validate(fix=args.fix)
 
     if errors:
         _print_errors(errors, src_dir, sys.stderr)

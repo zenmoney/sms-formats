@@ -1,0 +1,19 @@
+Hello\. You have spent ([A-Z]{3}) (\d[\d\s.,]*[.,]\d{2}) at (.+?) on your Credit Card .*?(\d{4}) on (\d{2}\/\d{2})\. Available Balance: ([A-Z]{3}) (\d[\d\s.,]*[.,]\d{2})\.
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid;date#dM;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Hello. You have spent AED 134.30 at Amazon Grocery on your Credit Card 523926******7383 on 14/02. Available Balance: AED 13944.87.
+
+-----EXAMPLE-----
+Hello. You have spent AED 27.00 at METRO TAXI on your Credit Card 523926******7383 on 11/09. Available Balance: AED 2048.63.
+
+-----EXAMPLE-----
+Hello. You have spent AED 4.90 at Smart Seven Mini Ma on your Credit Card 523926******7383 on 13/09. Available Balance: AED 2731.64.
+
+-----EXAMPLE-----
+Hello. You have spent AED 688.21 at Amazon.ae on your Credit Card 523926******7383 on 30/09. Available Balance: AED 5114.62.
+
+-----EXAMPLE-----
+Hello. You have spent AED 99.55 at CAREEM QUIK on your Credit Card 523926******7383 on 28/08. Available Balance: AED 1465.13.
