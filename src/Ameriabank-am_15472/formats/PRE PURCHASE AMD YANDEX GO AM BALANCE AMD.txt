@@ -1,7 +1,0 @@
-PRE-PURCHASE\s+(\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3})\s+\d{4}\*+(\d{4}),\s+([^,]+),\s+AM\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+BALANCE:\s+(-?\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3})
-
------COLUMNS-----
-outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
-
------EXAMPLE-----
-PRE-PURCHASE 1,500.00 AMD 4375***4901, YANDEX.GO, AM 27.02.2026 15:05 BALANCE: 117,842.57 AMD

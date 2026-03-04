@@ -1,7 +1,0 @@
-PRE-PURCHASE COMPLETION\s*\|\s*(\d[\d\s.,]*)\s*([A-Z]{3})\s*\|\s*\d+\*+(\d{2,4}),\s*\|\s*(.+?)\s*\|\s*(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s*\|\s*BALANCE:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
-
------COLUMNS-----
-outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
-
------EXAMPLE-----
-PRE-PURCHASE COMPLETION | 1,277.00 AMD | 9051***4595, | YANDEX EATS AM LLC, AM | 11.02.2026 16:21 | BALANCE: 94,474.00 AMD ║ ARCA transactions
