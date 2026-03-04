@@ -1,0 +1,7 @@
+^SBP\. Ispolnen perevod ([\d./-]{5}).*Schet\s\*([\d]{4})\.\sSpisano\s([\d\s.,]*\d)\s([а-яa-zA-Z]{1,3})\.\s(.*)
+
+-----COLUMNS-----
+date#dd.MM;syncid;outcome;instrument;comment
+
+-----EXAMPLE-----
+SBP. Ispolnen perevod 21.01 03:15 (msk). Schet *7697. Spisano 10000 r. Ivan Ivanovich Z v AO "TBank".
