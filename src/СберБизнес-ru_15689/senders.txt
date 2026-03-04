@@ -1,3 +1,2 @@
-900
 ru.sberbank_sbbol
 0321
