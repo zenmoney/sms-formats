@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+(\S+)\s+(.+?)(?=\.\s+Оплата картой)\.\s+Оплата картой\s+\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+-41 р. VKUSVILL_KSO. Оплата картой *3529. Баланс 2 814.38 р.
