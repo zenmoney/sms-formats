@@ -8,3 +8,6 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Покупка *8393: 1300 р в CHAYKHANA24 Баланс: 111366,66 р
+
+-----EXAMPLE-----
+Покупка *3955: 2222,10 р в PYATEROCHKA 23262 Баланс: 10805 р
