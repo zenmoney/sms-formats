@@ -1,4 +1,4 @@
-^.*(?:еревод|erevod).*?(\d{4}|Накопит\S+|[A-Z]{3}).*?\W?([\d\s.,]*\d)\s*([A-Z]{3})(?!.*\d\d\.\d\d\.\d{4})\W?\s+(.*?)\..*?(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^.*(?:еревод|erevod).*?(\d{4}|Накопит\S+|[A-Z]{3}).*?\W?([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W)(?!.*\d\d\.\d\d\.\d{4})\W?\s+(.*?)\..*?(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W).*
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;balance;acc_instrument
@@ -14,3 +14,9 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Перевод. Счет RUB. 1500 RUB. Card2Card. Баланс 6813.39 RUB
+
+-----EXAMPLE-----
+Перевод. Счет RUB. 413 ₽. Дмитрий П. Баланс 113539,23 ₽
+
+-----EXAMPLE-----
+Перевод. Счет RUB. 5555 ₽. Мария Г. Баланс 104561,9 ₽
