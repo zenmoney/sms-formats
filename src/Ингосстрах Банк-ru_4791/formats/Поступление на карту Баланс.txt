@@ -5,3 +5,6 @@ income;instrument;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Поступление +170867.80₽ на карту *1800. Баланс 170926.51₽
+
+-----EXAMPLE-----
+Поступление +1000.00RUB на карту *5316. Баланс 1868.57RUB
