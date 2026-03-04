@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import json
 import os
+import re
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -12,9 +13,10 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 from openai import AsyncOpenAI
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from import_changes import commit_file_or_raise
+from diff import commit_file
 from sms_format import (
     ALLOWED_COLUMNS,
+    AMOUNT_COLUMNS,
     SmsFormat,
     ValidationError,
     _clean_text,
@@ -43,6 +45,12 @@ class SmsFormatGenerationResult:
     reason: str
     sms_type: Optional[str]
     sms_format: Optional[SmsFormat]
+
+
+@dataclass
+class RegexRetryResult:
+    valid_regex: Optional[str]
+    last_generated_regex: Optional[str]
 
 
 async def run_prompt(
@@ -393,10 +401,15 @@ def _validate_regex_runtime(
         ]
 
     for idx, item in enumerate(entity_items):
-        name = item["name"]
+        name = item["name"].strip()
         expected = item["value"].strip()
         actual_raw = groups[idx]
         actual = str(actual_raw).strip() if actual_raw is not None else ""
+
+        if name in AMOUNT_COLUMNS:
+            expected = re.sub(r"\s+", "", expected)
+            actual = re.sub(r"\s+", "", actual)
+
         if actual != expected:
             try:
                 span = match.span(idx + 1)
@@ -430,12 +443,13 @@ async def _generate_regex_with_retry(
         Awaitable[Optional[str]],
     ],
     runtime_validators: List[Callable[[str, str], List[ValidationError]]],
-) -> Optional[str]:
+) -> RegexRetryResult:
     """
     Shared retry loop for regex generation with pluggable runtime validators.
     """
     previous_regex: Optional[str] = None
     previous_errors: List[ValidationError] = []
+    last_generated_regex: Optional[str] = None
 
     for attempt in range(max_attempts):
         serialized_errors = (
@@ -443,11 +457,16 @@ async def _generate_regex_with_retry(
             if previous_errors
             else None
         )
+
+        if DEBUG_LLM_OUTPUT:
+            print(f"Generation attempt: {attempt}, previous errors: {serialized_errors}")
+
         try:
             regex = await generate_fn(previous_regex, serialized_errors)
             if not isinstance(regex, str) or not regex.strip():
                 raise ValueError("Regex generation returned empty result.")
             regex = regex.strip()
+            last_generated_regex = regex
         except Exception as exc:
             previous_regex = None
             previous_errors = [
@@ -477,12 +496,18 @@ async def _generate_regex_with_retry(
                 runtime_errors.append(hardcode_error)
 
         if not runtime_errors:
-            return regex
+            return RegexRetryResult(
+                valid_regex=regex,
+                last_generated_regex=last_generated_regex,
+            )
 
         previous_regex = regex
         previous_errors = runtime_errors
 
-    return None
+    return RegexRetryResult(
+        valid_regex=None,
+        last_generated_regex=last_generated_regex,
+    )
 
 
 async def classify_sms_with_llm(
@@ -846,6 +871,7 @@ async def generate_sms_format(
     entity_extraction_model: str = DEFAULT_ENTITY_EXTRACTION_MODEL,
     regex_generation_model: str = DEFAULT_REGEX_GENERATION_MODEL,
     regex_validation_model: str = DEFAULT_REGEX_VALIDATION_MODEL,
+    allow_draft: bool = False,
 ) -> SmsFormatGenerationResult:
     if not isinstance(sms_text, str) or not sms_text.strip():
         raise ValueError("sms_text must be a non-empty string.")
@@ -877,11 +903,11 @@ async def generate_sms_format(
         sms_text=sms_text,
         model=classification_model,
     )
-    if sms_type in {"ad", "undefined"}:
+    if sms_type == "ad":
         return SmsFormatGenerationResult(
             sms_format=None,
-            status="failed",
-            reason=f"classification_{sms_type}",
+            status="ad",
+            reason="ad",
             sms_type=sms_type,
         )
 
@@ -929,7 +955,7 @@ async def generate_sms_format(
                 )
             )
 
-        regex = await _generate_regex_with_retry(
+        retry_result = await _generate_regex_with_retry(
             sms_text=sms_text,
             explanation=explanation,
             max_attempts=max_attempts,
@@ -937,6 +963,7 @@ async def generate_sms_format(
             generate_fn=transaction_generate_fn,
             runtime_validators=transaction_runtime_validators,
         )
+        regex = retry_result.valid_regex
         if isinstance(regex, str) and regex.strip():
             return SmsFormatGenerationResult(
                 sms_format=SmsFormat(
@@ -949,6 +976,24 @@ async def generate_sms_format(
                 ),
                 status="transaction",
                 reason="generated",
+                sms_type=sms_type,
+            )
+        if (
+            allow_draft
+            and isinstance(retry_result.last_generated_regex, str)
+            and retry_result.last_generated_regex.strip()
+        ):
+            return SmsFormatGenerationResult(
+                sms_format=SmsFormat(
+                    regex=retry_result.last_generated_regex,
+                    regex_group_names=entity_names,
+                    examples=[sms_text],
+                    company_id=str(resolved_company.id)
+                    if resolved_company and resolved_company.id
+                    else None,
+                ),
+                status="transaction_draft",
+                reason="draft_generated",
                 sms_type=sms_type,
             )
         return SmsFormatGenerationResult(
@@ -999,7 +1044,7 @@ async def generate_sms_format(
                 )
             )
 
-        regex = await _generate_regex_with_retry(
+        retry_result = await _generate_regex_with_retry(
             sms_text=sms_text,
             explanation=explanation,
             max_attempts=max_attempts,
@@ -1007,6 +1052,7 @@ async def generate_sms_format(
             generate_fn=non_transaction_generate_fn,
             runtime_validators=non_transaction_runtime_validators,
         )
+        regex = retry_result.valid_regex
         if isinstance(regex, str) and regex.strip():
             return SmsFormatGenerationResult(
                 sms_format=SmsFormat(
@@ -1019,6 +1065,24 @@ async def generate_sms_format(
                 ),
                 status=sms_type,
                 reason="generated",
+                sms_type=sms_type,
+            )
+        if (
+            allow_draft
+            and isinstance(retry_result.last_generated_regex, str)
+            and retry_result.last_generated_regex.strip()
+        ):
+            return SmsFormatGenerationResult(
+                sms_format=SmsFormat(
+                    regex=retry_result.last_generated_regex,
+                    regex_group_names=[],
+                    examples=[sms_text],
+                    company_id=str(resolved_company.id)
+                    if resolved_company and resolved_company.id
+                    else None,
+                ),
+                status=f"{sms_type}_draft",
+                reason="draft_generated",
                 sms_type=sms_type,
             )
         return SmsFormatGenerationResult(
@@ -1158,7 +1222,12 @@ async def validate_regex_flexibility_with_llm(
     )
 
 
-def _save_generated_format_with_commit(sms_format: SmsFormat, company_id: str) -> Optional[str]:
+def _save_generated_format_with_commit(
+    sms_format: SmsFormat,
+    company_id: str,
+    *,
+    is_draft: bool = False,
+) -> Optional[str]:
     resolved_company = find_company_by_id(str(company_id).strip())
     if resolved_company is None or resolved_company.id is None:
         raise ValueError("Valid --company is required for --save (company id expected).")
@@ -1170,8 +1239,12 @@ def _save_generated_format_with_commit(sms_format: SmsFormat, company_id: str) -
     if not save_result.changed_paths:
         return None
 
-    commit_title = f"[{resolved_company.name}] create format"
-    commit_file_or_raise(
+    commit_title = (
+        f"[{resolved_company.name}] create format draft"
+        if is_draft
+        else f"[{resolved_company.name}] create format"
+    )
+    commit_file(
         save_result.changed_paths,
         commit_title,
         sms_format.changed,
@@ -1194,6 +1267,11 @@ async def _main_from_stdin() -> int:
         action="store_true",
         help="Save generated format and create git commit.",
     )
+    parser.add_argument(
+        "--allow-draft",
+        action="store_true",
+        help="Allow draft fallback using last generated regex.",
+    )
     args = parser.parse_args()
     DEBUG_LLM_OUTPUT = bool(args.debug)
     json_output = not args.debug
@@ -1211,6 +1289,7 @@ async def _main_from_stdin() -> int:
     generation_result = await generate_sms_format(
         sms_text=sms_text,
         company_id=args.company,
+        allow_draft=bool(args.allow_draft),
     )
     sms_format = generation_result.sms_format
     if sms_format is None:
@@ -1231,7 +1310,11 @@ async def _main_from_stdin() -> int:
     commit_title: Optional[str] = None
     if save_enabled:
         try:
-            commit_title = _save_generated_format_with_commit(sms_format, args.company)
+            commit_title = _save_generated_format_with_commit(
+                sms_format,
+                args.company,
+                is_draft=generation_result.status.endswith("_draft"),
+            )
         except Exception as exc:
             if json_output:
                 print(
