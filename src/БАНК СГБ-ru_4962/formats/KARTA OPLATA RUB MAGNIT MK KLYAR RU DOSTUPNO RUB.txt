@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+KARTA\s+\*{3}(\d{4})\s+OPLATA\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+\((.*?)\s+DOSTUPNO\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+20.02.26 17:52 KARTA ***8186 OPLATA 89.99 RUB (MAGNIT MK KLYAR, RU( DOSTUPNO 2456.43 RUB
