@@ -4,7 +4,7 @@ import subprocess
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 
 from .github_client import GitHubClient
 
@@ -183,3 +183,48 @@ async def process_known_company_sms(
         issue_body=message,
     )
     return "failed"
+
+
+def run_diff_flow(
+    *,
+    github_client: GitHubClient,
+    github_repo: str,
+    base_branch: str,
+    payload: Dict[str, Any],
+) -> Dict[str, Any]:
+    with tempfile.TemporaryDirectory(prefix="sms-webhook-diff-") as temp_dir:
+        tmp_root = Path(temp_dir)
+        repo_path = tmp_root / "repo"
+        clone_url = github_client.build_clone_url(github_repo)
+        _run(["git", "clone", clone_url, str(repo_path)], cwd=tmp_root)
+
+        _run(["git", "checkout", base_branch], cwd=repo_path)
+        _run(["git", "pull", "--ff-only", "origin", base_branch], cwd=repo_path)
+
+        python_bin = os.environ.get("PYTHON_BIN", "python3")
+        run_result = subprocess.run(
+            [python_bin, "scripts/diff.py"],
+            cwd=str(repo_path),
+            check=False,
+            text=True,
+            capture_output=True,
+            input=json.dumps(payload, ensure_ascii=False),
+        )
+        if run_result.returncode != 0:
+            detail = (run_result.stderr or run_result.stdout or "diff_failed").strip()
+            raise RuntimeError(f"diff.py failed: {detail}")
+
+        stdout = (run_result.stdout or "").strip()
+        try:
+            parsed = json.loads(stdout)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f"invalid_diff_output: {stdout}") from exc
+        if not isinstance(parsed, dict):
+            raise RuntimeError("invalid_diff_output: expected JSON object")
+        if "diff" not in parsed or "commitHash" not in parsed:
+            raise RuntimeError("invalid_diff_output: missing diff or commitHash")
+
+        fresh_push_url = github_client.build_clone_url(github_repo)
+        _run(["git", "remote", "set-url", "origin", fresh_push_url], cwd=repo_path)
+        _run(["git", "push", "origin", f"HEAD:{base_branch}"], cwd=repo_path)
+        return parsed

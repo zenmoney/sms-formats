@@ -1,0 +1,7 @@
+Успешная оплата на сумму\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+через\s+QR\s+MIA\s+у\s+(.+?)\s+со счета\s+\d+(\d{4})\.\s+Доступный остаток:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Успешная оплата на сумму 200 MDL через QR MIA у Simpals S.r.l. со счета 22594699333. Доступный остаток: 352.45 MDL. ║ maibank

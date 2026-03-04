@@ -376,23 +376,47 @@ def save_format(
     formats_dir = _company_dir(company) / "formats"
     formats_dir.mkdir(parents=True, exist_ok=True)
 
+    id = str(format.id).strip() if format.id is not None else ""
+    name = clean_name(get_format_name(format) or "")
+
     if file_stem:
         stem = file_stem
     else:
-        name_clean = clean_name(get_format_name(format) or "")
-        id_part = str(format.id).strip() if format.id is not None else ""
-        if name_clean and id_part:
-            stem = f"{name_clean}_{id_part}"
-        elif name_clean:
-            stem = name_clean
-        elif id_part:
+        if name and id:
+            stem = f"{name}_{id}"
+        elif name:
+            stem = name
+        elif id:
             # Explicit leading underscore only when we have id but no name.
-            stem = f"_{id_part}"
+            stem = f"_{id}"
         else:
-            stem = "format"
+            raise ValueError(
+                f"Cannot determine file name stem for format without name and id ${format}"
+            )
     file_path = formats_dir / f"{stem}.txt"
+    changed_paths: list[str] = []
+
+    duplicate_paths: list[Path] = []
+    if id:
+        for other_path in _iter_format_files_for_company(company):
+            if other_path == file_path:
+                continue
+            parsed_name = parse_name_with_id(other_path.stem)
+            if str(parsed_name["id"]) == id or (
+                not parsed_name["id"] and parsed_name["name"] == name
+            ):
+                duplicate_paths.append(other_path)
+
     changed = _save_format_file(file_path, format)
-    return ChangeResult(changed_paths=[str(file_path)] if changed else [], entity=format)
+    if changed:
+        changed_paths.append(str(file_path))
+
+    for p in duplicate_paths:
+        if p.exists():
+            p.unlink()
+            changed_paths.append(str(p))
+
+    return ChangeResult(changed_paths=changed_paths, entity=format)
 
 
 def delete_format_by_id(
