@@ -1,4 +1,5 @@
 import asyncio
+from subprocess import CompletedProcess
 
 from server import repo_worker
 
@@ -100,3 +101,76 @@ def test_process_known_company_sms_marks_draft_pr(monkeypatch):
     assert fake_client.pr_calls
     assert fake_client.pr_calls[0]["title"] == "[Bank] create format draft"
     assert fake_client.pr_calls[0]["draft"] is True
+
+
+def test_run_diff_flow_success(monkeypatch):
+    commands = []
+
+    def _fake_run(cmd, cwd, check=True):
+        commands.append(cmd)
+        return CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    def _fake_subprocess_run(*args, **kwargs):
+        return CompletedProcess(
+            args=args[0],
+            returncode=0,
+            stdout='{"diff":{"companies":[],"senders":[],"formats":[]},"commitHash":"abc123"}',
+            stderr="",
+        )
+
+    monkeypatch.setattr(repo_worker, "_run", _fake_run)
+    monkeypatch.setattr(repo_worker.subprocess, "run", _fake_subprocess_run)
+
+    result = repo_worker.run_diff_flow(
+        github_client=FakeGitHubClient(),
+        github_repo="owner/repo",
+        base_branch="main",
+        payload={"diff": {"companies": [], "senders": [], "formats": []}, "lastCommitHash": "abc"},
+    )
+
+    assert result["commitHash"] == "abc123"
+    assert ["git", "push", "origin", "HEAD:main"] in commands
+
+
+def test_run_diff_flow_invalid_output(monkeypatch):
+    def _fake_run(cmd, cwd, check=True):
+        return CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    def _fake_subprocess_run(*args, **kwargs):
+        return CompletedProcess(args=args[0], returncode=0, stdout="not-json", stderr="")
+
+    monkeypatch.setattr(repo_worker, "_run", _fake_run)
+    monkeypatch.setattr(repo_worker.subprocess, "run", _fake_subprocess_run)
+
+    try:
+        repo_worker.run_diff_flow(
+            github_client=FakeGitHubClient(),
+            github_repo="owner/repo",
+            base_branch="main",
+            payload={"diff": {"companies": [], "senders": [], "formats": []}},
+        )
+        assert False, "Expected RuntimeError for invalid diff output"
+    except RuntimeError as exc:
+        assert "invalid_diff_output" in str(exc)
+
+
+def test_run_diff_flow_nonzero_exit(monkeypatch):
+    def _fake_run(cmd, cwd, check=True):
+        return CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    def _fake_subprocess_run(*args, **kwargs):
+        return CompletedProcess(args=args[0], returncode=1, stdout="", stderr="boom")
+
+    monkeypatch.setattr(repo_worker, "_run", _fake_run)
+    monkeypatch.setattr(repo_worker.subprocess, "run", _fake_subprocess_run)
+
+    try:
+        repo_worker.run_diff_flow(
+            github_client=FakeGitHubClient(),
+            github_repo="owner/repo",
+            base_branch="main",
+            payload={"diff": {"companies": [], "senders": [], "formats": []}},
+        )
+        assert False, "Expected RuntimeError for failed diff run"
+    except RuntimeError as exc:
+        assert "diff.py failed" in str(exc)
