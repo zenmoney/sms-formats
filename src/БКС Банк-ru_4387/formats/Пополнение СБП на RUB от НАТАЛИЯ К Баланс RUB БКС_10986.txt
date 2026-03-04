@@ -1,0 +1,7 @@
+Пополнение СБП на\s+(\d[\d\s.,]*)\s+(\S+)\s+от\s+(.+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение СБП на 3400.00 RUB от НАТАЛИЯ К. Баланс 3400 RUB ║ БКС Банк
