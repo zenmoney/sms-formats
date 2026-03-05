@@ -1,7 +1,0 @@
-^.*urchase.*?([A-Z]{3})\s*([\d\s.,]*\d).*\*\s*(\d{4})\s+(.*?)\s+Remain\w+\s+.alan.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+(\d{2}[-./]\d{2}[-./]\d{2,4}).*
-
------COLUMNS-----
-instrument;outcome;syncid;comment;av_balance;acc_instrument;date#dMy
-
------EXAMPLE-----
-Bank of Georgia: Purchase: GEL 0.30 Card: ****7180 Batumi bus - route N 1002 Remaining balance: 4.06 GEL 27.12.2021
