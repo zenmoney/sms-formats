@@ -1,0 +1,7 @@
+din\s+(\d{2}\.\d{2}\.\d{2})\s.*?Suma:\s+(\d[\d\.,]*)\s+([A-Z]{3})\.\s+Card:\s+\d+\*(\d{4})\.\s+Disponibil:\s+(-?\d[\d\.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Debitare card P2P (P2P On-Self) din 05.03.26 12:00. Suma: 34.400,00 MDL. Card: 5188*9135. Disponibil: 3.943,27 MDL. ║ Tranzactie reusita
