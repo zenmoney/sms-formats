@@ -1,0 +1,7 @@
+\*(\d{4})\s+Покупка\s+(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+09:46 *0988 Покупка 2069.90 р CH61072 Баланс 79730.55 р
