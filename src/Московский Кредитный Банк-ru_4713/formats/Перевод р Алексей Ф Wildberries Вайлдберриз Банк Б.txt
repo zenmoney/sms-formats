@@ -1,0 +1,7 @@
+Перевод\s+(\d[\d\s.,]*)(\S+)\s+(.*?)\s+Баланс\s+(-?\d[\d\s.,]*)(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод 15000.00р Алексей Ф. Wildberries (Вайлдберриз Банк) Баланс 0р ║ Перевод
