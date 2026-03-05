@@ -1,0 +1,7 @@
+21\s+5574\*{4}(\d{4}),\s+uplata:\s*(\d[\d\s.,]*)\s+([A-Z]{3}),\s*(\d{2}\.\d{2}\.\d{4}),\s*(YETTEL\.BANK\s+AD\s+NOVI\s+SAD)\.\s*Trenutno\s+raspolozivo:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+21 5574****3630, uplata: 60,000.00 RSD, 26.02.2026, YETTEL.BANK AD        NOVI SAD. Trenutno raspolozivo: 60.000,00 RSD     . ║ Transakcija je izvršena
