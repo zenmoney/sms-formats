@@ -5,3 +5,6 @@ instrument;outcome;syncid;payee;date#dMy
 
 -----EXAMPLE-----
 Purchase: GEL18.59 Card:***5506 SAMASAMA You will get: 32.53 PLUS Total: 24,481.97 PLUS 14.07.2025
+
+-----EXAMPLE-----
+Purchase: GEL29.10 Card:***3066 McDonald's vaja-fshave>Tbilisi GE 03.03.2026
