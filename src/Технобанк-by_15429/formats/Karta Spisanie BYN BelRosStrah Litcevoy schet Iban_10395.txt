@@ -1,7 +1,0 @@
-Karta\s+5\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,4})\s+(.*?),\s+Litcevoy\s+schet:\s+\d+\s+Ibank\s+BLR\s+OK\.\s+Dostupno\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,4})
-
------COLUMNS-----
-syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-Karta 5.9704 22.12.2025 13:15:49 Spisanie -8.83  BYN BelRosStrah, Litcevoy schet: 162512168 Ibank BLR OK. Dostupno 1878.55 BYN
