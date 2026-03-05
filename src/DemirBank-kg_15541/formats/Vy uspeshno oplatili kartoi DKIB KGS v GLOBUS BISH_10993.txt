@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Vy uspeshno oplatili kartoi\s+(?:.+?)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+v\s+(.+?)(?=\.\s*Tel:)
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;payee
+
+-----EXAMPLE-----
+27.12.2024 12:04:02 Vy uspeshno oplatili kartoi DKIB 59.29 KGS v GLOBUS 33 BISHKEK KG. Tel: (312)610610, (312)610613, 2222
