@@ -1,0 +1,10 @@
+^Chase Sapphire Preferred(?: Visa)?:\s+You\s+made\s+a\s+(\$)([\d\s.,]*\d)\s+transaction\s+with\s+(.*?)\s+on\s+(\w+ \d{1,2}, \d{4})\s+at
+
+-----COLUMNS-----
+instrument;outcome;payee;date#Mdy
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: You made a $8.25 transaction with DONUT WHEEL on Feb 21, 2026 at 6:41 PM ET.
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: You made a $3.44 transaction with CHARGEPOINT. INC on Feb 17, 2026 at 5:15 PM ET.

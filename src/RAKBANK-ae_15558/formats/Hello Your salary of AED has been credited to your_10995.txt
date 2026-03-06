@@ -1,0 +1,7 @@
+Your\s+(.+?)\s+of\s+(\S+?)\s+(\d[\d\s,\.]*[.,]\d{2})\s+has been credited to your account on\s+(\d{2}\/\d{2}\/\d{4})\.\s+Your available balance is\s+(\S+?)\s+(\d[\d\s,\.]*[.,]\d{2})
+
+-----COLUMNS-----
+comment;instrument;income;date#dMy;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Hello. Your salary of AED 23,922.00 has been credited to your account on 10/02/2026. Your available balance is AED 112,611.16.
