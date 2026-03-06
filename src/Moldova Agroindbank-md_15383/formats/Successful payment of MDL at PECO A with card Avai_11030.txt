@@ -1,0 +1,7 @@
+Successful payment of ([\d\s.,]+?) ([A-Z]{3}) at "([^"]+)"\s*[A-Za-z0-9\-]* with card \*{3}(\d{4})\. Available balance: ([\d\s.,]+?) ([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Successful payment of 1219.12 MDL at "PECO-92" A with card ***7988. Available balance: 3630.82 MDL. ║

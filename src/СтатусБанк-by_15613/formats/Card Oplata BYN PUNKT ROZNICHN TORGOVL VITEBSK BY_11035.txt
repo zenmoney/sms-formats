@@ -1,0 +1,7 @@
+Card(\d{4});\s*Oplata:\s*(\d[\d\s.,]*)(?:\s*)([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*(.*?);\s*Dostupno:\s*(\d[\d\s.,]*)(?:\s*)([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card6226; Oplata: 75,42 BYN; 06.03.26 15:56:23; PUNKT ROZNICHN.TORGOVL,VITEBSK,BY; Dostupno: 571,20 BYN

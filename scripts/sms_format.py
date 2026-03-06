@@ -52,6 +52,17 @@ ALLOWED_COLUMNS = {
     "mcc",
 }
 
+AMOUNT_COLUMNS = {
+    "income",
+    "outcome",
+    "fee",
+    "cashback",
+    "op_income",
+    "op_outcome",
+    "balance",
+    "av_balance",
+}
+
 
 def normalize_column_name(column):
     """Return base column name (before #) for validation."""
