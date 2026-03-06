@@ -1,0 +1,7 @@
+(?i).*otklonena\s*oplata.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+10798.00 KZT otklonena oplata OZON ALMATY KZ karta 4**7533 Balans 103556.94  ║ bcc.kz

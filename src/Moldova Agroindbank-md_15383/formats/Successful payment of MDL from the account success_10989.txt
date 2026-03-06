@@ -1,0 +1,7 @@
+Successful payment of (\d[\d\s.,]*)\s+([A-Z]{3}).*?account\s+\d+(\d{4}).*?Available balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Successful payment of 7788.26 MDL from the account 22596641021 successfully completed. Available balance: 45748.63 MDL. ║ maibank

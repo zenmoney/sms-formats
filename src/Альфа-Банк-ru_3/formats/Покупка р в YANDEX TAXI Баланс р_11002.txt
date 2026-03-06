@@ -1,0 +1,22 @@
+^(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s+([^\s]+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+([^\s]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Покупка *0136: 2936 р в YANDEX 4121 TAXI Баланс: 18 р
+
+-----EXAMPLE-----
+Покупка *8393: 1300 р в CHAYKHANA24 Баланс: 111366,66 р
+
+-----EXAMPLE-----
+Покупка *3955: 2222,10 р в PYATEROCHKA 23262 Баланс: 10805 р
+
+-----EXAMPLE-----
+Покупка *3636: 1 960 RUR в IP YAKOVLEVA A.D. Баланс: 1 183 519,13 RUR Задолженность: 29 657,74 RUR
+
+-----EXAMPLE-----
+Покупка *8997: 1 940 RUR в IP CHU Баланс: 4 461,70 RUR
+
+-----EXAMPLE-----
+Pokupka **1172: 129 RUR в SHEL-ZASHEL Баланс: 55 428,17 RUR
