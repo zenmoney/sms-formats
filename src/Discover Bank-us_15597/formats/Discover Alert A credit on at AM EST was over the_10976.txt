@@ -1,0 +1,7 @@
+Discover Alert:\s*(\d+):\s*A\s+(\S)\s*(\d[\d\s,]*(?:[.,]\d{2})?)\s+credit\s+on\s+(\d{1,2}\/\d{1,2}\/\d{2})\s+at
+
+-----COLUMNS-----
+syncid;instrument;income;date#Mdy
+
+-----EXAMPLE-----
+Discover Alert: 5655: A $2,500.00 credit on 3/4/26 at 12:45 AM EST was over the amount set for your alert. Text STOP to end

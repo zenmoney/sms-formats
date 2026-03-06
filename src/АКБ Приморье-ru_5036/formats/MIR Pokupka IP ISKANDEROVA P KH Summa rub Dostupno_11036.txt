@@ -1,0 +1,7 @@
+MIR\*\*(\d+):\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+Pokupka\s+(.+?)\s+Summa\s+(\d[\d\s.,]*)\s*([^\s]+)\s+Dostupno\s+(-?\d[\d\s.,]*)\s*([^\s]+)
+
+-----COLUMNS-----
+syncid;date#dMy;payee;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+MIR**93: 05.03.26 09:13 Pokupka IP ISKANDEROVA P.KH. Summa 90rub Dostupno 3684.43rub

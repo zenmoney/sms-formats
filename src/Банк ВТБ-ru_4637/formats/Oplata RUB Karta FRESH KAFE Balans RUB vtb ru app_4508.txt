@@ -1,4 +1,4 @@
-^(?:Оплата|Плат|Перевод|Oplata|Perevod).*?([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}).*\*(\d{4})\W?\s+(.*?)\s*.(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}).*
+^(?:Оплата|Плат|Перевод|Oplata|Perevod).*?([\d\s.,]*\d)\s*([а-яa-zA-Z₽]{1,4}).*\*(\d{4})\W?\s+(.*?)\s*\.?\s*(?:[БбBb])?(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z₽]{1,4}).*
 
 -----COLUMNS-----
 outcome;instrument;syncid;payee;av_balance;acc_instrument
@@ -7,10 +7,7 @@ outcome;instrument;syncid;payee;av_balance;acc_instrument
 Oplata 180.00 RUB Karta *1183 FRESH KAFE Balans 128.49 RUB 13:40 vtb.ru/app
 
 -----EXAMPLE-----
-Oplata 100.00 RUB
-Karta *1234 MAGAZIN
-Balans 10000.00 RUB 12:00
-vtb.ru/app
+Oplata 100.00 RUB Karta *1234 MAGAZIN Balans 10000.00 RUB 12:00 vtb.ru/app
 
 -----EXAMPLE-----
 Оплата 160.00 RUB Карта *5421 Оливка Баланс 7739.15 RUB 09:07 ║ ВТБ-Онлайн
@@ -35,3 +32,9 @@ Oplata 4093.06 RUR Karta *1840 Balans 89106.69 RUR 10:41 vtb.ru/app
 
 -----EXAMPLE-----
 Перевод 5000.00 RUB Счет*0645. Антон З. Баланс 140000.00 RUB 09:13
+
+-----EXAMPLE-----
+Перевод 300 ₽ Счет*9427. Анастасия К. Баланс 15712.14 ₽ 11:04 ║ ВТБ Онлайн
+
+-----EXAMPLE-----
+Перевод 17 673 ₽ Счет*3969. Максим Т. Баланс 114034.3 ₽ 11:09
