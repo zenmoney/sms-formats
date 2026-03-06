@@ -14,3 +14,6 @@ Amazon Rewards Visa: You made a $18.39 transaction with Catch_Air_Austin on Aug 
 
 -----EXAMPLE-----
 Chase Freedom Unlimited: You made a $8.34 transaction with JETS PIZZA - TX-020 on Feb 20, 2023 at 1:21 PM ET.
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: You made a $8.25 transaction with DONUT WHEEL on Feb 21, 2026 at 6:41 PM ET.
