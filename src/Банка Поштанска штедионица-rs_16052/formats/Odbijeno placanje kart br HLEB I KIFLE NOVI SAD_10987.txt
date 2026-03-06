@@ -1,0 +1,7 @@
+(?i)^\s*Odbijeno\s+pla[cć]anje.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Odbijeno placanje kart.br. 487077_8649 / HLEB I KIFLE 41 / NOVI SAD RS / RSD 480,00
