@@ -1,0 +1,7 @@
+Schet po karte\s+\*(\d{4})\s+popolnen na summu\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(\d{2}-[A-Z]{3}-\d{4})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy
+
+-----EXAMPLE-----
+Schet po karte  *8261 popolnen na summu 22452654.50 UZS. 03-MAR-2026 00:00
