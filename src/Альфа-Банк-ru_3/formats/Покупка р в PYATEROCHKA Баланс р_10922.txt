@@ -1,7 +1,0 @@
-^Покупка \*(\d{4}):\s+([0-9][\d\s]*[.,]\d{2})\s*([^\s\d])\s+в\s+(.*?)\s+Баланс:\s+([0-9][\d\s]*\d)\s*([^\s\d])\s*$
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Покупка *3955: 2222,10 р в PYATEROCHKA 23262 Баланс: 10805 р

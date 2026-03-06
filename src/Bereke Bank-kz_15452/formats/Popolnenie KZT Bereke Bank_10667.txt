@@ -1,7 +1,0 @@
-^Popolnenie:\s+([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\s+\d{1,4}\*+(\d{4})\s{2,}(20\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s*║(?:\s.*)?$
-
------COLUMNS-----
-income;instrument;syncid;date#yMd
-
------EXAMPLE-----
-Popolnenie: 2634.50 KZT 30***1168  2026-01-16 09:41:56. ║ Bereke Bank
