@@ -1,4 +1,4 @@
-^\d{4}-(\d{4}).*?(?:plata|плата|pisan|писан).*?([\d\s.,]*\d)\s*([A-Z]{3})\s*\(?(.*?)\)?\s+.(?:ostu|осту).*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+(\d{2}[-./]\d{2}[-./]?\d{0,4})\s.*
+^\d{4}-(\d{4}).*?(?:plata|плата|pisan|писан).*?([\d\s.,]*\d)\s*([A-Z]{3})\s*\(?(.*?)\)?\s+.(?:ostu|осту).*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+(\d{2}[-.\/]\d{2}[-.\/]?\d{0,4})\s.*
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument;date#dMy

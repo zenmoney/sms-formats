@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+([^\r\n]+?)(?=\s+Лимит)\s+Лимит:.*?;\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+Оплата 472,95 RUB LENTA 088 Лимит: 191112,74 RUB; *8250

@@ -154,3 +154,72 @@ def test_queue_serializes_same_key_tasks():
 
     asyncio.run(_run())
     assert events == ["first:start", "first:end", "second:start", "second:end"]
+
+
+def test_diff_endpoint_success(monkeypatch):
+    monkeypatch.setattr(app_module, "_github_client", None)
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setenv("GITHUB_REPO", "owner/repo")
+    monkeypatch.setattr(app_module, "GitHubClient", FakeGitHubClient)
+
+    def _fake_run_diff_flow(**kwargs):
+        return {
+            "diff": {"companies": [], "senders": [], "formats": []},
+            "commitHash": "abc123",
+        }
+
+    monkeypatch.setattr(app_module, "run_diff_flow", _fake_run_diff_flow)
+
+    payload = {
+        "diff": {"companies": [], "senders": [], "formats": []},
+        "lastCommitHash": "deadbeef",
+    }
+    with TestClient(app_module.app) as client:
+        response = client.post("/diff/", json=payload)
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "diff": {"companies": [], "senders": [], "formats": []},
+        "commitHash": "abc123",
+    }
+
+
+def test_diff_endpoint_runtime_error_maps_to_400(monkeypatch):
+    monkeypatch.setattr(app_module, "_github_client", None)
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setenv("GITHUB_REPO", "owner/repo")
+    monkeypatch.setattr(app_module, "GitHubClient", FakeGitHubClient)
+
+    def _fake_run_diff_flow(**kwargs):
+        raise RuntimeError("diff.py failed: Invalid changed value")
+
+    monkeypatch.setattr(app_module, "run_diff_flow", _fake_run_diff_flow)
+
+    payload = {
+        "diff": {"companies": [], "senders": [], "formats": []},
+        "lastServerTimestamp": "2026-01-01T00:00:00.000Z",
+    }
+    with TestClient(app_module.app) as client:
+        response = client.post("/diff/", json=payload)
+
+    assert response.status_code == 400
+    assert "diff.py failed" in response.json()["detail"]
+
+
+def test_diff_endpoint_invalid_output_maps_to_500(monkeypatch):
+    monkeypatch.setattr(app_module, "_github_client", None)
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setenv("GITHUB_REPO", "owner/repo")
+    monkeypatch.setattr(app_module, "GitHubClient", FakeGitHubClient)
+
+    def _fake_run_diff_flow(**kwargs):
+        raise RuntimeError("invalid_diff_output: not-json")
+
+    monkeypatch.setattr(app_module, "run_diff_flow", _fake_run_diff_flow)
+
+    payload = {"diff": {"companies": [], "senders": [], "formats": []}}
+    with TestClient(app_module.app) as client:
+        response = client.post("/diff/", json=payload)
+
+    assert response.status_code == 500
+    assert "invalid_diff_output" in response.json()["detail"]
