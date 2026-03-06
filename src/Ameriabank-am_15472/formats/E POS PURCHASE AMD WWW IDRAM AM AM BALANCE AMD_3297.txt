@@ -1,4 +1,4 @@
-^.*(?:PURCH\w+|C2C|GUMARI SAR\w+|GNUM)\s+(?:\|\s+)?([\d\s.,]*\d)\s*([A-Z]{3})\s+(?:\|\s+)?\d+\*+(\d{4})\s+(?:(?:TO:|\|)\s+)?(.*?)\s+(?:CABINET ARCA.*?)?(?:\|\s+)?(\d{2}[-./]\d{2}[-./]\d{2,4}) [\d:]{5,} (?:\|\s+)?(?:BALA|MNAC).*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^.*(?:PURCH\w+|C2C|PRE-PURCHASE COMP\w+|GUMARI SAR\w+|GNUM)\s+(?:\|\s+)?([\d\s.,]*\d)\s*([A-Z]{3})\s+(?:\|\s+)?\d+\*+(\d{4}),?\s+(?:(?:TO:|\|)\s+)?(.*?)\s+(?:CABINET ARCA.*?)?(?:\|\s+)?(\d{2}[-./]\d{2}[-./]\d{2,4}) [\d:]{5,} (?:\|\s+)?(?:BALA|MNAC).*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
 
 -----COLUMNS-----
 outcome;instrument;syncid;payee;date#dMy;av_balance;acc_instrument
@@ -17,3 +17,9 @@ E-POS PURCHASE | 3.24 USD | 4083***9302 | GOOGLE *Castle Duels T, US | 18.10.202
 
 -----EXAMPLE-----
 PRE-PURCHASE | 6,800.00 AMD | 4083***9302 | WWW.DODOPIZZA.AM, AM | 17.10.2024 16:21 | BALANCE: 167,006.02 AMD ║ АРКА транзакции
+
+-----EXAMPLE-----
+PURCHASE | 1,600.00 AMD | 4083***9129, | NAREK MEHRABYAN, AM | 21.07.2025 11:57 | BALANCE: 215,317.31 AMD ║ АРКА транзакции
+
+-----EXAMPLE-----
+PRE-PURCHASE COMPLETION | 1,277.00 AMD | 9051***4595, | YANDEX EATS AM LLC, AM | 11.02.2026 16:21 | BALANCE: 94,474.00 AMD ║ ARCA transactions
