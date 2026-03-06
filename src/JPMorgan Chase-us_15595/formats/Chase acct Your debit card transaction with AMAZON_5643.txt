@@ -1,13 +1,10 @@
-^Chase (?:acct )?(\d{4}|[A-Z][a-z]+)(?: [\w]+)?: You.*?(\$)([\d\s.,]*\d) .*(?:transaction with|transfer to) (.*?) on (\w+ \d{1,2}, \d{4}).*
+^Chase acct (\d{4}|[A-Z][a-z]+)(?: [\w]+)?: You.*?(\$)([\d\s.,]*\d) .*(?:transaction with|transfer to) (.*?) on (\w+ \d{1,2}, \d{4}).*
 
 -----COLUMNS-----
 syncid;instrument;outcome;payee;date#Mdy
 
 -----EXAMPLE-----
 Chase acct 8778: Your $1.58 debit card transaction with AMAZON.COM on Feb 8, 2023 at 10:44 AM ET was more than the $0.01 in your Alerts settings.
-
------EXAMPLE-----
-Chase Freedom Unlimited: You made a $8.34 transaction with JETS PIZZA - TX-020 on Feb 20, 2023 at 1:21 PM ET.
 
 -----EXAMPLE-----
 Chase acct 8778: Your $23.75 external transfer to UPMC MED PLAN on May 4, 2023 at 8:10 AM ET was more than the $0.01 in your Alerts settings.
