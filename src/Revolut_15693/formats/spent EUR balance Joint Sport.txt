@@ -1,7 +1,0 @@
-(\S)(\d[\d\s.,]*)\s+spent\s+[A-Z]{3}\s+balance:\s*(\d[\d\s.,]*)\s*(\S)\s+║\s*(.+)
-
------COLUMNS-----
-instrument;outcome;balance;acc_instrument;payee
-
------EXAMPLE-----
-€73.90 spent EUR balance: €2,824.71 ║ Joint · Sport 2000
