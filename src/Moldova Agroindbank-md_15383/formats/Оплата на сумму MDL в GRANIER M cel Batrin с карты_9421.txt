@@ -1,4 +1,4 @@
-Оплата на сумму (?<outcome>[\d.]+)\s(?<instrument>\w+)\sв\s(?<payee>".+?".+?)\sс\sкарты\s\*\*\*+(?<syncid>\d{4}).+?Доступный остаток:\s(?<avbalance>[\d.]+)\s(?<accinstrument>\w+)\.
+Оплата на сумму ([\d\s.,]+?)\s(\w+)\sв\s(".+?".+?)\sс\sкарты\s\*+(\d{4}).+?Доступный остаток:\s([\d\s.,]+?)\s(\w+)\.
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
