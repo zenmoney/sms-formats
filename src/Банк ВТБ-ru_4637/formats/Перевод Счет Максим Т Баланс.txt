@@ -1,7 +1,0 @@
-Перевод\s+(\d[\d\s.,]*)\s*([^\s]+)\s+Счет\*(\d{4})\.\s*(.+?)\s+Баланс\s+(\d[\d\s.,]*[.,]?\d*)\s*([^\s]+)
-
------COLUMNS-----
-outcome;instrument;syncid;payee;balance;acc_instrument
-
------EXAMPLE-----
-Перевод 17 673 ₽ Счет*3969. Максим Т. Баланс 114034.3 ₽ 11:09
