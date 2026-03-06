@@ -1,4 +1,4 @@
-Số dư TK VCB\s+\d*(\d{4})\s+\+(\d[\d\s,]*)\s+([A-Za-z]{3})\s+lúc\s+(\d{2}-\d{2}-\d{4}).*?Số dư\s+(\d[\d\s,]*)\s+([A-Za-z]{3})\.\s+Ref\b\s*(?:[^.]+\.)+?(\d{8})\.\d+\.\d+\.(.+?)\s*(?:║|$)
+Số dư TK VCB\s+\d*(\d{4})\s+\+(\d[\d\s,]*)\s+([A-Za-z]{3})\s+lúc\s+(\d{2}-\d{2}-\d{4}).*?Số dư\s+(\d[\d\s,]*)\s+([A-Za-z]{3})\.\s+Ref\b\s*(.+?)\.(\d{8})\.\d+\.\d+\.(.+?)\s*(?:║|$)
 
 -----COLUMNS-----
 syncid;income;instrument;date#dMy;balance;acc_instrument;comment;payee
