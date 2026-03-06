@@ -5,3 +5,9 @@ instrument;outcome;payee;date#dMy
 
 -----EXAMPLE-----
 Chase Sapphire Preferred Visa: You made a $3.44 transaction with CHARGEPOINT. INC on Feb 17, 2026 at 5:15 PM ET.
+
+-----EXAMPLE-----
+Amazon Visa: You made a $34.87 transaction with PANERA BREAD #606317 on Aug 12, 2023 at 12:07 PM ET.
+
+-----EXAMPLE-----
+Amazon Rewards Visa: You made a $18.39 transaction with Catch_Air_Austin on Aug 13, 2023 at 3:03 PM ET.
