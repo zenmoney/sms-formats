@@ -1,0 +1,7 @@
+The P2P transfer of (\d[\d\s.,]*) ([A-Z]{3}).*?card \*\*\*(\d{4}).*?Available balance:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+The P2P transfer of 1103.36 MDL from card ***7988 has been successfully initiated. Available balance: 0 MDL. ║ maibank
