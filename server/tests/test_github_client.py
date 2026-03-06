@@ -67,3 +67,71 @@ def test_find_or_create_issue_adds_comment_when_issue_exists(monkeypatch):
 
     assert issue["number"] == 77
     assert calls == [("add_issue_comment", 77, "Sender:\nSENDER\n\nText:\ntext")]
+
+
+def test_find_or_create_pr_converts_existing_pr_to_draft(monkeypatch):
+    client = object.__new__(GitHubClient)
+    calls = []
+
+    async def _find_open_pr(head_branch, base_branch):
+        return {"number": 17, "title": "PR", "draft": False}
+
+    async def _mark_pr_as_draft(pr_number):
+        calls.append(("mark_pr_as_draft", pr_number))
+        return {"number": pr_number, "title": "PR", "draft": True}
+
+    async def _create_pr(title, body, head_branch, base_branch, draft=False):
+        calls.append(("create_pr", title, body, head_branch, base_branch, draft))
+        return {"number": 99, "title": title, "draft": draft}
+
+    monkeypatch.setattr(client, "find_open_pr", _find_open_pr)
+    monkeypatch.setattr(client, "mark_pr_as_draft", _mark_pr_as_draft)
+    monkeypatch.setattr(client, "create_pr", _create_pr)
+
+    pr = asyncio.run(
+        client.find_or_create_pr(
+            title="Title",
+            body="Body",
+            head_branch="company-1",
+            base_branch="main",
+            draft=True,
+        )
+    )
+
+    assert pr["number"] == 17
+    assert pr["draft"] is True
+    assert calls == [("mark_pr_as_draft", 17)]
+
+
+def test_find_or_create_pr_keeps_existing_draft_when_new_commit_not_draft(monkeypatch):
+    client = object.__new__(GitHubClient)
+    calls = []
+
+    async def _find_open_pr(head_branch, base_branch):
+        return {"number": 17, "title": "PR", "draft": True}
+
+    async def _mark_pr_as_draft(pr_number):
+        calls.append(("mark_pr_as_draft", pr_number))
+        return {"number": pr_number, "title": "PR", "draft": True}
+
+    async def _create_pr(title, body, head_branch, base_branch, draft=False):
+        calls.append(("create_pr", title, body, head_branch, base_branch, draft))
+        return {"number": 99, "title": title, "draft": draft}
+
+    monkeypatch.setattr(client, "find_open_pr", _find_open_pr)
+    monkeypatch.setattr(client, "mark_pr_as_draft", _mark_pr_as_draft)
+    monkeypatch.setattr(client, "create_pr", _create_pr)
+
+    pr = asyncio.run(
+        client.find_or_create_pr(
+            title="Title",
+            body="Body",
+            head_branch="company-1",
+            base_branch="main",
+            draft=False,
+        )
+    )
+
+    assert pr["number"] == 17
+    assert pr["draft"] is True
+    assert calls == []

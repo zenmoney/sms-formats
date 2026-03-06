@@ -1,0 +1,7 @@
+Paid\s+(\d[\d\s.,]*)\s*([^\d\s()]+)\s*\(\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\d\s()]+)\s*\)\s+at\s+(.+?)\s+(?:[^\d\s()]+\s+)?Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([^\d\s()]+)
+
+-----COLUMNS-----
+op_outcome;op_instrument;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+🌍️️ Paid 20 € (212,51 kr) at Prames SEK Balance: 5 525,74 kr ║ Prames
