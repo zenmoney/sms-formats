@@ -1,7 +1,0 @@
-^(?:Карта)\s+\d\*\*(\d{4}):\s*перевод\s+([0-9][\d\s.,]*)\s*([A-Za-z]{1,5})\.\s*Доступно\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,5})\s*║\s*bcc\.kz\s*$
-
------COLUMNS-----
-syncid;outcome;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Карта 4**7991: перевод 13933.3 KZT. Доступно 93028.12 KZT  ║ bcc.kz

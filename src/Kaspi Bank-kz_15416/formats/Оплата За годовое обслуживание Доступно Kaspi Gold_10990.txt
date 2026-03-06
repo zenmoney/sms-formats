@@ -1,0 +1,7 @@
+Оплата:\s*(\d[\d\s\u00A0.,]*)\s*(\S+)\s+(.*?)\s+Доступно:\s*(-?\d[\d\s\u00A0.,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;comment;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата: 1 995 ₸ За годовое обслуживание Доступно: 106 233,74 ₸ ║ Kaspi Gold

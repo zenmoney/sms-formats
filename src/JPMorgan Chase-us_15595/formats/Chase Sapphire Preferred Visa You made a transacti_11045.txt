@@ -1,0 +1,19 @@
+You made a\s+(\S+)\s*(\d[\d\s.,]*)\s+transaction with\s+(.+?)\s+on\s+([A-Za-z]+\s\d{1,2},\s\d{4})\s+at
+
+-----COLUMNS-----
+instrument;outcome;payee;date#dMy
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: You made a $3.44 transaction with CHARGEPOINT. INC on Feb 17, 2026 at 5:15 PM ET.
+
+-----EXAMPLE-----
+Amazon Visa: You made a $34.87 transaction with PANERA BREAD #606317 on Aug 12, 2023 at 12:07 PM ET.
+
+-----EXAMPLE-----
+Amazon Rewards Visa: You made a $18.39 transaction with Catch_Air_Austin on Aug 13, 2023 at 3:03 PM ET.
+
+-----EXAMPLE-----
+Chase Freedom Unlimited: You made a $8.34 transaction with JETS PIZZA - TX-020 on Feb 20, 2023 at 1:21 PM ET.
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: You made a $8.25 transaction with DONUT WHEEL on Feb 21, 2026 at 6:41 PM ET.
