@@ -1,0 +1,7 @@
+(Оплата\s+.+?)\s+(.+?)\.\s+(\d[\d\s\u202F.,]*)\s+(\S+)\.\s+Баланс\s+(-?\d[\d\s\u202F.,]*)\s+(\S+)
+
+-----COLUMNS-----
+comment;payee;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата чаевых Ozon. 50 ₽. Баланс 4 165 ₽ ║ Ozon Банк

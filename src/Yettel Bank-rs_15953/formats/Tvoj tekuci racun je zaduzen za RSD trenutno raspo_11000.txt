@@ -1,0 +1,7 @@
+Tvoj tekuci racun je zaduzen za (\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),\s+trenutno raspolozivo stanje je:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Tvoj tekuci racun je zaduzen za 1,000.00 RSD, trenutno raspolozivo stanje je: 194,669.81 RSD. ║ Zaduženje po tekućem računu

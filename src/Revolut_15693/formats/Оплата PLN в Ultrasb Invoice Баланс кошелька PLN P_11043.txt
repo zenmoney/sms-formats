@@ -1,0 +1,7 @@
+.*?Оплата:\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\s()]+)\s*\(\s*(\d[\d\s.,]*[.,]\d{2})\s+([^\s()]+)\s*\)\s+в\s+(.+?)\s+Баланс кошелька\s+«[^\s»]+»:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([^\s]+)
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+🛍 Оплата: 4,95 € (20,99 PLN) в Ultrasb Invoice 40322 Баланс кошелька «PLN»: 523,58 PLN ║ Ultrasb Invoice 40322
