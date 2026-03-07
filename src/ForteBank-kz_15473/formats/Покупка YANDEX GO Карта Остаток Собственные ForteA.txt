@@ -5,3 +5,6 @@ outcome;instrument;payee;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Покупка: −1 220.00 ₸ YANDEX.GO Карта *9692 Остаток: Собственные 52 809.58 ₸ ║ ForteApp
+
+-----EXAMPLE-----
+Покупка: −1 780.00 KZT YANDEX.GO Карта *9692 Остаток: Собственные 51 769.87 KZT ║ ForteApp
