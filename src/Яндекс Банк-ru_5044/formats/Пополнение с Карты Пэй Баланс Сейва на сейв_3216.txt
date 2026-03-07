@@ -1,13 +1,7 @@
-^(?:Пополн|Top-up).*(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W)\s+║\s+\+([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W)\s+(?:на|to)\s+.*?(сейв|saver|Пэй|Pay).*
+^Top-up\s+from\s+(\S+)\.\s+Card\s+balance:\s+(-?[\d\s.,]+?)\s+([а-яa-zA-Z₽]{1,4})\s+║\s+\+?([\d\s.,]+?)\s+([а-яa-zA-Z₽]{1,4})\s+to\s+(?:the\s+)?(\S+)
 
 -----COLUMNS-----
-av_balance;acc_instrument;income;instrument;syncid
-
------EXAMPLE-----
-Пополнение с Карты Пэй. Баланс Сейва: 470 315,46 ₽ ║ +6 500 ₽ на сейв
+payee;av_balance;acc_instrument;income;instrument;syncid
 
 -----EXAMPLE-----
 Top-up from saver. Card balance: 1 000 ₽ ║ +1 000 ₽ to the Pay card
-
------EXAMPLE-----
-Пополнение с сейва. Баланс карты: 53 018,74 ₽ ║ +5 000 ₽ на карту Пэй
