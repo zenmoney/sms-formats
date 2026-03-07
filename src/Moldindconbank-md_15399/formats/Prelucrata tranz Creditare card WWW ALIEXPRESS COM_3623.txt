@@ -1,10 +1,7 @@
-^.*reditare.*?[("](?!P2P)(.*?)[)"].* (\d{2}[-./]\d{2}[-./]\d{2,4}) .*?uma.*?([\d\s.,]*\d)\s*([A-Z]{3}).*\*(\d{4}).*[Dd]isp.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^.*Prelucrata.*?reditare.*?"(?!P2P)(.*?)"\s+din\s+(\d{2}[-./]\d{2}[-./]\d{2,4}).*?uma:\s*([\d\s.,]+?)\s+([A-Z]{3}).*\*(\d{4}).*[Dd]isp.*?(-?[\d\s.,]+?)\s+([A-Z]{3})
 
 -----COLUMNS-----
 payee;date#dMy;income;instrument;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Prelucrata tranz. Creditare card "WWW.ALIEXPRESS.COM" din 04.04.18 00:00. Suma:9,28 USD. Card:4**4505. Suma disp:18.665,17 MDL.
-
------EXAMPLE-----
-Creditare card (aliexpress) din 20.12.24 11:35. Suma: 0,83 USD. Card: 4028*7664. Disponibil: 3,14 USD. ║ Tranzactie reusita
