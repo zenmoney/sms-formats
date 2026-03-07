@@ -1,0 +1,10 @@
+^Purchase ([\d,.]+) ([A-Z]{3}) (.*) from card x-(\d{4}) \((\d{2}/\d{2}/\d{2}), (.*)\)$
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;date#dd/MM/yy;comment
+
+-----EXAMPLE-----
+Purchase 607.00 THB TMN 7-11 from card x-1701 (07/03/26, 13:41 hr )
+
+-----EXAMPLE-----
+Purchase 412.00 THB WWW.GRAB.COM from card x-4801 (06/03/26, 11:22 hr )
