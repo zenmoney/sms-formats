@@ -1,0 +1,7 @@
+E-Com oplata:\s*(.+?),\s*[A-Z]{2},\s*(\d{2}\.\d{2}\.\d{2})\s*\d{2}:\d{2},?\s*karta\s+\*+(\d{4})[\.\s]*summa:(\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})\s+balans:(\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+E-Com oplata: PLUM OPLATA, UZ,07.03.26 04:20,karta ***3677. summa:1600000.00 UZS balans:1857364.35 UZS
