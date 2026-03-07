@@ -1,7 +1,0 @@
-22:49\s+\*(\d{4})\s+Покупка\s+([0-9][\d\s,\.]*)\s*([^\s\d,\.]{1,3}\.?)(?:\s+)(.*?)\s+Баланс\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([^\s\d,\.]{1,3}\.?)
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-22:49 *6448 Покупка 1345 р. PEREKRESTOK (TEKUCHEVA Баланс 1210.88 р.
