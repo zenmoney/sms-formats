@@ -1,0 +1,7 @@
+Card:\d+\.\.(\d+)\s+Suma:\+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+(.+?)(?=\s+INTERNET BANKING)\s+INTERNET BANKING\s+Rest:(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance
+
+-----EXAMPLE-----
+Card:4..6529 Suma:+13500.00MDL CHISINAU MD INTERNET BANKING Rest:62688.40

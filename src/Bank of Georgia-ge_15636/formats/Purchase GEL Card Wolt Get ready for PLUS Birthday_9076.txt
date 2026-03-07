@@ -1,7 +1,0 @@
-.*?(?:[Pp]urchase|[Pp]ayment|[Pp]okup|[Oo]plata)\s*:\s*([A-Za-z]{1,4})\s*([0-9][\d\s.,]*\d)(?=\s+(?:[Cc]ard|CARD)\s*:).*?(?:[Cc]ard|CARD)\s*:\*+(\d{4})\s+(.+?)\s+(?:Balance|Баланс)\s*:\s*.*?(\d{2}[-./]\d{2}[-./]\d{2,4})
-
------COLUMNS-----
-instrument;outcome;syncid;payee;date#dMy
-
------EXAMPLE-----
-Purchase: GEL77.64 Card:***3974 Wolt Get ready for PLUS Birthday Balance: GEL1,888.80, USD1,010.00, EUR883.31, GBP9,600.00 You will get: 174.69 PLUS Total: 27,607.79 PLUS 20.06.2025
