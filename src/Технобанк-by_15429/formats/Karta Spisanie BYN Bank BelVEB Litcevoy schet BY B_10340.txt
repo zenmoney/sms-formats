@@ -1,7 +1,0 @@
-^Karta\s+5\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,4})\s+Bank BelVEB,\s+Litcevoy schet:\s+[A-Z]{2}[A-Z0-9]+\s+Ibank BLR OK\.\s+Dostupno\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,4})$
-
------COLUMNS-----
-syncid;date#dMy;outcome;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Karta 5.9704 14.12.2025 20:28:38 Spisanie -200.00  BYN Bank BelVEB, Litcevoy schet: BY67BELB3014139BK80010226000 Ibank BLR OK. Dostupno 2061.48 BYN

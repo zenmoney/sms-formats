@@ -1,0 +1,10 @@
+Карта\s+\d+\*+(\d{4}):\s*перевод\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Доступно\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта 4**1987: перевод 21000 KZT. Доступно 380000 KZT  ║ BCC.KZ
+
+-----EXAMPLE-----
+Карта 4**7991: перевод 13933.3 KZT. Доступно 93028.12 KZT  ║ bcc.kz
