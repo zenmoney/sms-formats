@@ -1,0 +1,10 @@
+Karta\s\d+\.(\d+)\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Zachislenie\s+\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+Dostupno\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 5.9704 20.02.2026 15:16:59 Zachislenie +500.00 BYN  SOA Credit Ibank BLR OK.  Dostupno 513.85 BYN .
+
+-----EXAMPLE-----
+Karta 5.9704 10.12.2025 15:14:22 Zachislenie +2268.35 BYN  Zachislenie zarplaty TECHNO BLR OK.  Dostupno 2306.48 BYN .
