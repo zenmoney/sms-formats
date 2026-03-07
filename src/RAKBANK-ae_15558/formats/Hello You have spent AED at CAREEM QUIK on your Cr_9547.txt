@@ -1,7 +1,0 @@
-Hello\.\s+You have spent\s+([A-Za-z]{1,3})\s+([0-9][\d\s.,]*\d)\s+at\s+([A-Za-z]+\s+Q[A-Za-z]+)\s+on your Credit Card\s+[\d*xX]+?(\d{4})\s+on\s+(\d{1,2}[-/]\d{1,2})\.\s+Available Balance:\s+([A-Za-z]{1,3})\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\.)
-
------COLUMNS-----
-instrument;outcome;payee;syncid;date#dM;acc_instrument;av_balance
-
------EXAMPLE-----
-Hello. You have spent AED 99.55 at CAREEM QUIK on your Credit Card 523926******7383 on 28/08. Available Balance: AED 1465.13.

@@ -1,0 +1,10 @@
+([$€¥₽₴₹₼₸₦₩₿£])([\d\s.,]+?)\s+spent\s+(\S+)\s+balance:\s*[$€¥₽₴₹₼₸₦₩₿£]\s*(-?[\d\s.,]+?)\s*║.*?·\s*([^\r\n]+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;balance;payee
+
+-----EXAMPLE-----
+€25.99 spent EUR balance: €2,974.01 ║ Joint · YouTube
+
+-----EXAMPLE-----
+€73.90 spent EUR balance: €2,824.71 ║ Joint · Sport 2000

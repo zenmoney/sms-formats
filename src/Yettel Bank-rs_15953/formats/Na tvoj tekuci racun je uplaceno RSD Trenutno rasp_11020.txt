@@ -1,0 +1,7 @@
+je uplaceno\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Trenutno raspolozivo stanje je:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Na tvoj tekuci racun je uplaceno 1,000.00 RSD. Trenutno raspolozivo stanje je: 1,074.64 RSD. ║ Uplata na tekući račun

@@ -1,0 +1,19 @@
+Xarid:\s*(.*?)\s+([0-9]{2}\.[0-9]{2}\.[0-9]{2})\s+\d{2}:\d{2}\s+karta\s+\*+(\d{4}).*?Miqdor:\s*(\d[\d\s.,]*)\s+([A-Z]{3}),\s+Qoldiq:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Xarid: OOO MEDION LABZAK, Toshkent, Shayxontohur MFY Labzak mavzesi 17.02.26 15:59 karta ***8177. Miqdor:380000.00 UZS, Qoldiq:23423577.75 UZS
+
+-----EXAMPLE-----
+Xarid: PIE POINT MCHZH, TOSHKENT, TOSHKENT SHAHAR MIRZO ULUGBEK T 15.06.25 09:55 karta ***6334. Miqdor:23400.00 UZS, Qoldiq:18549127.87 UZS
+
+-----EXAMPLE-----
+Xarid: OOO AZIZ-XIDOYAT, , Toshkent sh Yunusobod tumani 4 09.06.25 22:12 karta ***3677. Miqdor:41900.00 UZS, Qoldiq:5011838.69 UZS
+
+-----EXAMPLE-----
+Xarid: MCHJ DEFACTUM LABORATORIE, tASHKENT, 0 12.12.25 08:42 karta ***6436. Miqdor:471000.00 UZS, Qoldiq:6291740.24 UZS
+
+-----EXAMPLE-----
+Xarid: FOM WORLD MCHJ, TASHKENT, Qumariq MFY QumAriq kochasi 51U 15.07.25 12:25 karta ***6334. Miqdor:14000.00 UZS, Qoldiq:84498621.67 UZS
