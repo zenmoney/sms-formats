@@ -92,33 +92,78 @@ class GitHubClient:
 
     async def find_open_pr(self, head_branch: str, base_branch: str) -> Optional[Dict[str, Any]]:
         owner = self.repo.split("/", 1)[0]
-        heads = [head_branch, f"{owner}:{head_branch}"]
-        for head in heads:
-            pulls = self._repo.get_pulls(state="open", sort="created", base=base_branch, head=head)
-            for pull in pulls:
-                return {"number": pull.number, "title": pull.title}
+        qualified_head = f"{owner}:{head_branch}"
+        pulls = self._repo.get_pulls(
+            state="open",
+            sort="created",
+            base=base_branch,
+            head=qualified_head,
+        )
+        for pull in pulls:
+            if pull.base.ref != base_branch:
+                continue
+            if pull.head.ref != head_branch:
+                continue
+            head_repo = getattr(pull.head, "repo", None)
+            head_full_name = getattr(head_repo, "full_name", None)
+            if head_full_name and head_full_name != self.repo:
+                continue
+            return {
+                "number": pull.number,
+                "title": pull.title,
+                "draft": bool(getattr(pull, "draft", False)),
+            }
         return None
 
     async def create_pr(
-        self, title: str, body: str, head_branch: str, base_branch: str
+        self,
+        title: str,
+        body: str,
+        head_branch: str,
+        base_branch: str,
+        draft: bool = False,
     ) -> Dict[str, Any]:
         pull = self._repo.create_pull(
             title=title,
             body=body,
             head=head_branch,
             base=base_branch,
+            draft=draft,
         )
-        return {"number": pull.number, "title": pull.title}
+        return {
+            "number": pull.number,
+            "title": pull.title,
+            "draft": bool(getattr(pull, "draft", draft)),
+        }
+
+    async def mark_pr_as_draft(self, pr_number: int) -> Dict[str, Any]:
+        pull = self._repo.get_pull(pr_number)
+        pull.convert_to_draft()
+        return {
+            "number": pull.number,
+            "title": pull.title,
+            "draft": True,
+        }
 
     async def find_or_create_pr(
-        self, *, title: str, body: str, head_branch: str, base_branch: str
+        self,
+        *,
+        title: str,
+        body: str,
+        head_branch: str,
+        base_branch: str,
+        draft: bool = False,
     ) -> Dict[str, Any]:
         existing = await self.find_open_pr(head_branch=head_branch, base_branch=base_branch)
         if existing is not None:
+            if draft and not bool(existing.get("draft")):
+                await self.mark_pr_as_draft(int(existing["number"]))
+                existing["draft"] = True
             return existing
         return await self.create_pr(
             title=title,
             body=body,
             head_branch=head_branch,
             base_branch=base_branch,
+            draft=draft,
         )

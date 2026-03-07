@@ -1,0 +1,7 @@
+^\*(\d{4})\s+([\d./-]{5}) .*opolneni.*?\s([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3})\s(.*)\,.*alan.*?\s(-?[\d\s.,]*\d).*
+
+-----COLUMNS-----
+syncid;date#dd.MM;income;instrument;payee;av_balance
+
+-----EXAMPLE-----
+*2419 21.01 03:14 popolnenie 14000p KORONAPAY2CARD, Balans 17320.66p

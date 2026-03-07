@@ -1,7 +1,0 @@
-Xarid:\s*(.*?MFY.*?kochasi\s+[0-9][0-9A-Za-z]*[A-Za-z])\s+(\d{2}\.\d{2}\.\d{2})(?=\s+\d{2}:\d{2})\s+\d{2}:\d{2}\s+karta\s+\*{3}(\d{4})\.\s*Miqdor:\s*([0-9][\d\s.,]*[.,]\d{2})\s+([A-Za-z]{1,4})\s*,\s*Qoldiq:\s*(-?[0-9][\d\s.,]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,4})
-
------COLUMNS-----
-payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-Xarid: FOM WORLD MCHJ, TASHKENT, Qumariq MFY QumAriq kochasi 51U 15.07.25 12:25 karta ***6334. Miqdor:14000.00 UZS, Qoldiq:84498621.67 UZS

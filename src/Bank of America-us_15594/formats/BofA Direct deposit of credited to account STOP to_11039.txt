@@ -1,0 +1,10 @@
+Direct deposit of\s+(?:([\$])\s?)?(\d[\d\s.,]*(?:[.,]\d{2})?)\s+credited\s+(\d{2}\/\d{2}\/\d{4})\s+to account\s*-\s*(\d{4})
+
+-----COLUMNS-----
+instrument;income;date#Mdy;syncid
+
+-----EXAMPLE-----
+BofA: Direct deposit of $748.83 credited 02/17/2026 to account - 7150. STOP to end account texts
+
+-----EXAMPLE-----
+BofA: Direct deposit of $1,787.45 credited 12/02/2025 to account - 7223. STOP to end account texts

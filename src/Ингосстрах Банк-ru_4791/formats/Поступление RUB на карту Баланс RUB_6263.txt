@@ -1,7 +1,0 @@
-^Поступ.*?\+([\d\s.,]*\d)\s*([A-Z]{3}).*?\*(\d{4})\.\s+.алан.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
-
------COLUMNS-----
-income;instrument;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-Поступление +1000.00RUB на карту *5316. Баланс 1868.57RUB
