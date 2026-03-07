@@ -1,0 +1,10 @@
+^(\d{4}-\d{4})\s-\sZarakhuvannia\szarobitnoi\splaty\s+([\d.]+)\s([A-Z]{3})\s+Dostupno\s([\d.]+)\s([A-Z]{3})\s+(\d{2}\.\d{2})\s\d{2}:\d{2}
+
+-----COLUMNS-----
+syncid;income;instrument;av_balance;acc_instrument;date#dM
+
+-----EXAMPLE-----
+5168-1166 - Zarakhuvannia zarobitnoi platy
+5510.26 UAH
+Dostupno 101783.05 UAH
+06.02 12:34

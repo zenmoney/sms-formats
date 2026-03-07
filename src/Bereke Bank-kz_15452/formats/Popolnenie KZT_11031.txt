@@ -1,0 +1,7 @@
+Popolnenie:\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:[\d*]*?)(\d{4})\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+income;instrument;syncid;date#yMd
+
+-----EXAMPLE-----
+Popolnenie: 15000.00 KZT 30***4726  2026-02-07 15:20:13.

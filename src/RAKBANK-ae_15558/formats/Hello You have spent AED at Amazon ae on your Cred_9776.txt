@@ -1,7 +1,0 @@
-(?:Hello\.\s+You have spent)\s+([A-Za-z]{1,3})\s+([0-9][\d\s.,]*\d)\s+at\s+([^\s].*?\.[^\s]+?)\s+on\s+your\s+Credit\s+Card\s+\d{6}\*{6}(\d{4})\s+on\s+(\d{1,2}[-./]\d{1,2})\.\s+Available\s+Balance:\s+([A-Za-z]{1,3})\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|[^\d]|$)
-
------COLUMNS-----
-instrument;outcome;payee;syncid;date#dM;acc_instrument;av_balance
-
------EXAMPLE-----
-Hello. You have spent AED 688.21 at Amazon.ae on your Credit Card 523926******7383 on 30/09. Available Balance: AED 5114.62.
