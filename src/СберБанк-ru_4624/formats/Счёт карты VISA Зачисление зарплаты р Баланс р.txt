@@ -1,0 +1,7 @@
+^Сч[её]т\s+карты VISA+\s*(\d{4})\s+\d{2}:\d{2}\s+(Зачисление\s+зарплаты)\s+([\d\s.,]+)\s*(р|руб|руб\.)\s+Баланс:\s+([\d\s.,]+)\s*(р|руб|руб\.)$
+
+-----COLUMNS-----
+syncid#ccard / checking / deposit;comment;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты VISA8231 14:38 Зачисление зарплаты 103 504.43р  Баланс: 150 752.55р
