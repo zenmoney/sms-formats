@@ -1,7 +1,13 @@
-The P2P transfer of (\d[\d\s.,]*) ([A-Z]{3}).*?card \*\*\*(\d{4}).*?Available balance:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+(?:Перевод [PР]2[PР] на сумму|Transferul P2P în sumă de|The P2P transfer of)\s+(\d[\d\s.,]*)\s+([A-Z]{3}).*?\*+(\d{4}).*?(?:Доступный остаток|Sold disponibil|Available balance):\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
 
 -----COLUMNS-----
 outcome;instrument;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 The P2P transfer of 1103.36 MDL from card ***7988 has been successfully initiated. Available balance: 0 MDL. ║ maibank
+
+-----EXAMPLE-----
+Перевод P2P на сумму 300 MDL с карты ***3931 был успешно инициирован. Доступный остаток: 1001.28 MDL. ║ maibank
+
+-----EXAMPLE-----
+Transferul P2P în sumă de 10 MDL de pe cardul ***7988 a fost iniţiat cu succes. Sold disponibil: 1724.38 MDL.
