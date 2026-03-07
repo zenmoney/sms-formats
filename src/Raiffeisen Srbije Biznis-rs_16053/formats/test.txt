@@ -1,0 +1,10 @@
+Postovani, Vas racun \d+\*\*(\d{4})\s+je zaduzen za\s+([\d\s.,]+?)\s+([A-Za-z]{3})\s+po osnovu ispostavljenog naloga za placanje u korist\s+(.+?)\s*\.?\s*║
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+Postovani, Vas racun 2650**7841 je zaduzen za 2.000,00 RSD po osnovu ispostavljenog naloga za placanje u korist Marijana Milovanović. ║ Raiffeisen banka
+
+-----EXAMPLE-----
+Postovani, Vas racun 2650**7841 je zaduzen za 4.500,00 RSD po osnovu ispostavljenog naloga za placanje u korist MILJA BALETIĆ. ║ Raiffeisen banka
