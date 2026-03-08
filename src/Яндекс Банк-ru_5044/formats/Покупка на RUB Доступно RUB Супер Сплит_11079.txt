@@ -1,0 +1,7 @@
+Покупка на (\d[\d\s.,]*[.,]\d{2})\s+(\S+(?:\s+\S+)*)\.\s+Доступно:\s+(-?\d[\d\s.,]*[.,]\d{2})(?=\s)\s+(\S+(?:\s+\S+)*)\s+║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Покупка на 366.00 RUB ₽. Доступно: 5.88 RUB ₽ ║ Супер Сплит

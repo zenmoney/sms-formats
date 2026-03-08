@@ -1,0 +1,7 @@
+Snyatiye,\s*(\d{2}\.\d{2}\.\d{2}).*?Karta\s+\(\*(\d{4})\)\.\s*Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s.*?Dostupno:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Snyatiye, 28.02.26 v 18:48. Karta (*0478). Summa: 16973.85 UZS. VISA MC UZS 2 UZCARD KB>Tashkent UZ. Dostupno: 0.00 UZS
