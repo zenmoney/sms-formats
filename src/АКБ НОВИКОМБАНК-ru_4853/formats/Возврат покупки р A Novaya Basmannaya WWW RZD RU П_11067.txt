@@ -1,0 +1,7 @@
+Возврат покупки\s+(\d[\d\s.,]*)\s+(\S+)\s+(.*?)\s+\*\*(\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;syncid
+
+-----EXAMPLE-----
+Возврат покупки 1861.60 р. 37A 1, Novaya Basmannaya WWW.RZD.RU **1104 Подробнее, в выписке

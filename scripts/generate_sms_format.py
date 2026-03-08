@@ -13,7 +13,7 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional
 from openai import AsyncOpenAI
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from import_changes import commit_file_or_raise
+from diff import commit_file
 from sms_format import (
     ALLOWED_COLUMNS,
     AMOUNT_COLUMNS,
@@ -1244,7 +1244,7 @@ def _save_generated_format_with_commit(
         if is_draft
         else f"[{resolved_company.name}] create format"
     )
-    commit_file_or_raise(
+    commit_file(
         save_result.changed_paths,
         commit_title,
         sms_format.changed,

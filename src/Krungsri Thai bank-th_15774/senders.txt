@@ -1,2 +1,3 @@
 Krungsri
 com.krungsri.uchoose
+com.krungsri.kma

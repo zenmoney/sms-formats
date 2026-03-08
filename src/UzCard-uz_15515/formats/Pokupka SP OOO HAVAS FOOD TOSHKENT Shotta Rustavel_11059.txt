@@ -1,0 +1,7 @@
+Pokupka:\s*(.+?)\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+karta\s+\*+(\d{4})\.\s*summa:(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),\s+balans:(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Pokupka: SP OOO HAVAS FOOD, TOSHKENT, Shotta Rustaveli 1 proezd 6 13.02.26 14:09 karta ***3677. summa:20075.00 UZS, balans:2337153.85 UZS

@@ -1,7 +1,0 @@
-^Xarid:\s+((?:[A-Z ]+,\s*){2}[A-Z ]+?)\s+(\d{2}[./-]\d{2}[./-]\d{2,4})\s+\d{2}:\d{2}\s+karta\s+\*{3}(\d{4})\.\s+Miqdor:\s*([0-9][\d\s]*[.,]\d{2})\s*([A-Za-z]{1,3}),\s+Qoldiq:\s*(-?[0-9][\d\s]*[.,]\d{2})(?=\s)\s*([A-Za-z]{1,3})$
-
------COLUMNS-----
-payee;date#dMy;syncid;outcome;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Xarid: PIE POINT MCHZH, TOSHKENT, TOSHKENT SHAHAR MIRZO ULUGBEK T 15.06.25 09:55 karta ***6334. Miqdor:23400.00 UZS, Qoldiq:18549127.87 UZS

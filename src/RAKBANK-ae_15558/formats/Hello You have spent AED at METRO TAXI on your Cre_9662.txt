@@ -1,7 +1,0 @@
-Hello\. You have spent\s+([A-Za-z]{1,4})\s+([0-9][\d\s.,]*\d)\s+at\s+(.*?)\s+on your Credit Card\s+([0-9]{4})[0-9]{2}\*{6}[0-9]{4}\s+on\s+(11[-/]09)\.\s+Available Balance:\s+([A-Za-z]{1,4})\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|[^\d]|$)
-
------COLUMNS-----
-instrument;outcome;payee;syncid;date#Md;acc_instrument;av_balance
-
------EXAMPLE-----
-Hello. You have spent AED 27.00 at METRO TAXI on your Credit Card 523926******7383 on 11/09. Available Balance: AED 2048.63.
