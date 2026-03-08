@@ -1,7 +1,7 @@
-^[\d:]{5}\s+Perevod\s+([\d\u00A0\s.,]+?)\s+([^\s.]+)\s+s\s+(?:.*?)*\*(\d{4})\s*\.?.*?(?:(?:Ostatok|stat|Доступно|Баланс)\s*:\s*(-?[\d\u00A0\s.,]+?)\s*([^\s.]+))?
+^[\d:]{5}\s+Perevod\s+([\d\u00A0\s.,]+?)\s+([^\s.]+)\s+s\s+.*?\*(\d{4})\s*\.?.*?(?:(?:Ostatok|stat|Доступно|Баланс)\s*:\s*(-?[\d\u00A0\s.,]+?))?
 
 -----COLUMNS-----
-outcome;instrument;syncid;av_balance;acc_instrument
+outcome;instrument;syncid;av_balance
 
 -----EXAMPLE-----
 11:44 Perevod 2200.00₸ s karty *5143. ║
