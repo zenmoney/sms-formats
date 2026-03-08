@@ -1,10 +1,7 @@
-^(?:PAN|Kart):\s*\d+\*+(\d{4})\s+(?:Amount|Məbləğ):\s*([\d\s.,]+?)\s+([A-Z]{3})\s+(.+?)\s+(?:Balance|Balans):\s*(-?[\d\s.,]+?)\s+([A-Z]{3})\s*║\s+Reverse.*$
+^(?:PAN|Kart):\s*\d+\*+(\d{4})\s+(?:Amount|Məbləğ):\s*([\d\s.,]+?)\s+([A-Z]{3})\s+(.+?)\s+(?:Balance|Balans):\s*(-?[\d\s.,]+?)\s+([A-Z]{3})\s*║\s+(Reverse.*)$
 
 -----COLUMNS-----
 syncid;income;instrument;payee;av_balance;acc_instrument;comment
 
 -----EXAMPLE-----
 PAN: 416973******3571 Amount: 30.34 AZN LEMSQZY* YOUKA Balance: 9521.03 AZN ║ Reverse
-
------EXAMPLE-----
-PAN: 416973******3571 Amount: 2.4 AZN UBER Balance: 1440.38 AZN ║ Purchase
