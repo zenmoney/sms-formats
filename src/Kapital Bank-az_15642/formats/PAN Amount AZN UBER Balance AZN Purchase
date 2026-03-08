@@ -1,4 +1,4 @@
-^(?:PAN|Kart).*?\*(\d{4})\s+.(?:moun|əblə).*?([\d\s.,]*\d)\s*([A-Z]{3})\s+(.*?)\s+[Bb]alan.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+║\s+.*(?:urcha|dəniş).*
+^(?:PAN|Kart):\s*\d+\*+(\d{4})\s+(?:Amount|Məbləğ):\s*([\d\s.,]+?)\s+([A-Z]{3})\s+(.+?)\s+(?:Balance|Balans):\s*(-?[\d\s.,]+?)\s+([A-Z]{3})\s*║\s*(?:Purchase|Ödəniş|Pre-Purchase|Payment).*$
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument
