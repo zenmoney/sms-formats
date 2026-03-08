@@ -1,7 +1,0 @@
-Purchase:\s*([A-Za-z]{1,3})\s*([0-9][\d\s.,]*\d)\s+Card:\*{3,}\s*(\d{4})\s+(.*?)\s+Get ready for PLUS Birthday You will get:\s+[0-9][\d\s.,]*\d\s+PLUS\s+Total:\s+[0-9][\d\s.,]*\d\s+PLUS\s+(\d{2}[-./]\d{2}[-./]\d{2,4})
-
------COLUMNS-----
-instrument;outcome;syncid;payee;date#dMy
-
------EXAMPLE-----
-Purchase: GEL77.11 Card:***5506 Europroduct Get ready for PLUS Birthday You will get: 134.94 PLUS Total: 21,886.93 PLUS 24.06.2025

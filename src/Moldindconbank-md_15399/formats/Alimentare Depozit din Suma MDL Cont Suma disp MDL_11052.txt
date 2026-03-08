@@ -1,0 +1,7 @@
+Alimentare Depozit din\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\.\s+Suma:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Cont:\s+\*\*(\d{4})\.\s+Suma disp\.: (\-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.
+
+-----COLUMNS-----
+date#dMy;income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Alimentare Depozit din 24.02.26 13:40. Suma: 50.000,00 MDL. Cont: **2060. Suma disp.: 0,00 MDL. ║ Procesare tranzactie

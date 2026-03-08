@@ -1,0 +1,10 @@
+^(\d{4}-\d{4})\s-\sSpysannia\s+([\d.]+)\s([A-Z]{3})\s+Dostupno\s([\d.]+)\s([A-Z]{3})\s+(\d{2}\.\d{2})\s\d{2}:\d{2}
+
+-----COLUMNS-----
+syncid;outcome;instrument;av_balance;acc_instrument;date#dM
+
+-----EXAMPLE-----
+5168-1166 - Spysannia
+29000.00 UAH
+Dostupno 190934.48 UAH
+24.02 00:18

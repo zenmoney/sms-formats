@@ -1,0 +1,13 @@
+Perevod\s+(\d[\d\s.,]*)(\S+)\s+s\s+karty\s+\*(\d{4})(?:\s*\.?.*?(?:Ostatok|stat|Доступно|Баланс)\s*:\s*(-?[\d\s.,]+))?
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance
+
+-----EXAMPLE-----
+11:44 Perevod 2200.00₸ s karty *5143. ║
+
+-----EXAMPLE-----
+16:05 Perevod 5000.00KZT s karty *6116 . Ostatok 1612276.16KZT
+
+-----EXAMPLE-----
+13:06 Perevod 26200.00KZT s karty *2416. ║

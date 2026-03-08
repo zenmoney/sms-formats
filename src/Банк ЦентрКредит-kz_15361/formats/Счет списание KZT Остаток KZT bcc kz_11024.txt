@@ -1,0 +1,7 @@
+Счет\s+(\d+)\s+списание\s+(\d[\d\s.,]*)\s+([^\s.]+)\.Остаток\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([^\s.]+)\.(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+syncid;outcome;instrument;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+Счет 8020 списание 641550 KZT.Остаток 20183.59 KZT.05.03.2026  ║ bcc.kz

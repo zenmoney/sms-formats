@@ -1,7 +1,0 @@
-^[\d:]{5} Perevod ([\d\s.,]*\d)\s*([A-Z]{3}) s .*?\*(\d{4}).*stat.*?(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-outcome;instrument;syncid;av_balance
-
------EXAMPLE-----
-16:05 Perevod 5000.00KZT s karty *6116 . Ostatok 1612276.16KZT

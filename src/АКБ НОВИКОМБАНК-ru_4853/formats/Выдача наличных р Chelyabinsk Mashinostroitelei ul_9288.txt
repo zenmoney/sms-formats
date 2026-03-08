@@ -1,7 +1,0 @@
-(?<!\S)Выдача\s+наличных\s+([0-9][\d\s.,]*\d)\s*([A-Za-zА-Яа-я]{1,3})\.\s+Chelyabinsk,\s+Mashinostroitelei\s+ul\.,\s+17\s+NVKB\s+\*+(\d{2,})\s+Баланс\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+16:40$
-
------COLUMNS-----
-outcome;instrument;syncid#cash;balance
-
------EXAMPLE-----
-Выдача наличных 5000.00р. Chelyabinsk, Mashinostroitelei ul., 17 NVKB **4476 Баланс 6197.69 16:40
