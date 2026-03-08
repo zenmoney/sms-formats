@@ -1,4 +1,4 @@
-^[\d:]{5}\s+Perevod\s+([\d\u00A0\s.,]+?)\s+([^\s.]+)\s+s\s+.*?\*(\d{4})(?:\s*\.?.*?(?:Ostatok|stat|Доступно|Баланс)\s*:\s*(-?[\d\u00A0\s.,]+?))?
+Perevod\s+(\d[\d\s.,]*)(\S+)\s+s\s+karty\s+\*(\d{4})(?:\s*\.?.*?(?:Ostatok|stat|Доступно|Баланс)\s*:\s*(-?[\d\s.,]+))?
 
 -----COLUMNS-----
 outcome;instrument;syncid;av_balance
