@@ -1,0 +1,10 @@
+Creditare\s+cont\s+.+?\s+din\s+(\d{2}\.\d{2}\.\d{2})(?=\s\d{2}:\d{2})\s\d{2}:\d{2}\.\sSuma:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\sCont:\s+\d+\*\*(\d{4})\.\sDisponibil:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Creditare cont MIA din 13.02.26 12:50. Suma: 2.500,00 MDL. Cont: 2259**7121. Disponibil: 2.588,88 MDL
+
+-----EXAMPLE-----
+Creditare cont MIA din 13.07.25 23:16. Suma: 3.570,00 MDL. Cont: 2259**7121. Disponibil: 92,86 MDL

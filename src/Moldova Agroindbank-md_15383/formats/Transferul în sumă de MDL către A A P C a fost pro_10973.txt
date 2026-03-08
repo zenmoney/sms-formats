@@ -1,0 +1,7 @@
+Transferul în sumă de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+către\s+(.+?)(?=\s+a fost)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Transferul în sumă de 327.17 MDL către A0110-0006 A.P.C.  a fost procesat cu succes ║ maibank

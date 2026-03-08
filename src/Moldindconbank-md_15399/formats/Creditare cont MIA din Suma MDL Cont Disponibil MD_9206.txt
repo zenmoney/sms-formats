@@ -1,7 +1,0 @@
-.*?(?:[Cc]reditare)\s+(?:[Cc]ont)\s+(.*?)\s+(?:[Dd]in|de\s+la)\s+(\d{2}[-./]\d{2}[-./]\d{2,4})(?:\s+\d{2}:\d{2})?.*?(?:[Ss]uma)\s*[:\-]?\s*([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,4}).*?(?:[Cc]ont)\s*[:\s]*[\d*\s]+?(\d{2,6}).*?(?:[Dd]isponibil)\s*[:\-]?\s*(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,4})
-
------COLUMNS-----
-payee;date#dMy;income;instrument;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-Creditare cont MIA din 13.07.25 23:16. Suma: 3.570,00 MDL. Cont: 2259**7121. Disponibil: 92,86 MDL

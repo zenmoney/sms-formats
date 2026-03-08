@@ -1,0 +1,7 @@
+Dear Customer, your funds transfer request of (\d[\d\s.,]*)\s+([A-Z]{3})\s+to\s+(IBAN\/Account\/Card\s+.+?\d{4}).*?from your account\/card\s+.*?(\d{4}).*?(\d{2}\/\d{2}\/\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;date#dMy
+
+-----EXAMPLE-----
+Dear Customer, your funds transfer request of 80,900.00 AED to IBAN/Account/Card XXXX2012  has been processed successfully from your account/card XXXX7002 on 15/02/2026 18:21

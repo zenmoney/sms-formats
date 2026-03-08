@@ -1,0 +1,7 @@
+Pokupka\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Karta\s+\*+(\d{4})\s+(.+?)\s+Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Satyp alu/ Pokupka 1200,00 KZT Karta ***3182 IP TAIYAKI COFFEE Balans 10837,82 KZT ║ Bereke Bank

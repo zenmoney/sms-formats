@@ -1,0 +1,19 @@
+Card No XXXX(\d{4})\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+(.*?)\s+(\d{2}\/\d{2}\/\d{2})(?=.*?Avl Bal\s+[A-Z]{3}\s+(-?\d[\d\s.,]*[.,]\d{2})).*?Avl Bal\s+([A-Z]{3})\s+-?\d[\d\s.,]*[.,]\d{2}
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Credit Card Purchase  Card No XXXX2586  AED 9.00  IKEA-YAS-IFB2054 ABU DHABI AE  15/02/26 21:07  Avl Bal AED 16460.43 February statement due on 09/03/2026
+
+-----EXAMPLE-----
+Credit Card Purchase  Card No XXXX1236  AED 52.50  AL FALAJ MARKET 2 LLC DUBAI ARE  18/01/26 14:44  Avl Bal AED 47781.33 January statement due on 26/01/2026
+
+-----EXAMPLE-----
+Credit Card Purchase  Card No XXXX1236  AED 1.50  Hayat Vending Machine Dubai ARE  21/01/26 11:48  Avl Bal AED 47217.30 January statement due on 26/01/2026
+
+-----EXAMPLE-----
+Credit Card Purchase  Card No XXXX1236  AED 34.40  Noon Food Dubai ARE  17/01/26 18:05  Avl Bal AED 47986.33 January statement due on 26/01/2026
+
+-----EXAMPLE-----
+Credit Card Purchase  Card No XXXX1236  AED 27.95  Noon Minutes Dubai ARE  25/01/26 12:03  Avl Bal AED 55070.88 January statement due on 26/01/2026
