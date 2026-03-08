@@ -1,7 +1,0 @@
-^PAN.*?\d+\*+(\d{4})\s+.mount.*?([\d\s.,]*\d)\s*([A-Z]{3}).*alan.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+║\s+Card\s+to\s+Card.*
-
------COLUMNS-----
-syncid;income;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-PAN: 416973******9554 Amount: 1.0 AZN IBA MOBILE Balance: 3.4 AZN ║ Card to Card
