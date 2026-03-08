@@ -26,3 +26,6 @@ outcome;instrument;syncid;payee;op_outcome;op_instrument;date#dMy
 
 -----EXAMPLE-----
 6,000.00 AMD VISA **7476 - BALANCE: 560,143.81 AMD GARNI RESERVE-MUSEUM 2, AM 05.08.2023 15:55 ║ IDBank: PURCHASE
+
+-----EXAMPLE-----
+1,056,952.00 AMD MASTER **4719 - MNACORD: 1,332,044.55 AMD SBQ, AM 10.11.2025 10:49 ║ IDBank: MUTQ HASHVIN
