@@ -1,0 +1,7 @@
+Karta\s+\S*?(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+?)\.\s+(.+?)\.\s+Dostupno:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 4***3097 08-03-26 10:19:14. Nalichnye v bankomate 100.00 BYN. BLR MAGAZIN DOBRONOM. Dostupno: 31.77 BYN. Tel. 7299090
