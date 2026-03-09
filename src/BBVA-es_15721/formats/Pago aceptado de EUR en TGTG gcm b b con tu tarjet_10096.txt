@@ -1,7 +1,0 @@
-^(?:Pago aceptado) de\s+([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\s+en\s+((?=[^\s]+\s+[A-Za-z]*\d[A-Za-z\d]{9,})[^\s]+\s+[^\s]+)\s+con tu tarjeta terminada en\s+(\d{4})\.\s*║\s*Pago aceptado\s*👍💳$
-
------COLUMNS-----
-outcome;instrument;payee;syncid
-
------EXAMPLE-----
-Pago aceptado de 3,99 EUR en TGTG 636gcm89b6b20 con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
