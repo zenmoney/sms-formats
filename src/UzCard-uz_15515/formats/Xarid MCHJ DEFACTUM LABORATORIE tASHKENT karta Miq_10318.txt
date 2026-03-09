@@ -1,7 +1,0 @@
-Xarid:\s*(.+?),\s*0\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+karta\s+\*{3}(\d{4})\.\s*Miqdor:\s*([0-9][\d\s.,]*[.,]\d{2})\s+([A-Za-z]{1,3})\s*,\s*Qoldiq:\s*(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,3})
-
------COLUMNS-----
-payee;date#dMy;syncid;outcome;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Xarid: MCHJ DEFACTUM LABORATORIE, tASHKENT, 0 12.12.25 08:42 karta ***6436. Miqdor:471000.00 UZS, Qoldiq:6291740.24 UZS

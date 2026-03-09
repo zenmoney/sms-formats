@@ -1,0 +1,7 @@
+Card\s+XXXX(\d{4})\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+(.+?)\s+(\d{2}\/\d{2}\/\d{2})\s+\d{2}:\d{2}\s+Balance\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#dMy;acc_instrument;balance
+
+-----EXAMPLE-----
+Debit Card Purchase   Card XXXX5207 AED 100.00 SmartDXBGov-PRKN      DUBAI           AE  07/03/26 19:51  Balance AED 85019.44

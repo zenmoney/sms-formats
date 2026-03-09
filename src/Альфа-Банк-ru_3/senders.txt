@@ -6,3 +6,4 @@ Alfa-Bank2
 alfabank
 ru.alfabank.mobile.android
 +18337492307
+alfa-bank

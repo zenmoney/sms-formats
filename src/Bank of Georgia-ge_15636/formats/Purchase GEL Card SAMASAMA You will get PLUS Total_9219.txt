@@ -1,7 +1,19 @@
-Purchase:\s*([A-Za-z]{1,3})\s*([0-9][\d\s.,]*\d)\s+Card\s*:\*{3}(\d{4})\s+([^\s]+)\s+You will get:\s*[0-9][\d\s.,]*\d\s+PLUS\s+Total:\s*[0-9][\d\s.,]*\d\s+PLUS\s+(\d{2}[-./]\d{2}[-./]\d{4})
+Purchase:\s*([A-Za-z]{1,4})([\d\s.,]+?)\s+Card:\s*\*+(\d{4})\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})\s*$
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee;date#dMy
 
 -----EXAMPLE-----
 Purchase: GEL18.59 Card:***5506 SAMASAMA You will get: 32.53 PLUS Total: 24,481.97 PLUS 14.07.2025
+
+-----EXAMPLE-----
+Purchase: GEL29.10 Card:***3066 McDonald's vaja-fshave>Tbilisi GE 03.03.2026
+
+-----EXAMPLE-----
+Bank of Georgia: Purchase: GEL 0.30 Card: ****7180 Batumi bus - route N 1002 Remaining balance: 4.06 GEL 27.12.2021
+
+-----EXAMPLE-----
+Purchase: GEL77.11 Card:***5506 Europroduct Get ready for PLUS Birthday You will get: 134.94 PLUS Total: 21,886.93 PLUS 24.06.2025
+
+-----EXAMPLE-----
+Purchase: GEL77.64 Card:***3974 Wolt Get ready for PLUS Birthday Balance: GEL1,888.80, USD1,010.00, EUR883.31, GBP9,600.00 You will get: 174.69 PLUS Total: 27,607.79 PLUS 20.06.2025

@@ -1,7 +1,0 @@
-^Credit\s+Card\s+Purchase\s+Card\s+No\s+XXXX(\d{4})\s+([A-Za-z]{1,3})\s+([0-9][\d\s.,]*\d)\s+(.*?)\s+(\d{2}[\/-]\d{2}[\/-]\d{2})\s+18:05\s+Avl\s+Bal\s+([A-Za-z]{1,3})\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s)\s+January\s+statement\s+due\s+on\s+26\/01\/2026$
-
------COLUMNS-----
-syncid;instrument;outcome;payee;date#dMy;acc_instrument;av_balance
-
------EXAMPLE-----
-Credit Card Purchase  Card No XXXX1236  AED 34.40  Noon Food Dubai ARE  17/01/26 18:05  Avl Bal AED 47986.33 January statement due on 26/01/2026

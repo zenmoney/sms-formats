@@ -1,0 +1,10 @@
+Successful payment of (\d[\d\s.,]*)\s+([A-Z]{3})\s+at\s+(.+?)\s+with card\s+\*{3}(\d{4})\.?\s+Available balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Successful payment of 9.49 USD at Spotify AB with card ***6445. Available balance: 5008.66 MDL. ║
+
+-----EXAMPLE-----
+Successful payment of 1219.12 MDL at "PECO-92" A with card ***7988. Available balance: 3630.82 MDL. ║

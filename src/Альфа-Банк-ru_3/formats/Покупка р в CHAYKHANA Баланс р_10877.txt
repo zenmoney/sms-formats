@@ -1,7 +1,0 @@
-^(?:Покупка) \*(\d{4}):\s+([0-9][\d\s.,]*)\s*([A-Za-zА-Яа-я]{1})\s+в\s+(.*?)\s+Баланс:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-zА-Яа-я]{1})$
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Покупка *8393: 1300 р в CHAYKHANA24 Баланс: 111366,66 р
