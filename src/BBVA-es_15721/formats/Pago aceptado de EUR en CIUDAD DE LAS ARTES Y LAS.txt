@@ -17,3 +17,9 @@ Pago aceptado de 3,99 EUR en TGTG 636gcm89b6b20 con tu tarjeta terminada en 2940
 
 -----EXAMPLE-----
 Pago aceptado de 2,04 EUR en YEGO* RIDE 6 MIN con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 44,02 EUR en LEFTIES con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 9,90 EUR en DULCE DE LECHE JESUS con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
