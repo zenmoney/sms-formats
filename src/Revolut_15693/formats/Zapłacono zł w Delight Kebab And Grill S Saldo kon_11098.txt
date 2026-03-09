@@ -1,0 +1,7 @@
+Zapłacono\s+(\d[\d\s.,]*)\s*(\S+)\s+w:\s*(.*?)(?=\.\s+Saldo konta)\.\s+Saldo konta\s*[^:]*:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)(?=[\s\.\║]|$)
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Zapłacono 39 zł w: Delight Kebab And Grill S. Saldo konta „PLN”: 187,63 zł. ║ Delight Kebab And Grill S

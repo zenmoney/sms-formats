@@ -1,7 +1,0 @@
-(?:[0-9][\d\s.,]*?)([0-9]{3}[.,]\d{2})\s+([A-Za-z]{1,3})\s+MASTER\s+\*\*(\d{4})\s+-\s+(.*?):\s+([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\s+SBQ,\s+AM\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+\d{2}:\d{2}\s+║\s+IDBank:\s+MUTQ\s+HASHVIN
-
------COLUMNS-----
-balance;acc_instrument;syncid;payee;outcome;instrument;date#dMy
-
------EXAMPLE-----
-1,056,952.00 AMD MASTER **4719 - MNACORD: 1,332,044.55 AMD SBQ, AM 10.11.2025 10:49 ║ IDBank: MUTQ HASHVIN

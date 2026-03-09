@@ -1,0 +1,25 @@
+^Pago aceptado\s+de\s+([\d\s.,]+?[.,]\d{2})\s+([A-Z]{3})\s+en\s+(.+?)\s+con tu tarjeta terminada en\s+(\d{4})\b
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+Pago aceptado de 16,00 EUR en CIUDAD DE LAS ARTES Y LAS con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 13,90 EUR en CRV*FRESH AND NATURE M con tu tarjeta terminada en 4373. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 19,99 EUR en MEDIA-MARKT - ALICANTE con tu tarjeta terminada en 2609.  ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 3,99 EUR en TGTG 636gcm89b6b20 con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 2,04 EUR en YEGO* RIDE 6 MIN con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 44,02 EUR en LEFTIES con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳
+
+-----EXAMPLE-----
+Pago aceptado de 9,90 EUR en DULCE DE LECHE JESUS con tu tarjeta terminada en 2940. ║ Pago aceptado  👍💳

@@ -1,0 +1,7 @@
+The MIA transfer of (\d[\d\s.,]*(?:[.,]\d{2})?)\s([A-Z]{3})\sfrom account \d*(\d{4}) has been successfully initiated\. Available balance: (-?\d[\d\s.,]*[.,]\d{2})\s([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+The MIA transfer of 220 MDL from account 22596462493 has been successfully initiated. Available balance: 6444.38 MDL. ║ maibank

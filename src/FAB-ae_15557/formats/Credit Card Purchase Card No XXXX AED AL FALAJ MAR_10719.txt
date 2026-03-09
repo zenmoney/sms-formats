@@ -1,7 +1,0 @@
-.*?Credit\s+Card\s+Purchase\s{2,}Card\s+No\s+X+(\d{4})\s{2,}([A-Za-z]{1,3})\s+([0-9][\d\s.,]*\d)\s{2,}(.*?)\s{2,}(\d{2}[-./]\d{2}[-./]\d{2,4})\s+14:44\s+Avl\s+Bal\s+([A-Za-z]{1,3})\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)
-
------COLUMNS-----
-syncid;instrument;outcome;payee;date#dMy;acc_instrument;av_balance
-
------EXAMPLE-----
-Credit Card Purchase  Card No XXXX1236  AED 52.50  AL FALAJ MARKET 2 LLC DUBAI ARE  18/01/26 14:44  Avl Bal AED 47781.33 January statement due on 26/01/2026

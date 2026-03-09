@@ -1,0 +1,13 @@
+^(?:PAN|Kart):\s*\d+\*+(\d{4})\s+(?:Amount|Məbləğ):\s*([\d\s.,]+?)\s+([A-Z]{3})\s+(.+?)\s+(?:Balance|Balans):\s*(-?[\d\s.,]+?)\s+([A-Z]{3})\s*║\s*(?:Purchase|Ödəniş|Pre-Purchase|Payment).*$
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+PAN: 416973******3571 Amount: 2.4 AZN UBER Balance: 1440.38 AZN ║ Purchase
+
+-----EXAMPLE-----
+Kart: 416973******1498 Məbləğ: 72.07 AZN ARAZ MARKET SHUVALAN Balans: 2189.74 AZN ║ Ödəniş
+
+-----EXAMPLE-----
+PAN: 416973******9554 Amount: 10.1 AZN PAYPAL *WORDPRESSIT Balance: 27.2 AZN ║ Pre-Purchase

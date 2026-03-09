@@ -1,7 +1,0 @@
-^(?:Pago aceptado)\s+de\s+([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\s+en\s+((?=(?:(?!\s+con tu tarjeta terminada en).)*\s-\s)(?:(?!\s+con tu tarjeta terminada en).)+?)\s+con tu tarjeta terminada en\s+(\d{4})\.\s+║\s+Pago aceptado\s{2}👍💳$
-
------COLUMNS-----
-outcome;instrument;payee;syncid
-
------EXAMPLE-----
-Pago aceptado de 19,99 EUR en MEDIA-MARKT - ALICANTE con tu tarjeta terminada en 2609.  ║ Pago aceptado  👍💳
