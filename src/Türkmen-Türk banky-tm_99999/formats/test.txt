@@ -1,7 +1,7 @@
-^(?:Sum|Meb|Amou).*?-([\d\s.,]*\d)\s*([A-Z]{3})\s+Fee.*?([\d\s.,]*\d).*\*(\d{4}).*(\d{2,4}[-./]\d{2}[-./]\d{2})\s+[\d:]{5,}\s+(?:.erchan\w+\W\s*)?(.*?)\s+.alan.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+\S+\s+([\d\s.,]+?)\s+\*{2,3}(\d{4})\s+\d+\s+(.+?)\s+galyndy\s+([\d\s.,]+?)
 
 -----COLUMNS-----
-outcome;instrument;fee;syncid;date#yMd;payee;av_balance;acc_instrument
+date#dMy;outcome;syncid;payee;av_balance
 
 -----EXAMPLE-----
-Amount:-52.70 AZN Fee:0.00 AZN Card:4189***7876 Date:2021-06-24 22:39:11 Merchant:AZPETROL MERDEKAN-QDM-77 Balance:3990.51 AZN
+01.03.2026 18:13 Sowda 110.16 ***5623 697424 ASGABAT S.BERKARARLYK ETR.AZYK SOW.K-2, TM galyndy 6.74
