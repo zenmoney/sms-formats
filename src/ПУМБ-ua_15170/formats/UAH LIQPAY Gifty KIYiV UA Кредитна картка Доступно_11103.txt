@@ -1,7 +1,10 @@
-^([\d\s.,]*\d)\s*([A-Z]{3})\s+(?!Кешб)(.*?)\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+.*\*(\d{4})\s+.осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+║\s+(?:Покуп|Списан|Забло).*
+(?<![\d.,])(?<!Кешбек:\s)(\d[\d\s.,]*\d)\s*([A-Za-z]{3})\s+(?![/(]|Кешбек:)(.*?)\s+(\d{2}-\d{2}-\d{4})\s+\d{2}:\d{2}\s+(?:Кредитна\s+картка|Картка):\s*\*(\d{4})\s+Доступно:\s+(-?\d[\d\s]*[.,]\d{2})([A-Za-z]{3})\s*║\s+(?:Покупка|Списання|Заблоковано|Купівля)
 
 -----COLUMNS-----
 outcome;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+1349.00UAH LIQPAY*Gifty KIYiV UA 10-02-2026 19:25 Кредитна картка: *8787 Доступно: 74722.98UAH ║ Купівля
 
 -----EXAMPLE-----
 21.00UAH DYTYACHYJ BURSHTYN UA  24-12-2022 16:01  Кредитна картка: *5753  Доступно: 100699.88UAH ║ Покупка
@@ -17,3 +20,6 @@ outcome;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 292.80UAH OLX_DOSTAVKA_UAPAY SOFIEVSKAYA B UA  03-03-2023 09:49  Кредитна картка: *5753  Доступно: 94550.07UAH ║ Заблоковано
+
+-----EXAMPLE-----
+243.96UAH SILPO ZAPOROZHYE UA 01-01-2026 17:56 Картка: *4538 Доступно: 352927.16UAH  ║ Купівля
