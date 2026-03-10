@@ -1,0 +1,7 @@
+Баланс:\s+[+-]?(\d[\d\s.,]*)\s+([A-Z]{3})\s+║.*?[+-]?(\d[\d\s.,]*)\s+([A-Z]{3})\s+на\s+(.+?)(?:\.|$)
+
+-----COLUMNS-----
+balance;acc_instrument;income;instrument;payee
+
+-----EXAMPLE-----
+СБП-выплата от . Баланс: 14965.00 RUB ║ +27043.00 RUB на Карта Пэй.
