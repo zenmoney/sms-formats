@@ -2,3 +2,4 @@ sbsibank.by
 belveb24.by
 com.belveb.belvebmobileplus
 by.belveb.bank
+belveb
