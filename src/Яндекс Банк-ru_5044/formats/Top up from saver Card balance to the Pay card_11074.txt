@@ -1,0 +1,7 @@
+^Top-up\s+from\s+(\S+)\.\s+Card\s+balance:\s+(-?[\d\s.,]+?)\s+([а-яa-zA-Z₽]{1,4})\s+║\s+\+?([\d\s.,]+?)\s+([а-яa-zA-Z₽]{1,4})\s+to\s+(?:the\s+)?(\S+)
+
+-----COLUMNS-----
+payee;av_balance;acc_instrument;income;instrument;syncid
+
+-----EXAMPLE-----
+Top-up from saver. Card balance: 1 000 ₽ ║ +1 000 ₽ to the Pay card

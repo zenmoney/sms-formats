@@ -1,0 +1,16 @@
+Karta\s+5\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+(-?[\d\s.,]+?)\s+([A-Z]{3})\s+(.+?)\s*,?\s*(.*?)\s*\.?\s*Dostupno\s+(-?[\d\s.,]+?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;comment;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 5.0640 02.03.2026 11:05:59 Spisanie -1.90  BYN Vzimanie komissiy za sms-informirovanie TECHNO BLR OK. Dostupno 257.40 BYN
+
+-----EXAMPLE-----
+Karta 5.9704 08.01.2026 18:40:50 Spisanie -158.40  BYN OAO NKFO ERIP E-POS, Litcevoy schet: 22704-1-2 Ibank BLR OK. Dostupno 769.14 BYN
+
+-----EXAMPLE-----
+Karta 5.9704 22.12.2025 13:15:49 Spisanie -8.83  BYN BelRosStrah, Litcevoy schet: 162512168 Ibank BLR OK. Dostupno 1878.55 BYN
+
+-----EXAMPLE-----
+Karta 5.9704 14.12.2025 20:28:38 Spisanie -200.00  BYN Bank BelVEB, Litcevoy schet: BY67BELB3014139BK80010226000 Ibank BLR OK. Dostupno 2061.48 BYN

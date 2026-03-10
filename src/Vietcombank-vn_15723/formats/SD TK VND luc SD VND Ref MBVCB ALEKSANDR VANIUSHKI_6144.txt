@@ -1,7 +1,10 @@
-^SD\s+TK\s+\d*(\d{4})\s+-([\d\s.,]*\d)\s*([A-Z]{3})\s+luc\s+(\d{2}[-./]\d{2}[-./]\d{2,4}).*SD\s+(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+(?:S(?:ố|ố)\s*d(?:ư|ư)\s*TK\s*VCB|SD\s*TK)\s+\d*(\d{4})\s+\-(\d[\d.,]*)\s*([A-Za-z]{3})\s+(?:l[uú]c|lúc|luc)\s*(\d{2}[-./]\d{2}[-./]\d{4}).+?(?:S(?:ố|ố)\s*d(?:ư|ư)|SD)\s+(\d[\d.,]*)\s*([A-Za-z]{3})
 
 -----COLUMNS-----
 syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
 
 -----EXAMPLE-----
 SD TK 1234567890 -303,000VND luc 05-03-2024 20:24:35. SD 301,211,180VND. Ref MBVCB.5439093730.070752.ALEKSANDR VANIUSHKIN transfer.CT tu 1234567890 ALE...
+
+-----EXAMPLE-----
+Số dư TK VCB 1044908029 -65,000 VND lúc 22-02-2024 11:31:18. Số dư 1,886,900 VND. Ref MBVCB.5353444593.IURII MEDIAKOV transfer.CT tu 1044908029 IURII MEDIAKOV toi1016323628 TRUONG THI AN ║ Thông báo VCB

@@ -1,0 +1,16 @@
+Выдача наличных\s+(\d[\d\s.,]*)(\S+?)\.\s+([^\*]+?)\s+\*\*(\d{4})\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})(?=\s|$)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance
+
+-----EXAMPLE-----
+Выдача наличных 5800.00р. SANKT-PETERBU ATM 60029211 **1104 Баланс 4209.59 11:15
+
+-----EXAMPLE-----
+Выдача наличных 5000.00р. Chelyabinsk, Mashinostroitelei ul., 17 NVKB **4476 Баланс 6197.69 16:40
+
+-----EXAMPLE-----
+Выдача наличных 15000.00р. Chelyabinsk, Mashinostroitelei ul., 17 NVKB **4476 Баланс 39588.49 15:43
+
+-----EXAMPLE-----
+Выдача наличных 2000.00р. MOSKVA ATM 60102252 **0410 Баланс 362055.61 10:09

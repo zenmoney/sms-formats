@@ -1,0 +1,7 @@
+Krungsri Debit Card Purchase\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+from card x-(\d{4})\s*\(\s*(\d{2}\/\d{2}\/\d{2}),
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;date#dMy
+
+-----EXAMPLE-----
+Krungsri Debit Card Purchase 330.00 THB LAZADA PAY from card x-8901 (08/03/26, 12:23 hr ) ║ krungsri app

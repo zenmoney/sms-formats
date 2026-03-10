@@ -1,7 +1,0 @@
-^Số\s+dư.*?(\d{4})\s+-([\d\s.,]*\d)\s*([A-Z]{3})\s+lúc\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+[\d:]+\.\s+Số\s+dư\s+(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
-
------COLUMNS-----
-syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
-
------EXAMPLE-----
-Số dư TK VCB 1044908029 -65,000 VND lúc 22-02-2024 11:31:18. Số dư 1,886,900 VND. Ref MBVCB.5353444593.IURII MEDIAKOV transfer.CT tu 1044908029 IURII MEDIAKOV toi1016323628 TRUONG THI AN ║ Thông báo VCB

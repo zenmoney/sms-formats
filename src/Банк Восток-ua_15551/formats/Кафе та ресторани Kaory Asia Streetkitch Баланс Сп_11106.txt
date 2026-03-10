@@ -1,0 +1,7 @@
+(.+?)\s+Баланс:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*║\s*Списання:\s*(\d[\d\s.,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+payee;balance;outcome;instrument
+
+-----EXAMPLE-----
+Кафе та ресторани - Kaory Asia Streetkitch Баланс: 4.85 ║ Списання: 6.90€

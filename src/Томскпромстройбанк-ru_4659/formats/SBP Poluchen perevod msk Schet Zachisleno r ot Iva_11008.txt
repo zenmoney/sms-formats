@@ -1,0 +1,7 @@
+^SBP\. Poluchen perevod ([\d./-]{5}).*Schet\s([\d]{4})\.\sZachisleno\s([\d\s.,]*\d)\s([а-яa-zA-Z]{1,3}).*\s(ot .*)\sBIK.*
+
+-----COLUMNS-----
+date#dd.MM;syncid;income;instrument;comment
+
+-----EXAMPLE-----
+SBP. Poluchen perevod 12.02 11:14 (msk). Schet 7697. Zachisleno 13 r. ot Ivan Ivanovich N iz OOO "OZON Bank" BIK 044525068.

@@ -1,0 +1,7 @@
+Paid\s+(\d[\d\s.,]*)\s+(\S+)\s+at\s+(.+?)\s+\S+\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+🍽️ Paid 99 kr at MyWay SEK Balance: 7 737,42 kr ║ MyWay
