@@ -1,0 +1,7 @@
+^Ud realizo una compra en\s+(.+?)\s+por\s+\$([\d.]+)\.T\.?\s*Credencial\s+\*(\d{4}),\s*(\d{4}/\d{2}/\d{2})
+
+-----COLUMNS-----
+payee;outcome;syncid;date#Ymd
+
+-----EXAMPLE-----
+Ud realizo una compra en RESTAURANTE EQUILIBRIO por $12.600.T. Credencial *2828, 2026/02/11, 09:13. Bco. Occidente Linea de Servicio (601)3902058
