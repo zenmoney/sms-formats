@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Przelew na telefon - odebrany.*?Sender Account: .*?Sender:\s*(.*?)\s+Title:\s.*?On account no\.\s*[\d.]*?(\d{4})\s+Value date:\s*(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+income;instrument;payee;syncid;date#yMd
+
+-----EXAMPLE-----
++1241,00 PLN Przelew na telefon - odebrany Sender Account: 75..8084 Sender: VOLHA SECH  UL.ŻUPNICZA 23 M.91 03-821 WARSZAWA Title: TRANSFER   On account no. 45..9009 Value date: 2026-03-10 ║ Account credit
