@@ -1,4 +1,4 @@
-Покупка\s+\*(\d{4}):\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+в\s+(.+?)>\s+Баланс:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+Покупка\s+\*(\d{4}):\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})\s+в\s+(.+?)>\s+Баланс:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;balance;acc_instrument
