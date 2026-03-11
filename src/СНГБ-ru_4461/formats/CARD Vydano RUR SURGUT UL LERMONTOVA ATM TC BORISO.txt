@@ -1,4 +1,4 @@
-(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+CARD(\d{4}):\s+Vydano\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+(.+?)\s+Balans:\s+([-\d][\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+CARD(\d{4}):\s+Vydano\s+([A-Z]{3})\s+([\d\s.,]+[.,]\d{2})\s+(.+?)\s+Balans:\s+([A-Z]{3})\s+([\d\s.,]+[.,]\d{2})
 
 -----COLUMNS-----
 date#dMy;syncid#cash;instrument;outcome;payee;balance;acc_instrument
