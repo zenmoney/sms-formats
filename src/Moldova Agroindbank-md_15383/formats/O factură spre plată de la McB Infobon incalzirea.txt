@@ -1,4 +1,4 @@
-^O factură spre plată de la\s+.+?\s+în sumă de\s+[\d\s.,]+?\s+[A-Z]{3}\s+este disponibilă\.?\s*║
+^O factură spre plată
 
 -----COLUMNS-----
 
