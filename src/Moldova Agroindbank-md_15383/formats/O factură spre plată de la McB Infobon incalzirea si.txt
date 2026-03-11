@@ -1,0 +1,7 @@
+^O factură spre plată de la\s+.+?\s+în sumă de\s+[\d\s.,]+?\s+[A-Z]{3}\s+este disponibilă\.?\s*║
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+O factură spre plată de la McB Infobon incalzirea si prepararea apei calde în sumă de 4396.35 MDL este disponibilă. ║
