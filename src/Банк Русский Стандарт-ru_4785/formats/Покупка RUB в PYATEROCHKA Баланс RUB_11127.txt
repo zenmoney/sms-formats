@@ -1,0 +1,7 @@
+Покупка\s+\*(\d{4}):\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})\s+в\s+(.+?)>\s+Баланс:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Покупка *9178: 159.99 RUB в PYATEROCHKA 10660> Баланс: 347.02 RUB
