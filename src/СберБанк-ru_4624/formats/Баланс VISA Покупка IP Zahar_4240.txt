@@ -68,6 +68,3 @@ outcome;instrument;av_balance;acc_instrument;syncid;comment
 
 -----EXAMPLE-----
 200 ₽ — Осталось: 3 800 ₽ Счёт карты МИР •• 4690 ║ 🧁 Ух ты! Покупка в YesNoMilk
-
------EXAMPLE-----
-20,80 ₽ — У вас ещё: 1 801,99 ₽ Счёт карты МИР •• 2595 ║ Успех! Купили по СБП в darkawe.shop
