@@ -1,0 +1,7 @@
+Online Purchase SAB Visa Emirates Credit Card \((\d{4})\)\s+was used at\s+(.+?)\s+for\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+Date:\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Balance:\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;date#yMd;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Online Purchase SAB Visa Emirates Credit Card (3821) was used at Trip.com for SAR 3,341.35 Date: 2026-03-12 17:24:11 Balance: SAR 178463.63

@@ -2,3 +2,5 @@ belgazprom
 belgazprombank
 2472
 by.bgpb.mbanking
+by.bgpb.dailyfin
+DailyFin
