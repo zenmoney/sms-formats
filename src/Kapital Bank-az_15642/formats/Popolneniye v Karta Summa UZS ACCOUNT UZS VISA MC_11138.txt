@@ -1,0 +1,7 @@
+Popolneniye,\s+(\d{2}\.\d{2}\.\d{2})\s+v\s+\d{2}:\d{2}\.\s+Karta\s+\(\*(\d{4})\)\.\s+Summa:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s.*?Dostupno:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Popolneniye, 12.03.26 v 18:21. Karta (*0478). Summa: 2000000.00 UZS. ACCOUNT UZS 2 VISA MC UZS>Tashkent UZ. Dostupno: 2000000.00 UZS
