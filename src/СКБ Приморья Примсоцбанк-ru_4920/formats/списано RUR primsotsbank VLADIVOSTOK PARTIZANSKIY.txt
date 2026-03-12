@@ -1,0 +1,7 @@
+\*(\d{4})\s+\d{2}:\d{2},\s+списано\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.*?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+*1255 05:19, списано 60000.00 RUR primsotsbank, VLADIVOSTOK, 44, PARTIZANSKIY AV.. Баланс 276741.29 RUR
