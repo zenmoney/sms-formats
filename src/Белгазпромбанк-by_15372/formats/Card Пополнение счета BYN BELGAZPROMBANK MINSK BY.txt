@@ -1,0 +1,7 @@
+Card(\d{4});\s*Пополнение счета:\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})(?=\s\d{2}:\d{2}:\d{2})\s*\d{2}:\d{2}:\d{2};\s*([^;]+?);\s*\s*Dostupno:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card6954; Пополнение счета: 0,81 BYN; 12.03.26 09:29:04; BELGAZPROMBANK,MINSK,BY;Dostupno: 119,08 BYN ║ BGPB mobile
