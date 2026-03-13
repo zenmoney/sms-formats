@@ -1,7 +1,0 @@
-Покупка\s+\*(\d{4}):\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+в\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Покупка *9334: 4230.29 RUB в VKUSVILL>MOSCOW Баланс: 8201.92 RUB
