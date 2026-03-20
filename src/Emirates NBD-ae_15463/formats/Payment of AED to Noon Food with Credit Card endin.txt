@@ -1,0 +1,7 @@
+Payment of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+to\s+(.+?)\s+with\s+Credit Card\s+ending\s+(\d{4})\.\s+Avl Cr\. Limit is\s+([A-Z]{3})\s+(\d[\d,]*[.,]\d{2})\.
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Payment of AED 75.30 to Noon Food with Credit Card ending 6348. Avl Cr. Limit is AED 46,591.53.
