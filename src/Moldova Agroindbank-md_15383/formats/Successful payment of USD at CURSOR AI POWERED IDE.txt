@@ -1,0 +1,7 @@
+Successful payment of (\d[\d\s.,]*)\s([A-Z]{3})\s+at\s+(.+?)\s+with card \*+(\d{4})\. Available balance: (-?\d[\d\s.,]*)\s([A-Z]{3})\.
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Successful payment of 20 USD at CURSOR, AI POWERED IDE with card ***1884. Available balance: 0 USD. ║
