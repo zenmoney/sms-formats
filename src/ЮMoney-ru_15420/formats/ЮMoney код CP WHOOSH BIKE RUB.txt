@@ -1,0 +1,7 @@
+^ЮMoney[:\s]+код\s*\d{3,6}.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+ЮMoney: код 3159 CP* WHOOSH.BIKE 03 11 RUB
