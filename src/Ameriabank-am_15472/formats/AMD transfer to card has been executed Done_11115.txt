@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+transfer to card has been executed\s+║\s+Done
+
+-----COLUMNS-----
+outcome;instrument
+
+-----EXAMPLE-----
+7000 AMD transfer to card has been executed ║ Done

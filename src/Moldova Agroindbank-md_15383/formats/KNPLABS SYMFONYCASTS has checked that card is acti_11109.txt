@@ -1,0 +1,7 @@
+^.*?has checked that card\s+\*+\d{4}\s+is active\. No charge was made\. Available balance:.*?║
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+KNPLABS/SYMFONYCASTS has checked that card ***1884 is active. No charge was made. Available balance: 24.99 USD. ║

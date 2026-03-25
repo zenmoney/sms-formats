@@ -1,0 +1,7 @@
+^O factură spre plată
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+O factură spre plată de la McB Infobon incalzirea si prepararea apei calde în sumă de 4396.35 MDL este disponibilă. ║

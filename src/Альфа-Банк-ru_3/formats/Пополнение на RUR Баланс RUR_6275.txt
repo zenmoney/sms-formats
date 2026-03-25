@@ -1,7 +1,0 @@
-^(?:Попол|Popol).*\*(\d{4})\s+на\s+([\d\s.,]*\d)\s*([A-Z]{3})\s+.алан.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s*(?:║.*)?$
-
------COLUMNS-----
-syncid;income;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Пополнение *6502 на 752,50 RUR Баланс: 139 978,80 RUR

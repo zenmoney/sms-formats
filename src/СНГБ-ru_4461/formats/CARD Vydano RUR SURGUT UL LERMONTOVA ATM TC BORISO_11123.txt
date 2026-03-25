@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+CARD(\d{4}):\s+Vydano\s+([A-Z]{3})\s+([\d\s.,]+[.,]\d{2})\s+(.+?)\s+Balans:\s+([A-Z]{3})\s+([\d\s.,]+[.,]\d{2})
+
+-----COLUMNS-----
+date#dMy;syncid#cash;instrument;outcome;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+11.03.2026 15:31 CARD7819: Vydano RUR 3,000.00 SURGUT UL.LERMONTOVA,9 ATM134-TC-BORISOVSKIY Balans: RUR 827,332.38

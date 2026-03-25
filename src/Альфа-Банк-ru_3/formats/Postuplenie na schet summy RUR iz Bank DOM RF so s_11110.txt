@@ -1,0 +1,7 @@
+Postuplenie\s+na\s+schet\s+\d+\*(\d{4}).*?summy\s+(\d[\d\s.,]*)\s+(\S+)\s+iz\s+(.+?)\s+so\s+svoego.*?;\s*(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Postuplenie na schet 408*76895 summy 55000.00 RUR iz Bank DOM.RF so svoego scheta cherez SBP; 09.03.2026 13:23:34                                                                                                                                                                                                                                                                                                ║ Уведомление

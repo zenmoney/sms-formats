@@ -1,0 +1,7 @@
+Счёт карты\s+(?:VISA|MIR)?[-\s]*(\d{4})\s+\d{2}:\d{2}\s+Отмена покупки\s+(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты VISA3859 20:20 Отмена покупки 1р DOSTAVKA PEREKRESTKA_SDK Баланс: 20 734.64р

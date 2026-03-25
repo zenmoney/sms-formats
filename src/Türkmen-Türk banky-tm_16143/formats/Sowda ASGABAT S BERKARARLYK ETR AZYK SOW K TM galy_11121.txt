@@ -1,0 +1,7 @@
+^(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+\S+\s+([\d\s.,]+?)\s+\*{2,3}(\d{4})\s+\d+\s+(.+?)\s+galyndy\s+([\d\s.,]+?)
+
+-----COLUMNS-----
+date#dMy;outcome;syncid;payee;av_balance
+
+-----EXAMPLE-----
+01.03.2026 18:13 Sowda 110.16 ***5623 697424 ASGABAT S.BERKARARLYK ETR.AZYK SOW.K-2, TM galyndy 6.74

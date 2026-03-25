@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Vasha karta\s+\S*(\d{4})\s+byla ispolzovana.*?summu\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument
+
+-----EXAMPLE-----
+06.03.2026 11:51:47 Vasha karta 421589******1565 byla ispolzovana na summu 207.00 KGS dlya internet platezhey. Tel: (+996) 312 610610 / 2222

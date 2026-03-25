@@ -1,7 +1,7 @@
-^([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W)\s+[-—]\s+.алан.*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W).*•\s+(\d{4}).*\s+║\s+.*Выдача.*
+^([\d\s.,]*\d)\s*(\S{1,3})\s+[-—]\s+(?:Баланс|Осталось):\s*([\d\s.,]*\d)\s*(\S{1,3})\s+(?:Сч[её]т карты\s+)?(?:VISA|MasterCard|МИР|Сбер\.сч[её]т)\s+••\s*(\d{4})\s+║\s+(?=.*(?:Выдач))(.*)$
 
 -----COLUMNS-----
-outcome;instrument;av_balance;acc_instrument;syncid#cash
+income;instrument;av_balance;acc_instrument;syncid#cash;comment
 
 -----EXAMPLE-----
 1 626,91 ₽ - Баланс: 6 642,08 ₽ VISA •• 4839 ║ Выдача OSB 8612 0700

@@ -1,0 +1,10 @@
+OPLATA\s+(\d+.\d{2})\s+(\S+)\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(.*?)\s+OSTATOK\s+(\d+.\d{2})\s+(\S+).*
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+OPLATA 104.00 BYN KARTA #8544 18.02.2026 17:44:05 TsENTR RAZVITIYa DETEY   >GORODMINSK>BY OSTATOK 143.39 BYN ║ Belinvest
+
+-----EXAMPLE-----
+OPLATA 11.00 BYN KARTA #6110 09.12.2025 12:10:02 P2P DEB BELCARD TO REZ>MINSK>BY OSTATOK 42.46 BYN

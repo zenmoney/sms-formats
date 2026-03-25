@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(transfer between own accounts)\s+has been executed
+
+-----COLUMNS-----
+outcome;instrument;comment
+
+-----EXAMPLE-----
+100000 AMD transfer between own accounts has been executed ║ Done

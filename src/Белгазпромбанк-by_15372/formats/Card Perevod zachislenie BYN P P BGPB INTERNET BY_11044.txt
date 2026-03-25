@@ -1,0 +1,7 @@
+Card(\d{4});\s*Perevod \(zachislenie\):\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})(?=\s\d{2}:\d{2}:\d{2})\s*\d{2}:\d{2}:\d{2};\s*([^;]+?);\s*MCC:\s*(\d+);\s*Dostupno:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;mcc;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card3977; Perevod (zachislenie): 132,00 BYN; 06.03.26 20:29:15; P2P_BGPB_3,INTERNET,BY; MCC: 6012;Dostupno: 474,34 BYN

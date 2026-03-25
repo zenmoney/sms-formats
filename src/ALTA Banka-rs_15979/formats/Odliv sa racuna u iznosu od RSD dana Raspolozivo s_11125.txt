@@ -1,0 +1,7 @@
+Odliv sa racuna:\s*\d*(\d{4})\s+u iznosu od:\s+(\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3}),\s+dana:\s*(\d{2}\.\d{2}\.\d{4})\.\s+Raspolozivo stanje po odlivu\s+(\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Odliv sa racuna: 0001000502100 u iznosu od: 20.00 RSD, dana: 11.03.2026. Raspolozivo stanje po odlivu 3,980.00 RSD. Vasa Alta banka
