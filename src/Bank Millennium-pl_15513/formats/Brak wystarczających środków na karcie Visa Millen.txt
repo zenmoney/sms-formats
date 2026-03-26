@@ -1,4 +1,4 @@
-(?i)^Brak wystarczających środków.*
+Brak wystarczających środków
 
 -----COLUMNS-----
 
