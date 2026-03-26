@@ -1,0 +1,7 @@
+(.+?)\s+spent\s(€)(\d[\d\s.,]*[.,]\d{2})\s+EUR\s+balance:\s+(€)(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+payee;instrument;outcome;acc_instrument;balance
+
+-----EXAMPLE-----
+Anton A spent €98.57 EUR balance: €2,952.60 ║ Joint · Alcampo
