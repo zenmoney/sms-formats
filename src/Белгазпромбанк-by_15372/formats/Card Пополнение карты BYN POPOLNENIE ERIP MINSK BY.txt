@@ -1,7 +1,0 @@
-Card(\d+);\s*Пополнение карты:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+);\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*([^;]+?);\s*MCC:\s*(\d+);Dostupno:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
-
------COLUMNS-----
-syncid;income;instrument;date#dMy;payee;mcc;av_balance;acc_instrument
-
------EXAMPLE-----
-Card6521; Пополнение карты: 250,00 BYN; 21.03.26 07:20:47; POPOLNENIE ERIP,MINSK,BY; MCC: 6010;Dostupno: 255,00 BYN ║ DailyFin

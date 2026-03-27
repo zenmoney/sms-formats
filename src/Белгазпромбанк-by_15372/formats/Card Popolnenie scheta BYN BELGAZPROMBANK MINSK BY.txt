@@ -1,7 +1,0 @@
-Card(\d{4});\s*Popolnenie scheta:\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})\s*;\s*(\d{2}\.\d{2}\.\d{2})(?=\s\d{2}:\d{2}:\d{2})\s*\d{2}:\d{2}:\d{2};.*?Dostupno:\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
-
------COLUMNS-----
-syncid;income;instrument;date#dMy;av_balance;acc_instrument
-
------EXAMPLE-----
-Card7418; Popolnenie scheta: 1,80 BYN; 17.03.26 09:37:49; BELGAZPROMBANK,MINSK,BY;Dostupno: 386,47 BYN
