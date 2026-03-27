@@ -1,0 +1,7 @@
+Покупка\s+(\d[\d\s.,]*)([^\d\s,\.]),\s*\*(\d{4})\s+(.+?)\.\s*Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})([^\d\s,\.])
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Покупка 558.96₽, *1340 MAGNIT MM MYULEN, RU. Баланс 1060.04₽ ║ Инго Банк
