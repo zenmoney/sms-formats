@@ -1,7 +1,7 @@
-\((\d{4})\).*?was used at\s+(.+?)\sfor\s([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2}).*?Date:\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}.*?Balance:\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+POS Purchase SAB Visa Emirates Credit Card \((\d{4})\) was used at (.+?) for ([A-Z]{3}) (\d[\d\s.,]*[.,]\d{2}) on (\d{4}-\d{2}-\d{2}) .*?Balance:\s*([A-Z]{3})\s*(-?\d[\d\s.,]*[.,]\d{2})
 
 -----COLUMNS-----
 syncid;payee;instrument;outcome;date#yMd;acc_instrument;balance
 
 -----EXAMPLE-----
-POS Purchase SAB Visa Emirates Credit Card (3821) was used at Hospital for Madical Ca for SAR 65.21 via Google Pay Date: 2026-03-15 13:17:57 Balance: SAR 180842.03
+POS Purchase SAB Visa Emirates Credit Card (3821) was used at E254 Tamimi Express for SAR 103.65 on 2026-03-28 21:40:57 Balance: SAR 179629.44
