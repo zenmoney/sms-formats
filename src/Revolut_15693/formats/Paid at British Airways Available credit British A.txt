@@ -1,0 +1,7 @@
+Paid\s+([£])(\d[\d\s.,]*[.,]\d{2})\s*\(\s*([€])(\d[\d\s.,]*[.,]\d{2})\s*\)\s+at\s+(.+?)\s+Available credit:\s*(?=(?:[€]\s*(\d[\d\s.,]*[.,]\d{2})))([€])\s*\d[\d\s.,]*[.,]\d{2}
+
+-----COLUMNS-----
+op_instrument;op_outcome;instrument;outcome;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+🌍️️ Paid £210.90 (€244.03) at British Airways Available credit: €3,911.89 ║ British Airways
