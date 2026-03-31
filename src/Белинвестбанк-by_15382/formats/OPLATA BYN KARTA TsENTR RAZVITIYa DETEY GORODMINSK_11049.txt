@@ -1,10 +1,16 @@
 OPLATA\s+(\d+.\d{2})\s+(\S+)\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(.*?)\s+OSTATOK\s+(\d+.\d{2})\s+(\S+).*
 
 -----COLUMNS-----
-outcome;instrument;syncid;date#dMy;payee;balance;acc_instrument
+outcome;instrument;syncid;date#dMy;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 OPLATA 104.00 BYN KARTA #8544 18.02.2026 17:44:05 TsENTR RAZVITIYa DETEY   >GORODMINSK>BY OSTATOK 143.39 BYN ║ Belinvest
 
 -----EXAMPLE-----
 OPLATA 11.00 BYN KARTA #6110 09.12.2025 12:10:02 P2P DEB BELCARD TO REZ>MINSK>BY OSTATOK 42.46 BYN
+
+-----EXAMPLE-----
+OPLATA 109.28 BYN KARTA #6918 30.03.2026 17:39:51 I.-SHOP 'WILDBERRIES.B >MINSK>BY OSTATOK 7693.37 BYN
+
+-----EXAMPLE-----
+OPLATA 47.88 BYN KARTA #6918 25.03.2026 10:00:40 magazin Euroopt PRIME    >g.Minsk>BY OSTATOK 6427.00 BYN
