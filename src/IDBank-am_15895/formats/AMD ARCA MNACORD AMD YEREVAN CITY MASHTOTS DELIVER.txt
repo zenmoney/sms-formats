@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+ARCA\s+\*\*(\d{4})\s+-\s+MNACORD:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument;payee;date#dMy
+
+-----EXAMPLE-----
+17,194.00 AMD ARCA **2575 - MNACORD: 35,601.30 AMD YEREVAN CITY MASHTOTS DELIVERY, AM 28.03.2026 21:05 ║ IDBank: GNUM
