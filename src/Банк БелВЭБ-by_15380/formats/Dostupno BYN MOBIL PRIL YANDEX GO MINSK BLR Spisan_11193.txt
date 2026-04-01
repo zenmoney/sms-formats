@@ -1,0 +1,7 @@
+Dostupno\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+MOBIL\.\s+PRIL\.\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4}).*?Spisanie\s+-?(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+av_balance;acc_instrument;payee;date#dMy;outcome;instrument
+
+-----EXAMPLE-----
+Dostupno 925.63 BYN MOBIL. PRIL. YANDEX GO MINSK BLR 30.03.2026 18:54:09 ║ 9.3195 Spisanie -7.90 BYN
