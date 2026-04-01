@@ -1,0 +1,7 @@
+Ordin de plata.*?din\s+(\d{2}\.\d{2}\.\d{2}).*?Suma:\s+(\d[\d\.\s,]*[.,]\d{2})\s+([A-Z]{3}).*?Cont:\s+\*+(\d{3,}).*?Suma disp\.\:\s+(\d[\d\.\s,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Ordin de plata din 17.03.26 22:25. Suma: 2.164,20 MDL. Cont: **5058. Suma disp.: 6.078,93 MDL. ║ Procesare tranzactie
