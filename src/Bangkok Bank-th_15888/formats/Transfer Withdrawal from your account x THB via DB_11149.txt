@@ -1,0 +1,7 @@
+[xX](\d{4}).*?(\d[\d\s.,]*)(\S{1,4}).*?(\d{2}\/\d{2}\/\d{2}).*?The available is\s+(\d[\d\s.,]*[.,]\d{2})(\S{1,4})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#yMd;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transfer/Withdrawal from your account x4640 722.76THB via DBCARD 22/03/26 20:29 The available is 3,014.90THB ║ Bangkok Bank
