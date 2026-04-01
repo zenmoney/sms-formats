@@ -1,0 +1,7 @@
+POPOLNENIE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+DATA\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(.+?)\s+OSTATOK\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+POPOLNENIE 2000.00 BYN KARTA #7022 DATA 15.03.2026 22:54:47 OPLATA USLUG - NEO>MINSK>BLR OSTATOK 6402.76 BYN

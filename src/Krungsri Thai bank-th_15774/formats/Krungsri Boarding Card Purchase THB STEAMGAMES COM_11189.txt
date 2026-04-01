@@ -1,0 +1,7 @@
+Purchase\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+from\s+card\s+x-?(\d{4})\s+Available\s+Balance\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+\((\d{2}/\d{2}/\d{2}),
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+Krungsri Boarding Card Purchase 3,000.00 THB STEAMGAMES.COM 42595 from card x-0740 Available Balance 50,418.96 THB (26/03/26, 05:16 hr ) ║ krungsri app
