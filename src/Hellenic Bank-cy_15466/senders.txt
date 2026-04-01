@@ -1,3 +1,5 @@
 HELLENIC BK
 +35799380800
 hellenicbk
+com.HellenicMobileBank
+eurobankcy
