@@ -1,0 +1,7 @@
+Снятие наличных\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+с Карты #(\d{4})\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2};\s+Место:\s+([^;]+);\s+Остаток:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid#cash;date#yMd;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Снятие наличных 100.00 BYN с Карты #3639 2026-03-26 09:07:17; Место: GIPERMARKET GIPPO > MINSK BLR; Остаток: 3 734.71 BYN. Сбер Банк ║ Push-уведомление
