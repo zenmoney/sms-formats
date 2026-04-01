@@ -1,7 +1,10 @@
-^Выдача наличных\s+([0-9][\d\s.,]*)\s*([A-Za-z]{1,3})\s+Карта\s+\*{4}(\d{4})\s+g\.\s*[^,]+,\s*D\.\s*[0-9]+,\s*PR-KT\s+[A-Za-z][A-Za-z'\-\s]*\s+Баланс\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})$
+Выдача наличных\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Карта\s+\*{4}(\d{4})\s+(g.*)\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
 
 -----COLUMNS-----
-outcome;instrument;syncid#cash;balance;acc_instrument
+outcome;instrument;syncid#cash;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Выдача наличных 70000.00 RUB Карта ****2127 g. Perm, D. 93, PR-KT KOMSOMOL'SKI Баланс 65.10 RUB
+
+-----EXAMPLE-----
+Выдача наличных 310000.00 RUB Карта ****2397 g. Perm, Bank VTB (PAO) Баланс 96.64 RUB

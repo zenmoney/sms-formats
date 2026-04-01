@@ -1,0 +1,10 @@
+Card(\d{4});\s*(?:Пополнение|Popolnenie)\s(?:счета|карты|scheta):\s*(\d[\d\s.,]*)\s*([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})\s*\d{2}:\d{2}:\d{2};\s*([^;]+?);\s*MCC:\s*(\d+);\s*Dostupno:\s*(-?\d[\d\s.,]*)\s*([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;mcc;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card6528; Пополнение счета: 300,00 BYN; 18.03.26 09:05:31; ABS BGPB,MINSK,BY; MCC: 6012;Dostupno: 662,65 BYN ║ DailyFin
+
+-----EXAMPLE-----
+Card6521; Пополнение карты: 250,00 BYN; 21.03.26 07:20:47; POPOLNENIE ERIP,MINSK,BY; MCC: 6010;Dostupno: 255,00 BYN ║ DailyFin
