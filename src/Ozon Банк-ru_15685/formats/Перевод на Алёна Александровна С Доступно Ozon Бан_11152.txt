@@ -1,0 +1,7 @@
+Перевод на\s+(\d[\d\s.,]*)\s*(\S+)\.\s+(.+?)\.\s+Доступно\s+(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод на 4 000.27 ₽. Алёна Александровна С.. Доступно 46 060.27 ₽ ║ Ozon Банк
