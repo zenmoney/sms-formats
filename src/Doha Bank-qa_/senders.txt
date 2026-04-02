@@ -1,2 +1,0 @@
-dohabank
-com.db.mobilebanking
