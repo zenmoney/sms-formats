@@ -1,0 +1,7 @@
+NALICHNYE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(.+?)\s+OSTATOK\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+NALICHNYE 100.00 BYN KARTA #1156 04.04.2026 11:47:53 STANTSIYA METRO PROLETA  >MINSK>BY OSTATOK 10.95 BYN
