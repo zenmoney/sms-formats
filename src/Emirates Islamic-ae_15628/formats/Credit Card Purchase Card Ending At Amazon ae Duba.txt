@@ -1,0 +1,7 @@
+Credit Card Purchase\s+Card Ending:\s*:\s*(\d{4}).*?At:\s*(.+?)\s+Amount:\s+([A-Z]{3})\s+(\d[\d\s.,]*?)\s+Date:\s*(\d{2}/\d{2}/\d{4}),.*?Available Limit:\s+[A-Z]{3}\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;date#Mdy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Credit Card Purchase Card Ending: : 6268 At: Amazon.ae, Dubai Amount: AED 44.54 Date: 04/04/2026, 11:23 Available Limit: AED 16,077.18
