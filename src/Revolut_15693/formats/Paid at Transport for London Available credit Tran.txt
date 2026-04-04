@@ -1,0 +1,7 @@
+Paid\s+(\S+)(\d[\d\s.,]*?)(?=\s+\()\s+\((\S+)(\d[\d\s.,]*[.,]\d{2})\)\s+at\s+(.+?)\s+Available credit:\s+(\S+)(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+instrument;outcome;op_instrument;op_outcome;payee;acc_instrument;av_balance
+
+-----EXAMPLE-----
+🌍️️ Paid £30 (€34.49) at Transport for London Available credit: €3,289.41 ║ Transport for London
