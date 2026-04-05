@@ -5,3 +5,6 @@ payee;outcome;instrument
 
 -----EXAMPLE-----
 Вы совершили покупку в U Kunstatu на сумму 1 890Kč ║ Покупка
+
+-----EXAMPLE-----
+Вы совершили покупку в TOO ZAVOD KAZAKHSKOY AKAD на сумму 705₸ ║ Покупка
