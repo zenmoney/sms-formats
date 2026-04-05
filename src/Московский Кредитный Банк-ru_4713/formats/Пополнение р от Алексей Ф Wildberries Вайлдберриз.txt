@@ -1,4 +1,4 @@
-Пополнение\s+(-?\d[\d\s.,]*)\s*(\S+)\s+от\s+(.*?)\s+Баланс\s+(-?\d[\d\s.,]*)\s*(\S+)
+Пополнение\s+(\d[\d\s.,]*)\s*(\S+)\s+от\s+([^.]*)\..*?\s+Баланс\s+(-?\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 income;instrument;payee;balance;acc_instrument
