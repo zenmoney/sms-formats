@@ -1,7 +1,0 @@
-The amount of\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+was withdrawn from card\s+\*{3}(\d{4})\s+as a cash withdrawal\.\s+Available balance:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
-
------COLUMNS-----
-outcome;instrument;syncid#cash;av_balance;acc_instrument
-
------EXAMPLE-----
-The amount of 3000 MDL, was withdrawn from card ***9478 as a cash withdrawal. Available balance: 7000 MDL. ║
