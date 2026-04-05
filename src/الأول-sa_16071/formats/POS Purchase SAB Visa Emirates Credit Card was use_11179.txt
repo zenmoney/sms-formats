@@ -1,0 +1,7 @@
+POS Purchase SAB Visa Emirates Credit Card \((\d{4})\) was used at (.+?) for ([A-Z]{3}) (\d[\d\s.,]*[.,]\d{2}) on (\d{4}-\d{2}-\d{2}) .*?Balance:\s*([A-Z]{3})\s*(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+POS Purchase SAB Visa Emirates Credit Card (3821) was used at E254 Tamimi Express for SAR 103.65 on 2026-03-28 21:40:57 Balance: SAR 179629.44

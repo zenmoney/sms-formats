@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Vasha karta\s+\d+\*+(\d{4})\s+ispolzovana v\s+(.+?)\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;payee;outcome;instrument
+
+-----EXAMPLE-----
+14.03.2026 00:03:21 Vasha karta 421589******2373 ispolzovana v ATM 20,000.00 KGS. Tel: (+996) 312 610610 / 2222

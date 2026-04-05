@@ -1,0 +1,7 @@
+Payment\sof\s([A-Z]{3})\s*(\d[\d\s.,]*)\s+to\s+(.*?)\s+with.*?ending\s*(\d{4}).*?(?:Bal|imit|alan).*?([A-Z]{3})\s*(-?\d[\d\s.,]*)\.
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Payment of AED 44.55 to Noon Minutes with Credit Card ending 1796. Avl Cr. Limit is AED 16,928.04.
