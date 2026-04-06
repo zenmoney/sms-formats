@@ -1,0 +1,7 @@
+Покупка на\s+(\d[\d\s.,]*)\s*(\S+)\.\s*(.+?)\.\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*║\s*Платежи,\s*карта\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+Покупка на 2231.76 ₽. MAGNIT MM MUZHCHINA. Доступно 465131.45 ₽ ║ Платежи, карта *8232
