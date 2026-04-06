@@ -1,4 +1,4 @@
-Card:\s+\*\*(\d{4}).*?Balance:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(₼).*?Transfer:\s*.*?\+.*?([0-9][\d\s.,]*[.,]\d{2})\s*(₼)
+Card:\s+\*\*(\d{4})[\s\u200C-\u200F\u202F\u00A0]*Balance:[\s\u200C-\u200F\u202F\u00A0]*(-?\d[\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼]).*?Transfer:[\s\u200C-\u200F\u202F\u00A0]*\+[\s\u200C-\u200F\u202F\u00A0]*([0-9][\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼])
 
 -----COLUMNS-----
 syncid;balance;acc_instrument;income;instrument
