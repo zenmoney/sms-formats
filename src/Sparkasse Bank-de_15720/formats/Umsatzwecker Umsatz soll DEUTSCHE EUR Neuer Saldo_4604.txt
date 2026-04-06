@@ -1,7 +1,10 @@
-^.*msatzweck.*?-([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}).*x(\d{3,4})\D.*?-(-?[\d\s.,]*\d).*
+Umsatzwecker:?\s+(.+?)\:\s+-(\d[\d\s.,]*)\s+([A-Z]{3})\s+Neuer Saldo zu Konto\s+[\*x]*(\d{3,4})\:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
 
 -----COLUMNS-----
-outcome;instrument;syncid;av_balance
+payee;outcome;instrument;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Umsatzwecker "Umsatz soll": DEUTSCHE .: -12,10 EUR Neuer Saldo zu Konto xxxxx253: -48,14 EUR Ihre Sparkasse
+
+-----EXAMPLE-----
+Umsatzwecker: Klarna Ba.: -13,29 EUR Neuer Saldo zu Konto *9680: 655,77 EUR Ihre Sparkasse
