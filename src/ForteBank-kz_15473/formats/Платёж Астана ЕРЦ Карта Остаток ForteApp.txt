@@ -5,3 +5,6 @@ outcome;instrument;payee;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Платёж: −26 772.76 ₸ Астана ЕРЦ Карта *5387 Остаток: 67 583.78 ₸ ║ ForteApp
+
+-----EXAMPLE-----
+Платёж: −36 613.03 KZT Алсеко Карта *3171 Остаток: 97.69 KZT ║ ForteApp
