@@ -1,4 +1,4 @@
-(\*?\d{4})\s+Оплата:\s+(\d[\d\s.,]*)\s+(\S+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s+(\S+)
+(*?\d{4})\s+Оплата:\s+(\d[\d\s.,])\s([^\d\s]+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,])\s([^\d\s]+)(?:\s*[|║].*)?
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument
