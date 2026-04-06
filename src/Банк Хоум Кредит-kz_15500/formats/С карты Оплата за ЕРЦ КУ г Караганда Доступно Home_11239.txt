@@ -1,4 +1,4 @@
-^С\s+карт.*?(\d{4})\s+.плата.*?([\d\s.,]*\d)\s*([A-Z]{3}|\W)\s+за\s+(.*?)\s+.осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}|\W).*
+С карты\s+(\*?\d{4})\s+Оплата:\s+(\d[\d\s.,]*)\s*(\S+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument

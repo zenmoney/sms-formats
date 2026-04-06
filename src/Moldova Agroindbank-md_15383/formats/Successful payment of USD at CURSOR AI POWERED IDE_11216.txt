@@ -1,7 +1,10 @@
-Successful payment of (\d[\d\s.,]*)\s+([A-Z]{3})\s+at\s+(.+?)\s+with card\s+\*{3}(\d{4})\.?\s+Available balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+Successful payment of (\d[\d\s.,]*)\s([A-Z]{3})\s+at\s+(.+?)\s+with card \*+(\d{4})\. Available balance: (\d[\d\s.,]*)\s([A-Z]{3})\. ║
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Successful payment of 20 USD at CURSOR, AI POWERED IDE with card ***1884. Available balance: 0 USD. ║
 
 -----EXAMPLE-----
 Successful payment of 9.49 USD at Spotify AB with card ***6445. Available balance: 5008.66 MDL. ║

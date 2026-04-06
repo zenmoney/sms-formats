@@ -1,7 +1,0 @@
-^Карта\s+\d\*\*(\d{4}):\s+пополнение\s+([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\.\s+Доступно\s+([0-9][\d\s]*[.,]\d)(?=\s)\s+([A-Za-z]{1,3})\s+║\s+bcc\.kz$
-
------COLUMNS-----
-syncid;income;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Карта 4**9272: пополнение 140000.00 KZT. Доступно 153855.8 KZT  ║ bcc.kz
