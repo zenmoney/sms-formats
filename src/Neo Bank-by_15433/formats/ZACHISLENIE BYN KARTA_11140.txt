@@ -1,0 +1,7 @@
+ZACHISLENIE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})
+
+-----COLUMNS-----
+income;instrument;syncid
+
+-----EXAMPLE-----
+ZACHISLENIE 800.39 BYN KARTA #7022

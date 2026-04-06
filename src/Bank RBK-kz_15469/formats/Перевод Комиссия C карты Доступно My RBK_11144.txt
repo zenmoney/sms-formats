@@ -1,0 +1,7 @@
+Перевод:\s*(\d[\d\s.,]*)\s*(\S)\s+Комиссия:\s*(\d[\d\s.,]*)(?:\s*\S)?\s+C карты:\s*\*(\d{4})\s+Доступно:\s*(-?\d[\d\s.,]*)\s*(\S)
+
+-----COLUMNS-----
+outcome;instrument;fee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод: 1 600.00₸ Комиссия: 0₸ C карты: *9518 Доступно: 145 161.84₸ ║ My RBK
