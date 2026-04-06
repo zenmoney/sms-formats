@@ -1,4 +1,4 @@
-Зачислено\s+(\d[\d\s.,]*)\s+(\S+)\s+за\s+(.+)
+Зачислено\s+(\d[\d\s.,]*)\s+(.+?)\s+за\s+(.+)
 
 -----COLUMNS-----
 income;instrument;comment
