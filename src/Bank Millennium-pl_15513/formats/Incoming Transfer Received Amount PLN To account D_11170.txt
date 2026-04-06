@@ -1,0 +1,7 @@
+Incoming Transfer Received:\s*Amount:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+To account:\s*[^\d\n]*[0-9.]*?(\d{4})\b.*?Date:\s*(\d{2}\/\d{2}\/\d{2})(?=,).*?Available balance:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Incoming Transfer Received: Amount: 70,00 PLN To account: 42...00310495787 Date: 21/03/26, 07:08 Available balance: 12.196,82 PLN

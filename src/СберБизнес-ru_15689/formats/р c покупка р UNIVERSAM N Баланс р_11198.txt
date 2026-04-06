@@ -1,0 +1,7 @@
+р/c \*\*(\d{4}).*?покупка\s+(\d[\d\s.,]*)\s*(\S)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+р/c **0926 (*9804) 20:24 покупка 5 852.76р UNIVERSAM N31 Баланс: 444 147.24р

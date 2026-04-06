@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s*([^\s.]+)\.\s+на карту\s\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*)\s+([^\s.]+)
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
++3 966 р. на карту *8832. Баланс 32 967.31 р.
