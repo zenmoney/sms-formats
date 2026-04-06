@@ -1,4 +1,4 @@
-^(?:(?:Приват|Транз).*?)?([\d\s.,]*\d)\s*([A-Z]{3})\s+(?!Зарах|Zarak?h|Знятт|Зарпл|Zarp|Попов|Popo[vl]|.*дправник|Perekaz\s+(?:zi|vid|.*dpravnyk)|Переказ\s+(?:зі|від|.*дправн))(.*?)\s+(\d\*[\d]{2})\s+[\d:]{5,}\s+(?:Na\s+.*)?(?:Бал|Bal).*?\.?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^(?:(?:Приват|Транз).*?)?-?([\d\s.,]*\d)\s*(?:([A-Z]{3})|₴)\s+(?!Зарах|Zarak?h|Знятт|Зарпл|Zarp|Попов|Popo[vl]|.*дправник|Perekaz\s+(?:zi|vid|.*dpravnyk)|Переказ\s+(?:зі|від|.*дправн))(.*?)\s+(\d\*[\d]{2})\s+[\d:]{5,}\s+(?:Na\s+.*)?(?:Бал|Bal).*?\.?-?([\d\s.,]*\d)\s*(?:([A-Z]{3})|₴).*
 
 -----COLUMNS-----
 outcome;instrument;comment;syncid;av_balance;acc_instrument
@@ -80,3 +80,6 @@ outcome;instrument;comment;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 1.00UAH Perekaz na svoiu kartu 53**27 cherez dodatok Pryvat24 5*99 12:34 Bal. 56560.35UAH Kred. limit 30000.0UAH
+
+-----EXAMPLE-----
+-116₴ Таксі. Uklon 5*48 14:44 Бал. 133 710.88₴
