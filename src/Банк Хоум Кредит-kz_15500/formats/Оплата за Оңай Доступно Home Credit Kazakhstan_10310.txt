@@ -1,4 +1,4 @@
-(?:С карты\s+)?(\*?\d{4})\s+Оплата:\s+(\d[\d\s.,]*)\s+(\S+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s+(\S+)
+(\*?\d{4})\s+Оплата:\s+(\d[\d\s.,]*)\s+(\S+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument
@@ -8,6 +8,3 @@ syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 0743 Оплата: 100₸ за Tele2 Доступно: 9900₸ ║ Home Credit Kazakhstan
-
------EXAMPLE-----
-С карты *1359 Оплата: 2545.81₸ за ЕРЦ КУ г.Караганда Доступно: 83368.06₸ ║ Home Credit Kazakhstan
