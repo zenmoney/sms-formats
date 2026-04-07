@@ -1,4 +1,4 @@
-(?:[\uFEFF\u200F\u200E]*)([^\r\n]+?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+.*?Кешбэк\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+([^\r\n]+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s+║.*?Кешбэк\s+(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 payee;balance;acc_instrument;cashback;instrument
