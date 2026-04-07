@@ -1,4 +1,4 @@
-^([\d\s.,]*\d)\s*([A-Z]{3})\s+((?:(?:Zarp|Зарп)|(?:Zarak?h|Зарах).*(?:rotsent|рот?цент)).*?)\s+(\d\*\d{2})\s+.*(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^\+?([\d\s.,]*\d)\s*(?:([A-Z]{3})|₴)\s+((?:(?:Zarp|Зарп)|(?:Zarak?h|Зарах).*(?:rotsent|рот?цент)).*?)\s+(\d\*\d{2})\s+.*(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*(?:([A-Z]{3})|₴).*
 
 -----COLUMNS-----
 income;instrument;comment;syncid;av_balance;acc_instrument
@@ -20,3 +20,6 @@ income;instrument;comment;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 0.36USD Зарахування процентів за договором «Приват-вклад» 5*69 06:12 Бал. 0.72USD ║ ПриватБанк: Транзакции по счетам
+
+-----EXAMPLE-----
++10 809.38₴ Зарплата, ТОВ УКРАЇНА 5*48 16:33 Бал. 10 809.38₴
