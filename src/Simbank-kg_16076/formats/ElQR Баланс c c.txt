@@ -1,7 +1,0 @@
-Баланс\s+(\d[\d\s.,]*)\s+([^\s║]+)
-
------COLUMNS-----
-balance;acc_instrument
-
------EXAMPLE-----
-‎ElQR Баланс 61 000 c̲ ║ ‎🤑 2000 c̲
