@@ -1,0 +1,7 @@
+Perevod na kartu \*(\d{4}),\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Komissiya:\s+(\d[\d\s.,]*[.,]\d{2})\s+[A-Z]{3}\.\s+Dostupno:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#yMd;fee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Perevod na kartu *9252, 2 500 000.00 UZS 2026-03-31 16:29:29 Komissiya: 0.00 UZS. Dostupno: 6 200 000.00 UZS
