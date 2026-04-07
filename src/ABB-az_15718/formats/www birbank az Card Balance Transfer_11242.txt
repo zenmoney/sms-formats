@@ -1,0 +1,7 @@
+Card:\s+\*\*(\d{4})[\s\u200C-\u200F\u202F\u00A0]*Balance:[\s\u200C-\u200F\u202F\u00A0]*(-?\d[\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼]).*?Transfer:[\s\u200C-\u200F\u202F\u00A0]*\+[\s\u200C-\u200F\u202F\u00A0]*([0-9][\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼])
+
+-----COLUMNS-----
+syncid;balance;acc_instrument;income;instrument
+
+-----EXAMPLE-----
+www.birbank.az Card: **7836 Balance: ‎30.49‎₼‎ ║ 💸 Transfer: +‎1.00‎₼

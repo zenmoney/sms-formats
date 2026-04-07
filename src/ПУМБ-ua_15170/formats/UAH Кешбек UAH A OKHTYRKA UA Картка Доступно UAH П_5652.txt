@@ -1,7 +1,0 @@
-^([\d\s.,]*\d)\s*([A-Z]{3})\s+(Кешб.*?[\d\s.,]*\d\s*[A-Z]{3})\s+(.*?)\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+[\d:]{5}.*\*(\d{4})\s+.осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\s+║\s+(?:Покуп|Списан).*
-
------COLUMNS-----
-outcome;instrument;comment;payee;date#dMy;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-158.18UAH Кешбек: 3.17UAH A1146 OKHTYRKA UA 05-02-2023 11:55  Картка: *8524  Доступно: 2081.49UAH ║ Покупка

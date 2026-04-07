@@ -1,0 +1,8 @@
+Kart:\s*ish\s+\*\*(\d{4}).*?Balans:\s*[\u200e\u200f\s]*(\d[\d\s.,]*[.,]\d{2})[\u200e\u200f\s]*(\S+).*?Köçürmə:\s*(?:[-\u2212\u2012\u2013])?[\u200e\u200f\s]*?(\d[\d\s.,]*[.,]\d{2})[\u200e\u200f\s]*(\S+)
+
+-----COLUMNS-----
+syncid;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+ABB MOBILE Kart: ish **6319 Balans: ‎2,337.36‎₼‎ ║ 💸 Köçürmə:
+-‎22.00‎₼
