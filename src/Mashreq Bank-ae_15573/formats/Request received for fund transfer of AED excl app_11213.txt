@@ -1,0 +1,7 @@
+^Request received for fund transfer.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Request received for fund transfer of AED 7546 (excl. applicable charges) with ref. no. MAC0304261190618. Contact  +971 4 424 4444 if you haven't initiated this.

@@ -1,0 +1,7 @@
+Покупка:\s*[\-\u2212]?\s*(\d[\d\s]*[.,]\d{2})\s*(\S+)\s+(.+?)\s+Карта\s*\*(\d{4})\s+Остаток:\s+Кредитные\s+(-?\d[\d\s]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Покупка: −12 800.00 ₸ HELIOS AZS 02 Карта *1392 Остаток: Кредитные 2 987 200.00 ₸ ║ ForteApp
