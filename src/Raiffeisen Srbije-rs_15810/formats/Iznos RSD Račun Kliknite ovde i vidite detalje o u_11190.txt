@@ -1,0 +1,7 @@
+Iznos\s+(\d[\d\s.,]*,\d{2})\s+([A-Z]{3})\s*\|\s*(\d{2}\.\d{2}\.\d{4})\s*\|\s*Račun\s+\d+\*\*(\d{4})
+
+-----COLUMNS-----
+income;instrument;date#dMy;syncid
+
+-----EXAMPLE-----
+Iznos 10.868,00 RSD | 26.03.2026 | Račun 2650**5610 | Kliknite ovde i vidite detalje o uplati u aplikaciji ║ Uplata na račun
