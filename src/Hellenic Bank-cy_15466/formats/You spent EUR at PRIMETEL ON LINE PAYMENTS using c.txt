@@ -1,4 +1,4 @@
-You spent\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+at\s+(.+?)\s+using card\s+••••(\d{4})
+You\s+spent\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+at\s+(.+?)\s+using\s+card\s+••••(\d{4})
 
 -----COLUMNS-----
 instrument;outcome;payee;syncid
