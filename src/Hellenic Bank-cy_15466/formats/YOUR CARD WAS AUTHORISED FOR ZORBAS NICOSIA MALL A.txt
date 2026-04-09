@@ -1,4 +1,4 @@
-YOUR CARD \*(\d{4}) WAS AUTHORISED FOR\s+(.+?),\s*([^\d\s]+)(\d[\d\s.,]*)(?=\s+AT\b)
+YOUR\s+CARD\s+\*(\d{4})\s+WAS\s+AUTHORISED\s+FOR\s+(.+?),\s*([^\d\s]+)(\d[\d\s.,]*)(?=\s+AT\b)
 
 -----COLUMNS-----
 syncid;payee;instrument;outcome
