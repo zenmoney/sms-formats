@@ -1,4 +1,4 @@
-(.+?)\s+spent\s+(\S+)\s+(\d[\d\s.,]*)\s+EUR\s+balance:\s+(\S+)\s+(\d[\d\s.,]*)
+(.+?)\s+spent\s+(\S+)\s*(\d[\d\s.,]*)\s+EUR\s+balance:\s+(\S+)\s*(\d[\d\s.,]*)
 
 -----COLUMNS-----
 payee;instrument;outcome;acc_instrument;balance
