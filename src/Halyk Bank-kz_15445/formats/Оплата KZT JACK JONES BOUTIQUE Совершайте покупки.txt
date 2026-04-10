@@ -1,4 +1,4 @@
-\d{2}:\d{2}\s+Оплата\s+\*(\d{4})\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s+(.+?)\.(?!(?:[^║]*)(?:Доступно|Dostupno|осту|ostu|остаток|ostatok))
+\d{2}:\d{2}\s+Оплата\s+\*(\d{4})\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s+(.+?)\.(?:(?!.*(?:Доступно|Dostupno|осту|ostu|остаток|ostatok)).)*$
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee
