@@ -1,7 +1,0 @@
-^(?:YOUR\s+CARD)\s+\*(\d{4})\s+WAS\s+AUTHORISED\s+FOR\s+(.*?),\s+([A-Za-z]{1,3}|\W)\s*([0-9][\d\s.,]*\d)\s+AT\s+09:51$
-
------COLUMNS-----
-syncid;payee;instrument;outcome
-
------EXAMPLE-----
-YOUR CARD *5577 WAS AUTHORISED FOR COSTA COFFEE, €4,60 AT 09:51
