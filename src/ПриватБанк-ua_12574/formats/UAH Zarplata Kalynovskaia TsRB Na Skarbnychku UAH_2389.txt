@@ -1,4 +1,4 @@
-^\+?([\d\s.,]*\d)\s*(?:([A-Z]{3})|₴)\s+((?:(?:Zarp|Зарп)|(?:Zarak?h|Зарах).*(?:rotsent|рот?цент)).*?)\s+(\d\*\d{2})\s+.*(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*(?:([A-Z]{3})|₴).*
+^\+?([\d\s.,]*\d)\s*([A-Z]{3}|.)\s+((?:(?:Zarp|Зарп)|(?:Zarak?h|Зарах).*(?:rotsent|рот?цент)).*?)\s+(\d\*\d{2})\s+.*(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*([A-Z]{3}|.).*
 
 -----COLUMNS-----
 income;instrument;comment;syncid;av_balance;acc_instrument
