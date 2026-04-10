@@ -1,7 +1,0 @@
-Card Ending:\s*(\d{4}).*?At:\s*(.+?)\s*Amount:\s*([A-Z]{3})\s*(\d[\d\s.,]*)\s*Date:\s*(\d{2}\/\d{2}\/\d{4}),.*?Available Limit:\s*([A-Z]{3})\s*(\d[\d,]*[.,]\d{2})
-
------COLUMNS-----
-syncid;payee;instrument;outcome;date#dMy;acc_instrument;av_balance
-
------EXAMPLE-----
-Credit Card Purchase Card Ending: 9102 At: CHOITHRAM TRADING COMP, Abu Dhabi Amount: AED 1.95 Date: 19/02/2026, 09:48 Available Limit: AED 27,029.50
