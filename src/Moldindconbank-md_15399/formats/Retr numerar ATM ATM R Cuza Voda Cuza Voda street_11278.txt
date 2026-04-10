@@ -1,0 +1,7 @@
+Retr\.numerar ATM\s+.*?\s+din\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\.\s+Suma:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Card:\s*\d+\*(\d{4})\.\s+Disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;syncid#cash;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Retr.numerar ATM (ATM121 R. "Cuza Voda" 44 Cuza Voda street) din 06.04.26 21:07. Suma: 150,00 MDL. Card: 5223*1142. Disponibil: 129.850,00 MDL. ║ Tranzactie reusita
