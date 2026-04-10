@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+UA[0-9A-Z]*([0-9]{4})\s+.*?popovnennia rakhunku\.?\s+Zalyshok:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;date#dMy;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+17617.20 UAH 31.03.26 17:51 UA823003350000000262003468859 popovnennia rakhunku. Zalyshok: 700.15 USD

@@ -1,0 +1,7 @@
+Visa\s+(\d{4}):.*?made a\s+([^\d\s])(\d[\d\s.,]*[.,]\d{2})\s+transaction\s+with\s+(.+?)\s+on\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})(?=\s+at\b)
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#dMy
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa 8260: SMIRNOVA,ALEKSANDRA made a $20.15 transaction with WAL-MART #4563 on Mar 15, 2026 at 7:19 PM ET. ║ You have received a notification

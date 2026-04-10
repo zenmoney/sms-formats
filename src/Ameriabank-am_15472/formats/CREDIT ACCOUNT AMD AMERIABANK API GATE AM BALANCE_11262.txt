@@ -1,0 +1,7 @@
+CREDIT ACCOUNT\s*\|\s*(\d[\d\s.,]*)\s*([^\s|,]+)\s*\|\s*[^|,]*?(\d{4})\s*,\s*\|\s*(.+?)\s*\|\s*(\d{2}\.\d{2}\.\d{4})\s*\d{2}:\d{2}\s*\|\s*BALANCE:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s║]+)
+
+-----COLUMNS-----
+income;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+CREDIT ACCOUNT | 97,500.00 AMD | 4083***0727, | AMERIABANK API GATE, AM | 08.04.2026 21:25 | BALANCE: 104,959.76 AMD ║ АРКА транзакции

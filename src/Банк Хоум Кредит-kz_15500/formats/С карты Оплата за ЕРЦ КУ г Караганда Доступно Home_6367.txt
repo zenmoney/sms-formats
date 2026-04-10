@@ -1,7 +1,0 @@
-^С\s+карт.*?(\d{4})\s+.плата.*?([\d\s.,]*\d)\s*([A-Z]{3}|\W)\s+за\s+(.*?)\s+.осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}|\W).*
-
------COLUMNS-----
-syncid;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-С карты *1359 Оплата: 2545.81₸ за ЕРЦ КУ г.Караганда Доступно: 83368.06₸ ║ Home Credit Kazakhstan

@@ -1,0 +1,10 @@
+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+Кешбек:\s*(\d[\d\s.,]*[.,]\d{2})(?:[A-Z]{3})\s+(.+?)\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+\d{2}:\d{2}\s+Картка:\s*\*(\d{4})\s+Доступно:\s*(-?\d[\d\s.,]*[.,]\d{2})([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;cashback;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+190.00UAH Кешбек: 1.42UAH KAZA ZAPOROZHYE UA 14-03-2026 10:58 Картка: *4538 Доступно: 390657.89UAH  ║ Купівля
+
+-----EXAMPLE-----
+158.18UAH Кешбек: 3.17UAH A1146 OKHTYRKA UA 05-02-2023 11:55  Картка: *8524  Доступно: 2081.49UAH ║ Покупка
