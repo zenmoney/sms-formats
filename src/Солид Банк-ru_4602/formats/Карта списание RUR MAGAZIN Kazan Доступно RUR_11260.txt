@@ -1,0 +1,7 @@
+Карта\s+\*(\d{4}):\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2},\s+списание\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+(.+?)\.\s+Доступно\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта *3532: 18.03.2026 16:58, списание 219.98 RUR, MAGAZIN 36, Kazan. Доступно 780.02 RUR.
