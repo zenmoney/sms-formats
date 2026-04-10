@@ -1,0 +1,7 @@
+payment\s+.*\s+is due tomorrow.*║.*Payment reminder
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Your 37.99 PLN payment to Spotify is due tomorrow. Tap for more ║ Payment reminder ⏰
