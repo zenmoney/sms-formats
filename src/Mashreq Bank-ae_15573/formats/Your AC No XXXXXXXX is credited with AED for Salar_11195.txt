@@ -1,0 +1,7 @@
+Your AC No:\s+(?:[X\d]*?)(\d{4})\s+is credited with\s+([A-Z]{3})\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+for\s+([^\.]+)
+
+-----COLUMNS-----
+syncid;instrument;income;comment
+
+-----EXAMPLE-----
+Your AC No: XXXXXXXX8523 is credited with AED 37072.00 for Salary. Login to Online Banking for details.

@@ -1,0 +1,7 @@
+Purchase of\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+on acct\s+\S+\s+at\s+(.+?)\s+on\s+\d{2}:\d{2}:\d{2}\s+(\d{2}-\d{2}-\d{4})\s+Bal\s+([A-Z]{3})\s+(\d[\d\s.,]*)
+
+-----COLUMNS-----
+instrument;outcome;payee;date#dMy;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Purchase of QAR 68.13 on acct SAV at Mc Donalds-JABAL OMAR MAKKAH SA on 16:46:11 19-03-2026 Bal QAR 3041.67 For disputes call 44456789

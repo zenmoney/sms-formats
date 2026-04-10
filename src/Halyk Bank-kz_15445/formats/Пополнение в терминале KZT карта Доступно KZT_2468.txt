@@ -1,4 +1,4 @@
-^Пополн.*?([\d\s.,]*\d)\s*([A-Z]{3}).*\*(\d{4}).*осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^Пополн.*?(\d[\d\s.,]*)\s*([A-Z]{3}).*\*(\d{4}).*Доступно\s+(-?[\d\s.,]*\d)\s*([A-Z]{3})
 
 -----COLUMNS-----
 income;instrument;syncid;av_balance;acc_instrument

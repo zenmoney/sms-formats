@@ -1,0 +1,7 @@
+^ЮMoney.*код.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+ЮMoney: код 3159 CP* WHOOSH.BIKE 03 11 RUB

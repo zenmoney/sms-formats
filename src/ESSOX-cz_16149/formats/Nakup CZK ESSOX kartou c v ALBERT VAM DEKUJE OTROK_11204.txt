@@ -1,0 +1,7 @@
+Nakup\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+.+?\s+kartou\s+c\.\*(\d{4})\;\s*(\d{1,2}\.\d{1,2}\.\d{4})\s+v[^\;]*\;\s*([^\.]+?)\.\s+Dostupny\s+zustatek\s+(-?\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Nakup 19,90 CZK ESSOX kartou c.*0983; 22.3.2026 v 08:09; ALBERT VAM DEKUJE OTROKOVICE. Dostupny zustatek 4 093,39 CZK. Dekujeme. Vas ESSOX
