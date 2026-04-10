@@ -1,4 +1,4 @@
-PAN:\s*\d{6}\*+(\d{4})\s+Amount:\s*(\d[\d\s.,]*?(?:[.,]\d{1,2})?)\s+([^\s]+)\s+([^\s].*?)\s+Balance:\s*(\d[\d\s]*[.,]\d{2})\s+([^\s]+)
+PAN:\s*\d{6}\*+(\d{4})\s+Amount:\s+(\d[\d\s.,]*)\s+([^\s]+)\s+(.+?)\s+Balance:\s+(\d[\d\s.,]*)\s+([^\s]+)\s+║\s+Account credit
 
 -----COLUMNS-----
 syncid;income;instrument;payee;balance;acc_instrument
