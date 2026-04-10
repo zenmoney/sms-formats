@@ -1,0 +1,13 @@
+(\d+)\s+Vasha oplata proshla uspeshno\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Ostatok:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+)
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+7010 Vasha oplata proshla uspeshno 2026-04-03 18:35:33 Summa: 25 BYN Ostatok: 819.35 BYN BLR/MINSK/PERSON TO PERSON MP BSB Vash BSB Bank
+
+-----EXAMPLE-----
+1235 Vasha oplata proshla uspeshno 2025-12-05 14:00:59 Summa: 0.42 BYN Ostatok: 54.91 BYN BLR/MINSK/SUPERMARKET GREEN BAPB Vash BSB Bank
+
+-----EXAMPLE-----
+1235 Vasha oplata proshla uspeshno 2026-01-29 09:40:24 Summa: 25 BYN Ostatok: 3.99 BYN BLR/MINSK/INTERNET-BANKING BSB Vash BSB Bank

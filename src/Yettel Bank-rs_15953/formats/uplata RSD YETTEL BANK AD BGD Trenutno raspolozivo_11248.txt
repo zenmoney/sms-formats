@@ -1,0 +1,10 @@
+\d+\s+\d{4}\*{4}(\d{4}),\s+uplata:\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+(\d{2}\.\d{2}\.\d{4}),\s+(.+?)\s*\.\s*Trenutno raspolozivo:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+21 5574****7060, uplata: 36,000.00 RSD, 22.03.2026, YETTEL.BANK AD        BGD     . Trenutno raspolozivo: 37.008,19 RSD 0,00 EUR    . ║ Transakcija je izvršena
+
+-----EXAMPLE-----
+21 5574****3630, uplata: 60,000.00 RSD, 26.02.2026, YETTEL.BANK AD        NOVI SAD. Trenutno raspolozivo: 60.000,00 RSD     . ║ Transakcija je izvršena

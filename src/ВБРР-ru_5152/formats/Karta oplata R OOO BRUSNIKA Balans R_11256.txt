@@ -1,0 +1,7 @@
+Karta\*(\d{4})\s+\d{2}:\d{2}\s+oplata\s+(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+Balans:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Karta*2856 16:09 oplata 172.15 R OOO "BRUSNIKA" Balans: 37841.26 R

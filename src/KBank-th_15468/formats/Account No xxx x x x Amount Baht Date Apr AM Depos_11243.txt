@@ -1,0 +1,7 @@
+Account No\.\s*.*?(\d{4})\D*?\s+Amount\s+(\d[\d\s.,]*)\s+([A-Za-z]+)\s+Date\s+(\d{1,2}\s+.+?\s+\d{2,4})(?=\s+\d{1,2}:\d{2}\s+[APap][Mm]).*?║\s*Deposit\b
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy
+
+-----EXAMPLE-----
+Account No.  xxx-x-x8847-x Amount 20,000.00 Baht  Date 5 Apr 26  10:11 AM ║ Deposit
