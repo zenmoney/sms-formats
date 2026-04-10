@@ -1,0 +1,7 @@
+You\s+spent\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+at\s+(.+?)\s+using\s+card\s+••••(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+💳 You spent EUR 55.97 at PRIMETEL-ON LINE PAYMENTS using card ••••1314 ║ Eurobank Cyprus
