@@ -1,0 +1,7 @@
+SPISANIE SO SCHETA\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+KARTA\s+#(\d{4})\s+OSTATOK\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+SPISANIE SO SCHETA 3.99 BYN KARTA #7878 OSTATOK 168.32 BYN
