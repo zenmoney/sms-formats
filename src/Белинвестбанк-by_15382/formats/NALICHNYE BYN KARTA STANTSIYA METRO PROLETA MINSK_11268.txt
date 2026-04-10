@@ -1,0 +1,13 @@
+NALICHNYE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+([^\r\n>]+?)\s+>.*?OSTATOK\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+NALICHNYE 100.00 BYN KARTA #1156 04.04.2026 11:47:53 STANTSIYA METRO PROLETA  >MINSK>BY OSTATOK 10.95 BYN
+
+-----EXAMPLE-----
+NALICHNYE 140.00 BYN KARTA #0184 25.12.2025 18:10:19 ATM 908                  >MINSK>BY OSTATOK 5883.27 BYN
+
+-----EXAMPLE-----
+NALICHNYE 450.00 BYN KARTA #8854 27.12.2025 13:40:11 CBU-603/6 BAPB ATM     >MOGILEV>BY OSTATOK 785.00 BYN

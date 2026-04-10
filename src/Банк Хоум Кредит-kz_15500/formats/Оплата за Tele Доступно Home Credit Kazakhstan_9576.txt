@@ -1,7 +1,0 @@
-^(\d{4})\s+Оплата:\s+([0-9][\d\s.,]*\d)([A-Za-z]{1,3}|\W)\s+за\s+(.+?)\s+Доступно:\s+(-?[0-9][\d\s.,]*\d)([A-Za-z]{1,3}|\W)(?:\s*║.*)?$
-
------COLUMNS-----
-syncid;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-0743 Оплата: 100₸ за Tele2 Доступно: 9900₸ ║ Home Credit Kazakhstan

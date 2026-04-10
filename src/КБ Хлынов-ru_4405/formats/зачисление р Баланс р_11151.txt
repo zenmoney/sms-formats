@@ -1,0 +1,7 @@
+\*(\d{4})\s+(\d{2}\.\d{2})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s.,]*)\s*(\S)\s+Баланс\s+(-?\d[\d\s.,]*)\s*(\S)
+
+-----COLUMNS-----
+syncid;date#dM;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+*7196 23.03 11:33 зачисление 372340р Баланс 383422.45р

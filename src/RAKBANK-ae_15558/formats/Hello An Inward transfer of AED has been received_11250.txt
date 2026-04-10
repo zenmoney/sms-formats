@@ -1,0 +1,7 @@
+An Inward transfer of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+has been received and credited to your account\s+[A-Za-z0-9Xx*#-]+?(\d{4})\.\s+Your available balance is\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+instrument;income;syncid;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Hello. An Inward transfer of AED 47.40 has been received and credited to your account XXXXXXX094001. Your available balance is AED 8,357.63.

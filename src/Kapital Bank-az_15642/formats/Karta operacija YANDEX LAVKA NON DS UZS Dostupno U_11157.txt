@@ -1,0 +1,7 @@
+Karta\s+\*(\d{4})\.\s+operacija\s+"([^"]+)",\s*(\d[\d\s.,]*)\s*,\s*([A-Z]{3}),\s*"(\d{2}-\d{2}-\d{4})\s*\d{2}:\d{2}"\.\s+Dostupno:\s+(\d[\d\s.,]*),\s*([A-Z]{3})\.
+
+-----COLUMNS-----
+syncid;payee;outcome;instrument;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta *0478. operacija "YANDEX.LAVKA NON 3DS", 2600.00, UZS, "14-03-2026 02:11". Dostupno: 1033142.00, UZS.
