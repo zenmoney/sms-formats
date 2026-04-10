@@ -1,4 +1,4 @@
-(?![^║]*Кешбек:)(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+\S+\s+-\s*(\d[\d\s.,]*)\s+(\S+)
+^(?!.*[Кк]ешбек:)(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+\S+\s+-\s*(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 payee;balance;acc_instrument;outcome;instrument
