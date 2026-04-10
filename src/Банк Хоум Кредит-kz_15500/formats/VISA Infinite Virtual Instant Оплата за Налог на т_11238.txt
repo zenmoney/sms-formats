@@ -1,0 +1,7 @@
+^(?!С карты)(?!\*?\d{4}\b)(?:[A-Za-zА-Яа-я\s]+)?Оплата:\s+(\d[\d\s.,]*)([^\d\s]+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)([^\d\s]+)
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+VISA Infinite Virtual Instant Оплата: 65476₸ за Налог на транспорт Доступно: 34181.7₸ ║ Home Credit Kazakhstan

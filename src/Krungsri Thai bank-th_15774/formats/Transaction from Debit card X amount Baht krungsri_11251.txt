@@ -1,0 +1,7 @@
+Debit card X-(\d{4}).*?amount\s+(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument
+
+-----EXAMPLE-----
+Transaction from Debit card X-6366 amount 2,090.00 Baht ║ krungsri app

@@ -1,0 +1,7 @@
+The transfer of\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+from the account\s+[\d\s]*?(\d{4})\s+to card\s+(\*+\s*\d{4}|\d{4}).*?Available balance:\s+(-?\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+The transfer of 5000 MDL from the account 22526054815 to card ***7988 has been successfully processed. Available balance: 6352.04 MDL. ║ maibank

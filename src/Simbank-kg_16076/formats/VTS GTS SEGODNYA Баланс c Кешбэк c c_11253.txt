@@ -1,0 +1,7 @@
+^([^\r\n]+?)\s+Баланс\s+(\d[\d\s.,\u00A0]*)\s+(\S+)(?:\s+\S+\s*)?Кешбэк\s+(\d[\d\s.,\u00A0]*)\s+(\S+)
+
+-----COLUMNS-----
+payee;balance;acc_instrument;cashback;instrument
+
+-----EXAMPLE-----
+‎VTS GTS*SEGODNYA 2 Баланс 49 965,12 c̲  🎁 Кешбэк 6.04 c̲ ║ ‎🍞 302 c̲

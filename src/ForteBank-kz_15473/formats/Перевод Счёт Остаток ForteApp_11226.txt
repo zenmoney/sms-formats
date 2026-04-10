@@ -1,0 +1,7 @@
+Перевод:\s*(?:[-−])?(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+Счёт\s*\*(\d{4})\s+Остаток:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод: −2 000.00 ₸ Счёт *1484 Остаток: 108 042.78 ₸ ║ ForteApp
