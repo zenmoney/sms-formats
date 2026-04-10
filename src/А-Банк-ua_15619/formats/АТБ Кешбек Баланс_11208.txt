@@ -1,4 +1,4 @@
-(?:.+?\s+Кешбек:)\s*(\d[\d\s]*[.,]?\d*)\s*(\S+)\s*Баланс:\s*(\d[\d\s]*[.,]\d{2})\s*(\S+)\s*║\s*🛒\s*-?\s*(\d[\d\s]*[.,]\d{2})\s*(\S+)
+(.+?)\s+Кешбек:\s+(\d[\d\s.,]*)\s+(\S+)\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+\S+\s+-\s*(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 cashback;instrument;balance;acc_instrument;outcome;instrument
