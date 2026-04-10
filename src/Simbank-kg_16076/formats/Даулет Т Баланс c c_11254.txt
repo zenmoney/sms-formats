@@ -1,0 +1,10 @@
+[\uFEFF\u200E\u200F]?(.+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s*[\uFEFF\u200E\u200F]*(?:💸|🤑)\s*(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+‎Даулет Т. Баланс 51 409,56 c̲ ║ ‎💸 540 c̲
+
+-----EXAMPLE-----
+‎ElQR Баланс 61 000 c̲ ║ ‎🤑 2000 c̲
