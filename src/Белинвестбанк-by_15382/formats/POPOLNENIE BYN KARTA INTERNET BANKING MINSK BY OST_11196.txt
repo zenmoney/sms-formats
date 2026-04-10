@@ -1,7 +1,0 @@
-POPOLNENIE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(?!POPOLNENIE).*?OSTATOK\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
-
------COLUMNS-----
-income;instrument;syncid;date#dMy;av_balance;acc_instrument
-
------EXAMPLE-----
-POPOLNENIE 200.00 BYN KARTA #6110 15.03.2026 16:54:29 INTERNET-BANKING       >MINSK>BY OSTATOK 203.78 BYN
