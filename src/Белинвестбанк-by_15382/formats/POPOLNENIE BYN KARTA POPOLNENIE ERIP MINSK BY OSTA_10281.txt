@@ -1,7 +1,0 @@
-.*?(?:POPOLNENIE|[Пп]опол[нн]ени[еЕ]).*?([0-9][\d\s.,]*)\s*([A-Za-z]{1,3}).*?(?:KARTA|CARD|КАРТА)\s*[#*]?\s*(\d{2,4}).*?(\d{2}[-./]\d{2}[-./]\d{2,4}).*?\d{2}:\d{2}(?::\d{2})?.*?(?:POPOLNENIE|[Пп]опол[нн]ени[еЕ])\s+(.*?)\s+(?:OSTATOK|ОСТАТОК)\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3}).*
-
------COLUMNS-----
-income;instrument;syncid;date#dMy;payee;balance;acc_instrument
-
------EXAMPLE-----
-POPOLNENIE 400.00 BYN KARTA #0197 09.12.2025 11:01:37 POPOLNENIE ERIP>MINSK>BY OSTATOK 499.39 BYN

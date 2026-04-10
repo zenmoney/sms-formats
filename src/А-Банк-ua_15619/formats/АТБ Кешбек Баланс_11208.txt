@@ -1,7 +1,7 @@
-(?:.+?\s+Кешбек:)\s*(\d[\d\s]*[.,]?\d*)\s*(\S+)\s*Баланс:\s*(\d[\d\s]*[.,]\d{2})\s*(\S+)\s*║\s*🛒\s*-?\s*(\d[\d\s]*[.,]\d{2})\s*(\S+)
+(.+?)\s+Кешбек:\s+(\d[\d\s.,]*)\s+(\S+)\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+\S+\s+-\s*(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
-cashback;instrument;balance;acc_instrument;outcome;instrument
+payee;cashback;instrument;balance;acc_instrument;outcome;acc_instrument
 
 -----EXAMPLE-----
 АТБ Кешбек: 1.6 ₴ Баланс: 55 757.11 ₴ ║ 🛒 -133.40 ₴
