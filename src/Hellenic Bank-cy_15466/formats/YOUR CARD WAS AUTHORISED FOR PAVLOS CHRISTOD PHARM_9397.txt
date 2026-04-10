@@ -1,7 +1,0 @@
-^YOUR CARD \*(\d{4}) WAS AUTHORISED FOR ([^,]*?\S\s{2}\S[^,]*?),\s+([A-Za-z]{1,3}|\W)\s*([0-9][\d\s.,]*\d) AT \d{2}:\d{2}$
-
------COLUMNS-----
-syncid;payee;instrument;outcome
-
------EXAMPLE-----
-YOUR CARD *5577 WAS AUTHORISED FOR PAVLOS CHRISTOD  PHARM, €5,05 AT 09:36
