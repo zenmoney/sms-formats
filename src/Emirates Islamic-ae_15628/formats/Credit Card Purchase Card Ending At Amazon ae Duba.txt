@@ -1,4 +1,4 @@
-Credit Card Purchase\s+Card Ending:\s*:\s*(\d{4}).*?At:\s*(.+?)\s+Amount:\s+([A-Z]{3})\s+(\d[\d\s.,]*?)\s+Date:\s*(\d{2}/\d{2}/\d{4}),.*?Available Limit:\s+[A-Z]{3}\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+Credit Card Purchase\s+Card Ending:\s*:?[\s]*?(\d{4}).*?At:\s*(.+?)\s+Amount:\s+([A-Z]{3})\s*([\d\s.,]*[.,]\d{2})\s+Date:\s*(\d{2}/\d{2}/\d{4}),.*?Available Limit:\s+([A-Z]{3})\s*(-?\d[\d\s.,]*[.,]\d{2})
 
 -----COLUMNS-----
 syncid;payee;instrument;outcome;date#Mdy;av_balance;acc_instrument
