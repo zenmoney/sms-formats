@@ -1,7 +1,0 @@
-^([\d\s.,]*\d)\s*([A-Z]{3}) (?!Переказ|Знят)(.*?)\. (.*?)(?:, ID.*?)? (\d\*\d{2}) [\d:]{5} .*Бал\s*\.? (-?[\d\s.,]*\d)\s*([A-Z]{3}).*
-
------COLUMNS-----
-outcome;instrument;comment;payee;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-99.00UAH Кіно. Multiplex, ID платежу: 2506235636 4*42 18:35 Кешбек 2.97UAH Бал. 199901.00UAH Кред. лiмiт 200000.0UAH

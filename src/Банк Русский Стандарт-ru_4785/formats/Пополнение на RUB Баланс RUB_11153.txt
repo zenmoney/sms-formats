@@ -1,0 +1,7 @@
+Пополнение\s+\*(\d{4})\s+на\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Баланс:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение *4477 на 40000.00 RUB Баланс: 40320.04 RUB

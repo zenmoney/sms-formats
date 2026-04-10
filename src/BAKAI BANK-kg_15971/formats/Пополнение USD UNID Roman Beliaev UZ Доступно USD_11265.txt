@@ -1,0 +1,7 @@
+Пополнение\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+(.*?)(?=,\s+\d{2}\.\d{2}\.\d{2}),\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s+\d{4}\*{3}(\d{4})\s+Доступно:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение 669.28 USD, UNID*Roman Beliaev, UZ, 08.04.26 01:05, 4714***7048 Доступно: 1047.99 USD ║ Транзакция

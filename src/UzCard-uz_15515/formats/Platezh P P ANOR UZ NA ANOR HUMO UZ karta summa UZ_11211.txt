@@ -1,0 +1,7 @@
+Platezh:\s*(.*?)\s*,\s*[^,]+,\s*(\d{2}\.\d{2}\.\d{2})(?=\s*\d{2}:\d{2})\s*\d{2}:\d{2},\s*karta\s+\*+(\d{4})\.\s*summa:\s*(\d[\d\s.,]*)\s*([^\s,]+)\s+balans:\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\s,]+)
+
+-----COLUMNS-----
+payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Platezh: P2P ANOR UZ NA ANOR HUMO, UZ,04.04.26 23:51,karta ***3677. summa:65000.00 UZS balans:742296.09 UZS

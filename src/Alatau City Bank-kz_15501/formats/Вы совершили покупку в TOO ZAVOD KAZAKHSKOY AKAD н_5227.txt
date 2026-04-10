@@ -1,7 +1,0 @@
-^.*окуп\w+\s+в\s+(.*?)\s+на\s+сум.*?([\d\s.,]*\d)\s*([A-Z]{3}|\W)\s+║\s+Покупка.*
-
------COLUMNS-----
-payee;outcome;instrument
-
------EXAMPLE-----
-Вы совершили покупку в TOO ZAVOD KAZAKHSKOY AKAD на сумму 705₸ ║ Покупка

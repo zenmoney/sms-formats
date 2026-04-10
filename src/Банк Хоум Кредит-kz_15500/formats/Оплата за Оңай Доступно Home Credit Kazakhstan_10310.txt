@@ -1,7 +1,10 @@
-^\*(\d{4})\s+Оплата:\s+([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,3}|\W)\s+за\s+(.*?)\s+Доступно:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$|[^\w])\s*([A-Za-z]{1,3}|\W)(?:\s*║.*)?$
+^(?!С карты)\*?(\d{4})\s+Оплата:\s+(\d[\d\s.,]*)\s*(\S+)\s+за\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 *9589 Оплата: 1000₸ за Оңай Доступно: 1298.39₸ ║ Home Credit Kazakhstan
+
+-----EXAMPLE-----
+0743 Оплата: 100₸ за Tele2 Доступно: 9900₸ ║ Home Credit Kazakhstan

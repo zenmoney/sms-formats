@@ -1,0 +1,7 @@
+Debit Card Cash Withdrawal: Amount:\s*-?(\d[\d\s.,]*)\s+([A-Z]{3})\s+Card:\s+\d+\*+(\d{4})\s+Date:\s+(\d{2}/\d{2}/\d{2}),\s*\d{2}:\d{2}\s+Available balance:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Debit Card Cash Withdrawal: Amount: -800,00 PLN Card: 487474******0956    Date: 24/03/26, 13:15 Available balance: 9.681,98 PLN
