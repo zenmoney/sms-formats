@@ -1,0 +1,7 @@
+Paid\s+(\d[\d\s.,]*)\s+([A-Z]{3,5})\s*\(\s*(\d[\d\s.,]*)\s+([A-Z]{3,5})\s*\)\s+at\s+(.+?)\s+[A-Z]{3,5}\s+Balance:\s*(\d[\d\s.,]*[.,]\d+)\s+([A-Z]{3,5})
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+🍽️ Paid 49,56 PLN (13,62755 USDT) at Domino's pizza USDT Balance: 0,95818 USDT ║ Domino's pizza

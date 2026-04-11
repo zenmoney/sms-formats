@@ -1,0 +1,10 @@
+Paid\s+(\S+)\s*(\d[\d\s.,]*)\s*\(\s*(\S+)\s*(\d[\d\s.,]*)\s*\)\s+at\s+(.+?)\s+Available credit:\s+(\S+)\s*(\d[\d\s.,]*)
+
+-----COLUMNS-----
+instrument;outcome;op_instrument;op_outcome;payee;acc_instrument;av_balance
+
+-----EXAMPLE-----
+🌍️️ Paid £210.90 (€244.03) at British Airways Available credit: €3,911.89 ║ British Airways
+
+-----EXAMPLE-----
+🌍️️ Paid £30 (€34.49) at Transport for London Available credit: €3,289.41 ║ Transport for London

@@ -1,0 +1,7 @@
+PAN:\s*\d{6}\*+(\d{4})\s+Amount:\s+(\d[\d\s.,]*)\s+([^\s]+)\s+(.+?)\s+Balance:\s+(\d[\d\s.,]*)\s+([^\s]+)\s+║\s+Account credit
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+PAN: 416973******3309 Amount: 888.1 AZN KAPS Balance: 10201.78 AZN ║ Account credit
