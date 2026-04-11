@@ -1,0 +1,7 @@
+Money Deposit to XXX-1-(?:\d+?)(\d{4})-X by TRANSFER DEPOSIT amount (\d[\d\s,]*(?:[.,]\d{2})?)\s+([A-Za-z]+)
+
+-----COLUMNS-----
+syncid;income;instrument
+
+-----EXAMPLE-----
+Money Deposit to XXX-1-38008-X by TRANSFER DEPOSIT amount 7,720.00 Baht ║ krungsri app
