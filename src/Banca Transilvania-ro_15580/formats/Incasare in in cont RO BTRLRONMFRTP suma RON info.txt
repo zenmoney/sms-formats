@@ -1,0 +1,7 @@
+Incasare in:\s*(\d{2}/\d{2}).*?cont:\s*[A-Z0-9]+?\*+?(\d{2}).*?suma:\s*(\d[\d\s.,]*)\s+([A-Z]{3}),info:\s*(.+)
+
+-----COLUMNS-----
+date#dM;syncid;income;instrument;payee
+
+-----EXAMPLE-----
+Incasare in: 14/04 in cont: RO90BTRLRONMFRTP******01 suma: 74.99 RON,info: ATM POS 10 04 26 TID \IRL\DUBLIN\SIR JO\GOOGLE PLA
