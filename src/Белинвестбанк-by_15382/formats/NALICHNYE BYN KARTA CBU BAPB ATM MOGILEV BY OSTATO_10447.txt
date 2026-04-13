@@ -1,7 +1,0 @@
-^NALICHNYE\s+([0-9][\d\s]*[.,]\d{2})\s*([A-Za-z]{1,3})\s+KARTA\s+#(\d{4})\s+(\d{2}[.-/]\d{2}[.-/]\d{4})\s+\d{2}:\d{2}:\d{2}\s+CBU-\d+/\d+\s+BAPB\s+ATM\s+>[A-Za-z]+>BY\s+OSTATOK\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})$
-
------COLUMNS-----
-outcome;instrument;syncid#cash;date#dMy;balance;acc_instrument
-
------EXAMPLE-----
-NALICHNYE 450.00 BYN KARTA #8854 27.12.2025 13:40:11 CBU-603/6 BAPB ATM     >MOGILEV>BY OSTATOK 785.00 BYN

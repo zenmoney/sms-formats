@@ -1,0 +1,7 @@
+(?i:purchase of)\s+(\d[\d\s.,]*)\s+(\S+)\b.*?(?i:card ending)\s*\*+(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid
+
+-----EXAMPLE-----
+Information: Dear customer, you made a purchase of 45,97 TL with your card ending ****1293. Info: 08502220724 MERSIS: 0922003497000017 B001

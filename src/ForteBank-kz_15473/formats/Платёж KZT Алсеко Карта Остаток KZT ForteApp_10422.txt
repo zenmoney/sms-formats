@@ -1,7 +1,0 @@
-^Платёж:\s*[−-]\s*([0-9][\d\s.,]*)\s*([A-Za-z]{1,3})\s+(.*?)\s+Карта\s*\*(\d{4})\s+Остаток:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})(?:\s*║.*)?$
-
------COLUMNS-----
-outcome;instrument;payee;syncid;balance;acc_instrument
-
------EXAMPLE-----
-Платёж: −36 613.03 KZT Алсеко Карта *3171 Остаток: 97.69 KZT ║ ForteApp
