@@ -1,0 +1,7 @@
+of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2}).*?from\s+(?:\d+X+)?(\d{4})\b
+
+-----COLUMNS-----
+instrument;cashback;syncid
+
+-----EXAMPLE-----
+Hi ! We've received your Cashback redemption request 21532542 of AED 314.00 from 5239XXXXXXXX7383. We'll be in touch shortly.
