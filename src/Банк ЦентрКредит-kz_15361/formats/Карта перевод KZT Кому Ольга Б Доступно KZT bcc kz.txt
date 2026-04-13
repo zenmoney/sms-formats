@@ -1,0 +1,7 @@
+Карта\s+4\*\*(\d{4}):\s*перевод\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Кому:\s*(.+?)\s+Доступно\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта 4**7991: перевод 15000 KZT Кому: Ольга Б. Доступно 263159.86 KZT  ║ bcc.kz
