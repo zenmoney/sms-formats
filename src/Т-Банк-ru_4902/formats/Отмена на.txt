@@ -1,0 +1,7 @@
+Отмена\s+на\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s*(\S+)\s*,\s*счет\s+карты\s+\*(\d{4})\s+Доступно\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s*(\S+)\s+║\s*(.+)
+
+-----COLUMNS-----
+income;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Отмена на 11 ₽, счет карты *8087 Доступно 12 784,96 ₽ ║ Y.M*vezet
