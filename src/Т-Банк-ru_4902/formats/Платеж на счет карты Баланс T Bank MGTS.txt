@@ -1,7 +1,0 @@
-Платеж на\s*(\d[\d\s.,]*)\s*([^\d\s,.\-]+),\s*счет карты \*(\d{4})\s*Баланс\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([^\d\s,.\-]+)
-
------COLUMNS-----
-outcome;instrument;syncid;balance;acc_instrument
-
------EXAMPLE-----
-Платеж на 264,61 ₽, счет карты *0020 Баланс 37 935,25 ₽ ║ T-Bank.MGTS
