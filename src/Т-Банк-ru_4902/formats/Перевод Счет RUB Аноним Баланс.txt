@@ -1,7 +1,0 @@
-Перевод\.\s*Счет\s+\S+\.\s*(\d[\d\s.,]*)\s*(\S+)\.\s*(.+?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
-
------COLUMNS-----
-outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Перевод. Счет RUB. 2431 ₽. Аноним Баланс 3510,75 ₽
