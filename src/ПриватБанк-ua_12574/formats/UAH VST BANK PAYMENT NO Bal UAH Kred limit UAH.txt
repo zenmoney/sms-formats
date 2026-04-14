@@ -1,4 +1,4 @@
-\+(\d[\d\s.,]*)([A-Z]{3})\s+(.+?)\s+\d{1,2}:\d{2}\s+Bal\.\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+\+(\d[\d\s.,]*)([A-Z]{3})\s+(.+?)\s+\d{1,2}:\d{2}\s+Bal\.\s+(-?\d[\d\s.,]*(?:[.,]\d{2})?)\s*([A-Z]{3})
 
 -----COLUMNS-----
 income;instrument;payee;balance;acc_instrument
