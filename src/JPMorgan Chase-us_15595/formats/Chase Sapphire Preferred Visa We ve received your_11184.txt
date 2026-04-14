@@ -1,0 +1,7 @@
+Chase Sapphire Preferred Visa:\s+We've received your\s+([^\s]+)\s?(\d[\d\s.,]*[.,]\d{2})\s+payment\.
+
+-----COLUMNS-----
+instrument;income
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: We've received your $304.78 payment.

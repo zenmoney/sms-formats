@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Cashback\s+(.+?)\s+na\s+rubli\s+Остаток:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3});\s*\*(\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+5700,00 RUB Cashback MTS Premium na rubli Остаток: 6287,96 RUB; *8533

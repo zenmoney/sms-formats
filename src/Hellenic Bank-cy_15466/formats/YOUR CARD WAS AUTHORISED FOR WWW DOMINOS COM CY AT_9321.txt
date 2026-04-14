@@ -1,7 +1,0 @@
-^YOUR CARD \*(\d{4}) WAS AUTHORISED FOR (WWW\s+.*?\s+COM\s+CY),\s+([A-Za-z]{1,3}|\W)\s*([0-9][\d\s.,]*\d)(?=\s+AT\s+\d{2}:\d{2})\s+AT\s+\d{2}:\d{2}$
-
------COLUMNS-----
-syncid;payee;instrument;outcome
-
------EXAMPLE-----
-YOUR CARD *0697 WAS AUTHORISED FOR WWW DOMINOS COM CY, €23,05 AT 18:30

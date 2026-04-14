@@ -1,0 +1,7 @@
+Zruseni transakce\s+.+?\s+kartou\s+c\.\*(\d{4})\s+dne\s+(\d{1,2}\.\d{1,2}\.\d{4})\s+v\s+\d{2}:\d{2}\s+v\s+castce\s+(\d[\d\s.,]*)\s+([A-Z]{3});\s*([^\.]+?)\.\s+Dostupny\s+zustatek\s+(-?\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Zruseni transakce ESSOX kartou c.*0983 dne 22.3.2026 v 07:21 v castce 136,00 CZK; HOSPUDKA U MASINKY OTROKOVICE. Dostupny zustatek 4 432,99 CZK. Dekujeme. Vas ESSOX
