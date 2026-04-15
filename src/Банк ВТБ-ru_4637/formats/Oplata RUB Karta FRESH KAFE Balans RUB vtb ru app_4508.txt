@@ -1,4 +1,4 @@
-^(?:Оплата|Плат|Перевод|Oplata|Perevod).*?([\d\s.,]*\d)\s*([а-яa-zA-Z₽]{1,4})\s*(?:Карта|Счет|Karta|Schet)\s*_?\*(\d{4})\W?\s+([^*]*?)\s*\.?\s*(?:[БбBb])?(?:алан|alan).*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z₽]{1,4}).*
+^(?:Оплата|Плат|Перевод|Oplata|Perevod).*?([\d\s.,]*\d)\s*([A-Za-zА-Яа-я₽рRUR]+)\s*(?:Карта|Счет|Karta|Schet)\s*_?\*(\d{4})\W?\s*(.*?)(?=\s*[БB][АA][ЛL][АA][НN][СS]\b)\s*[БB][АA][ЛL][АA][НN][СS].*?(-?\d[\d\s.,]*)\s*([A-Za-zА-Яа-я₽рRUR]+)
 
 -----COLUMNS-----
 outcome;instrument;syncid;payee;av_balance;acc_instrument
