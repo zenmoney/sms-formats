@@ -1,0 +1,7 @@
+Пополнение по СБП на\s+(\d[\d\s.,]*)\s*(\S+),\s*счет\s+([A-Z]{3})\.\s*(.+?)\.\s*Доступно\s+(\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение по СБП на 1 000 ₽, счет RUB. QR Payments. Доступно 1 122,75 ₽ ║
