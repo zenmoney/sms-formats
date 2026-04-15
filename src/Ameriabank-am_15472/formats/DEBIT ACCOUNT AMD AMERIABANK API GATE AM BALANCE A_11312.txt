@@ -1,0 +1,7 @@
+DEBIT ACCOUNT\s*\|\s*(\d[\d\.,]*[.,]\d{2})\s*([A-Z]{3})\s*\|\s*\d+\*+(\d{4}),\s*\|\s*(.+?)\s*\|\s*(\d{2}\.\d{2}\.\d{4})\s*\d{2}:\d{2}\s*\|\s*BALANCE:\s*([ -]?\d[\d\.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+DEBIT ACCOUNT | 9,432.00 AMD | 4083***0727, | AMERIABANK API GATE, AM | 15.04.2026 08:55 | BALANCE: 35,074.66 AMD ║ АРКА транзакции
