@@ -1,0 +1,7 @@
+\[Web발신\]\s+[^,]+,(\d{2}/\d{2}),\d{2}:\d{2}\s+\d+\*+\d*(\d{4})\s+Dep\.:(\d[\d,]*)\s+Bal\.:(\d[\d,]*)
+
+-----COLUMNS-----
+date#Mdy;syncid;income;balance
+
+-----EXAMPLE-----
+[Web발신] HANABANK,04/15,15:39 102******62107 Dep.:199,000 Bal.:199,000
