@@ -1,4 +1,4 @@
-^(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s+([^\s]+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+([^\s]+)
+(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s+(\S+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)(?:\s+Задолженность)?
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;balance;acc_instrument
