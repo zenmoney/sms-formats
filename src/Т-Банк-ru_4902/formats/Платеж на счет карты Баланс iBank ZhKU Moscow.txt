@@ -1,0 +1,7 @@
+Платеж на\s+(\d[\d\s,]*[.,]\d{2})\s*(\S+),\s*счет карты\s+\*(\d{4})\s+Баланс\s+(\d[\d\s,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Платеж на 7 680,12 ₽, счет карты *0020 Баланс 43 162,48 ₽ ║ iBank.ZhKU Moscow
