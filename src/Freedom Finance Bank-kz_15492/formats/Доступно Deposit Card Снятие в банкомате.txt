@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+([^\s]+)\s+Доступно\s+(\d[\d\s]*[.,]\d{2})\s+([^\s]+).*?\*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;syncid#cash
+
+-----EXAMPLE-----
+-10 000 ₸ Доступно 1 273 976,37 ₸ Deposit Card **3646 ║ Снятие в банкомате
