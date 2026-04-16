@@ -1,4 +1,4 @@
-^(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s+([^\s]+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s+([^\s]+)
+(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;balance;acc_instrument
@@ -20,3 +20,33 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Pokupka **1172: 129 RUR в SHEL-ZASHEL Баланс: 55 428,17 RUR
+
+-----EXAMPLE-----
+Покупка *7902: 424,97р в PEREKRESTOK PODLIPKI Баланс: 61492,75р
+
+-----EXAMPLE-----
+Покупка *6964: 155,96р в MAGNIT MM SAYGON Баланс: 738,39р
+
+-----EXAMPLE-----
+Покупка *1491: 19р в Y.M AMPP Баланс: 48007,01р
+
+-----EXAMPLE-----
+Покупка *0390: 1390,20р в MAGNIT MM STEKLOVANIE Баланс: 2299,27р
+
+-----EXAMPLE-----
+Покупка *0390: 85р в STRELKACARD13. Баланс: 4365,74р
+
+-----EXAMPLE-----
+Покупка *7481: 2711,08р в PYATEROCHKA 20937 Баланс: 28522,46р
+
+-----EXAMPLE-----
+Покупка *7074: 550р в IP LYUTAYA YE.A. Баланс: 23850,60р
+
+-----EXAMPLE-----
+Покупка *1446: 55р в EBK_PROEZD TKPAY_TPP Баланс: 10813,96р
+
+-----EXAMPLE-----
+Покупка *3858: 228р в IP KHAMATSHIN Баланс: 13068,33р
+
+-----EXAMPLE-----
+Покупка *5625: 1656р в WB WILDBERRIES Баланс: 569,55р

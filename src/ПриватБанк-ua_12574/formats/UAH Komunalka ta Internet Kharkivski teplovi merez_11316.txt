@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s*([A-Z]{3})\s+(.+?)\s+\d+\*\d+\s+\d{2}:\d{2}\s+Komisiia\s+(\d[\d\s.,]*)\s*(?:[A-Z]{3})\s+Na Skarbnychku\s+\d[\d\s.,]*\s*(?:[A-Z]{3})\s+Bal\.\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;fee;balance;acc_instrument
+
+-----EXAMPLE-----
+-2 153.71UAH Komunalka ta Internet. Kharkivski teplovi merezhi 5*16 09:47 Komisiia 1UAH Na Skarbnychku 6.29UAH Bal. 90 505.25UAH Kred. limit 90 000UAH
