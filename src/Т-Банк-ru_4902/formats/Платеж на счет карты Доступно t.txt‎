@@ -1,0 +1,7 @@
+Платеж\s+на\s*(\d[\d\s.,]*)\s*(\S+),?\s*счет\s+карты\s+\*(\d{4})\s*Доступно\s*(\d[\d\s.,]*)\s*(\S+)(?:\s+║\s+(.+))?
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Платеж на 170 ₽, счет карты *5556 Доступно 42 829,5 ₽ ║ t2
