@@ -1,0 +1,7 @@
+Пополнение в\s+([^.]+?)\.\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+payee;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение в OzonATM. 3000 RUR. Баланс 3246.85 ₽ ║ Ozon Банк
