@@ -1,0 +1,7 @@
+-(\d[\d\s]*(?:[.,]\d+)?)(?:\s*([A-Z]{3}))\s+(.+?)\s+\d{1,2}:\d{2}\s+Komisiia\s+(\d[\d\s]*(?:[.,]\d+)?)(?:\s*[A-Z]{3})\s+Bal\.\s+(\d[\d\s]*(?:[.,]\d+)?)(?:\s*([A-Z]{3}))
+
+-----COLUMNS-----
+outcome;instrument;payee;fee;balance;acc_instrument
+
+-----EXAMPLE-----
+-96.8UAH Komunalka ta Internet. Naftohaz 5*16 09:47 Komisiia 1UAH Na Skarbnychku 3.2UAH Bal. 89 636.6UAH Kred. limit 90 000UAH
