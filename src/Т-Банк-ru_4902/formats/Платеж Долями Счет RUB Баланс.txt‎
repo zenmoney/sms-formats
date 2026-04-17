@@ -1,7 +1,7 @@
-(Платеж Долями)\.\s+Счет\s+(?:\S+)\.\s*(\d[\d\s.,]*)\s*(\S+)\.\s*Баланс\s+(\d[\d\s.,]*)\s*(\S+)
+(Платеж\s+Долями)\.\s+Счет\s+(\S+)\.\s*(\d[\d\s.,]*)\s*(\S+)\.\s*Баланс\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
-comment;outcome;instrument;balance;acc_instrument
+comment;syncid;outcome;instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 Платеж Долями. Счет RUB. 263 ₽. Баланс 8888,5 ₽

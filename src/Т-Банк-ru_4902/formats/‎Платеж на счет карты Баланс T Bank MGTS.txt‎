@@ -1,4 +1,4 @@
-Платеж на\s*(\d[\d\s.,]*)\s*(\S+),?\s*счет карты \*(\d{4})\s*Баланс\s*(\d[\d\s.,]*)\s*(\S+)(?:\s+║\s+(.+))?
+Платеж\s+на\s*(\d[\d\s.,]*)\s*(\S+),?\s*счет\s+карты\s+\*(\d{4})\s*Баланс\s*(\d[\d\s.,]*)\s*(\S+)(?:\s+║\s+(.+))?
 
 -----COLUMNS-----
 outcome;instrument;syncid;balance;acc_instrument;payee
