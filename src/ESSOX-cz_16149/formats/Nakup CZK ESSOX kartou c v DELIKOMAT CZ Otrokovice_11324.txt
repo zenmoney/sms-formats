@@ -1,0 +1,7 @@
+Nakup\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\S+\s+kartou\s+c\.\*\*(\d+);\s+(\d{1,2}\.\d{1,2}\.\d{4})\s+v\s+\d{1,2}:\d{2};\s+(.+?)\.\s+Dostupny\s+zustatek\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Nakup 6,00 CZK ESSOX kartou c.**983; 17.4.2026 v 21:03; DELIKOMAT CZ 50618 Otrokovice. Dostupny zustatek 9 148,77 CZK. Dekujeme. Vas ESSOX
