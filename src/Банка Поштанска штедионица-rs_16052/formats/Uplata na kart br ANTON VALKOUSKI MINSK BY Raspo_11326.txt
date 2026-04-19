@@ -1,0 +1,7 @@
+Uplata na kart\.br\.\s+(?:[^_\s]+_)(\d{4})\s*/\s*(.*?)\s*/\s*[^/]+?\s*/\s*(\d[\d\s.,]*[.,]\d{2})\s*/\s*Raspolozivo:\s*([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;payee;income;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Uplata na kart.br. 487077_9718 / ANTON VALKOUSKI / MINSK BY / 933 260,00 / Raspolozivo: EUR 77,53
