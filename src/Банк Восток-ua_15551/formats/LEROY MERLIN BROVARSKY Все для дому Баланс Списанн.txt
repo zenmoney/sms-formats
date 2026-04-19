@@ -1,0 +1,7 @@
+(.+?)\s+Баланс:\s+(\d[\d\s.,]*[.,]\d{2})(\S+)\s*║\s*Списання:\s*(\d[\d\s.,]*[.,]\d{2})(\S+)\s+з картки\s+\*(\d{4})
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument;syncid
+
+-----EXAMPLE-----
+LEROY MERLIN BROVARSKY Все для дому Баланс: 42223.60₴ ║ Списання: 65.10₴ з картки *1166
