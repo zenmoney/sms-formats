@@ -1,4 +1,4 @@
-HANABANK,(\d{2}/\d{2}),\d{2}:\d{2}\s+\d+\*+(\d{4})\s+W/D:([\d.,]+)\s*(.+?)?\s*Bal\.:(\d[\d.,]*)
+HANABANK,(\d{2}/\d{2}),\d{2}:\d{2}\s+\d+\*+\d*(\d{4})\s+W/D:([\d.,]+)\s*(.+?)?\s*Bal\.:(\d[\d.,]*)
 
 -----COLUMNS-----
 date#Md;syncid;outcome;payee;av_balance
