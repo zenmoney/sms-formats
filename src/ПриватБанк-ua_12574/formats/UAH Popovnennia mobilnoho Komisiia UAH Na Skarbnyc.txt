@@ -1,7 +1,0 @@
--\s*(\d[\d\s.,]*)\s*([A-Z]{3}).*?Komisiia\s+(\d[\d\s.,]*)\s*[A-Z]{3}.*?Na Skarbnychku\s+(\d[\d\s.,]*)\s*[A-Z]{3}.*?Bal\.?\s+(\d[\d\s.,]*)\s*([A-Z]{3})
-
------COLUMNS-----
-outcome;instrument;fee;cashback;balance;acc_instrument
-
------EXAMPLE-----
--304UAH Popovnennia mobilnoho: +380679106007 5*16 08:36 Komisiia 4UAH Na Skarbnychku 6UAH Bal. 83 330UAH Kred. limit 90 000UAH
