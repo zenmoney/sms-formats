@@ -5,3 +5,6 @@ outcome;instrument;syncid
 
 -----EXAMPLE-----
 Списание 700.00 р. Карта *7805 https://link.atb.su/history
+
+-----EXAMPLE-----
+Списание 5698.20 р. Карта *6950 https://link.atb.su/history
