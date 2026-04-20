@@ -1,0 +1,7 @@
+<#>\s*\d+\s+is your verification code.*Do not share this code
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+<#> 752685 is your verification code for transferring 100 000.00 UZS from 9252 in the SQB Mobile application. Do not share this code with anyone!sS7py+xxuFp
