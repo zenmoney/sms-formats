@@ -1,7 +1,0 @@
--([0-9][\d\s.,]*)\s*(\S)\s+(?:Доступно|доступно)\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*(\S)\s+(?:Списано\s+с)\s+Deposit\s+Card\s+\*\*(\d{4})\s+║\s*Успешная\s+оплата\s+(.*)
-
------COLUMNS-----
-outcome;instrument;av_balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
--6 432 ₸ Доступно 2 249 395,75 ₸ Списано с Deposit Card **3646 ║ Успешная оплата через Freedom QR ТОО "КВАРД LTD"
