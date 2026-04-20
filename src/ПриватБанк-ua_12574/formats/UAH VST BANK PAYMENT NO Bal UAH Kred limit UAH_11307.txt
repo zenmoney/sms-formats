@@ -1,0 +1,10 @@
+\+(\d[\d\s.,]*)([A-Z]{3})\s+(.+?)\s+\d{1,2}:\d{2}\s+Bal\.\s+(-?\d[\d\s.,]*(?:[.,]\d{2})?)\s*([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
++500UAH VST BANK PAYMENT, NO 5*16 12:52 Bal. 93 190UAH Kred. limit 90 000UAH
+
+-----EXAMPLE-----
++5 003.52UAH Pensiia 5*41 13:21 Bal. 6 507.87UAH

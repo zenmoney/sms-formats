@@ -1,0 +1,7 @@
+se cobrarán.*Próximo cargo de impuesto AEAT
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+El 20 de Abril de 2026 se cobrarán 4.960,77 EUR en tu cuenta *2971 de I.R.P.F. - PAGO FRACC. EMPR. Y PROFES.. El cargo se atenderá si hay saldo disponible antes de las 16:30h y se cumplen los requisitos de domiciliación que la AEAT establece. ║ Próximo cargo de impuesto AEAT 🔜 📄
