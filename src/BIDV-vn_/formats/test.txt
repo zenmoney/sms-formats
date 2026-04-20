@@ -1,7 +1,7 @@
-Карта\s+\*(\d{4}):\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2},\s+списание\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+(.+?)\.\s+Доступно\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+TK\s+\d+xxx(\d{4})\s+tai\s+\S+\s+(-?\d[\d,]*)\s*(\S+)\s+vao\s+\d{2}:\d{2}\s+(\d{2}/\d{2}/\d{4})\.\s+So\s+du:(\d[\d,]*)\s*(\S+)\.\s+ND:.*-(.+)
 
 -----COLUMNS-----
-syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+syncid;outcome;instrument;date#dMy;balance;acc_instrument;payee
 
 -----EXAMPLE-----
-Карта *3532: 18.03.2026 16:58, списание 219.98 RUR, MAGAZIN 36, Kazan. Доступно 780.02 RUR.
+TK 880xxx3447 tai BIDV -325,440VND vao 14:11 18/04/2026. So du:102,526VND. ND: Retail-511957******5875-533871-2026-04-16 07:34:10-Lazada VN
