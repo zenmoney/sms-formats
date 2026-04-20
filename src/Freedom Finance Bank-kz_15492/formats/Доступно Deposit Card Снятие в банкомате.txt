@@ -26,3 +26,12 @@ outcome;instrument;av_balance;acc_instrument;syncid;payee
 
 -----EXAMPLE-----
 -4 600 ₸ Доступно 4 254,45 ₸ Списано с Deposit Card **5275 ║ Перевод Абай И.
+
+-----EXAMPLE-----
+-19 260 ₸ Доступно 205 254,65 ₸ Списано с Deposit Card **2720 ║ Списана сумма за билет
+
+-----EXAMPLE-----
+-16 242 ₸ Доступно 29 085,4 ₸ Списано с Deposit Card **2633 ║ Списана сумма за заказ Arbuz.kz
+
+-----EXAMPLE-----
+-6 432 ₸ Доступно 2 249 395,75 ₸ Списано с Deposit Card **3646 ║ Успешная оплата через Freedom QR ТОО "КВАРД LTD"
