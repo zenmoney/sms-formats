@@ -1,7 +1,0 @@
-^To[\'’]lov:\s*(.*?),(?=\s*\d+\s*,)\s*(\d+),(\d{2}[./]\d{2}[./]\d{2})\s+\d{2}:\d{2},\s*karta\s+\*{3}(\d{4})\.\s*Miqdor:([0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,5})\s+Qoldiq:(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,5})$
-
------COLUMNS-----
-payee;comment;date#dMy;syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-To'lov: OOO CLICK, 99,23.06.25 23:28,karta ***6334. Miqdor:495000.00 UZS Qoldiq:18054127.87 UZS

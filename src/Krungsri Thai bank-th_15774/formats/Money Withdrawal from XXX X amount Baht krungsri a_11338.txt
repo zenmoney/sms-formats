@@ -1,0 +1,7 @@
+Money Withdrawal from XXX-1-[^-]*?(\d{4})-X\s+amount\s+(\d[\d\s.,]*[.,]\d{2})\s+([^║]+?)\s+║
+
+-----COLUMNS-----
+syncid;outcome;instrument
+
+-----EXAMPLE-----
+Money Withdrawal from XXX-1-38008-X amount 15,000.00 Baht ║ krungsri app

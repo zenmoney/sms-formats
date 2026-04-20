@@ -1,7 +1,0 @@
-^([A-Z]{3}|\W)\s*([\d\s.,]*\d)\s+sent\s+by\s+(.*?)\s+and\s+has\s+been\s+credit.*?\dX+(\d{4}).*
-
------COLUMNS-----
-instrument;income;payee;syncid
-
------EXAMPLE-----
-AED 14,428.53 sent by INTERNATIONAL SCIENTIFIC PU.A.FZCO and has been credited into your account number 69XXXX5646.

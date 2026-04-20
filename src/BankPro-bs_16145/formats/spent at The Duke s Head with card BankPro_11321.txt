@@ -1,0 +1,7 @@
+([^\d\s])(\d[\d\s.,]*)\s+spent at\s+(.+?)\s+with card\s+••\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+£9.55 spent at The Duke's Head with card •• 7330 ║ BankPro

@@ -1,7 +1,0 @@
-^Online to'lov:\s*([^,]*\d[^,]*,\s*[A-Z]{2}),(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s*karta\s+\*{3}(\d{4})\.\s*Miqdor:\s*([0-9][\d\s.,]*[.,]\d{2})\s*([A-Za-z]{1,3})\.\s*Qoldiq:\s*(-?[0-9][\d\s]*[.,]\d{2})\s*([A-Za-z]{1,3})\s*$
-
------COLUMNS-----
-payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-Online to'lov: OFB UZCARD2PAYNET, UZ,20.06.25 12:29,karta ***5617. Miqdor:200000.00 UZS. Qoldiq:3856422.85 UZS
