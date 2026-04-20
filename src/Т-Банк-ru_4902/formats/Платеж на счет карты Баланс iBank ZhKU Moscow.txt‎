@@ -1,4 +1,4 @@
-Платеж на\s+(\d[\d\s,]*[.,]\d{2})\s*(\S+),\s*счет карты\s+\*(\d{4})\s+Баланс\s+(\d[\d\s,]*[.,]\d{2})\s*(\S+)
+Платеж\s+на\s+(\d[\d\s,]*)\s*(\S+),\s*счет\s+карты\s+\*(\d{4})\s+Баланс\s+(\d[\d\s,]*)\s*(\S+)
 
 -----COLUMNS-----
 outcome;instrument;syncid;balance;acc_instrument
