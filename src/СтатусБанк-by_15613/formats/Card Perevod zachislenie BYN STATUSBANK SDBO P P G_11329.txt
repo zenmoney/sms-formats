@@ -1,0 +1,7 @@
+Card(\d{4});\s*Perevod \(zachislenie\):\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*(.*?)(?=\s*;\s*Dostupno:)\s*;\s*Dostupno:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card4540; Perevod (zachislenie): 31,00 BYN; 17.04.26 02:14:49; STATUSBANK SDBO P2P,G. MINSK,BY; Dostupno: 16,04 USD

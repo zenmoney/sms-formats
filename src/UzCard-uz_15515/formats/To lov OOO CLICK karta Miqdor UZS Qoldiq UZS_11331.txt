@@ -1,0 +1,31 @@
+(?:Online\s+t|T)o[\'’]lov:\s+(.+?),\s+(?:UZ|\d{2}),(\d{2}[./]\d{2}[./]\d{2})\s+\d{2}:\d{2},\s*karta\s+\*{3}(\d{4})\.\s+Miqdor:(\d[\d\s.,]*)\s+([A-Za-z]{1,5})\.?\s+Qoldiq:(-?\d[\d\s.,]*)\s+([A-Za-z]{1,5})
+
+-----COLUMNS-----
+payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+To'lov: OOO CLICK, 99,23.06.25 23:28,karta ***6334. Miqdor:495000.00 UZS Qoldiq:18054127.87 UZS
+
+-----EXAMPLE-----
+To’lov: IFB U2H P, UZ,09.06.25 09:40,karta ***6334. Miqdor:601500.00 UZS Qoldiq:1086037.78 UZS
+
+-----EXAMPLE-----
+To'lov: OFB P2P UZCARD2HUMO, UZ,17.06.25 11:52,karta ***5617. Miqdor:50250.00 UZS Qoldiq:4715932.85 UZS
+
+-----EXAMPLE-----
+Online to'lov: CLICK OPLATA, UZ,11.06.25 19:26,karta ***9249. Miqdor:20000.00 UZS. Qoldiq:3785570.00 UZS
+
+-----EXAMPLE-----
+Online to'lov: MCHJ UNIVERSAL MOBILE SYSTEMS CLICK, UZ,10.06.25 22:20,karta ***6334. Miqdor:40000.00 UZS. Qoldiq:452748.31 UZS
+
+-----EXAMPLE-----
+Online to'lov: OFB UZCARD2PAYNET, UZ,20.06.25 12:29,karta ***5617. Miqdor:200000.00 UZS. Qoldiq:3856422.85 UZS
+
+-----EXAMPLE-----
+Online to'lov: OOO YANDEXGO UB, UZ,14.07.25 16:59,karta ***8701. Miqdor:4500.00 UZS. Qoldiq:386029.06 UZS
+
+-----EXAMPLE-----
+Online to'lov: PAYME OPLATA, UZ,09.06.25 19:40,karta ***8422. Miqdor:97500.00 UZS. Qoldiq:2770826.23 UZS
+
+-----EXAMPLE-----
+Online to'lov: IP OOO ANGLESEY FOOD, UZ,18.04.26 17:56,karta ***1180. Miqdor:192379.84 UZS. Qoldiq:560124.55 UZS

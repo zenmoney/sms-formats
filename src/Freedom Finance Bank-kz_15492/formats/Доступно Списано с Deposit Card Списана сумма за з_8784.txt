@@ -1,7 +1,0 @@
--\s*([0-9][\d\s.,]*)\s*([^ \d\s]{1,3}|[A-Za-z]{1,3})\s+Доступно\s+([0-9][\d\s.,]*)\s*([^ \d\s]{1,3}|[A-Za-z]{1,3})\s+Списано\s+с\s+Deposit\s+Card\s+\*\*(\d{4})\s+║\s*Списана\s+сумма\s+за\s+заказ\s+(.*)$
-
------COLUMNS-----
-outcome;instrument;av_balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
--16 242 ₸ Доступно 29 085,4 ₸ Списано с Deposit Card **2633 ║ Списана сумма за заказ Arbuz.kz

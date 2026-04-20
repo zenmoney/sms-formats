@@ -1,4 +1,4 @@
-Пополнение\s+\*(\d+)\s+на\s+(\d[\d\s.,]*)\s+(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+Пополнение\s+\*(\d+)\s+на\s+(\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;income;instrument;balance;acc_instrument
@@ -11,3 +11,9 @@ syncid;income;instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 Пополнение *6502 на 752,50 RUR Баланс: 139 978,80 RUR
+
+-----EXAMPLE-----
+Пополнение *1662 на 625,37р Баланс: 1085,37р
+
+-----EXAMPLE-----
+Пополнение *8825 на 250р Баланс: 2531,80р
