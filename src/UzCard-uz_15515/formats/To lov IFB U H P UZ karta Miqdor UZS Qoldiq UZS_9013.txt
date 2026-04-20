@@ -1,7 +1,0 @@
-To’lov:\s*(.*?)(?=,\d{2}\.\d{2}\.\d{2})\s*,\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s*karta\s+\*{3}(\d{4})\.\s*Miqdor:([0-9][\d\s.,]*\d)\s+([A-Za-z]{2,5})\s+Qoldiq:([0-9][\d\s.,]*\d)\s+([A-Za-z]{2,5})
-
------COLUMNS-----
-payee;date#dMy;syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-To’lov: IFB U2H P, UZ,09.06.25 09:40,karta ***6334. Miqdor:601500.00 UZS Qoldiq:1086037.78 UZS
