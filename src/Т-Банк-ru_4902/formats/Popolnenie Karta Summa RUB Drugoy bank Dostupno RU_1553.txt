@@ -1,4 +1,4 @@
-(?:Пополнение|Popolnenie)[.,]?\s+(?:Карта|Karta)\s*_\s*(\d{4})\.\s+(?:Summa\s+)?(\d[\d\s.,]*)\s+(\S+|[₽$€])\.\s*(.+?)?\s*(?:Доступно|Dostupno)\s+(\d[\d\s.,]*)\s+(\S+|[₽$€])
+(?:Пополнение|Popolnenie)[.,]?\s+(?:Карта|Karta|счет\s+карты)\s*\*\s*(\d{4})\.\s+(?:Summa\s+)?(\d[\d\s.,]*)\s+(\S+|[₽$€])\.\s*(.+?)?\s*(?:Доступно|Dostupno)\s+(\d[\d\s.,]*)\s+(\S+|[₽$€])
 
 -----COLUMNS-----
 syncid;income;instrument;payee;av_balance;acc_instrument
