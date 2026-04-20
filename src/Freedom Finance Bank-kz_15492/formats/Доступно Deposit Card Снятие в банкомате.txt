@@ -1,4 +1,4 @@
--(\d[\d\s.,]*)\s+([^\s]+)\s+Доступно\s+(\d[\d\s]*[.,]\d{2})\s+([^\s]+).*?\*\*(\d{4})
+-(\d[\d\s.,]*)\s+(\S+)\s+Доступно\s+(\d[\d\s.,]*)\s+(\S+)\s+Списано с\s+(?:\S+\s+)?\*\*(\d{4})
 
 -----COLUMNS-----
 outcome;instrument;av_balance;acc_instrument;syncid#cash
