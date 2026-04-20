@@ -1,7 +1,0 @@
-^Online to'lov:\s+CLICK OPLATA,\s*UZ,\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s*karta\s+\*{3}(\d{4})\.\s*Miqdor:([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,3})\.\s*Qoldiq:([0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})$
-
------COLUMNS-----
-date#dMy;syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-Online to'lov: CLICK OPLATA, UZ,11.06.25 19:26,karta ***9249. Miqdor:20000.00 UZS. Qoldiq:3785570.00 UZS

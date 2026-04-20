@@ -1,7 +1,10 @@
-[\uFEFF\u200E\u200F]?(.+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s*[\uFEFF\u200E\u200F]*(?:💸|🤑)\s*(\d[\d\s.,]*)\s+(\S+)
+[\u200E\u200F\uFEFF]*([^\r\n]+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s*║\s*(?:[^\s\w]+\s*)?(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+‎VTS APTEKA Баланс 47 973,67 c̲ ║ ‎💉 47 c̲
 
 -----EXAMPLE-----
 ‎Даулет Т. Баланс 51 409,56 c̲ ║ ‎💸 540 c̲
