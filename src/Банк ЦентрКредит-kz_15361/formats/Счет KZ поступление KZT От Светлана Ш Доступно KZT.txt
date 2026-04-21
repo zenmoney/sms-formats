@@ -1,0 +1,7 @@
+Счет KZ\*\*(\d+):\s*поступление\s+(\d[\d\s.,]*)\s+([A-Z]{3}).*?От:\s+(.+?)\s+Доступно\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счет KZ**1917: поступление 15000 KZT От: Светлана Ш. Доступно 32000 KZT  ║ bcc.kz
