@@ -35,3 +35,6 @@ syncid;income;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Пополнение, счет RUB. 1485 ₽. Доступно 3787,73 ₽
+
+-----EXAMPLE-----
+Пополнение. Счет RUB. 40000 RUB. Банкомат. Доступно 342472.36 RUB
