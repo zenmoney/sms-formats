@@ -1,7 +1,0 @@
-ECMC(\d{4})\s+.*?Оплата\s+(\d[\d\s.,]*)\s*(\S+)\s+Комиссия\s+(\d[\d\s.,]*)(?:\s*\S+)?\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;fee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты ECMC0669 10:52 Оплата 2100р Комиссия 21р  Баланс: 43 549.49р

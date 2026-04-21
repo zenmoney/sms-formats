@@ -1,7 +1,0 @@
-VISA(\d{4}).*?Оплата\s+(\d[\d\s.,]*)\s*([^\s]+).*?Комиссия\s+(\d[\d\s.,]*)\s*(?:[^\s]+)\s+(.+?)\s+Баланс:\s*(-?\d[\d\s\u00A0.,]*)\s*([^\s]+)
-
------COLUMNS-----
-syncid;outcome;instrument;fee;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты VISA4224 17:40 Оплата 1200р Комиссия 18р АО "T-Банк" Баланс: 22 941р

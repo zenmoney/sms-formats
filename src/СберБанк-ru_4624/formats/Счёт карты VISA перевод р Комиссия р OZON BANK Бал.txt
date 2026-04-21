@@ -1,7 +1,0 @@
-VISA(\d{4})\s+\d{2}:\d{2}\s+перевод\s+(\d[\d\s.,]*)(\S+)\s+Комиссия\s+(\d[\d\s.,]*)(?:\S+)\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*[.,]\d{2})(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;fee;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты VISA4509 09:33 перевод 6941.73р Комиссия 86.77р OZON BANK Баланс: 25 346.21р
