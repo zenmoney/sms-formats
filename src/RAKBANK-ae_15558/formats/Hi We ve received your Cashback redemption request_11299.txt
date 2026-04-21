@@ -1,0 +1,7 @@
+Cashback redemption request.*?We'll be in touch shortly
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Hi ! We've received your Cashback redemption request 21532542 of AED 314.00 from 5239XXXXXXXX7383. We'll be in touch shortly.

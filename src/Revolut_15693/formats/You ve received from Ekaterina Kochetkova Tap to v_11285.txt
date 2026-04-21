@@ -1,0 +1,7 @@
+You've received\s+(\S)\s*(\d[\d\s.,]*)\s+from\s+(.+?)\.
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+You've received €200 from Ekaterina Kochetkova. Tap to view ║ You've been sent money ✅
