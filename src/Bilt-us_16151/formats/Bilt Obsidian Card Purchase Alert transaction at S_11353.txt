@@ -1,0 +1,10 @@
+Bilt Obsidian Card Purchase Alert:\s+(\$)(\d[\d.,]*)\s+transaction at\s+(.+?)\s+on card ending in\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+Bilt Obsidian Card Purchase Alert: $76.24 transaction at Safeway on card ending in 4478
+
+-----EXAMPLE-----
+Bilt Obsidian Card Purchase Alert: $23.29 transaction at McDonald's on card ending in 0939
