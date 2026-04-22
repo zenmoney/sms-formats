@@ -1,0 +1,7 @@
+Visa\s+(\d{4})[:]? .*?has a\s+(\S)(\d[\d\s.,]*[.,]\d{2}).*?from\s+(.+?)(?=(?:\.\s*║|\s*║|\.\s+You|\s+You|$))
+
+-----COLUMNS-----
+syncid;instrument;income;payee
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa 8260: SMIRNOVA,ALEKSANDRA has a $17.26 pending credit from H&M  0409AURORA. ║ You have received a notification
