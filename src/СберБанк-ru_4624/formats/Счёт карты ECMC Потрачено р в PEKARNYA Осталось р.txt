@@ -1,0 +1,7 @@
+Счёт карты\s+\S*?(\d{4}).*?Потрачено\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s+(\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты ECMC4004 15:59 👍 Потрачено 370р в PEKARNYA Осталось: 525.87р
