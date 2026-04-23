@@ -1,0 +1,7 @@
+Перевод\.\s+Счет\s+(\S+?)\.\s+(\d[\d\s.,]*)\s+\S+\.\s+Баланс\s+(-?\d[\d\s]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+instrument;outcome;balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод. Счет RUB. 14840 ₽. Баланс 14163,45 ₽
