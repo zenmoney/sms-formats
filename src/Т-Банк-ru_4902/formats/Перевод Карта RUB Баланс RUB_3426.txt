@@ -1,7 +1,7 @@
-(?:Перевод|Оплата)\.\s+(?:Карта\s+\*|Счет\s+)(\d{4})\.\s+(\d[\d\s.,]*)\s+(\S+)\.\s*Баланс\s+(\d[\d\s.,]*)\s+(\S+)
+(?:Перевод|Оплата)\.\s+(?:Карта\s+\*|Счет\s+)(\d{4})\.\s+(\d[\d\s.,]*)\s+(\S+)\.\s*(.+?)?\s*Баланс\s+(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;av_balance;acc_instrument
+syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Перевод. Карта *1691. 139 RUB. Баланс 4049.78 RUB
