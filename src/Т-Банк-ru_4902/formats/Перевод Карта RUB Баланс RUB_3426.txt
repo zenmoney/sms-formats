@@ -11,3 +11,9 @@ syncid;outcome;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Оплата. Карта *2374. 1735.78 RUB. Баланс 116078.06 RUB
+
+-----EXAMPLE-----
+Перевод. Карта *0614. 6500 RUB. . Баланс 45867.68 RUB
+
+-----EXAMPLE-----
+Перевод. Карта *9383. 310 RUB. Kurovskiy Marat. Баланс 39949.67 RUB
