@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate format files: names, columns, regex match, group count, no cross-match."""
+
 import argparse
 import sys
 from pathlib import Path
@@ -161,9 +162,7 @@ def _collect_validation_errors():
     errors.extend(_check_bank_folder_names(src_dir))
     companies = list_companies()
     for company in companies:
-        bank_dir_name = (
-            f"{company.name}_{company.id}" if company.id is not None else company.name
-        )
+        bank_dir_name = f"{company.name}_{company.id}" if company.id is not None else company.name
         bank_path = src_dir / bank_dir_name
         bank_name = company.name
         if bank_name != clean_name(bank_name):
@@ -235,9 +234,7 @@ def _apply_validation_fixes(errors):
                 parsed = parse_name_with_id(stem)
                 id_part = parsed["id"]
                 new_stem = (
-                    f"{err.expected_name}_{id_part}"
-                    if id_part is not None
-                    else err.expected_name
+                    f"{err.expected_name}_{id_part}" if id_part is not None else err.expected_name
                 )
                 new_path = path.parent / f"{new_stem}.txt"
                 if str(new_path) != err.file_path:
