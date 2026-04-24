@@ -1,7 +1,7 @@
-^.*(?:Перевод|Оплата).*?(\d{4}|[A-Z]{3})\.([\d\s.,]*\d)\s*([A-Z]{3})\.[^.]*алан.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+(?:Перевод|Оплата|Платеж|Операция)\.\s+(?:Карта\s+\*|Счет\s+)(\d{4})\.\s+(\d[\d\s.,]*)\s+(\S+)\.\s*(.+?)?\s*Баланс\s+(-?\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;av_balance;acc_instrument
+syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Перевод. Карта *1691. 139 RUB. Баланс 4049.78 RUB
@@ -13,4 +13,13 @@ syncid;outcome;instrument;av_balance;acc_instrument
 Оплата. Карта *2374. 1735.78 RUB. Баланс 116078.06 RUB
 
 -----EXAMPLE-----
-Перевод. Счет RUB. 5,86 RUB. Баланс 11160 RUB
+Перевод. Карта *0614. 6500 RUB. . Баланс 45867.68 RUB
+
+-----EXAMPLE-----
+Перевод. Карта *9383. 310 RUB. Kurovskiy Marat. Баланс 39949.67 RUB
+
+-----EXAMPLE-----
+Платеж. Карта *4998. 200 RUB. MTS. Баланс -9465.99 RUB
+
+-----EXAMPLE-----
+Оплата. Карта *8954. 57.6 RUB. . Баланс 190.71 RUB
