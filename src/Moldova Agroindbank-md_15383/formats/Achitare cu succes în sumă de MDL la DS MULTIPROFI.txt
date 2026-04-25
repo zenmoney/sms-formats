@@ -1,0 +1,7 @@
+Achitare cu succes în sumă de (\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+cu cardul\s+\*+(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})(?=\.)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 12 MDL la DS MULTIPROFIL cu cardul ***7988. Sold disponibil: 1904.22 MDL. ║
