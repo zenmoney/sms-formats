@@ -1,0 +1,7 @@
+Transfer/Withdrawal from your account X(\d{4})\s+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+via.*?(\d{2}/\d{2}/\d{2})\s+\d{2}:\d{2}\s+The available balance is\s+(-?\d[\d\s.,]*[.,]\d{2})([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transfer/Withdrawal from your account X4640 706.96THB via DBCARD 22/04/26 21:23 The available balance is 4,469.99THB ║ Bangkok Bank

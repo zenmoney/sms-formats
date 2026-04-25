@@ -1,0 +1,7 @@
+(?:Перевод|Perevod)\.\s+Накопительный\s+счет\.?\s*(Накопит\S+)?\.\s*(\d[\d\s.,]*)\s+(\S+)\.\s*(.+?)?\s*Баланс\s+(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод. Накопительный счет. 3000 RUB. . Баланс 0.79 RUB
