@@ -1,7 +1,0 @@
-(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s*║\s*🍾\s*\+\s?(\d[\d\s.,]*[.,]\d{2})\s*(\S+)
-
------COLUMNS-----
-comment;balance;acc_instrument;income;instrument
-
------EXAMPLE-----
-Заробiтна плата Баланс: 23 065.23 ₴ ║ 🍾 +1 332.10 ₴
