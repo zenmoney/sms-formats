@@ -1,0 +1,7 @@
+Счет\s+([A-Z]{3})\.\s+(\d[\d\s.,]*)\s+[^\s.]+\.\s+(.+?)\.\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([^\s.]+)
+
+-----COLUMNS-----
+instrument;outcome;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Платеж. Счет RUB. 800 ₽. МТС. Баланс 6147,91 ₽
