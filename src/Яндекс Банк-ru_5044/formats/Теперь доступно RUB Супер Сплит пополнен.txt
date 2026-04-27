@@ -1,7 +1,7 @@
-Теперь доступно:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s*║\s*(.+)
+Теперь доступно:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s*║\s*(Супер Сплит)\s+(.+)
 
 -----COLUMNS-----
-av_balance;acc_instrument;comment
+av_balance;acc_instrument;syncid;comment
 
 -----EXAMPLE-----
 Теперь доступно: 49148.62 RUB ║ Супер Сплит пополнен
