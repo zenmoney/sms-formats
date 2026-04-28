@@ -4,13 +4,19 @@
 syncid;instrument;outcome;payee;date#Mdy
 
 -----EXAMPLE-----
-Chase Freedom Unlimited Visa: You made a $7.99 transaction with McDonalds 11853 on Apr 28, 2026 at 8:40 AM ET.
+Chase Sapphire Preferred Visa: You made a $3.44 transaction with CHARGEPOINT. INC on Feb 17, 2026 at 5:15 PM ET.
 
 -----EXAMPLE-----
 Amazon Visa: You made a $34.87 transaction with PANERA BREAD #606317 on Aug 12, 2023 at 12:07 PM ET.
+
+-----EXAMPLE-----
+Amazon Rewards Visa: You made a $18.39 transaction with Catch_Air_Austin on Aug 13, 2023 at 3:03 PM ET.
 
 -----EXAMPLE-----
 Chase Freedom Unlimited: You made a $8.34 transaction with JETS PIZZA - TX-020 on Feb 20, 2023 at 1:21 PM ET.
 
 -----EXAMPLE-----
 Chase Sapphire Preferred Visa: You made a $8.25 transaction with DONUT WHEEL on Feb 21, 2026 at 6:41 PM ET.
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: You made a $7.99 transaction with McDonalds 11853 on Apr 28, 2026 at 8:40 AM ET.
