@@ -1,7 +1,0 @@
-Платеж\. Счет\s+.+?\.\s+(\d[\d\s.,]*)\s+(\S+)\.\s+(.+?)\.\s+Баланс\s+(-?\d[\d\s]*(?:[.,]\d{1,2})?)\s+(\S+)
-
------COLUMNS-----
-outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Платеж. Счет RUB. 800 ₽. Т-Мобайл. Баланс 14570,4 ₽
