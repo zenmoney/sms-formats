@@ -1,7 +1,0 @@
-📉[\s\u00A0]*(\d[\d\s\u00A0.,]*[.,]\d{2})[\s\u00A0]*(\S+)[\s\u00A0]*••[\s\u00A0]*(\d{4})[\s\u00A0]*║[\s\u00A0]*[-\u2212\u2796\u2797]?[\s\u00A0]*(\d[\d\s\u00A0.,]*)[\s\u00A0]*(\S+)[\s\u00A0]*(.+)
-
------COLUMNS-----
-balance;acc_instrument;syncid;outcome;instrument;payee
-
------EXAMPLE-----
-📉 135 494,22 ₽ •• 9842 ║ ➖ 1 200 ₽ Happy City
