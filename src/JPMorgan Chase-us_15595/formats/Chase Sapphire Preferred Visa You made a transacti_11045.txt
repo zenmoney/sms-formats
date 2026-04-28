@@ -1,7 +1,7 @@
-You made a\s+(\S+)\s*(\d[\d\s.,]*)\s+transaction with\s+(.+?)\s+on\s+([A-Za-z]+\s\d{1,2},\s\d{4})\s+at
+(.*):\s+You made a\s+(\S)\s*(\d[\d\s.,]*)\s+transaction with\s+(.+?)\s+on\s+([A-Za-z]+\s\d{1,2},\s\d{4})\s+at
 
 -----COLUMNS-----
-instrument;outcome;payee;date#dMy
+syncid;instrument;outcome;payee;date#Mdy
 
 -----EXAMPLE-----
 Chase Sapphire Preferred Visa: You made a $3.44 transaction with CHARGEPOINT. INC on Feb 17, 2026 at 5:15 PM ET.
@@ -17,3 +17,6 @@ Chase Freedom Unlimited: You made a $8.34 transaction with JETS PIZZA - TX-020 o
 
 -----EXAMPLE-----
 Chase Sapphire Preferred Visa: You made a $8.25 transaction with DONUT WHEEL on Feb 21, 2026 at 6:41 PM ET.
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: You made a $7.99 transaction with McDonalds 11853 on Apr 28, 2026 at 8:40 AM ET.
