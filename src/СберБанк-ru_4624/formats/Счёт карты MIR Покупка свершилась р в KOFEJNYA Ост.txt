@@ -1,7 +1,0 @@
-MIR-(\d+).*?Покупка.*?(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s*(\d[\d\s.,]*(?:[.,]\d+)?)(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты MIR-7855 14:42 Покупка свершилась! 140р в KOFEJNYA Осталось: 150 895.9р

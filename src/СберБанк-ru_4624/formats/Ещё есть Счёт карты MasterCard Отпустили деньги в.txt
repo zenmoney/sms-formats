@@ -1,7 +1,0 @@
-(\d[\d\s.,]*)\s*(\S+)\s*—\s*Ещё есть:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+).*?Счёт карты\s+.*?(\d{4})
-
------COLUMNS-----
-outcome;instrument;balance;acc_instrument;syncid
-
------EXAMPLE-----
-4 350 ₽ — Ещё есть: 32 780,96 ₽ Счёт карты MasterCard •• 3576 ║ Отпустили деньги в Банк Уралсиб
