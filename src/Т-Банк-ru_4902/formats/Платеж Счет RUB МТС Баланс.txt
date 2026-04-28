@@ -11,3 +11,6 @@ syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Платеж. Счет RUB. 486 RUB. Petroelektro. Баланс 7776.26 RUB
+
+-----EXAMPLE-----
+Платеж. Счет RUB. 800 ₽. Т-Мобайл. Баланс 14570,4 ₽
