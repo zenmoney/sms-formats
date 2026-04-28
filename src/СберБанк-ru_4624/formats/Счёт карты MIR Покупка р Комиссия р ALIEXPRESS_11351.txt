@@ -1,0 +1,7 @@
+MIR-(\d{4})\s+\d{1,2}:\d{2}\s+Покупка\s+(\d[\d\s.,]*)\s*(\S+)\s+Комиссия\s+(\d[\d\s.,]*)\s*\3\s+(.+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;fee;payee
+
+-----EXAMPLE-----
+Счёт карты MIR-0960 10:37 Покупка 5647.58р Комиссия 70.59р ALIEXPRESS

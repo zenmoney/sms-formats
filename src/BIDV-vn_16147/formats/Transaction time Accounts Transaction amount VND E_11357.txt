@@ -1,0 +1,7 @@
+Transaction time:\s*\d{2}:\d{2}\s+(\d{2}\/\d{2}\/\d{4}).*?Accounts:\s*\d*(\d{4}).*?Transaction amount:\s*-?(\d[\d,]*)\s*([A-Z]{3}).*?Ending balance:\s*([0-9][\d,]*)\s*([A-Z]{3}).*?Transaction note:\s*(.*?)\s*Transaction code:
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Transaction time: 18:41 22/04/2026 Accounts: 8808493447 Transaction amount: -500,000 VND Ending balance: 567,380 VND Transaction note: 8818493479 Bulochke Transaction code: 0391pZUu-88Ya7hD3N ║ Thông báo BIDV
