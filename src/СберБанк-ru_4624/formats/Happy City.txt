@@ -1,7 +1,7 @@
 [📉💳]\s*(\d[\d\s\u00A0.,]*)\s*(\S+)\s*••\s*(\d{2,6})\s*║\s*[➖−–-]?\s*(\d[\d\s\u00A0.,]*)\s*(\S+)\s*(?:по\s+СБП\s+для|СБП)?\s*(.+?)(?:\s*—\s*.+)?$
 
 -----COLUMNS-----
-av_alance;acc_instrument;syncid;outcome;instrument;payee
+av_balance;acc_instrument;syncid;outcome;instrument;payee
 
 -----EXAMPLE-----
 📉 135 494,22 ₽ •• 9842 ║ ➖ 1 200 ₽ Happy City
