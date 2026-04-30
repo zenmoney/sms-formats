@@ -1,7 +1,0 @@
-A transaction of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+was debited from your credit card\s+(\d{4})\s+(.+?)\.\s+Your balance is\s+([A-Z]{3})\s*(-?\d[\d\s.,]*[.,]\d{2})\.
-
------COLUMNS-----
-instrument;outcome;syncid;payee;acc_instrument;balance
-
------EXAMPLE-----
-A transaction of AED 6193.00 was debited from your credit card 3730 EMIRATES - INTERNET BO. Your balance is AED29426.09.
