@@ -8,3 +8,6 @@ Credit Card Purchase Card Ending: : 6268 At: Amazon.ae, Dubai Amount: AED 44.54 
 
 -----EXAMPLE-----
 Credit Card Purchase Card Ending: 9102 At: CHOITHRAM TRADING COMP, Abu Dhabi Amount: AED 1.95 Date: 19/02/2026, 09:48 Available Limit: AED 27,029.50
+
+-----EXAMPLE-----
+Credit Card Purchase Card Ending: 6268 At: Amazon Retail, Dubai Amount: AED 28.49 Date: 28/04/2026, 07:33 Available Limit: AED 16,077.18
