@@ -1,0 +1,7 @@
+Vam nachisleny procenty v razmere\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Dostupno po karte\s+(-?\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})\.
+
+-----COLUMNS-----
+income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Vam nachisleny procenty v razmere 7,052.05 RUR. Dostupno po karte 15 717.85 RUR.
