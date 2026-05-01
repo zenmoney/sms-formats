@@ -1,0 +1,7 @@
+Vam zachislen cashback na kartu \*(\d{4}).*?razmere\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument
+
+-----EXAMPLE-----
+Vam zachislen cashback na kartu *3038 v razmere 1074.63 KGS ║ Пополнение счета
