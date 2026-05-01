@@ -1,4 +1,4 @@
-(?!Від)(.+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s+Коментар\s+(.+?)\s*║\s*(\d[\d\s.,]*)\s+(\S+)
+^(?!Від:\s*)(.+?)\s+Баланс\s+(\d[\d\s.,]*)\s+(\S+)\s+Коментар\s+(.+?)\s*║\s*(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 payee;balance;acc_instrument;comment;outcome;instrument
