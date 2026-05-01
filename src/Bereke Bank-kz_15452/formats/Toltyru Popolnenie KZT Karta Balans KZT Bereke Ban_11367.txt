@@ -1,0 +1,7 @@
+Popolnenie\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+(\S+)\s+Karta\s+(?:\*+\s*)?(\d{4})\s+Balans\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie 5876,00 KZT  Karta ***4408  Balans 5876,00 KZT ║ Bereke Bank

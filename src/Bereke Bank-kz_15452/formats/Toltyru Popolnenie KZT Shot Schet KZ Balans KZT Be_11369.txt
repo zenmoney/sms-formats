@@ -1,0 +1,7 @@
+(.+?)\s+Popolnenie\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Shot\/Schet\s+[^\s]*?([0-9]{4})\s+Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie 245000,00 KZT  Shot/Schet KZ***0258  Balans 245000,48 KZT ║ Bereke Bank
