@@ -1,0 +1,13 @@
+(\d{4})\s+Vasha oplata proshla uspeshno\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Ostatok:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)(?=\s+Vash BSB Bank|$)
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+7010 Vasha oplata proshla uspeshno 2026-04-10 19:14:23 Summa: 40 BYN Ostatok: 290 BYN BLR/MINSK/PERSON TO PERSON MP BSB Vash BSB Bank
+
+-----EXAMPLE-----
+9575 Vasha oplata proshla uspeshno 2026-04-11 12:07:29 Summa: 4.99 USD Ostatok: 191.14 BYN DE1/SCHWALBACH/SAMSUNG ELECTRONIC Vash BSB Bank
+
+-----EXAMPLE-----
+1235 Vasha oplata proshla uspeshno 2026-01-09 22:55:08 Summa: 26.32 BYN Ostatok: 25 BYN BLR/MINSK/INTERNET-BANKING BSB Vash BSB Bank

@@ -1,7 +1,0 @@
-^(\d{4})\s+Vasha oplata proshla uspeshno\s+(20\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Summa:\s+([0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,3})\s+Ostatok:\s+(-?[0-9][\d\s]*)(?=\s)\s+([A-Za-z]{1,3})\s+(.*)$
-
------COLUMNS-----
-syncid;date#yMd;outcome;instrument;balance;acc_instrument;payee
-
------EXAMPLE-----
-1235 Vasha oplata proshla uspeshno 2026-01-09 22:55:08 Summa: 26.32 BYN Ostatok: 25 BYN BLR/MINSK/INTERNET-BANKING BSB Vash BSB Bank

@@ -1,7 +1,7 @@
 (?:MIR-|МИР-|VISA|ECMC|СЧЁТ)(\d{4})(?!\sНедостаточно).*?(?:перевод|Покупка|Оплата)\s+(\d[\d\s.,]*)\s*(\S+)\s+(?!с комиссией|Комиссия|от)(.*?)\s*Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
+syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты MIR-6227 13:13 перевод 6000.11р OZON Баланс: 6000р

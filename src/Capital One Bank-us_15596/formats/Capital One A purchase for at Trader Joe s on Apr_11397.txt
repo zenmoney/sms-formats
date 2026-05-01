@@ -1,0 +1,7 @@
+Capital One:\s+A purchase for\s+(\S)(\d[\d\s.,]*[.,]\d{2})\s+at\s+(.+?)\s+on\s+([A-Za-z]{3}\.?\s+\d{1,2},\s+\d{4}).*?\((\d{4})\)
+
+-----COLUMNS-----
+instrument;outcome;payee;date#Mdy;syncid
+
+-----EXAMPLE-----
+Capital One: A purchase for $38.01 at Trader Joe's on Apr. 30, 2026 was charged to Olga’s Venture X Card (0406). Std carrier charges apply.
