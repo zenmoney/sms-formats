@@ -1,7 +1,0 @@
-.*?Achitare cu succes în sumă de\s+([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,3})\s+la\s+([^\s]+).*?&.*?\s+cu\s+cardul\s+\*+(\d{4}).*?Sold disponibil:\s*(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})
-
------COLUMNS-----
-outcome;instrument;payee;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-Achitare cu succes în sumă de 90 MDL la CROSTA KITCHEN&BAKERY cu cardul ***9924. Sold disponibil: 4450.87 MDL. ║
