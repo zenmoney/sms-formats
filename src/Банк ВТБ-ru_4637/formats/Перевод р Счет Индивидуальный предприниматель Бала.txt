@@ -20,3 +20,6 @@ outcome;instrument;syncid;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Перевод 17 673 ₽ Счет*3969. Максим Т. Баланс 114034.3 ₽ 11:09
+
+-----EXAMPLE-----
+Перевод 1500р Счет*1433 Виктория Д. Баланс 24690р 20:40
