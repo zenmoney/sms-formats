@@ -1,0 +1,7 @@
+Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(.+?)(?=\.\s+Balance:)\.\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid#cash;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 4***3097 28-04-26 18:32:12. Nalichnye v bankomate 700.00 BYN. BLR 8-E MARTA ATM 025. Balance: 815.39 BYN. Tel. 7299090
