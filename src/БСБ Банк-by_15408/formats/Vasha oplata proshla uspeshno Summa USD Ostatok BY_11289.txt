@@ -1,7 +1,0 @@
-(\d+)\s+Vasha oplata proshla uspeshno\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}.*?Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3}).*?Ostatok:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)(?=\s+Vash BSB Bank|$)
-
------COLUMNS-----
-syncid;date#yMd;outcome;instrument;balance;acc_instrument;payee
-
------EXAMPLE-----
-9575 Vasha oplata proshla uspeshno 2026-04-11 12:07:29 Summa: 4.99 USD Ostatok: 191.14 BYN DE1/SCHWALBACH/SAMSUNG ELECTRONIC Vash BSB Bank
