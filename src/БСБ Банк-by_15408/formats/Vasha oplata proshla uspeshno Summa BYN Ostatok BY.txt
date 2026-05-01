@@ -1,4 +1,4 @@
-(\d{4})\s+Vasha oplata proshla uspeshno\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Ostatok:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+)
+(\d{4})\s+Vasha oplata proshla uspeshno\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Summa:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Ostatok:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)(?=\s+Vash BSB Bank|$)
 
 -----COLUMNS-----
 syncid;date#yMd;outcome;instrument;balance;acc_instrument;payee
