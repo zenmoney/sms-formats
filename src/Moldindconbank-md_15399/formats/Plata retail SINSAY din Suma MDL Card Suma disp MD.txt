@@ -1,4 +1,4 @@
-(?!Tranz\. anulata: )Plata retail \(([^\)]+)\) din (\d{2}\.\d{2}\.\d{2}) .*?Suma:\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})\.\s+Card:\s+\*(\d{4})\.\s+Suma disp\.?:?\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})
+(?<!Tranz\. anulata: )Plata retail \(([^\)]+)\) din (\d{2}\.\d{2}\.\d{2}) .*?Suma:\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})\.\s+Card:\s+\*(\d{4})\.\s+Suma disp\.?:?\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})
 
 -----COLUMNS-----
 payee;date#dMy;outcome;instrument;syncid;av_balance;acc_instrument
