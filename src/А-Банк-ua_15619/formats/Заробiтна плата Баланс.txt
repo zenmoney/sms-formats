@@ -5,3 +5,6 @@ comment;balance;acc_instrument;income;instrument
 
 -----EXAMPLE-----
 Заробiтна плата Баланс: 27 061.53 ₴ ║ 🍾 +3 996.30 ₴
+
+-----EXAMPLE-----
+Заробiтна плата Баланс: 15072.63 ₴ ║ 💰 +1 332.10 ₴
