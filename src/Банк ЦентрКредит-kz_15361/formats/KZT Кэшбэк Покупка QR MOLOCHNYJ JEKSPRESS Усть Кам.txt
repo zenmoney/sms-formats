@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+([A-Z]{3})\s+Кэшбэк\s+(\d[\d\s.,]*[.,]\d{2})\s+Покупка\s+QR\s+(.+?ogKZ)\s+Karta\s+4\*\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;cashback;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+-10960 KZT Кэшбэк 548.00 Покупка QR MOLOCHNYJ JEKSPRESS Усть-КаменогKZ Karta 4**5124 Баланс 27000.26 KZT  ║ BCC.KZ
