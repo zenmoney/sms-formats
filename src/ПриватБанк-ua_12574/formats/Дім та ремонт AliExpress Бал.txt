@@ -1,0 +1,7 @@
+-?\d+\.\d+\$\(([\d.]+)(₴)\)\s+(.+?)\s+(\d+\*\d+)\s+\d{2}:\d{2}\s+Бал\.\s+([\d\s.]+)(₴).*
+
+-----COLUMNS-----
+outcome;instrument;comment;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+-1.12$(49.56₴) Дім та ремонт. AliExpress 5*48 14:04 Бал. 718.02₴
