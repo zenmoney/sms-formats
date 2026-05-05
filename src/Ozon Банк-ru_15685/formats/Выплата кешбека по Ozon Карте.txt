@@ -1,0 +1,7 @@
+\+((\d[\d\s.,]*))\s*(\S)\s*║\s*(.+)
+
+-----COLUMNS-----
+income;instrument;cashback;comment
+
+-----EXAMPLE-----
++9 ₽ ║ Выплата кешбека по Ozon Карте
