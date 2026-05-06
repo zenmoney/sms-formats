@@ -1,0 +1,7 @@
+Перевод\. Счет карты \*(\d{4})\.\s+(\d[\d\s.,]*)\s+(\S+)\.\s+(.+?\.)\s+Баланс\s+(-?\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод. Счет карты *3471. 4119 ₽. Юлия Г. Баланс 3881 ₽

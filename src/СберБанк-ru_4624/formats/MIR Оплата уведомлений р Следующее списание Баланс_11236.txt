@@ -1,7 +1,7 @@
 (?:MIR-|МИР-?|VISA|ECMC|СЧЁТ|MAES)(\d{4})\s+\d{2}:\d{2}\s+(Оплата\s+уведомлений.*?)\s+(\d[\d\s.,]*)\s*([^\s.]).+?\s+Баланс:\s+(\d[\d\s.,]*)(\S+)
 
 -----COLUMNS-----
-syncid;comment;outcome;instrument;balance;acc_instrument
+syncid;comment;outcome;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 MIR-4120 01:52 Оплата уведомлений 59р. Следующее списание 10.08.25. Баланс: 8264,43р ║ Списание за уведомления об операциях
