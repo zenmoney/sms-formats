@@ -1,4 +1,4 @@
-în sumă de (\d[\d\s.,]*)\s+([A-Z]{3}).*?cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*[.,]\d{2})(?=\s+[A-Z]{3}\b)\s+([A-Z]{3})
+Transferul\s+(?!P2P)în sumă de (\d[\d\s.,]*)\s+([A-Z]{3}).*?cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
 
 -----COLUMNS-----
 outcome;instrument;syncid;av_balance;acc_instrument
