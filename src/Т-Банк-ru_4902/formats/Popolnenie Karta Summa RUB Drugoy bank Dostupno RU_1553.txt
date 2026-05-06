@@ -1,4 +1,4 @@
-(?:Пополнение|Popolnenie)[.,]?\s+(?:Карта|Karta|счет\s+карты)\s*\*\s*(\d{4})\.\s+(?:Summa\s+)?(\d[\d\s.,]*)\s+(\S+|[₽$€])\.\s*(.+?)?\s*(?:Доступно|Dostupno)\s+(\d[\d\s.,]*)\s+(\S+|[₽$€])
+(?:Пополнение|Popolnenie)[.,]?\s+(?:Карта|Karta|счет\s+карты)\s*\*\s*(\d{4})\.\s+(?:Summa\s+)?(\d[\d\s.,]*)\s+(\S+|[₽$€])\.\s*(?: (.+?)\.)?\s*(?:Доступно|Dostupno)\s+(\d[\d\s.,]*)\s+(\S+|[₽$€])
 
 -----COLUMNS-----
 syncid;income;instrument;payee;av_balance;acc_instrument
@@ -14,3 +14,6 @@ Popolnenie. Karta *1973. Summa 76652.38 RUB. Drugoy bank. Dostupno 77268.87 RUB.
 
 -----EXAMPLE-----
 Пополнение, счет карты *3540. 1600 ₽. Доступно 1684,7 ₽
+
+-----EXAMPLE-----
+Пополнение. Карта *9632. 184,91 ₽. Доступно 490544,22 ₽
