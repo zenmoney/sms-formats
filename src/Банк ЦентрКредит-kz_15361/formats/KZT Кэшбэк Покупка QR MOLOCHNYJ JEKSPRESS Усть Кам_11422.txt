@@ -1,0 +1,10 @@
+-(\d[\d\s.,]*)\s*([A-Z]{3}).*?(?:Pokupka|Покупка)\s+(.+?)\s+Karta\s+\d+\*\*(\d{4})\s+(?:Balans|Баланс)\s+(-?\d[\d\s.,]*)\s*([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+-10960 KZT Кэшбэк 548.00 Покупка QR MOLOCHNYJ JEKSPRESS Усть-КаменогKZ Karta 4**5124 Баланс 27000.26 KZT  ║ BCC.KZ
+
+-----EXAMPLE-----
+-1400 KZT CashBack 42.00 Pokupka TOO LALE A ALMATY KZ Karta 4**0681 Balans 31408.18 KZT Upravlyaite kartoi v https://m.bcc.kz
