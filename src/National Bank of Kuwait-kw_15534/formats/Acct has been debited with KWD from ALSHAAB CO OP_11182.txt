@@ -1,7 +1,16 @@
-Acct\.\s+(\d{4})\s+has been debited with\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+from\s+(.*?)\.Your Avl\. balance is\s+([A-Z]{3})\s+(\d[\d\s.,]*)
+Acct\.\s+(\d{4})\s+has been debited with\s+([A-Z]{3})\s+(\d[\d,]*\.\d{3})\s+from\s+(.*?)\.\s*Your Avl\. balance is\s+([A-Z]{3})\s+(\d[\d,]*\.\d{3})
 
 -----COLUMNS-----
 syncid;instrument;outcome;payee;acc_instrument;av_balance
 
+
+
 -----EXAMPLE-----
 Acct. 0465 has been debited with KWD 5.800 from ALSHAAB CO OP  , ALSHAAB.Your Avl. balance is KWD 1,743.966
+
+-----EXAMPLE-----
+Acct. 0465 has been debited with KWD 1,234.500 from TEST SHOP. Your Avl. balance is KWD 509.466
+
+-----EXAMPLE-----
+Acct. 0465 has been debited with KWD 5.100 from CO.OP MARKET.Your Avl. balance is KWD 1,738.866
+
