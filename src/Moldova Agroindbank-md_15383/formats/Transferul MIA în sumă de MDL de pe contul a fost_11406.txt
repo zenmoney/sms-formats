@@ -1,0 +1,7 @@
+Transferul\s+.+?\s+în sumă de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+de pe contul\s+\d*(\d{4}),.*?Sold disponibil:\s+(\d[\d\s.,]*[.,]?\d+)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transferul MIA în sumă de 400 MDL de pe contul 22596462493, a fost inițiat cu succes. Sold disponibil: 673.9 MDL. ║ maibank

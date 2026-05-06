@@ -1,7 +1,0 @@
-^-([\d\s.,]*\d)\s*([A-Z]{3}).*okupka\s+(.*?)\s+.art.*?(\d{4}) .alan.*?(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-outcome;instrument;payee;syncid;av_balance
-
------EXAMPLE-----
--1400 KZT CashBack 42.00 Pokupka TOO LALE A ALMATY KZ Karta 4**0681 Balans 31408.18 KZT Upravlyaite kartoi v https://m.bcc.kz

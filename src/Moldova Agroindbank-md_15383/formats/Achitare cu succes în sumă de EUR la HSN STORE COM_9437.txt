@@ -1,7 +1,31 @@
-.*?Achitare cu succes\s+în\s+sum[ăa]\s+de\s+([0-9][\d\s]*[.,]\d{2})\s*([A-Za-z]{1,3})\s+la\s+(.*?)\s+cu\s+cardul\s+\*{3}(\d{4})\.\s+Sold disponibil:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})\.\s*║?
+Achitare cu succes în sumă de (\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+cu cardul\s+\*+(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Achitare cu succes în sumă de 45.56 EUR la HSN STORE COM cu cardul ***4257. Sold disponibil: 91.44 EUR. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 12 MDL la DS MULTIPROFIL cu cardul ***7988. Sold disponibil: 1904.22 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 10 MDL la "WWW.PT.MD" cu cardul ***4494. Sold disponibil: 12220.94 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 6 MDL la PUA cu cardul ***4494. Sold disponibil: 12186.94 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 720 MDL la MAIB INVITRO DIAGNOSTICS RI cu cardul ***9924. Sold disponibil: 903.13 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 252 MDL la MAIB APP ORANGE cu cardul ***9924. Sold disponibil: 1606.69 MDL. ║ maibank
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 90 MDL la CROSTA KITCHEN&BAKERY cu cardul ***9924. Sold disponibil: 4450.87 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 465 MDL la CROSTA KITCHENANDBAKER cu cardul ***9924. Sold disponibil: 2240.67 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 80 MDL la CROSTA KITCHEN&BAKERY cu cardul ***9924. Sold disponibil: 1895.2 MDL. ║

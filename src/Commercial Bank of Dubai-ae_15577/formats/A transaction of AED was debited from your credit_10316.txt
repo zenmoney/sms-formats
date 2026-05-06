@@ -1,7 +1,13 @@
-^A transaction of\s+([A-Za-z]{1,3})\s+([0-9][\d\s]*[.,]\d{2})\s+was debited from your credit card\s+(\d{4})\s+([A-Za-z](?:[A-Za-z ]*[A-Za-z])?)\.\s+Your balance is\s+([A-Za-z]{1,3})(-?[0-9][\d\s]*[.,]\d{2})\.$
+A transaction of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+was debited from your credit card\s+(\d{4})\s+(.+?)\.\s+Your balance is\s+([A-Z]{3})\s*(-?\d[\d\s.,]*[.,]\d{2})\.
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee;acc_instrument;balance
 
 -----EXAMPLE-----
 A transaction of AED 2270.28 was debited from your credit card 3730 ICP Smart Services. Your balance is AED45932.50.
+
+-----EXAMPLE-----
+A transaction of AED 6193.00 was debited from your credit card 3730 EMIRATES - INTERNET BO. Your balance is AED29426.09.
+
+-----EXAMPLE-----
+A transaction of AED 3897.00 was debited from your credit card 3730 EMIRATES - INTERNET BO. Your balance is AED1000.09.

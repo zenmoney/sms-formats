@@ -1,0 +1,13 @@
+Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.
+
+-----COLUMNS-----
+syncid#cash;date#yMd;outcome;instrument;payee
+
+-----EXAMPLE-----
+Karta 4***1078 05-05-26 18:38:30. Nalichnye v bankomate 850.00 BYN. BLR EVROOPT HYPER.   Tel. 7299090
+
+-----EXAMPLE-----
+Karta 4***3097 28-04-26 18:32:12. Nalichnye v bankomate 700.00 BYN. BLR 8-E MARTA ATM 025. Balance: 815.39 BYN. Tel. 7299090
+
+-----EXAMPLE-----
+Karta 4***3097 08-03-26 10:19:14. Nalichnye v bankomate 100.00 BYN. BLR MAGAZIN DOBRONOM. Dostupno: 31.77 BYN. Tel. 7299090

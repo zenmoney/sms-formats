@@ -1,7 +1,0 @@
-^Achitare cu succes\s+în\s+sumă\s+de\s+([0-9][\d\s.,]*\d)\s*([A-Za-z]{1,3})\s+la\s+([A-Z][A-Z]+(?:\s+[A-Z][A-Z]+){2,}\s+[A-Z]{2})\s+cu\s+cardul\s+\*{3}(\d{4})\.\s+Sold disponibil:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,3})\.\s*║$
-
------COLUMNS-----
-outcome;instrument;payee;syncid;av_balance;acc_instrument
-
------EXAMPLE-----
-Achitare cu succes în sumă de 720 MDL la MAIB INVITRO DIAGNOSTICS RI cu cardul ***9924. Sold disponibil: 903.13 MDL. ║
