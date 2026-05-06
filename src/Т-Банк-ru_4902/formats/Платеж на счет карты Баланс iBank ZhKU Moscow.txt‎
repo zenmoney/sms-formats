@@ -1,7 +1,0 @@
-Платеж\s+на\s+(\d[\d\s.,]*)\s*(\S+),\s*счет\s+карты\s+\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*)\s*(\S+)(?:\s*║\s*(.+))?
-
------COLUMNS-----
-outcome;instrument;syncid;balance;acc_instrument;payee
-
------EXAMPLE-----
-Платеж на 7 680,12 ₽, счет карты *0020 Баланс 43 162,48 ₽ ║ iBank.ZhKU Moscow
