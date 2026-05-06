@@ -1,0 +1,7 @@
+გადახდა:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(?:.+?)\s+\*{3}(\d{4})\s+(.+?)\s+ნაშთი:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+გადახდა: 188.19 EUR Visa Classic ***3369 HFB ECO IKEA 221 DRESDEN ნაშთი: 2190.99 GEL 04.05.2026
