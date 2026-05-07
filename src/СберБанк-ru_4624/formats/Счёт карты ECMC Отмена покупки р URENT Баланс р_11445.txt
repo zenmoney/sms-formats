@@ -1,0 +1,7 @@
+ECMC(\d{4}).*?Отмена покупки\s+(\d[\d\s.,]*)(\S)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S)
+
+-----COLUMNS-----
+syncid;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты ECMC4653 17:04 Отмена покупки 300р URENT Баланс: 1602.90р
