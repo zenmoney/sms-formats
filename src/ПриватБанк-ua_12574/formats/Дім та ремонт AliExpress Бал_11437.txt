@@ -1,0 +1,10 @@
+-([\d\s.,]+)(\W)\(([\d\s.,]+)(\W)\)\s+(.+?)\.?\s+(.+?)\.?\s+(\d+\*\d+)\s+\d{2}:\d{2}\s+Бал\.\s+([\d\s.,]+)(\W)\s?.*
+
+-----COLUMNS-----
+op_outcome;op_instrument;outcome;instrument;comment;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+-1.12$(49.56₴) Дім та ремонт. AliExpress 5*48 14:04 Бал. 718.02₴
+
+-----EXAMPLE-----
+-1.48$(65.49₴) Інтернет-магазини. AliExpress. 4*42 14:20 Бал. 2 637.53₴ Кред. лiмiт 10 000.00₴
