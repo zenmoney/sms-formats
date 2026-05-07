@@ -1,0 +1,7 @@
+Hello\.\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+is debited from your account\s+XXXXXXX(\d{4})\s+for\s+([A-Za-z ]+?)\s+of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\.\s+(?=(?:Your available balance is\s+[A-Z]{3}\s+(\d[\d\s.,]*[.,]\d{2})\.))Your available balance is\s+([A-Z]{3})\s+\d[\d\s.,]*[.,]\d{2}\.
+
+-----COLUMNS-----
+instrument;outcome;syncid;payee;op_instrument;op_outcome;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Hello. AED 5702.79 is debited from your account XXXXXXX094001 for RAKMoney Transfer of KZT  700000.00. Your available balance is AED 5281.85. Not you? Call 600544049.
