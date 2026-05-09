@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)([A-Z]{3}).*?kartky\s+\*(\d{4}).*?Komisiia\s+(\d[\d\s.,]*)\s*[A-Z]{3}.*?Bal\.\s+(\d[\d\s.,]*)\s*([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;fee;balance;acc_instrument
+
+-----EXAMPLE-----
++100.5EUR zi svoiei kartky *0241 5*63 00:34 Komisiia 0.5EUR Bal. 100EUR
