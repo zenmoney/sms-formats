@@ -3,7 +3,6 @@
 -----COLUMNS-----
 syncid;outcome;instrument;av_balance;acc_instrument;payee
 
-
 -----EXAMPLE-----
 *8965; Покупка 475.00р; Остаток 9525.00р; OZON.RU 03.03
 
