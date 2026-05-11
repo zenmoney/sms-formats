@@ -1,7 +1,0 @@
-(?:.+?)\s*\*(\d{4})\s+(.+?)\s+(\d[\d\s.,]*)(\S+)\s+Баланс:\s+(\d[\d\s.,]*)(\S+)
-
------COLUMNS-----
-syncid;comment;income;instrument;balance;acc_instrument
-
------EXAMPLE-----
-Сбер.счёт *8789 Зачисление соцвыплаты 1782р Баланс: 5412р
