@@ -1,0 +1,7 @@
+YOUR ACCOUNT\s+\d+-\d+-(?:[^-]+)-(\d+)\s+HAS BEEN CREDITED WITH\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+ON\s+(\d{2}\/\d{2}\/\d{4})(?:,\d{1,2}:\d{2})?
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy
+
+-----EXAMPLE-----
+YOUR ACCOUNT 243-01-******-01 HAS BEEN CREDITED WITH                  283,27 EUR ON 11/05/2026,18:30
