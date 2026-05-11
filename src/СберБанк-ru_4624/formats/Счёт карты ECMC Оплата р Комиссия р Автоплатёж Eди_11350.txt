@@ -1,7 +1,7 @@
-Счёт карты\s+([A-Z]{3,4}[-]?\d{4})\s+\d{2}:\d{2}\s+(?:Оплата|Покупка|перевод)\s+(\d[\d\s.,]*)\s*(\S+)\s+Комиссия\s+(\d[\d\s.,]*)\s*(?:\S+)\s+(.+?)?\s*Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
+Счёт карты\s+([A-Z]{3,4}[-]?\d{4})\s+\d{2}:\d{2}\s+(?:Оплата|Покупка|перевод)\s+(\d[\d\s.,]*)\s*(\S+)\s+Комиссия\s+(\d[\d\s.,]*)\s*(?:\S+)?\s*(?:(.+?))?\s*Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;fee;payee;balance;acc_instrument
+syncid;outcome;instrument;fee;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты ECMC0669 11:08 Оплата 805.64р Комиссия 8.06р Автоплатёж Eдиный счёт Баланс: 60 643.06р
@@ -20,3 +20,6 @@ syncid;outcome;instrument;fee;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA4509 09:33 перевод 6941.73р Комиссия 86.77р OZON BANK Баланс: 25 346.21р
+
+-----EXAMPLE-----
+Счёт карты VISA3565 09:44 Оплата 2587.65р Комиссия 25.88р  Баланс: 11 708.2р
