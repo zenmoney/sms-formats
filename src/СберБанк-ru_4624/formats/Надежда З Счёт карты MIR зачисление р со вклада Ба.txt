@@ -1,7 +1,0 @@
-(.+?):\s*Счёт карты\s+MIR-(\d{4})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s\u00A0.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(\d[\d\s\u00A0.,]*)\s*(\S+)
-
------COLUMNS-----
-payee;syncid;income;instrument;comment;balance;acc_instrument
-
------EXAMPLE-----
-Надежда З.: Счёт карты MIR-5929 12:18 зачисление 35 000р со вклада Баланс: 35 771р
