@@ -1,4 +1,4 @@
-(?: (.+?):\s*)?Счёт карты\s+(?:MIR-|МИР-|VISA|ECMC)?(\d{4})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s\u00A0.,]*)\s*(\S+)\s+(со вклада)\s+Баланс:\s+(\d[\d\s\u00A0.,]*)\s*(\S+)
+(?:(.+?):\s*)?Счёт карты\s+(?:MIR-|МИР-|VISA|ECMC)?(\d{4})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s\u00A0.,]*)\s*(\S+)\s+(со вклада)\s+Баланс:\s+(\d[\d\s\u00A0.,]*)\s*(\S+)
 
 -----COLUMNS-----
 payee;syncid;income;instrument;comment;av_balance;acc_instrument
