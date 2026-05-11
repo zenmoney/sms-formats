@@ -1,0 +1,7 @@
+Карта\s+[\d*]*(\d{4}):\s+поступление\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+От:\s*(.+?)\s+Доступно\s+(-?\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта 4**5959: поступление 10000 KZT От: Алуа Н. Доступно 2011473.34 KZT  ║ bcc.kz
