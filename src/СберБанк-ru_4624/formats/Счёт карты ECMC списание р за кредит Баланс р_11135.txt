@@ -20,3 +20,6 @@ syncid;outcome;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 СЧЁТ0075 07:27 списание 17 257.27р за кредит Баланс: 4722.94р
+
+-----EXAMPLE-----
+СЧЁТ0211 05:44 списание 36 627.6р за кредит Баланс: 64 373.65р
