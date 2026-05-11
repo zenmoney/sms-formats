@@ -1,7 +1,0 @@
-ECMC(\d{4}).*?перевод\s+(\d[\d\s.,]*)\s*(\S+?)\s+Комиссия\s+(\d[\d\s.,]*)\S*\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d+)\s*(\S+?)
-
------COLUMNS-----
-syncid;outcome;instrument;fee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты ECMC3412 15:15 перевод 500р Комиссия 7.50р  Баланс: 79 492.5р
