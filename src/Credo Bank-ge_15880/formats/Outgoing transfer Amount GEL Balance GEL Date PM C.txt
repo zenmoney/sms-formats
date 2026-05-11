@@ -1,0 +1,7 @@
+Amount:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3});\s*Balance:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Date:\s*(\d{1,2}\/\d{1,2}\/\d{4})(?=\s|$)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;date#Mdy
+
+-----EXAMPLE-----
+Outgoing transfer Amount: 116.00 GEL; Balance: 310.54 GEL Date:5/11/2026 7:37:08 PM Check details in MyCredo: https://mycredo.page.link/Pdkp
