@@ -1,7 +1,0 @@
-^Podiz.*\*(\d{4})\W? iznos ([\d\s.,]*\d)\s*([A-Z]{3}).*ana (\d{2}[-./]\d{2}[-./]\d{2,4}).* [Rr]asp.*?([A-Z]{3}|\W)\s*(-?[\d\s.,]*\d).*
-
------COLUMNS-----
-syncid#cash;outcome;instrument;date#dMy;acc_instrument;av_balance
-
------EXAMPLE-----
-Podizanje gotovine DINA karticom **0153: iznos 11,000.00RSD, mesto MULTICARD 181 , dana 25.12.2022 u 14:51:27h. Rasp.: RSD 100,341.09. ALTA banka

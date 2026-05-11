@@ -1,0 +1,13 @@
+Podizanje gotovine DINA karticom \*\*(\d{4}):.*?iznos\s+(\d[\d\s.,]*)\s*([A-Z]{3}),\s*mesto\s+([^,]+?)(?:>)?,\s+dana\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+syncid#cash;outcome;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Podizanje gotovine DINA karticom **1514: iznos  70,000.00RSD, mesto ATM ALTA IGUMAN, dana 08.05.2026 u 14:54:00h. Primedbe 011/3040-905 Vasa ALTA banka
+
+-----EXAMPLE-----
+Podizanje gotovine DINA karticom **7256: iznos  70,000.00RSD, mesto ATM ALTA BANKA>, dana 08.12.2025 u 12:29:08h. Primedbe 011/3040-905 Vasa ALTA banka
+
+-----EXAMPLE-----
+Podizanje gotovine DINA karticom **0153: iznos 11,000.00RSD, mesto MULTICARD 181 , dana 25.12.2022 u 14:51:27h. Rasp.: RSD 100,341.09. ALTA banka
