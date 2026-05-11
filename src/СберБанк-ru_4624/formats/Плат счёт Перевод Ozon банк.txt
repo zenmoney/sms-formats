@@ -1,7 +1,0 @@
-(\d[\d\s.,]*)\s*([^\s]+)\s+Плат\. счёт\s+••\s*(\d+)\s*║\s*Перевод\s+(.+)
-
------COLUMNS-----
-outcome;instrument;syncid;payee
-
------EXAMPLE-----
-2 101 ₽ Плат. счёт •• 5447 ║ Перевод Ozon банк
