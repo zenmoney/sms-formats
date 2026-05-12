@@ -1,0 +1,7 @@
+Сбер\.счёт\s*\*(\d{4})\s+(Зачисление соцвыплаты)\s+(\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;comment;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Сбер.счёт *8789 Зачисление соцвыплаты 1782р Баланс: 5412р
