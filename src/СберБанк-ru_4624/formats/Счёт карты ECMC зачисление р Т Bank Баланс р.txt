@@ -1,7 +1,0 @@
-ECMC(\d{4})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s\u00A0.,]*)\s*(р)\s+([A-Za-zА-Яа-я0-9\-]+)\s+Баланс:\s+(-?\d[\d\s\u00A0.,]*[.,]\d{2})\s*(р)
-
------COLUMNS-----
-syncid;income;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты ECMC9406 13:19 зачисление 45 000р Т-Bank Баланс: 49 409.79р
