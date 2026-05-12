@@ -1,0 +1,7 @@
+🛒\s*Оплата:\s*(\d[\d\s.,]*)\s*(\S)\s*Баланс:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S)\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🛒 Оплата: 23,04 € Баланс: 184,47 € ║ Oviedo High School
