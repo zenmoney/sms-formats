@@ -1,0 +1,7 @@
+VOZVRAT SREDSTV\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+([^>]+)(?=>)
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;payee
+
+-----EXAMPLE-----
+VOZVRAT SREDSTV 41.21 BYN KARTA #9310 11.05.2026 06:40:15 I.-SHOP 'WILDBERRIES.BY'> BY
