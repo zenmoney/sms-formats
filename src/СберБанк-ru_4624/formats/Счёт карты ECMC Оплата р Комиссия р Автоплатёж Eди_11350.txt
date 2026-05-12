@@ -23,3 +23,6 @@ syncid;outcome;instrument;fee;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA3565 09:44 Оплата 2587.65р Комиссия 25.88р  Баланс: 11 708.2р
+
+-----EXAMPLE-----
+Счёт карты ECMC3412 15:15 перевод 500р Комиссия 7.50р  Баланс: 79 492.5р
