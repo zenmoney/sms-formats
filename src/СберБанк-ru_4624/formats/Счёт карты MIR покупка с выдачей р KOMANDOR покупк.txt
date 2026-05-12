@@ -1,0 +1,7 @@
+MIR-(\d{4}).*?покупка с выдачей\s+(\d[\d\s\u00A0.,]*)(\S+)\s+(.+?)\s+покупка\s+(\d[\d\s\u00A0.,]*)(\S+)\s+выдача\s+(\d[\d\s\u00A0.,]*)(\S+)\s+Баланс:\s+(-?\d[\d\s\u00A0.,]*(?:[.,]\d{1,2})?)(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;op_outcome;op_instrument;op_outcome;op_instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-2919 18:27 покупка с выдачей 5275.97р KOMANDOR покупка 275.97р выдача 5000.00р Баланс: 62 319.3р

@@ -1,0 +1,7 @@
+Депозит\s+\*(\d{4})\s+\d{2}:\d{2}\s+Перевод\s+(-?\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
+
+-----COLUMNS-----
+syncid;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Депозит *2845 15:45 Перевод 3313,89р Баланс: 1р
