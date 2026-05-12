@@ -1,0 +1,7 @@
+Счёт карты MIR-(\d+).*?на\s+(\d[\d\s.,]*)(\S)\s+в\s+(.+?)\s+Осталось:\s*(\d[\d\s.,]*[.,]?\d+)\s*(\S)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-9099 15:08 👌 Всё оплатили на 2842р в AU3677 Осталось: 212 743.1р
