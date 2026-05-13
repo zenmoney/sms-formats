@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+(\S+?)\s+(.+?)\. Оплата картой \*(\d{4})\. Баланс\s+(-?\d[\d\s.,]*)\s+(\S+?)(?=\s|$|║)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+-370 р. KOFEYNYA, SANKT-PETERBU. Оплата картой *7507. Баланс 0 р. ║ Рокет
