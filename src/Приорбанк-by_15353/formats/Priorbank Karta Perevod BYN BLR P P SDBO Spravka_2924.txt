@@ -1,7 +1,10 @@
-^.*?\*(\d{4}).* ([\d-]{8}) .*erevod(?!.*ostup)([\d\s.,]*\d)\s*([A-Z]{3}).*
+^.*?\*(\d{4}).* ([\d-]{8}) .*erevod(?!.*ostup)([\d\s.,]*\d)\s*([A-Z]{3})(?:\.?\s+(.*?)\.)?(?:.*?Balance:\s*([\d\s.,]*\d)\s*([A-Z]{3}))?.*
 
 -----COLUMNS-----
-syncid;date#dd-MM-yy;outcome;instrument
+syncid;date#dd-MM-yy;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Priorbank. Karta 4***1991. 04-04-17 11:43:34. Perevod 9.40 BYN. BLR P2P_SDBO.  Spravka: 80172899292
+
+-----EXAMPLE-----
+Karta 4***6259 11-05-26 10:51:32. Perevod 8977.50 BYN. BLR P2P SDBO NO FEE. Balance: 1915.40 BYN. Tel. 7299090
