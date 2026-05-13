@@ -1,0 +1,7 @@
+transfer of (\d[\d\s.,]*)\s+([A-Z]{3})\s+to\s+(.+?)(?=\s+has been refunded)
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+Your transfer of 198.36 PLN to Bank Pekao S.A. has been refunded to your account ║ Transfer refund 💸
