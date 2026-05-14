@@ -61,7 +61,7 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
             if "src" in parts:
                 src_idx = parts.index("src")
                 # Check if file is directly in src/Bank_XXX/ (not in subdirs except formats)
-                if src_idx + 2 < len(parts):
+                if src_idx + 3 < len(parts):
                     # File is in a subdirectory other than /formats/
                     subdir = parts[src_idx + 2]
                     if subdir != "formats":
@@ -89,13 +89,13 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
 def _check_format_filename_chars(src_dir: Path) -> list[ValidationError]:
     """
     Check that format filenames in /formats/ contain only allowed characters.
-    Allowed: letters (any alphabet), digits, underscore (_), and .txt extension.
-    No hidden characters, spaces, or special symbols.
+    Allowed: letters (any alphabet), digits, spaces, underscore (_), and .txt extension.
+    No hidden characters or special symbols.
     """
     errors = []
     # Pattern: one or more allowed chars, then .txt, then end of string
-    # \w matches letters, digits, underscore (including Unicode letters)
-    pattern = re.compile(r"^[\w]+\.txt$")
+    # \w matches letters, digits, underscore (including Unicode letters).
+    pattern = re.compile(r"^[\w ]+\.txt$")
     for file_path in src_dir.rglob("*"):
         if not file_path.is_file():
             continue
@@ -109,7 +109,7 @@ def _check_format_filename_chars(src_dir: Path) -> list[ValidationError]:
                     file_path=str(file_path),
                     message=(
                         "Invalid characters in filename "
-                        "(only letters, digits, underscore allowed "
+                        "(only letters, digits, spaces, underscore allowed "
                         "before .txt)"
                     ),
                 )
