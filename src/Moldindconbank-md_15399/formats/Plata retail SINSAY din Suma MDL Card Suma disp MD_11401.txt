@@ -1,0 +1,7 @@
+(?<!Tranz\. anulata: )Plata retail \(([^\)]+)\) din (\d{2}\.\d{2}\.\d{2}) .*?Suma:\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})\.\s+Card:\s+\*(\d{4})\.\s+Suma disp\.?:?\s+(\d[\d\.]*,\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;date#dMy;outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Plata retail (SINSAY) din 24.04.26 16:46. Suma: 139,00 MDL. Card: *5343. Suma disp.: 7.064,30 MDL.     ║ Tranzactie reusita

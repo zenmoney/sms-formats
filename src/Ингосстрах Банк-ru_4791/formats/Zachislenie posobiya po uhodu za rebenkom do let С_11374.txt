@@ -1,0 +1,7 @@
+(.*?)(?=\s*,\s*\*\*\*)\s*,\s*\*\*\*(\d+)\.\s*Сумма\s+(\d[\d\s.,]*[.,]\d{2})(\S+)\.\s*Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+comment;syncid;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Zachislenie posobiya po uhodu za rebenkom (do 1,5 let) , ***1038. Сумма 68995.48₽. Баланс 71178.21₽

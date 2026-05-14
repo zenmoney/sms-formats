@@ -1,0 +1,7 @@
+([^\/]+)\/\s*Popolnenie\s+(\d[\d\s.,]*)\s+([^\s]+)\s+\S*\*+(\d{4})\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+payee;income;instrument;syncid;date#yMd
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie 4600.00 KZT KZ***5486  2026-05-13 21:19:23. ║ Bereke Bank

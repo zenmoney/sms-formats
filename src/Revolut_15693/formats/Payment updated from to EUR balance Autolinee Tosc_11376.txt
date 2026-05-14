@@ -1,0 +1,7 @@
+Payment updated from\s+\d[\d\s.,]*\s*\S+.*?to\s+(\d[\d\s.,]*)\s*(\S+)(?:\s+\S+)?\s+balance:\s+(-?\d[\d\s.,]*)\s*(\S+)\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🚎️️ Payment updated from 1 € to 4 € EUR balance: 1 010,85 € ║ Autolinee Toscane

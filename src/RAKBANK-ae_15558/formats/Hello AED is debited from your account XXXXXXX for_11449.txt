@@ -1,0 +1,7 @@
+Hello\.\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+is debited from your account\s+XXXXXXX(\d+)\s+for\s+([A-Za-z ]+?)\s+of\s+([A-Z]{3})\s+(\d[\d\s.,]*)\.\s+Your available balance is\s+([A-Z]{3})\s+(\d[\d\s.,]*)\.
+
+-----COLUMNS-----
+instrument;outcome;syncid;payee;op_instrument;op_outcome;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Hello. AED 5702.79 is debited from your account XXXXXXX094001 for RAKMoney Transfer of KZT  700000.00. Your available balance is AED 5281.85. Not you? Call 600544049.

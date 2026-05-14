@@ -1,0 +1,7 @@
+Transferul\s+(?!P2P)în sumă de (\d[\d\s.,]*)\s+([A-Z]{3}).*?cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transferul în sumă de 10000 MDL de pe cardul ***1822 către contul 22526054815 a fost procesat cu succes. Sold disponibil: 11325.55 MDL. ║ maibank

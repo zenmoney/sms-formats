@@ -1,0 +1,7 @@
+\d{4}\*{3}(\d{4})\s+POPOLNENIE SCHETA USPESHNO\s+(\d[\d\s.,]*)\s+(\S+),\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2},\s+DOSTUPNO:\s*(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+5058***4866 POPOLNENIE SCHETA USPESHNO 3.76 TJS, 01.05.2026 10:20, DOSTUPNO:544.78 TJS

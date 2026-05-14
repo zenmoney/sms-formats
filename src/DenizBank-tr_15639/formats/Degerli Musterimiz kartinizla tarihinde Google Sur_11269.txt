@@ -1,0 +1,7 @@
+\d[\d\*]*?(\d{4})\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+tarihinde\s+(.+?)\s+isyerinden\s+yapilan\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;payee;outcome;instrument
+
+-----EXAMPLE-----
+Degerli Musterimiz, 555660******7223 kartinizla 10.04.2026 10:09:43 tarihinde Google Survivor io        isyerinden yapilan 232.99 TRY tutarindaki islem bilginiz disindaysa 0850 222 0 800 'u arayiniz. MERSIS NO:0292008449600341 B002

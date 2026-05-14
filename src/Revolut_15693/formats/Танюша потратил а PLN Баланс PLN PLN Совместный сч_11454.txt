@@ -1,0 +1,7 @@
+-(.+?)-\s+потратил\(а\)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Баланс\s+«.*?»:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})\s*║\s*(.+)
+
+-----COLUMNS-----
+comment;outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+-Танюша- потратил(а) 254,40 PLN  Баланс «PLN»: 1 011,02 PLN ║ Совместный счет · Sushi Lovers

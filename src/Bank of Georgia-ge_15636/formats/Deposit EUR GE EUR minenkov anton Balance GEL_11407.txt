@@ -1,0 +1,7 @@
+Deposit:\s+([A-Z]{3})(\d[\d\s.,]*)\s+[A-Z0-9]+\*{3}(\d{4})(?:[A-Z]{3})?\s+(.+?)\s+Balance:\s+([A-Z]{3})(-?\d[\d\s.,]*[.,]\d{2})\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+instrument;income;syncid;payee;acc_instrument;balance;date#dMy
+
+-----EXAMPLE-----
+Deposit: EUR200.00 GE22***5325EUR minenkov anton Balance: GEL1,345.83 30.04.2026

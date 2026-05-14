@@ -1,0 +1,7 @@
+(Tranz\. anulata): Plata retail \(([^)]+)\) din (\d{2}\.\d{2}\.\d{2}) \d{2}:\d{2}\. Suma: (\d[\d\s.,]*) ([A-Z]{3})\. Card: \*(\d{4})\. Suma disp\.: (\d[\d\s.,]*) ([A-Z]{3})
+
+-----COLUMNS-----
+comment;payee;date#dMy;income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Tranz. anulata: Plata retail (bolt eu) din 31.03.26 14:53. Suma: 60,00 MDL. Card: *7466. Suma disp.: 1.147,18 MDL.

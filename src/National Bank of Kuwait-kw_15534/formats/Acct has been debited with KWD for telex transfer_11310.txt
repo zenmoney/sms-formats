@@ -1,0 +1,7 @@
+Acct\. (\d{4}) has been debited with ([A-Z]{3})\s+(\d[\d\s.,]*)\s+for\s+([^.]+?)\. Avl\. balance is ([A-Z]{3})\s+(-?\d[\d\s.,]*)(?=\.)
+
+-----COLUMNS-----
+syncid;instrument;outcome;comment;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Acct. 6497 has been debited with KWD 2.000 for telex transfer. Avl. balance is KWD 8.327.

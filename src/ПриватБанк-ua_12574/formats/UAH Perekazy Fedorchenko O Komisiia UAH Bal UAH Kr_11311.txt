@@ -1,0 +1,7 @@
+-\s?(\d[\d\s.,]*)([A-Z]{3})\s(.*?)(?=\s\d+\*\d+).*?Komisiia\s(\d[\d\s.,]*)(?:[A-Z]{3})\sBal\.\s(\d[\d\s.,]*)([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;fee;balance;acc_instrument
+
+-----EXAMPLE-----
+-3 500UAH Perekazy. Fedorchenko O. 5*16 06:25 Komisiia 105UAH Bal. 85 845UAH Kred. limit 90 000UAH

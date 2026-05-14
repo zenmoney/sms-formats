@@ -1,0 +1,7 @@
+AutoPay reminder for Amex acct ending\s+\d*(\d{4})\.\s+Your Total New Balance payment of\s+([^\d\s]+)(\d[\d\s.,]*[.,]\d{2})\s+will be processed on\s+(\d{1,2}\/\d{1,2}\/\d{2,4})
+
+-----COLUMNS-----
+syncid;instrument;outcome;date#Mdy
+
+-----EXAMPLE-----
+AutoPay reminder for Amex acct ending 71007. Your Total New Balance payment of $173.52 will be processed on 4/29/26. ║ Amex

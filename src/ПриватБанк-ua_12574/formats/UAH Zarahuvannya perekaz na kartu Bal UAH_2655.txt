@@ -1,4 +1,4 @@
-^(?:(?:Приват|Транз).*?)?([\d\s.,]*\d)\s*([A-Z]{3})\s+((?:(?:Popo.n|Попо.н)(?!.*гот)|(?:Зарах|Zarak?h)(?!.*(?:rotsent|роцент))|Perekaz\s+(?:zi|.*dpravnyk)|Переказ\s+(?:з|дправн))(?!.*дправник).*?)\s+(\d\*\d\d)\s+[\d:]{5,}\s+(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^(?:(?:Приват|Транз).*?)?\+?([\d\s.,]*\d)\s*([A-Z]{3}|\W)\s+((?:(?:Popo.n|Попо.н)(?!.*гот)(?!.*mobi)|(?:Зарах|Zarak?h)(?!.*(?:rotsent|роцент))|Perekaz\s+(?:zi|.*dpravnyk)|Переказ\s+(?:з|дправн))(?!.*дправник).*?)\s+(\d\*\d\d)\s+[\d:]{5,}\s+(?:Bal|Бал).\s*(-?[\d\s.,]*\d)\s*([A-Z]{3}|\W)\s?.*
 
 -----COLUMNS-----
 income;instrument;comment;syncid;av_balance;acc_instrument
@@ -14,9 +14,6 @@ Kred.limit 8500UAH
 
 -----EXAMPLE-----
 1700.00UAH Popovnennia 5*91 09:10 Bal. 5662.52UAH Kred.limit 5000UAH https://pb.ua/s/p24/2
-
------EXAMPLE-----
-102.00UAH Popovnennia mobilnoho +1234567890 4*93 17:29 Bal. 2066.66UAH Bal.Bonus+ 9.78UAH
 
 -----EXAMPLE-----
 10.00UAH Зарахування переказу на картку 4*31 12:00 Бал. 61.00UAH ║ Транзакцii за рахунками
@@ -38,3 +35,9 @@ Kred.limit 8500UAH
 
 -----EXAMPLE-----
 400.00UAH Perekaz cherez dodatok Pryvat24. Vidpravnyk: Krachun Mykhailo Olehovych 5*99 18:42 Bal. 56959.35UAH Kred. limit 30000.0UAH
+
+-----EXAMPLE-----
++500₴ Поповнення картки в Банкоматі М КИЇВ, ВУЛ. ГРИШКА МИХАЙЛА, БУД. 101 4*42 17:12 Бал. 10 213.25₴ Кред. ліміт 10 000₴
+
+-----EXAMPLE-----
++600₴ Зарахування переказу. ФІО. 4*42 09:20 Бал. 1 713.25₴ Кред. ліміт 10 000₴

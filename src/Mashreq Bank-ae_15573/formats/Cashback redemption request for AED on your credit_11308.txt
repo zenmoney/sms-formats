@@ -1,0 +1,7 @@
+Cashback redemption request for ([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+on your credit card ending \*{4}(\d{4})
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Cashback redemption request for AED 177.29 on your credit card ending ****8428 is successful and will reflect in your card balance within 24 hours.

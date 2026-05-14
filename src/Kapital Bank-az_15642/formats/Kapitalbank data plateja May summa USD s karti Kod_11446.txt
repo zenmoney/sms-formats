@@ -1,0 +1,7 @@
+(?i)^.*kod\s+podtverjdeniya\s+oplati[:\-]?\s*(?:\d(?:[\d\s\-]*\d)?).*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Kapitalbank:  data plateja  03 May 2026 17:41:09  summa  154.00 USD  s karti  2889. Kod podtverjdeniya oplati: 936193

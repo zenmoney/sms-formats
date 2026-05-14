@@ -1,7 +1,0 @@
--\s*([0-9][\d\s.,]*)\s*([^\d\s,]{1,3})\s+Доступно\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s)\s+([^\d\s,]{1,3})\s+Списано\s+с\s+SuperCard\s+\*\*(\d{4})\s*║\s*Списана\s+сумма\s+за\s+заказ\s+(.*)
-
------COLUMNS-----
-outcome;instrument;av_balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
--241 ₸ Доступно 673 991,09 ₸ Списано с SuperCard **2950 ║ Списана сумма за заказ Arbuz.kz

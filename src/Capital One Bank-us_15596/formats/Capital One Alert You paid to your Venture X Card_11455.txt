@@ -1,0 +1,7 @@
+You paid\s+([^\d\s])(\d[\d,]*[.,]\d{2})\s+to your.*?\((\d{4})\).*?on\s([A-Za-z]+\s\d{1,2},\s\d{4})
+
+-----COLUMNS-----
+instrument;outcome;syncid;date#Mdy
+
+-----EXAMPLE-----
+Capital One Alert: You paid $4,493.74 to your Venture X Card…(9792) on May 8, 2026. Msg & data rates may apply.

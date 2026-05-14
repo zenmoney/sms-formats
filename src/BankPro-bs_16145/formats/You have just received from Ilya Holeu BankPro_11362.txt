@@ -1,0 +1,7 @@
+You have just received\s+(\S)\s*(\d[\d\s.,]*(?:[.,]\d{2})?)\s+from\s+([^║\n]+?)\s+║
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+You have just received €150.00 from Ilya Holeu ║ BankPro

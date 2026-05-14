@@ -1,0 +1,8 @@
+ABB MOBILE Kart: boz yashil \*\*(\d{4})[\s\u200C-\u200F\u202F\u00A0]*Balans:[\s\u200C-\u200F\u202F\u00A0]*([0-9][\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼])(?:[^\w\d]+)?Köçürmə:[\s\u200C-\u200F\u202F\u00A0]*\+[\s\u200C-\u200F\u202F\u00A0]*([0-9][\d\s.,]*[.,]\d{2})[\s\u200C-\u200F\u202F\u00A0]*([₼])
+
+-----COLUMNS-----
+syncid;balance;acc_instrument;income;instrument
+
+-----EXAMPLE-----
+ABB MOBILE Kart: boz yashil **5223 Balans: ‎44.27‎₼‎ ║ 💸 Köçürmə:
++‎22.00‎₼

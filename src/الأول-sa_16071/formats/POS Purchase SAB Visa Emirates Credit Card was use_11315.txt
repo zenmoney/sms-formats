@@ -1,0 +1,10 @@
+(?:POS|Online) Purchase SAB Visa Emirates Credit Card \((\d{4})\)\s+was used at\s+(.+?)\s+for\s+([A-Z]{3})\s+(\d[\d\s.,]*)(?:\s+via\s+.+?)?\s+Date:\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Balance:\s+([A-Z]{3})\s+(\d[\d\s.,]*)
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+POS Purchase SAB Visa Emirates Credit Card (3821) was used at E254 Tamimi Express for SAR 38.15 via Google Pay Date: 2026-04-14 21:09:36 Balance: SAR 194520.32
+
+-----EXAMPLE-----
+Online Purchase SAB Visa Emirates Credit Card (3821) was used at Trip.com for SAR 3,341.35 Date: 2026-03-12 17:24:11 Balance: SAR 178463.63

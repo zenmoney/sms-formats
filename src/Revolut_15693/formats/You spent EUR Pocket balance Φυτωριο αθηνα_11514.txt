@@ -1,0 +1,7 @@
+You spent\s+(\S)(\d[\d\s.,]*[.,]\d{2})(?:\s+[A-Z]{3})?\s+Pocket balance:\s+(\S)(-?\d[\d\s.,]*[.,]\d{2})(?=\s*║|$)\s*║\s+([^\r\n]+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;balance;payee
+
+-----EXAMPLE-----
+🛍 You spent €3.95 EUR Pocket balance: €418.38 ║ Φυτωριο αθηνα

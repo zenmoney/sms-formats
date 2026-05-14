@@ -1,0 +1,7 @@
+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+║\s*-\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+Bolt Баланс: 499.70 ₴ ║  -108.00 ₴
