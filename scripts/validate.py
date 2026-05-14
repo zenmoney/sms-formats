@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate format files: names, columns, regex match, group count, no cross-match."""
-
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -34,7 +34,7 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
     """
     Check for files with invalid extensions/names in src/ directory structure.
     Rules:
-    - In /formats/: only *.txt allowed (ID not required, added automatically later)
+    - In /formats/: only *.txt allowed
     - In bank root (src/Bank_X/): only senders.txt allowed
     - Any other files: error
     """
@@ -56,10 +56,12 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
                 )
         else:
             # File is not in /formats/, check if it's in bank root
+            # Bank root is direct child of src/
             if "src" in parts:
                 src_idx = parts.index("src")
-                # Check if file is in a subdirectory other than /formats/
+                # Check if file is directly in src/Bank_XXX/ (not in subdirs except formats)
                 if src_idx + 2 < len(parts):
+                    # File is in a subdirectory other than /formats/
                     subdir = parts[src_idx + 2]
                     if subdir != "formats":
                         errors.append(
@@ -80,6 +82,33 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
                                 message="Invalid file (only senders.txt allowed in bank root)",
                             )
                         )
+    return errors
+
+
+def _check_format_filename_chars(src_dir: Path) -> list[ValidationError]:
+    """
+    Check that format filenames in /formats/ contain only allowed characters.
+    Allowed: letters (any alphabet), digits, underscore (_), and .txt extension.
+    No hidden characters, spaces, or special symbols.
+    """
+    errors = []
+    # Pattern: one or more allowed chars, then .txt, then end of string
+    # \w matches letters, digits, underscore (including Unicode letters)
+    pattern = re.compile(r"^[\w]+\.txt$")
+    for file_path in src_dir.rglob("*"):
+        if not file_path.is_file():
+            continue
+        if "/formats/" not in str(file_path):
+            continue
+        filename = file_path.name
+        if not pattern.match(filename):
+            errors.append(
+                ValidationError(
+                    kind="invalid_filename_chars",
+                    file_path=str(file_path),
+                    message="Invalid characters in filename (only letters, digits, underscore allowed before .txt)",
+                )
+            )
     return errors
 
 
@@ -158,11 +187,15 @@ def _collect_validation_errors():
     src_dir = get_src_dir()
     # Проверка расширений и имён файлов
     errors.extend(_check_file_extensions(src_dir))
+    # Проверка символов в именах файлов форматов
+    errors.extend(_check_format_filename_chars(src_dir))
     # Проверка имён папок банков
     errors.extend(_check_bank_folder_names(src_dir))
     companies = list_companies()
     for company in companies:
-        bank_dir_name = f"{company.name}_{company.id}" if company.id is not None else company.name
+        bank_dir_name = (
+            f"{company.name}_{company.id}" if company.id is not None else company.name
+        )
         bank_path = src_dir / bank_dir_name
         bank_name = company.name
         if bank_name != clean_name(bank_name):
@@ -223,7 +256,7 @@ def _apply_validation_fixes(errors):
     for err in errors:
         if err.kind == "invalid_format":
             to_delete.add(err.file_path)
-        elif err.kind in ("invalid_extension", "invalid_file"):
+        elif err.kind in ("invalid_extension", "invalid_file", "invalid_filename_chars"):
             to_delete.add(err.file_path)
         elif err.kind in ("example_no_match", "cross_match") and err.example_text is not None:
             to_remove_examples.setdefault(err.file_path, set()).add(err.example_text)
@@ -234,7 +267,9 @@ def _apply_validation_fixes(errors):
                 parsed = parse_name_with_id(stem)
                 id_part = parsed["id"]
                 new_stem = (
-                    f"{err.expected_name}_{id_part}" if id_part is not None else err.expected_name
+                    f"{err.expected_name}_{id_part}"
+                    if id_part is not None
+                    else err.expected_name
                 )
                 new_path = path.parent / f"{new_stem}.txt"
                 if str(new_path) != err.file_path:
