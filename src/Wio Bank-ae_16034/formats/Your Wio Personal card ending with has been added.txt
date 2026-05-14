@@ -1,0 +1,7 @@
+Your Wio Personal card ending with \d{4} has been added to Google Pay.*?freeze this card
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Your Wio Personal card ending with 9764 has been added to Google Pay. If it wasn't you, freeze this card in the App and contact us immediately at 600 500 946.
