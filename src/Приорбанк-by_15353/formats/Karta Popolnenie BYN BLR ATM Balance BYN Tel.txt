@@ -1,7 +1,7 @@
-Karta\s+[^\d]*?(\d{4})\s+(\d{2,4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Popolnenie\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+?)\.\s+(.+?)\.\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Popolnenie\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s+(.+?)\.\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})(?=\.)
 
 -----COLUMNS-----
 syncid;date#yMd;income;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
-Karta 4***5726 14-05-26 19:21:49. Popolnenie 500.00 BYN. BLR ATM 943. Balance: 500.89 BYN. Tel. 7299090
+Karta 4***0563 17-05-26 18:02:09. Popolnenie 800.00 BYN. BLR ATM 866. Balance: 1136.16 BYN. Tel. 7299090
