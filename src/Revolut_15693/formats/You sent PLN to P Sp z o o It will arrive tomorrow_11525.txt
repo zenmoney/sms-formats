@@ -1,0 +1,7 @@
+You sent\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+to\s+(.+?)(?=\. It will arrive)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+You sent 65,23 PLN to P4 Sp. z o. o.. It will arrive tomorrow ║ Transfer sent ✅

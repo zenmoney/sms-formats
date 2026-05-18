@@ -1,0 +1,7 @@
+🛍\s+You spent\s+(\d[\d\s.,]*[.,]\d{2})\s*(.+?)\s+balance:\s+(-?\d[\d\s]*[.,]\d{2})\s*(.+?)\s+║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🛍 You spent 130,70 kr SEK balance: 1 829,94 kr ║ Systembolaget

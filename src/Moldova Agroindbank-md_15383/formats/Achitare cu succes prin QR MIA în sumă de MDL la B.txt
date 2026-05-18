@@ -1,0 +1,7 @@
+în sumă de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.*?)\s+din contul\s+\d*(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Achitare cu succes prin QR MIA în sumă de 835.59 MDL la Broker De Asigurare - Reasigurare Omnis S.r.l. din contul 22596462493. Sold disponibil: 3888 MDL. ║ maibank
