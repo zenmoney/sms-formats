@@ -1,0 +1,7 @@
+POPOLNENIE\s+(\d[\d\s.,]*)\s+([A-Za-z]{3})\s+(.+?)\s+OSTATOK\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})\s+KARTA\s+\d*\*(\d{4})\s+(\d{4}-\d{2}-\d{2})(?:\s+\d{2}:\d{2}:\d{2})?
+
+-----COLUMNS-----
+income;instrument;payee;balance;acc_instrument;syncid;date#yMd
+
+-----EXAMPLE-----
+POPOLNENIE 500.00 BYN MTB MOBILE BANK / MINSK / BY OSTATOK 997.48 BYN KARTA 5*1354 2026-05-19 22:13:19

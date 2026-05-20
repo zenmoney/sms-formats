@@ -1,0 +1,7 @@
+STANDS AT\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})$
+
+-----COLUMNS-----
+acc_instrument;balance
+
+-----EXAMPLE-----
+THE BALANCE OF YOUR BASIC ACCOUNT IS ABOVE THE AMOUNT SPECIFIED, AND NOW STANDS AT EUR 9,71

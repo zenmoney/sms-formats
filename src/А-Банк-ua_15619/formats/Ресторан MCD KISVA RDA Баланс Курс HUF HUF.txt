@@ -1,0 +1,7 @@
+(.+?)\s+Баланс:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+Курс.*?║.*?(?:[-\u2212]\s*)?(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+Ресторан MCD KISVA'RDA Баланс: 37 204.78 ₴ Курс 0.1456  ₴/HUF ║ 🍸 -4 280.00 HUF
