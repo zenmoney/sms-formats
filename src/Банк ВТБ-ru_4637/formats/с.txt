@@ -1,0 +1,7 @@
+Перевод\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\*(\d{4})\s+(.+?)\s+\.\s+Баланс\s+(\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод 11502.31р Счет*6783 Росгосстрах - . Баланс 172595.79р 10:53
