@@ -1,2 +1,0 @@
-yapikredi
-com.ykb.android
