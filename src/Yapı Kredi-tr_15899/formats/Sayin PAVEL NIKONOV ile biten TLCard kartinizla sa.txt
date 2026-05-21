@@ -1,4 +1,4 @@
-Sayin\s+[^,]+,\s+(\d{4})\s+ile biten\s+\w+\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s*,?\s*([^\s,]+(?:\s+[^\s,]+)*)\s+is yerinden\s+(\d[\d\s.,]*)\s*([A-Z]+)\s+islem yapilmistir
+Sayin\s+[^,]+,\s+(\d{4})\s+ile biten\s+\w+\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s+saat\s+[\d:]+\'de\s*,?\s*([^\s,]+(?:\s+[^\s,]+)*)\s+is yerinden\s+(\d[\d\s.,]*)\s*([A-Z]+)\s+islem yapilmistir
 
 -----COLUMNS-----
 syncid;date#dMy;payee;outcome;instrument
