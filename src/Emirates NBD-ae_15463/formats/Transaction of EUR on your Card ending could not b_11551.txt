@@ -1,0 +1,7 @@
+(?i)^.*could not be completed.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Transaction of EUR 10.44 on your Card ending 1575 could not be completed. For Details, Please call 600540000
