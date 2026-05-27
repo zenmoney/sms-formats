@@ -5,3 +5,6 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 р/c **0926 (*9804) 20:24 покупка 5 852.76р UNIVERSAM N31 Баланс: 444 147.24р
+
+-----EXAMPLE-----
+р/c **6486 (*1425) 14:49 покупка 184.98р Begemag-22 Баланс: 201 343.77р

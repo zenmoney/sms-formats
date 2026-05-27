@@ -1,0 +1,7 @@
+Karta\s+4\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-([0-9][\d\s.,]*)\s+([A-Za-z]{1,3})\s+(Pereschet kapitalizatcii TECHNO BLR OK\.)\s+Dostupno\s+(-?[0-9][\d\s.,]*)\s+([A-Za-z]{1,3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 4.1234 18.05.2026 10:59:49 Spisanie -0.02 BYN Pereschet kapitalizatcii TECHNO BLR OK. Dostupno 274.25 BYN
