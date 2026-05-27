@@ -1,4 +1,4 @@
-Purchase:\s*([A-Za-z]{1,4})([\d\s.,]+?)\s+Card:\s*\*+(\d{4})\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})\s*$
+Purchase:\s*([A-Za-z]{1,4})\s*([\d\s.,]+?)\s+Card:\s*\*+(\d{4})\s+(.+?)(?:\s+(?:You will get:|Balance:|Remaining balance:).+)?\s+(\d{2}\.\d{2}\.\d{4})\s*$
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee;date#dMy
@@ -17,3 +17,9 @@ Purchase: GEL77.11 Card:***5506 Europroduct Get ready for PLUS Birthday You will
 
 -----EXAMPLE-----
 Purchase: GEL77.64 Card:***3974 Wolt Get ready for PLUS Birthday Balance: GEL1,888.80, USD1,010.00, EUR883.31, GBP9,600.00 You will get: 174.69 PLUS Total: 27,607.79 PLUS 20.06.2025
+
+-----EXAMPLE-----
+Purchase: GEL49.99 Card:***1234 Zoomart Givi Kartozia str 6 Balance: GEL672.44 you received: 87.48 PLUS Total: 17,142.25 PLUS 20.05.2026
+
+-----EXAMPLE-----
+Purchase: GEL20.25 Card:***1234 I/E GEOGI BRIA Balance: GEL722.43 you received: 35.44 PLUS Total: 17,054.77 PLUS 18.05.2026

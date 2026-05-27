@@ -1,0 +1,7 @@
+Blokada na rachunku Konto:\d*(\d{4})\s+Kwota:(\d[\d\s.,]*)\s*([A-Z]+)\s+Data:(\d{4}-\d{2}-\d{2})\s+[\d:]+\s+Saldo dostepne:(\d[\d\s.,]*)\s*([A-Z]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#YMD;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Blokada na rachunku Konto:455634080000 Kwota:119,00PLN Data:2026-05-19 18:47 Saldo dostepne:554,63PLN
