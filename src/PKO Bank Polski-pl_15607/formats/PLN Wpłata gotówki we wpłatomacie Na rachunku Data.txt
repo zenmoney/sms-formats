@@ -1,4 +1,4 @@
-\+(\d[\d\s.,]*)\s+(\S+)\s+[Ww][Pp][Łł]ATA\s+[Gg]OT[Óó]WKI\s+[Ww][Ee]\s+[Ww][Pp][Łł]ATOMACIE\b.*?(?:[Nn]a\s+)?(?:[Рр]achunk|account\s+no\.?)\s+\d+\.\.(\d{4})\.?.*?(?:[Dd]ata\s+[Ww]aluty|[Vv]alue\s+[Dd]ate):\s*(\d{4}-\d{2}-\d{2})
+\+(\d[\d\s.,]*)\s+(\S+)\s+[Ww][Pp][Łł]ATA\s+[Gg]OT[Óó]WKI\s+[Ww][Ee]\s+[Ww][Pp][Łł]ATOMACIE\b.*?(?:[Nn]a\s+rachunk|account\s+no\.?|na\s+rachunk)\s+\d+\.\.(\d{4})\.?.*?(?:[Dd]ata\s+[Ww]aluty|[Vv]alue\s+[Dd]ate):\s*(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
 income;instrument;syncid#cash;date#yMd
