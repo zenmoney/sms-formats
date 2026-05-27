@@ -1,0 +1,7 @@
+Amount:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+?)\s*;\s*From sender:\s*(.+?)\s*;\s*Balance:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+?)\s*;\s*Date:\s*(\d{1,2}\/\d{1,2}\/\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;balance;acc_instrument;date#Mdy
+
+-----EXAMPLE-----
+Incoming transfer  Amount: 400.00 USD; From sender: MARTA KAPLINA; Balance: 4137.96 USD; Date:5/20/2026 7:40:06 PM Check details in MyCredo:https://mycredo.page.link/Pdkp
