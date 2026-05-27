@@ -1,0 +1,7 @@
+Ai autorizat tranzactia de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+din contul\s+\d*(\d{4})\s+in\s+(\d{2}-\d{2}-\d{4})\.\s+Sold:\s+(\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+Ai autorizat tranzactia de 150.4 RON la ZARA 3788 BSC C8 din contul 999915236643 in 16-05-2026. Sold: 15,777.92 RON. ║ Mesaj nou de la ING

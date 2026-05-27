@@ -1,0 +1,7 @@
+(.+?),\s*(\d[\d\s.,]*)\s*([A-Z]+)\s*║\s*Підтвердження оплати
+
+-----COLUMNS-----
+payee;outcome;instrument
+
+-----EXAMPLE-----
+Cult Beauty, 41.75 EUR ║ Підтвердження оплати
