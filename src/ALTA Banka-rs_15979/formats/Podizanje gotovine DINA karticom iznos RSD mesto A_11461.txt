@@ -1,4 +1,4 @@
-Podizanje gotovine\s+(?:DINA|VISA)\s+karticom\s+(?:\*\*(\d{4}))?:\s*.*?iznos\s+(\d[\d\s.,]*)\s*([A-Z]{3}),\s*mesto\s+([^,]+?)(?:>)?,\s+dana\s+(\d{2}\.\d{2}\.\d{4})
+Podizanje gotovine\s+(?:DINA|VISA)\s+karticom\s*(?:\*\*(\d{4}))?\s*:\s*.*?iznos\s+(\d[\d\s.,]*)\s*([A-Z]{3}),\s*mesto\s+([^,]+?)(?:>)?,\s+dana\s+(\d{2}\.\d{2}\.\d{4})
 
 -----COLUMNS-----
 syncid#cash;outcome;instrument;payee;date#dMy
