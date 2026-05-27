@@ -1,4 +1,4 @@
-\+(\d[\d\s.,]*)\s+(\S+).*?[Ww]płata\s+gotówki.*?(\d{2}\.\.\d{4})\.?.*?(?:[Dd]ata\s+[Ww]aluty|[Vv]alue\s+[Dd]ate):\s*(\d{4}-\d{2}-\d{2})
+\+(\d[\d\s.,]*)\s+(\S+).*?[Ww][Pp][Łł][Aa][Tt][Aa]\s+[Gg][Oo][Tt][Óó][Ww][Kk][Ii].*?(\d{2}\.\.\d{4}).*?(?:[Dd]ata\s+[Ww]aluty|[Vv]alue\s+[Dd]ate):\s*(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
 income;instrument;syncid#cash;date#yMd
