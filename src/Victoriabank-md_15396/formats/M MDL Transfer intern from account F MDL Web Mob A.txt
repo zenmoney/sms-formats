@@ -1,4 +1,4 @@
-[\w.]+\s+([A-Z0-9]+)\s+(\d{4}-\d{2}-\d{2})(?=\s+\d{2}:\d{2}:\d{2}).*?[Tt]ransfer intern from account\s+[A-Z0-9]+\s*;\s*(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+║
+([\w.]+)\s+(\d{4}-\d{2}-\d{2})(?=\s+\d{2}:\d{2}:\d{2}).*?[Tt]ransfer intern from account\s+[A-Z0-9]+\s*;\s*(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+║
 
 -----COLUMNS-----
 syncid;date#yMd;income;instrument;payee
