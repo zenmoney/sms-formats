@@ -1,0 +1,7 @@
+Charicxva - (.+?)\s*Tanxa:\s*(\d[\d\s.,]*)\s*([A-Z]{3}).*?Nashti:\s*(\d[\d\s.,]*)\s*([A-Z]{3}).*?Tarigi:\s*(\d{2}/\d{2}/\d{4})
+
+-----COLUMNS-----
+payee;income;instrument;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+Charicxva - CREDO P2P Tanxa: 4.00 GEL Baratidan:  ****7358 Angarishze: GE24CD0360000037555037 Nashti: 9 GEL Tarigi: 22/05/2026 11:50:23 Detalebi ixilet Mycredo-shi: https://mycredo.page.link/Pdkp
