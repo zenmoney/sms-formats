@@ -1,0 +1,7 @@
+Aceptado el pago de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+en\s+(.+?)(?=\s+con\s+Bizum)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Aceptado el pago de 65,21  EUR en FEU VERT 601 CONDESA VEN. con Bizum ║ Pago aceptado ✅
