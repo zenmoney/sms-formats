@@ -1,0 +1,7 @@
+Top-up,\s+card\s+\*(\d{4}):\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+from\s+(.+?)\.\s+Available balance:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Top-up, card *1997: 2000000,00 UZS from ALEKSEI ZARAISKII. Available balance: 2325168,20 UZS

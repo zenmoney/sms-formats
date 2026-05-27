@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+You have successfully paid with your\s+.+?\s+card\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+at\s+(.+?)(?=\.\s+Tel:)
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;payee
+
+-----EXAMPLE-----
+23.05.2026 08:30:16 You have successfully paid with your DKIB card 1,000.00 KGS at MC MEDIKANA BISHKEK KG. Tel: (+996) 312 610610 / 2222

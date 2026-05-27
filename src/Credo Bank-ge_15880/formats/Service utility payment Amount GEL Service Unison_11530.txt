@@ -1,0 +1,7 @@
+Amount:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3});\s*Service:\s*(.+?)\s+Balance:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Service/utility payment Amount: 65.00 GEL; Service: Unison, ID: Med523527 Balance: 342.84 GEL Date: äDateñ; Check details in MyCredo: https://mycredo.page.link/Pdkp

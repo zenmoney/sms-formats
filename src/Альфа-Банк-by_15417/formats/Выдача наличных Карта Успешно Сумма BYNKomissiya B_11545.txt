@@ -1,0 +1,7 @@
+Карта\s+\d+\.(\d+).*?Сумма:\s*-?(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3}).*?Komissiya:\s*(\d[\d\s.,]*[.,]\d{2})\s*[A-Z]{3}.*?Остаток:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+syncid#cash;outcome;instrument;fee;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+Выдача наличных Карта 5.4338 Успешно Сумма: -110.00 BYNKomissiya:4.50 BYN Остаток:334.25 BYN 22.05.2026 14:27:30 ║ -110.00 BYN

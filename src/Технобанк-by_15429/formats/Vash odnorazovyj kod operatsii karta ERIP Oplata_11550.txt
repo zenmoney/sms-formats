@@ -1,0 +1,7 @@
+(?i)^\s*(?:vash|ваш)\b[^\n]*\b(?:odnorazov\w*|odnorazovyj|odnorazovyy|одноразов\w*)\b[^\n]*\b(?:kod|код)\b.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Vash odnorazovyj kod operatsii 018624 (karta 5*9704, ERIP _Oplata zakaza, 139.33 BYN, data operatsii  2026-05-24 11:29:25)
