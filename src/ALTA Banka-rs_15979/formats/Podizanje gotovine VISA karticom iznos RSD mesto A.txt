@@ -1,7 +1,0 @@
-iznos\s+(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3}).*?mesto\s+(.+?)\,\s*dana\s+(\d{2}\.\d{2}\.\d{4})
-
------COLUMNS-----
-outcome;instrument;payee;date#dMy
-
------EXAMPLE-----
-Podizanje gotovine VISA karticom: iznos  80,000.00RSD, mesto ATM ALTA IGUMAN, dana 14.05.2026 u 09:51:28h. Primedbe 011/3040-905 Vasa ALTA banka
