@@ -1,7 +1,13 @@
-\+(\d[\d\s.,]*)\s+(\S+).*?Na rachunku\s+\d+\.\.(\d{4}).*?Data waluty:\s*(\d{4}-\d{2}-\d{2})
+\+(\d[\d\s.,]*)\s+(\S+)\s+[Ww]płata gotówki we wpłatomacie.*?(?:Na rachunku|On account no\.)\s+\d+\.\.(\d{4})\.?.*?(?:Data waluty|Value date):\s*(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
-income;instrument;syncid;date#yMd
+income;instrument;syncid#cash;date#yMd
 
 -----EXAMPLE-----
 +1400,00 PLN Wpłata gotówki we wpłatomacie Na rachunku 16..7069 Data waluty: 2026-05-19 ║ Uznanie rachunku
+
+-----EXAMPLE-----
++600,00 PLN WPŁATA GOTÓWKI WE WPŁATOMACIE    Nadawca: UL. GRABISZYNSKA 240  PLWROCLAW  Tytuł:    Na rachunku 32..7759. Data waluty: 2020-06-23 ║ Uznanie rachunku
+
+-----EXAMPLE-----
++430,00 PLN WPŁATA GOTÓWKI WE WPŁATOMACIE    On account no. 70..1340  Value date: 2021-07-09 ║ Account credit
