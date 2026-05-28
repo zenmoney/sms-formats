@@ -1,0 +1,13 @@
+(?:.+?)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\d{4}\*{3}(\d{4})\s*(?:,\s*)?([^,]+),\s*[A-Z]{2}\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+(?:MNACORD|BALANCE):\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+ANBAVARAR MIJOCNER 449.00 RUB 2,484.91 AMD 4318***2771, YANDEX.PLUS, KZ 16.05.2026 13:34 MNACORD: 2,222.73 AMD
+
+-----EXAMPLE-----
+E-POS PURCHASE 13.38 EUR 14.49 USD 4318***6211 UBR*, NL 23.12.2022 17:58 BALANCE: 1,875.28 USD
+
+-----EXAMPLE-----
+GNUM 13.55 EUR 15.11 USD 4318***7920 CAF25765BEAUT1I1, FR 03.08.2024 08:47 MNACORD: 253.53 USD

@@ -1,0 +1,7 @@
+PKO Bank Polski:.*?Rachunek\s+\d+\.+\d+.*?Nie otrzymali[śs]my wp[łl]aty\.?\s*Zaleg[łl]o[śs]c\s+wynosi
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+PKO Bank Polski: Rachunek 26...9639 Nie otrzymalismy wplaty. Zaleglosc wynosi 16.54 [PLN]. Prosimy o wplate

@@ -1,4 +1,4 @@
-^.*\*(\d{4}).*iznos[u:] ([\d\s.,]*\d)\s*([A-Z]{3}).*?(\d{2}[-./]\d{2}[-./]\d{2,4}),\s+(.*?),?\.\s+.(?:aspol|renutn).*?:\s+(?!0,00)(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+.*\*(\d{4}).*iznos[u:]?\s*([\d\s.,]*\d)\s*([A-Z]{3}).*?(\d{2}[-./]\d{2}[-./]\d{2,4}),\s+(.*?),?\.\s+(?:.*?[Rr]aspoloziv[oí]|.*?[Rr]enutn).*?:\s+(?:0,00\s*[A-Z]{3}\s+)*(-?[\d\s.,]*\d)\s*([A-Z]{3})
 
 -----COLUMNS-----
 syncid;outcome;instrument;date#dMy;payee;av_balance;acc_instrument
@@ -23,3 +23,9 @@ Karticom 5574****1234, iznos: 10,042.00 RSD, 25.05.2024, LIDL BEOGRAD - TROGIDER
 
 -----EXAMPLE-----
 Karticom 5574****4977, je izvršena transakcija u iznosu 301.81 EUR na dan 18.10.2024, Booking.com Amsterda. Trenutno raspoloživo stanje je: 22,72 EUR 5.605,24 RSD .
+
+-----EXAMPLE-----
+Karticom  5574****8937, iznos: 580.00 RSD, 19.05.2026, PIZZA PLUS-PIZZA BAR  Novi Beo. Trenutno raspolozivo: 0,00 RSD 10,00 EUR    .
+
+-----EXAMPLE-----
+Karticom 5574****9126, iznos: 120.00 EUR, 29.12.2022, SRBI ZA SRBE AT +4368021. Raspolozivo: 0,00 EUR 0,00 USD 998.722,46 RSD

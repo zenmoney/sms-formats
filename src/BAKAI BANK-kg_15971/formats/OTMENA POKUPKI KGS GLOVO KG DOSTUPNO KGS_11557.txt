@@ -1,0 +1,7 @@
+(?:OTMENA\s+POKUPKI)\s+([0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,3}),\s+(.+?),\s+(?:[A-Z]{2}),\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s+(?:\d{4}\*{3})(\d{4}),\s+DOSTUPNO:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,3})
+
+-----COLUMNS-----
+income;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+OTMENA POKUPKI 1.00 KGS, GLOVO, KG, 25.05.26 13:51, 4714***7193, DOSTUPNO: 8005.27 KGS
