@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Validate format files: names, columns, regex match, group count, no cross-match."""
-
 import argparse
 import re
 import sys
@@ -61,7 +60,7 @@ def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
             if "src" in parts:
                 src_idx = parts.index("src")
                 # Check if file is directly in src/Bank_XXX/ (not in subdirs except formats)
-                if src_idx + 3 < len(parts):
+                if src_idx + 2 < len(parts):
                     # File is in a subdirectory other than /formats/
                     subdir = parts[src_idx + 2]
                     if subdir != "formats":
@@ -137,6 +136,27 @@ def _check_bank_folder_names(src_dir: Path) -> list[ValidationError]:
     return errors
 
 
+def _validate_examples_match_regex(
+    parsed, compiled_regex, file_path
+) -> list[ValidationError]:
+    """
+    Validate that each example fully matches the compiled regex.
+    This catches cases where regex is missing \\n for multi-line examples.
+    """
+    errors = []
+    for example in parsed.examples:
+        if not compiled_regex.fullmatch(example):
+            errors.append(
+                ValidationError(
+                    kind="example_no_match",
+                    file_path=file_path,
+                    message="Example does not fully match regex (check for missing \\n)",
+                    example_text=example,
+                )
+            )
+    return errors
+
+
 def _relative_path(path, base=None):
     """Path relative to base (default cwd) for shorter output."""
     base = base or Path.cwd()
@@ -197,7 +217,9 @@ def _collect_validation_errors():
     errors.extend(_check_bank_folder_names(src_dir))
     companies = list_companies()
     for company in companies:
-        bank_dir_name = f"{company.name}_{company.id}" if company.id is not None else company.name
+        bank_dir_name = (
+            f"{company.name}_{company.id}" if company.id is not None else company.name
+        )
         bank_path = src_dir / bank_dir_name
         bank_name = company.name
         if bank_name != clean_name(bank_name):
@@ -240,6 +262,8 @@ def _collect_validation_errors():
                     compiled_regex=compiled,
                 )
             )
+            # НОВАЯ ПРОВЕРКА: явная валидация примеров через fullmatch
+            errors.extend(_validate_examples_match_regex(parsed, compiled, file_path))
         errors.extend(validate_cross_match(formats_with_regex))
     return errors
 
@@ -269,7 +293,9 @@ def _apply_validation_fixes(errors):
                 parsed = parse_name_with_id(stem)
                 id_part = parsed["id"]
                 new_stem = (
-                    f"{err.expected_name}_{id_part}" if id_part is not None else err.expected_name
+                    f"{err.expected_name}_{id_part}"
+                    if id_part is not None
+                    else err.expected_name
                 )
                 new_path = path.parent / f"{new_stem}.txt"
                 if str(new_path) != err.file_path:
