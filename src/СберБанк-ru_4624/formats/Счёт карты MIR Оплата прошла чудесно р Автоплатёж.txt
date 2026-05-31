@@ -1,0 +1,7 @@
+MIR-(\d{4})\s+\d{2}:\d{2}\s+(.+?)\s+(\d[\d\s.,]*)\s*(\S+).*?Автоплатёж\s+(.+?)\s+У вас ещё:\s*(\d[\d\s\u00A0.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;comment;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-7004 09:41 Оплата прошла чудесно! 890р Автоплатёж GoodLine S.bor У вас ещё: 351 227р
