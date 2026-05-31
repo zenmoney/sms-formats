@@ -1,7 +1,7 @@
 You spent\s+(\d[\d\s]*[.,]\d{2})\s+(.+?)\s+balance:\s*(\d[\d\s]*[.,]\d{2})\s+(.+?)\s*║\s*(.+)
 
 -----COLUMNS-----
-outcome;instrument;balance;acc_instrument;payee
+outcome;instrument;av_balance;acc_instrument;payee
 
 -----EXAMPLE-----
 🛒 You spent 325,69 kr SEK balance: 574,19 kr ║ ICA
