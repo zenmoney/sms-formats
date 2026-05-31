@@ -1,0 +1,7 @@
+Пополнение:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Cash-in\s+Карта:\s*\*(\d{4})\s+Комиссия:\s+(\d[\d\s.,]*)\s+[A-Z]{3}\s+Доступно:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;fee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение: 9 000 KGS Cash-in Карта: *0039 Комиссия: 0 KGS Доступно: 320,39 KGS ║
