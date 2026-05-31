@@ -1,7 +1,10 @@
-^\+([\d\s.,]*\d)\s*([A-Z]{1,3}).*WPŁATA\s+GOT.*(?:achun|acc).*?\.(\d{4}).*\s+(\d{4}-\d{2}-\d{2})\s+.*
+\+(\d[\d\s.,]*)\s+(\S+).*?[Ww][Pp][Łł][Aa][Tt][Aa]\s+[Gg][Oo][Tt][Óó][Ww][Kk][Ii].*?(\d{2}\.\.\d{4}).*?(?:[Dd]ata\s+[Ww]aluty|[Vv]alue\s+[Dd]ate):\s*(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
 income;instrument;syncid#cash;date#yMd
+
+-----EXAMPLE-----
++1400,00 PLN Wpłata gotówki we wpłatomacie Na rachunku 16..7069 Data waluty: 2026-05-19 ║ Uznanie rachunku
 
 -----EXAMPLE-----
 +600,00 PLN WPŁATA GOTÓWKI WE WPŁATOMACIE    Nadawca: UL. GRABISZYNSKA 240  PLWROCLAW  Tytuł:    Na rachunku 32..7759. Data waluty: 2020-06-23 ║ Uznanie rachunku

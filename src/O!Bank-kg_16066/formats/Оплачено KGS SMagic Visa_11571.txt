@@ -1,0 +1,9 @@
+Оплачено: (\d+\.\d+) (\w{3}) ([^(].*) Visa \*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+Оплачено: 640.00 KGS
+SMagic
+Visa *3720
