@@ -1,0 +1,7 @@
+(?:PLATEZH\s+USPESHEN)\s+([0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,3}),\s+(.+?),\s+(?:[A-Z]{2}),\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s+(?:\d{4}\*{3})(\d{4}),\s+DOSTUPNO:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,3})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+PLATEZH USPESHEN 138.00 KGS, MB QR Pay, KG, 27.05.26 03:32, 4714***7193, DOSTUPNO: 5249.34 KGS
