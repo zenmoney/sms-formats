@@ -1,4 +1,4 @@
-Your available balance is back to\s*(\S)\s*(-?\d[\d\s.,]*[.,]\d{2})(?=\s|║|$)
+Your available balance is back to\s+(\S)\s*(-?\d[\d\s.,]*[.,]\d{2})
 
 -----COLUMNS-----
 acc_instrument;av_balance

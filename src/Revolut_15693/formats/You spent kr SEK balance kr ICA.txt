@@ -1,4 +1,4 @@
-You spent\s+(\d[\d\s]*[.,]\d{2})\s+(.+?)\s+balance:\s*(\d[\d\s]*[.,]\d{2})\s+(.+?)\s*║\s*(.+)
+You spent\s+(\d[\d\s.,]*)\s+(\S+)\s+.*?balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(.+?)\s+║\s+(.+)
 
 -----COLUMNS-----
 outcome;instrument;av_balance;acc_instrument;payee

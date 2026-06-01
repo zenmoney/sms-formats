@@ -1,4 +1,4 @@
-You've received a payment refund of\s+([^\d\s]+)(\d[\d\s.,]*[.,]\d{2})\s+from\s+(.+?)\s+║
+You've received a payment refund of\s+(\S)(\d[\d\s.,]*)\s+from\s+(.+?)\s+║
 
 -----COLUMNS-----
 instrument;income;payee
