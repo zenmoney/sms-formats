@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s*(\S+)\s*—\s*Баланс:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*СЧЁТ\s*••\s*(\d+)\s*║\s*Перевод\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;syncid;payee
+
+-----EXAMPLE-----
+40 000 ₽ — Баланс: 68 589,09 ₽ СЧЁТ •• 5114 ║ Перевод Яндекс
