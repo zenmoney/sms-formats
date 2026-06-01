@@ -1,4 +1,4 @@
--?(\d[\d\s.,]*)\s*(\S)\.\s+(.+?)\.\s+Оплата картой\s+\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*)\s+(\S)\.
+-?(\d[\d\s.,]*)\s*(\S)\.\s+(.+?)\.\s+Оплата\s+картой\s+\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*)\s+(\S)\.
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
