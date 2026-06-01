@@ -1,7 +1,0 @@
-^.*\*(\d{4}),\s+izno.*?([\d\s.,]*\d)\s*([A-Z]{3}),\s+(\d{2}[-./]\d{2}[-./]\d{2,4}),\s+(.*?),?\.\s+.(?:aspol|renutn).*?:\s+0,00.*?(?!\s+0,00)(-?[\d\s.,]*\d)\s*(RSD).*
-
------COLUMNS-----
-syncid;outcome;instrument;date#dMy;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-Karticom 5574****9126, iznos: 120.00 EUR, 29.12.2022, SRBI ZA SRBE AT +4368021. Raspolozivo: 0,00 EUR 0,00 USD 998.722,46 RSD
