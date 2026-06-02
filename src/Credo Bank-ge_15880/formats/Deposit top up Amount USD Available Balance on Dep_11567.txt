@@ -1,0 +1,7 @@
+Amount:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Available Balance on Deposit\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s+Date:\s+(\d{1,2}\/\d{1,2}\/\d{4})
+
+-----COLUMNS-----
+income;instrument;av_balance;acc_instrument;date#Mdy
+
+-----EXAMPLE-----
+Deposit top-up Amount: 99.30 USD  Available Balance on Deposit 2881.30 USD. Date: 5/28/2026 12:13:24 AM; Check details in MyCredo: https://mycredo.page.link/Pdkp

@@ -1,0 +1,7 @@
+(-?\d[\d\s.,]*)([A-Z]{3})\s+([A-Z]+?)\s+\*.*?(\d{1,2}-\d{1,2}-\d{4})\s+\d{1,2}:\d{2}\s+Картка:\s*\*(\d{4})\s+Доступно:\s+(-?\d[\d\s.,]*[.,]\d{2})([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+0.00UAH GOOGLE *TEMPORARY HOLD LONDON GB 26-05-2026 02:29 Картка: *5534 Доступно: 44853.03UAH  ║ Перевірка рахунку
