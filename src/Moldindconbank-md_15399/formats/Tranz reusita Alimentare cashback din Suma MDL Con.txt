@@ -1,4 +1,4 @@
-din\s+(\d{2}\.\d{2}\.\d{2}).*?Suma:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Cont:\s+\*\*(\d{4}).*?Suma disp\.\:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+din\s+(\d{2}\.\d{2}\.\d{2}).*?Suma:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+Cont:\s+\*\*(\d{4}).*?Suma\s+disp\.\:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+║
 
 -----COLUMNS-----
 date#dMy;cashback;instrument;syncid;av_balance;acc_instrument
