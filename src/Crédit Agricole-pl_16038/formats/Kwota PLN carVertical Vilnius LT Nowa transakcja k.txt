@@ -1,0 +1,7 @@
+Kwota:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),\s*(.+?)\s*,\s*(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Kwota: 147.58 PLN, carVertical, Vilnius, LT, 31.05.2026 ║ Nowa transakcja kartowa
