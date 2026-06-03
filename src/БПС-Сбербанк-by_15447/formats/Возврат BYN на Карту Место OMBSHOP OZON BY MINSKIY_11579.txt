@@ -1,0 +1,7 @@
+Возврат.*?(\d[\d\s.,]*)\s+([A-Z]{3})\s+.*?\s+#(\d{4})\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}(?::\d{2})?;\s*Место:\s+"([^"]+)".*?Остаток:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;date#yMd;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Возврат 42.78 BYN на Карту #2874 2026-05-26 18:38:20; Место: "OMBSHOP.OZON.BY" > MINSKIY R-N BLR; Остаток: 56.55 BYN. Сбер Банк ║ Push-уведомление
