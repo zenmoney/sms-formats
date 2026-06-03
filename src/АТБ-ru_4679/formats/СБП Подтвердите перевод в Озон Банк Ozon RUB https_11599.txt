@@ -1,0 +1,7 @@
+^.*\bПодтвердите\b.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+СБП: Подтвердите перевод в Озон Банк (Ozon) 1418 RUB: https://link.atb.su/home/me2me?id=5dcc37aa-1272-48c9-be22-8c74bf7d580b
