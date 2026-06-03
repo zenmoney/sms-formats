@@ -1,0 +1,7 @@
+(?i).*(?:one[- ]time|verification code|verification|код|\bOTP\b|одноразовый).*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+One-time verification code: Только мошенники просят назвать код, никому не сообщайте его: 74215 ║ OTP
