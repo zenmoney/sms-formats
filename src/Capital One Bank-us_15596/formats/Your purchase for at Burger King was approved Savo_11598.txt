@@ -1,0 +1,7 @@
+Your purchase for\s+([^\d\s])\s?(\d[\d\s.,]*[.,]\d{2})\s+at\s+(.+?)\s+was approved\.\s*║\s*Savor Credit Card…(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+Your purchase for $81.90 at Burger King was approved. ║ Savor Credit Card…2587

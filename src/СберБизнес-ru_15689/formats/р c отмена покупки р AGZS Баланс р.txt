@@ -1,0 +1,7 @@
+р/c \*\*(\d+).*?отмена покупки\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+р/c **6991 (*8064) 23:49 отмена покупки 260.78р AGZS 2 Баланс: 86 342.43р
