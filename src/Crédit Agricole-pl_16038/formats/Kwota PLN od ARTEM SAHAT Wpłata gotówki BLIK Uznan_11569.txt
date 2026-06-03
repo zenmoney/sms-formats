@@ -1,0 +1,7 @@
+Kwota:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+od:\s*(.+?)\s*,\s*(.+)\s*,\s*(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;comment;date#dMy
+
+-----EXAMPLE-----
+Kwota: 1000.00 PLN od: ARTEM SAHAT, Wpłata gotówki BLIK, 28.05.2026 ║ Uznanie

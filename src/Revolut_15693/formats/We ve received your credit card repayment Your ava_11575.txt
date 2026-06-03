@@ -1,0 +1,7 @@
+Your available balance is back to\s+(\S)\s*(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+acc_instrument;av_balance
+
+-----EXAMPLE-----
+We've received your credit card repayment. Your available balance is back to €2,743.69 ║ Repayment made! ✅
