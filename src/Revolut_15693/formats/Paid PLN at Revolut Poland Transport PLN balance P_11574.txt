@@ -1,0 +1,7 @@
+Paid\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+at\s+(.*?)\s+[A-Z]{3}\s+balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+😎 Paid 3.40 PLN at Revolut Poland Transport PLN balance: 0.71 PLN ║ Revolut Poland Transport

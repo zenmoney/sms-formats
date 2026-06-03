@@ -1,0 +1,7 @@
+[\w.]*?([A-Z0-9]+)\s+(\d{4}-\d{2}-\d{2})(?=\s+\d{2}:\d{2}:\d{2}).*?[Tt]ransfer intern from account\s+[A-Z0-9]+\s*;\s*(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+║
+
+-----COLUMNS-----
+syncid;date#yMd;income;instrument;payee
+
+-----EXAMPLE-----
+M...5MDL 2026-05-17 14:03:47 Transfer intern from account F1;111.72 MDL Web/Mob Apa-Canal or.Chisinau ║ 111.72 MDL 2026-05-17 14:03:47

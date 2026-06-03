@@ -1,4 +1,4 @@
-Покупка:\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\.\s+Карта\s+\*(\d{4})\.\s+Остаток\s+(\d[\d\s.,]*)\s+(\S+)
+Покупка:\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\.\s+Карта\s+\*(\d{4})\.?\s+Остаток\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;balance;acc_instrument
@@ -14,3 +14,9 @@ outcome;instrument;payee;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Покупка: 129.99 ₽ в PYATEROCHKA 15154. Карта *2157. Остаток 6614.48 ₽ ║ Операция по карте одобрена
+
+-----EXAMPLE-----
+Покупка: 1284 ₽ в APTEKA 77-6. Карта *2407. Остаток 389339.65 ₽
+
+-----EXAMPLE-----
+Покупка: 470 ₽ в Freshkafe U. Карта *2407. Остаток 388280.67 ₽

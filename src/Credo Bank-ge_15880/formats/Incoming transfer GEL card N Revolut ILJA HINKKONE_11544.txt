@@ -1,0 +1,7 @@
+Incoming transfer:\s*(\d[\d\s.,]*[.,]\d{2})\s+(\S+).*?card\s+N\s+\*+\s*(\d{4})\s+(.+?)\s+Balance:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Incoming transfer: 1030.15 GEL card N **** 6384   Revolut*ILJA HINKKONEN Balance: 1336.97 GEL  You can make payments at terminals, online shops, or via ATMs. The amount will be reflected in your account within 3 working days.
