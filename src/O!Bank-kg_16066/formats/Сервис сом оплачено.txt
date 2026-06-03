@@ -1,4 +1,4 @@
-(\d[\d\s.,]*)\s+([^\s]+)\s+оплачено
+║ (\d[\d\s.,]*)\s+(\S+)\s+оплачено
 
 -----COLUMNS-----
 outcome;instrument
