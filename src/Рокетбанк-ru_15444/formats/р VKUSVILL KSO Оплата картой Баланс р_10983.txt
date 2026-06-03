@@ -1,7 +1,10 @@
--(\d[\d\s.,]*)\s+(\S+)\s+(.+?)(?=\.\s+Оплата картой)\.\s+Оплата картой\s+\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+-?(\d[\d\s.,]*)\s*(\S)\.\s+(.+?)\.\s+Оплата\s+картой\s+\*(\d{4})\.\s+Баланс\s+(-?\d[\d\s.,]*)\s+(\S)\.
 
 -----COLUMNS-----
-outcome;instrument;payee;syncid;balance;acc_instrument
+outcome;instrument;payee;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 -41 р. VKUSVILL_KSO. Оплата картой *3529. Баланс 2 814.38 р.
+
+-----EXAMPLE-----
+-370 р. KOFEYNYA, SANKT-PETERBU. Оплата картой *7507. Баланс 0 р. ║ Рокет
