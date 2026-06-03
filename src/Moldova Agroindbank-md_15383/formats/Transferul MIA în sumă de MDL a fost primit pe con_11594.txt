@@ -1,0 +1,7 @@
+Transferul\s+.+?\s+în sumă de\s+(\d[\d\s.,]*)\s+(\S+)\s+a fost primit pe contul\s+\d*(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)(?=\.)
+
+-----COLUMNS-----
+income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transferul MIA în sumă de 1052 MDL a fost primit pe contul 22596462493. Sold disponibil: 1381.01 MDL. ║

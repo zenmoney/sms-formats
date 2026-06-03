@@ -1,0 +1,7 @@
+A payment of\s+(\S)(\d[\d\s.,]*[.,]\d{2})\s+has been scheduled for\s+[A-Za-z]{3}\.?\s+\d{1,2},\s+\d{4}\.
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+A payment of $0.50 has been scheduled for Jun. 3, 2026. ║
