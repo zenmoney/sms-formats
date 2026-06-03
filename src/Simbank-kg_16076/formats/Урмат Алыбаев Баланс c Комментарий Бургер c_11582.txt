@@ -1,0 +1,7 @@
+(.+?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S).*?Комментарий:\s*(.+?)\s*║.*?(\d[\d\s.,]*)\s+(\S)
+
+-----COLUMNS-----
+payee;balance;acc_instrument;comment;outcome;instrument
+
+-----EXAMPLE-----
+‎Урмат Алыбаев Баланс 399,51 c̲ 💬 Комментарий: Бургер ║ ‎🤑 300 c̲

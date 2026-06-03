@@ -1,0 +1,7 @@
+USPESHNOE\s+POPOLNENIE\s+SCHETA\s+(\d[\d\s.,]*)\s+([A-Z]{3}),\s*(.+?),\s*[A-Z]{2},\s*(\d{2}\.\d{2}\.\d{2})(?=\s+\d{2}:\d{2},)\s+\d{2}:\d{2},\s*\d+\*+(\d{4}),\s*DOSTUPNO:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+USPESHNOE POPOLNENIE SCHETA 3281.00 KGS, Online Bank CBS, KG, 29.05.26 18:05, 4714***7193, DOSTUPNO: 5300.00 KGS

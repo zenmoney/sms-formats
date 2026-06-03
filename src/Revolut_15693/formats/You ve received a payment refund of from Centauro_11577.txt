@@ -1,0 +1,7 @@
+You've received a payment refund of\s+(\S)(\d[\d\s.,]*)\s+from\s+(.+?)\s+║
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+You've received a payment refund of €79.20 from Centauro ║ Refund arrived  🎉
