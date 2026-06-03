@@ -1,0 +1,7 @@
+Soma/\s*Summa\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+Karta\s+\*+\s*(\d{4}).*?Balans\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Soma/ Summa 49 500.00 KZT Karta ***5881 Balans 0.00 KZT ║ Bereke Bank

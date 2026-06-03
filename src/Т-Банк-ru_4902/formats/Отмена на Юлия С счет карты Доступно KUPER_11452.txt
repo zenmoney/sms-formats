@@ -1,7 +1,10 @@
-Отмена на\s+(\d[\d\s.,]*)\s*([^\s,]+),\s*([^,]+?)\s*,\s*счет карты\s+\*(\d{4})\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s,║]+)
+Отмена на\s+(\d[\d\s.,]*)\s+(\S+),\s+(.+?),\s+счет карты\s+\*(\d{4})\s+Доступно\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+(.+)
 
 -----COLUMNS-----
-income;instrument;payee;syncid;av_balance;acc_instrument
+income;instrument;payee;syncid;av_balance;acc_instrument;comment
 
 -----EXAMPLE-----
 Отмена на 140 ₽, Юлия С., счет карты *7323 Доступно 413,46 ₽ ║ KUPER2
+
+-----EXAMPLE-----
+Отмена на 904 ₽, Татьяна Д., счет карты *2087 Доступно 3 805 ₽ ║ Rostic's
