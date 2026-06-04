@@ -1,4 +1,4 @@
-M\.\.\.(\d+)\s+(\d{4}-\d{2}-\d{2})(?=\s+\d{2}:\d{2}:\d{2}).*?Credit Account;(\d[\d\s.,]*?)\s+(\S+?)\s+(.+?)(?=\s*║)
+M\.+(\d{4})\s+(\d{4}-\d{2}-\d{2})(?:\s+\d{2}:\d{2}:\d{2})\s+Credit\s+Account;(-?\d[\d\s.,]*)\s+(\S+)\s+(.+?)
 
 -----COLUMNS-----
 syncid;date#yMd;income;instrument;payee
