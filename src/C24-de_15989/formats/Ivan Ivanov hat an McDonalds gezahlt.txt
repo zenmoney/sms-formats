@@ -1,0 +1,10 @@
+(.+?)\s+hat\s+(\d[\d\s.,]*)\s+(\S+)\s+an\s+(.+?)\s+gezahlt\.$
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+Ivan Ivanov hat 12,98 € an McDonalds 01126 gezahlt.
+
+-----EXAMPLE-----
+Ivan Ivanov hat 118,25 € an Lidl sagt Danke gezahlt.

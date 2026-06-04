@@ -1,0 +1,16 @@
+Sie\s+haben\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:an|bei)\s+(.+?)\s+gezahlt
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Sie haben 1,00 € an 0000.000000-Parkent gezahlt.
+
+-----EXAMPLE-----
+Sie haben 36,25 € an PAYPAL *ivan.ivanov gezahlt.
+
+-----EXAMPLE-----
+Sie haben 23,32 € an Preply gezahlt.
+
+-----EXAMPLE-----
+Sie haben 4,50 € bei UNIVERSITAETSKLINIK gezahlt.

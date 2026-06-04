@@ -1,0 +1,7 @@
+Sie\s+haben\s+eine\s+Zahlung\s+über\s+(\d[\d\s.,]*)\s+(\S+)\s+von\s+(.+?)\s+erhalten
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+Sie haben eine Zahlung über 1,00 € von Ivan Ivanov erhalten.
