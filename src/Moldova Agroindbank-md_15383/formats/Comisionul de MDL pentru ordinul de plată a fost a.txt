@@ -1,0 +1,7 @@
+Comisionul\s+de\s+(\d[\d\s.,]*)\s+([A-Z]{3}).*?de\s+pe\s+contul\s+\d*(\d{4}).*?Sold\s+disponibil:(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+fee;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Comisionul de 3.5 MDL pentru ordinul de plată a fost achitat cu succes de pe contul 22596641021. Sold disponibil:45389.91 MDL. ║
