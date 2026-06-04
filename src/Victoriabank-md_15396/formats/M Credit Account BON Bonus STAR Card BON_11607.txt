@@ -1,0 +1,7 @@
+M\.+(\d{4})\s+(\d{4}-\d{2}-\d{2})(?:\s+\d{2}:\d{2}:\d{2})\s+Credit\s+Account;(-?\d[\d\s.,]*)\s+(\S+)\s+(.+?)
+
+-----COLUMNS-----
+syncid;date#yMd;income;instrument;payee
+
+-----EXAMPLE-----
+M...4415 2026-06-04 17:10:39 Credit Account;3.18 BON Bonus STAR Card ║ 3.18 BON 2026-06-04 17:10:39

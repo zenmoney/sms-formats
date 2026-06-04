@@ -1,0 +1,7 @@
+Cancellation,\s+card
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Cancellation, card *1997: 71200,00 UZS, cancelled by UZUM TEZKOR. Available balance: 1565181,20 UZS
