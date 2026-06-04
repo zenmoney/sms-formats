@@ -1,4 +1,4 @@
-^.*?\*(\d{4}).* (\d{2}[-./]\d{2}[-./]\d{2,4}) .*(?:plata|pisano) ([\d\s.,]*\d)\s*([A-Z]{3})\W?\s+(.*?)\.\s+.ostu.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+(\d{4}).*(\d{2}[-./]\d{2}[-./]\d{2,4})\s+.*?\.\s+(?:Oplata|Itogo\s+spisano)\s+(\d[\d\s.,]*)\s*([A-Z]{3})\.\s+(.*?)\.\s+Dostupno:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.
 
 -----COLUMNS-----
 syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument

@@ -1,7 +1,7 @@
-Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.
+Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+(Nalichnye\s+v\s+bankomate)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.
 
 -----COLUMNS-----
-syncid#cash;date#yMd;outcome;instrument;payee
+syncid#cash;date#dMy;comment;outcome;instrument;payee
 
 -----EXAMPLE-----
 Karta 4***1078 05-05-26 18:38:30. Nalichnye v bankomate 850.00 BYN. BLR EVROOPT HYPER.   Tel. 7299090

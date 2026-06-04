@@ -1,7 +1,16 @@
-^.*?\*(\d{4}).*([\d-]{10}).*plata(?!.*ostu)([\d\s.,]*\d)\s*([A-Z]{3})\.?\s+(.*?)\..*
+(?!.*Dostupno:)(\d{4}).*(\d{2}[-./]\d{2}[-./]\d{2,4})\s+.*?\.\s+Oplata\s+(\d[\d\s.,]*)\s*([A-Z]{3})\.\s+(.*?)\.
 
 -----COLUMNS-----
-syncid;date#dd-MM-yyyy;outcome;instrument;payee
+syncid;date#dMy;outcome;instrument;payee
 
 -----EXAMPLE-----
 Priorbank. Karta 4***0144 23-05-2018 12:28:38. Oplata 2.25 BYN. BLR TC KORONA.  . Spravka: 80172899292
+
+-----EXAMPLE-----
+Karta 4***9365 23-05-26 13:04:33. Oplata 23.76 BYN. BLR SHOP "MILA".   Tel. 7299090
+
+-----EXAMPLE-----
+Priorbank. Karta 4***9602. 30-03-17 17:59:06. Oplata 4.17 BYN. NLD UBER BY MAR30 2WQAS HELP..  Spravka: 80172899292
+
+-----EXAMPLE-----
+Karta 4***5038 10-05-26 14:54:44. Oplata 117.90 BYN. BLR AZS N2. Balance: 337.79 BYN. Tel. 7299090

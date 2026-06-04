@@ -1,0 +1,7 @@
+((?:Otmena|Возврат).*?)\s+(\d[\d\s.,]*)\s*(\S+)\s+(?:Karta|Счет)\s*\*(\d{4})\s+от\s*(.*?)\s+(?:Balans|Баланс)\s+(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+comment;income;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Возврат по СБП 21.20р Счет*3902 от АО НСПК_В2С Баланс 21.20р 02:31

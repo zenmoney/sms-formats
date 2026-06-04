@@ -1,0 +1,7 @@
+(Плата\s+по\s+догов.\s+аренды)\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\s+\*(\d+)\s+Баланс\s+(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+comment;outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Плата по догов. аренды 43500р Счет *2660 Баланс 43500р 16:28
