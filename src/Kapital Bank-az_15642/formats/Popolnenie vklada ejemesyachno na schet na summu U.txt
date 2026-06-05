@@ -1,0 +1,7 @@
+na summu\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{2}\.\d{2}\.\d{4})\.\s+Ostatok vklada\s*-\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+Popolnenie vklada '% ejemesyachno na schet' na summu 22466137.91 UZS 04.06.2026. Ostatok vklada - 40466137.91 UZS
