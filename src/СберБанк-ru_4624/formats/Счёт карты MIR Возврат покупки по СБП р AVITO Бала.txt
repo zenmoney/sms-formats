@@ -1,0 +1,7 @@
+Счёт карты MIR-(\d{4})\s+\d{1,2}:\d{2}\s+(.+?)\s+(\d[\d\s\u00A0]*(?:[.,]\d{2})?)\s*(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s\u00A0]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+syncid;comment;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-7159 18:52 Возврат покупки по СБП 29 497р AVITO Баланс: 886 214.94р
