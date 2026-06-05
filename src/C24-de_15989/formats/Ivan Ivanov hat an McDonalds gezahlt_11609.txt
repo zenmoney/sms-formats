@@ -1,4 +1,4 @@
-(.+?)\s+hat\s+(\d[\d\s.,]*)\s+(\S+)\s+an\s+(.+?)\s+gezahlt\.$
+(.+?)\s+hat\s+(\d[\d.,]*)\s+(\S+)\s+an\s+(.+?)\s+gezahlt\.(?:\s*\|\|.*)?$
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee
@@ -8,3 +8,6 @@ Ivan Ivanov hat 12,98 € an McDonalds 01126 gezahlt.
 
 -----EXAMPLE-----
 Ivan Ivanov hat 118,25 € an Lidl sagt Danke gezahlt.
+
+-----EXAMPLE-----
+Ivan Ivanov hat 4,00 € an IF KIO IKEA 321 DUESSE gezahlt. || Zahlung erfolgreich
