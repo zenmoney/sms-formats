@@ -1,0 +1,7 @@
+(?i)^.*\b(?:tap to verify|verify a payment|verify this payment|tap to confirm)\b.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+You’re making an online card payment of £190 to PAYPAL *ABD CONSULT ABD C. Tap to verify ║ Verify a payment
