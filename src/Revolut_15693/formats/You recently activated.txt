@@ -1,0 +1,7 @@
+public transport ticket.*?expires\s+(?:in\s+\d+\s+minutes|soon).*?Tap for details\s*║
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+You recently activated a public transport ticket that expires in 3 minutes. Tap for details ║ Your ticket expires soon ⏳
