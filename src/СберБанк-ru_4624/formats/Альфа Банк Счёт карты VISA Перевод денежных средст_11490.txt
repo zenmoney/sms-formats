@@ -1,7 +1,7 @@
 (.+?)\s+\+\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:Плат\.\s*)?[Сс]чёт.*?••\s+(\d{4}).*?║.*?от\s+(.+?)$
 
 -----COLUMNS-----
-payee;income;instrument;syncid;payee
+comment;income;instrument;syncid;payee
 
 -----EXAMPLE-----
 Альфа-Банк + 4 000 ₽ Счёт карты VISA •• 1760 "Перевод денежных средств" ║ Перевод по СБП от МАКСИМ ВЛАДИМИРОВИЧ Б.
