@@ -1,0 +1,7 @@
+Пополнение счёта\.\s*Баланс карты:\s*(\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*║\s*\+(\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s+на карту\s+(.+)
+
+-----COLUMNS-----
+balance;acc_instrument;income;instrument;syncid#ccard / checking / deposit
+
+-----EXAMPLE-----
+Пополнение счёта. Баланс карты: 1000,37 ₽ ║ +1000,37 ₽ на карту Пэй
