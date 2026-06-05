@@ -1,7 +1,10 @@
-Sie\s+haben\s+(\d[\d\s.,]*)\s+(\S+)\s+bei\s+(.+?)\.?\s+\|\|\s+.*$/gm
+^.+?\.?\s*\|\|\s*Kartenzahlung\s+bestätigen$
 
 -----COLUMNS-----
 
 
 -----EXAMPLE-----
 Bitte bestätigen Sie die Online-Zahlung über 1,00 € bei PAYPAL *Ivanov Ivan. || Kartenzahlung bestätigen
+
+-----EXAMPLE-----
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. || Kartenzahlung bestätigen
