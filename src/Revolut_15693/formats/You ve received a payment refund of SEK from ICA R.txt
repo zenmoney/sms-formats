@@ -1,0 +1,7 @@
+You've received a payment refund of\s+([A-Z]{3})\s*(\d[\d\s.,]*[.,]\d{2})\s+from\s+(.+?)(?=\s*║|$)
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+You've received a payment refund of SEK248.20 from ICA ║ Refund arrived  🎉
