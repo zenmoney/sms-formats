@@ -1,0 +1,7 @@
+Списание со счета\s+(-?\d[\d\s.,]*)\s+([A-Z]{3}),\s+IBAN\s+#(?:[A-Za-z0-9\s]*?)(\d{4})\.\s+Остаток:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Списание со счета 3.76 BYN, IBAN #10192474. Остаток: 10.93 BYN. Сбер Банк ║ Push-уведомление
