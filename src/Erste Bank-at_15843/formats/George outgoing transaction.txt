@@ -1,4 +1,4 @@
-^(?:Giro account\s*•\s*Debit card\s+)?([\d\s.,]+)\s*([A-Z]{3})\s*|\s*Outgoing transaction\s*|\s*(.+?)\s+((?:[\d\s.,]+(?:\s*[A-Z]{2})?)\s+K1)\s+(\d{2}.\d{2}.\s+\d{2}:\d{2})$
+^(?:Giro account\s*•\s*Debit card\s+)?([\d\s.,]+)\s*([A-Z]{3})\s*\|\s*Outgoing transaction\s*\|\s*(.+?)\s+((?:[\d\s.,]+(?:\s*[A-Z]{2})?)\s+K1)\s+(\d{2}\.\d{2}\.\s+\d{2}:\d{2})$
 
 -----COLUMNS-----
 outcome;instrument;payee;comment;date#dd.MM. HH:mm
