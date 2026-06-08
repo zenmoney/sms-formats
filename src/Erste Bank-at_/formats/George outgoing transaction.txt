@@ -1,0 +1,24 @@
+^(?:Giro account\s*•\s*Debit card\s+)?([\d\s.,]+)\s*([A-Z]{3})\s*|\s*Outgoing transaction\s*|\s*(.+?)\s+((?:[\d\s.,]+(?:\s*[A-Z]{2})?)\s+K1)\s+(\d{2}.\d{2}.\s+\d{2}:\d{2})$
+
+-----COLUMNS-----
+outcome;instrument;payee;comment;date#dd.MM. HH:mm
+
+-----EXAMPLE-----
+Giro account • Debit card
+2,28 EUR | Outgoing transaction | MCDONALDS224 2360 K1 08.06. 08:11
+
+-----EXAMPLE-----
+Giro account • Debit card
+4,00 EUR | Outgoing transaction | MCDONALDS224 2360 K1 08.06. 08:10
+
+-----EXAMPLE-----
+Giro account • Debit card
+16,15 EUR | Outgoing transaction | SPAR 2361 K1 08.06. 16:24
+
+-----EXAMPLE-----
+Giro account • Debit card
+2,00 EUR | Outgoing transaction | E-COMM 2,00 DE K1 08.06. 11:15
+
+-----EXAMPLE-----
+Giro account • Debit card
+24,53 EUR | Outgoing transaction | E-COMM 24,53 LU K1 07.06. 14:24
