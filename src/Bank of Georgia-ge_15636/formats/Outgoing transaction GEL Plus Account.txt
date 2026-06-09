@@ -1,0 +1,7 @@
+Outgoing transaction:\s+([A-Z]{3})(\d[\d\s.,]*[.,]\d{2})\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;date#dMy
+
+-----EXAMPLE-----
+Outgoing transaction: GEL220.00 Plus Account 09.06.2026
