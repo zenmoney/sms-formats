@@ -1,7 +1,0 @@
-(\d[\d\s.,]*)\s+(\S+)\s*\|\s*Outgoing transaction\s*\|\s*(.*?)\s+(\d{2}\.\d{2}\.)
-
------COLUMNS-----
-outcome;instrument;payee;date#dM
-
------EXAMPLE-----
-12,67 EUR | Outgoing transaction | LIDL DANKT   3157  K1   09.06. 08:11 ║ Giro account • Debit card

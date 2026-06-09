@@ -1,4 +1,4 @@
-^(?:Giro account\s*•\s*Debit card\s+)?([\d\s.,]+)\s*([A-Z]{3})\s*\|\s*Incoming transaction\s*\|\s*(.+?)\s*\|\s*(.+)$
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\|\s+Incoming\s+transaction\s+\|\s+(.+?)\s+\|\s+(.+)
 
 -----COLUMNS-----
 income;instrument;payee;comment
