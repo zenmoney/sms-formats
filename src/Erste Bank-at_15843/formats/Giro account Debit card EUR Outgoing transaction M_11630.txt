@@ -1,7 +1,7 @@
-^(?:Giro account\s*•\s*Debit card\s+)?([\d\s.,]+)\s*([A-Z]{3})\s*\|\s*Outgoing transaction\s*\|\s*(.+?)\s+((?:[\d\s.,]+(?:\s*[A-Z]{2})?)\s+K1)\s+(\d{2}\.\d{2}\.)\s+\d{2}:\d{2}$
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\|\s+Outgoing\s+transaction\s+\|\s+(.+?)\s+(\d{2}\.\d{2}\.)
 
 -----COLUMNS-----
-outcome;instrument;payee;comment;date#dd.MM.
+outcome;instrument;payee;date#dM
 
 -----EXAMPLE-----
 Giro account • Debit card
@@ -22,3 +22,6 @@ Giro account • Debit card
 -----EXAMPLE-----
 Giro account • Debit card
 24,53 EUR | Outgoing transaction | E-COMM 24,53 LU K1 07.06. 14:24
+
+-----EXAMPLE-----
+12,67 EUR | Outgoing transaction | LIDL DANKT   3157  K1   09.06. 08:11 ║ Giro account • Debit card

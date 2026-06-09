@@ -1,0 +1,7 @@
+Your card \d{4}xx(\d{4}) has been charged\s+(\d[\d\s.,]*)\s+([A-Z]{3});\s*([^;]+?)\s*;\s*(\d{2}/\d{2}/\d{4})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;date#Mdy
+
+-----EXAMPLE-----
+Your card 5119xx5875 has been charged 7.30 USD; boosty.to; 09/06/2026 12:28:23 ║ Thông báo BIDV
