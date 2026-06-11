@@ -1,7 +1,7 @@
-(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s*\|\s*Outgoing transaction\s*\|\s*([^\|]+?)\s*\|.*?(\d{2}/\d{2})
+^(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s*\|\s*Outgoing transaction\s*\|\s*(.+?)\s*\|\s*(.+?)\s*║\s*Giro account\s*•\s*Debit card$
 
 -----COLUMNS-----
-outcome;instrument;payee;date#Md
+outcome;instrument;payee;comment
 
 -----EXAMPLE-----
 39,43 EUR | Outgoing transaction | Salzburg AG | Salzburg AG VK 41828748 05/26 ║ Giro account • Debit card
