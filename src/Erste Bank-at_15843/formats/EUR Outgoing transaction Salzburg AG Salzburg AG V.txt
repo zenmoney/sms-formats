@@ -1,4 +1,4 @@
-^(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s*\|\s*Outgoing transaction\s*\|\s*(.+?)\s*\|\s*(.+?)\s*║\s*Giro account\s*•\s*Debit card$
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\|\s+Outgoing\s+transaction\s+\|\s+(.+?)\s+\|\s+(.+?)\s+║
 
 -----COLUMNS-----
 outcome;instrument;payee;comment
