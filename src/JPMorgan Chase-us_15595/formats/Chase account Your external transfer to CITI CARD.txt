@@ -1,0 +1,7 @@
+(?:.+?)\s+account\s+(\d+):\s+Your\s+([^\d\s]+)(\d[\d\s.,]*)\s+external transfer to\s+(.+?)\s+on\s+([A-Za-z]{3}\s+\d{1,2},\s+\d{4})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#Mdy
+
+-----EXAMPLE-----
+Chase account 2256: Your $178.82 external transfer to CITI CARD ONLINE on Jun 12, 2026 at 4:58 AM ET was more than the $0.00 limit in your Alerts settings. ║ You have received a notification
