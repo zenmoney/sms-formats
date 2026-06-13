@@ -1,0 +1,7 @@
+Debit card - (\d{4}).*?on\s+([A-Za-z]+\s+\d{1,2},\s*\d{4}).*?for\s+(\S)\s*(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;date#Mdy;instrument;outcome
+
+-----EXAMPLE-----
+BofA: Debit card - 0241 charge made online, by phone or mail on June 13, 2026 for $1.01. Log in to view details. STOP to end account texts
