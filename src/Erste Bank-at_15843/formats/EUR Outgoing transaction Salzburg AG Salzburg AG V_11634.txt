@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\|\s+Outgoing\s+transaction\s+\|\s+(.+?)\s+\|\s+(.+?)\s+║
+
+-----COLUMNS-----
+outcome;instrument;payee;comment
+
+-----EXAMPLE-----
+39,43 EUR | Outgoing transaction | Salzburg AG | Salzburg AG VK 41828748 05/26 ║ Giro account • Debit card
