@@ -1,0 +1,7 @@
+You've received\s+([^\d\s]+)(\d[\d\s.,]*[.,]\d{2})\s+in your account ending\s+(\d{4})\s+on\s+(\d{2}-[A-Za-z]{3}-\d{4})(?=,)
+
+-----COLUMNS-----
+instrument;income;syncid;date#dMy
+
+-----EXAMPLE-----
+You've received RM50.00 in your account ending 4427 on 09-JUN-2026, 07:40:44. If you need assistance, please call the number on the back of your card. ║ CIMB OCTO MY
