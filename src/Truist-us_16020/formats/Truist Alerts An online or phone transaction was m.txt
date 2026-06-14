@@ -1,4 +1,4 @@
-credit card\s+(\d{4})\s+at\s+([^,]+),\s+for\s+(\S+)\s*(\d[\d\s.,]*)\s+on\s+(\d{4}-\d{2}-\d{2})
+credit card\s+(\d{4})\s+at\s+([^,]+),\s+for\s+(\S)\s*(\d[\d.,]*)\s+on\s+(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
 syncid;payee;instrument;outcome;date#yMd
