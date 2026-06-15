@@ -1,4 +1,4 @@
-Acct\.\s+(\d{4})\s+has been debited with\s+([A-Z]{3})\s+(\d[\d,]*\.\d{3})\s+from\s+(.*?)\.\s*Your Avl\. balance is\s+([A-Z]{3})\s+(\d[\d,]*\.\d{3})
+Acct\.\s+(\d{4})\s+has been debited with\s+([A-Z]{3})\s+(\d[\d,]*\.\d{2})\d\s+from\s+(.*?)\.\s*Your Avl\. balance is\s+([A-Z]{3})\s+(\d[\d,]*\.\d{2})\d
 
 -----COLUMNS-----
 syncid;instrument;outcome;payee;acc_instrument;av_balance
