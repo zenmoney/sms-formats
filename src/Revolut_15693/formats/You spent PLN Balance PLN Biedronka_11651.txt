@@ -1,0 +1,7 @@
+You\s+spent\s+([A-Z]{3})(\d[\d\s.,]*)\s+Balance:\s+([A-Z]{3})(-?\d[\d\s.,]*[.,]\d{2})\s+║\s+(.+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;av_balance;payee
+
+-----EXAMPLE-----
+🛒 You spent PLN56.74 Balance: PLN2,012.75 ║ Biedronka

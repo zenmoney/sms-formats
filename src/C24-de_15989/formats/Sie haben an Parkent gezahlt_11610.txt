@@ -1,7 +1,7 @@
-Sie\s+haben\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:an|bei)\s+(.+?)\s+gezahlt
+(Sie)\s+haben\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:an|bei)\s+(.+?)\s+gezahlt
 
 -----COLUMNS-----
-outcome;instrument;payee
+syncid;outcome;instrument;payee
 
 -----EXAMPLE-----
 Sie haben 1,00 € an 0000.000000-Parkent gezahlt.
