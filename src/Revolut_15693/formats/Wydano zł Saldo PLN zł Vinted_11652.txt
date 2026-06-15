@@ -1,0 +1,7 @@
+Wydano\s+(\d[\d\s.,]*)\s*([^\s\d.,]+)\s+Saldo\s+[^:]+:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s\d.,]+)\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🛍 Wydano 133,90 zł Saldo PLN: 175,34 zł ║ Vinted

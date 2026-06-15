@@ -1,0 +1,7 @@
+NALICHNYE\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+OSTATOK\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+KARTA\s+\S*\*(\d{4})\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument;syncid#cash;date#yMd
+
+-----EXAMPLE-----
+NALICHNYE 100.00 BYN MTB MOBILE BANK / MINSK / BY OSTATOK 11800.37 BYN KARTA 5*4365 2026-06-11 17:40:58
