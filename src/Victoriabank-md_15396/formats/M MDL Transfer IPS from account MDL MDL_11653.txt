@@ -1,0 +1,7 @@
+M\.{3}(\d[A-Z]{3})\s+(\d{4}-\d{2}-\d{2}).*?Transfer IPS from account;(\d[\d\s.,]*)\s([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument
+
+-----EXAMPLE-----
+M...6MDL 2026-06-14 10:01:17 Transfer IPS from account;200.00 MDL ║ 200.00 MDL 2026-06-14 10:01:17
