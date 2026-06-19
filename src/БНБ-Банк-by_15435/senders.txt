@@ -4,3 +4,4 @@ bnbbank
 bnb-bank
 bnb_bank
 com.alseda.bnbbank
+com.iskra.mobile
