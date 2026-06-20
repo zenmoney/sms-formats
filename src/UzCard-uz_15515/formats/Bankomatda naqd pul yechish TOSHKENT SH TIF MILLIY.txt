@@ -1,0 +1,7 @@
+UZ,([0-9]{2}\.[0-9]{2}\.[0-9]{2})\s+\d{2}:\d{2},karta\s+\*\*\*(\d{4})\.\s*Miqdor:([0-9][\d\s.,]*)\s+([A-Z]{3})\s+Qoldiq:([0-9][\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid#cash;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Bankomatda naqd pul yechish: TOSHKENT SH. TIF MILLIY BANKI AJ ATLA, UZ,20.06.26 17:05,karta ***9103. Miqdor:101000.00 UZS Qoldiq:1635090.63 UZS
