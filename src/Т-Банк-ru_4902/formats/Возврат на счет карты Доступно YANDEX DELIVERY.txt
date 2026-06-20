@@ -1,0 +1,7 @@
+Возврат на\s*(\d[\d\s.,]*)\s*([^\s,]+).*?счет карты\s*\*(\d{4}).*?Доступно\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s,║]+)\s*║\s*(.+)
+
+-----COLUMNS-----
+income;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Возврат на 550 ₽, счет карты *1103 Доступно 250 884,16 ₽ ║ YANDEX*5814*DELIVERY
