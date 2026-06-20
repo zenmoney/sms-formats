@@ -1,0 +1,7 @@
+Zapłacono\s+(\d[\d\s,\.]*)\s*(zł)\s+w:\s*(.+?)(?=\.\s*⚠️\s*Saldo konta)\.\s*⚠️\s*Saldo konta\s*„PLN”:\s*(-?\d[\d\s,]*[.,]\d{2})\s*(zł)(?=[\s\.║]|$)
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Zapłacono 304,70 zł w: Allegro. ⚠️ Saldo konta „PLN”: 24,54 zł. ║ Allegro ⚒️
