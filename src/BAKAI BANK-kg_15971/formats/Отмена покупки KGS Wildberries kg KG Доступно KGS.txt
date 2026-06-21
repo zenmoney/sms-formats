@@ -1,0 +1,7 @@
+Отмена покупки\s+(\d[\d\s.,]*)\s+([A-Z]{2,3}),\s+([^,]+),(?:\s+[A-Z]{2,3},\s+)(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s+\d{4}\*+(\d{4}),\s+Доступно:(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{2,3})
+
+-----COLUMNS-----
+income;instrument;payee;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Отмена покупки 5.00 KGS, Wildberries.kg, KG, 18.06.26 22:46, 4714***3038, Доступно:65167.52 KGS ║ Покупка
