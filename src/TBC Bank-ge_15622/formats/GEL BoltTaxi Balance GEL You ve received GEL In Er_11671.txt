@@ -1,0 +1,7 @@
+(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+(.+?)\s+Balance:\s*(-?\d[\d\s.,]*[.,]\d{2})(\S+)\s+(You.?ve received:.*?)\s+(\d{2}\/\d{2}\/\d{2})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;balance;acc_instrument;comment;date#dMy
+
+-----EXAMPLE-----
+10.00GEL (*8089) BoltTaxi Balance: 1792.44GEL  You’ve received: 0.07GEL In Ertguli Piggy bank you have: 25.98GEL 12/06/26 11:59

@@ -1,0 +1,7 @@
+Оплата:\s*(-?\d[\d\s.,]*)\s*(\S+)\s+Баланс\s+«(?:.+?)»: \s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s+║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🍽️ Оплата: 3,99 € Баланс «EUR»: 610,44 € ║ Too Good To Go

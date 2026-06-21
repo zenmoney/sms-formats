@@ -1,0 +1,7 @@
+PayNow:\s*([A-Z]\$)(\d[\d\s.,]*(?:[.,]\d{2})?)\s+from\s+A/C ending\s+(\d{1,10})\s+to\s+(.+?)\s+\(UEN ending[^\)]*\),\s*(\d{1,2}\s+.+?)(?=\s+\d{1,2}:\d{2}\s+SGT)
+
+-----COLUMNS-----
+instrument;outcome;syncid;payee;date#dM
+
+-----EXAMPLE-----
+Fr DBS: Successful PayNow: S$8.00 from A/C ending 5115 to SIN SOON HENG FRESH PRODUCTS PTE. LTD. (UEN ending 447K), 18 Jun 17:39 SGT. If unauthorised, call DBS hotline.
