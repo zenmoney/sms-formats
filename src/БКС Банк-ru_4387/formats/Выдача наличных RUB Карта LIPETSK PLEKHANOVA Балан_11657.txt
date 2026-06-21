@@ -1,0 +1,13 @@
+Выдача наличных\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Карта\s+\*{4}(\d{4})\s+(.+?)(?=\s+Баланс)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid#cash;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Выдача наличных 100000.00 RUB Карта ****4024 LIPETSK, PLEKHANOVA Баланс 109269.24 RUB
+
+-----EXAMPLE-----
+Выдача наличных 310000.00 RUB Карта ****2397 g. Perm, Bank VTB (PAO) Баланс 96.64 RUB
+
+-----EXAMPLE-----
+Выдача наличных 70000.00 RUB Карта ****2127 g. Perm, D. 93, PR-KT KOMSOMOL'SKI Баланс 65.10 RUB

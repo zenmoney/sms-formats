@@ -1,0 +1,7 @@
+Placeno kart\.br\.\s*\d*(\d{4})\s*/\s*(.+?)\s*/\s*[A-Z]+\s+[A-Z]+\s*/\s*([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s*/\s*Raspolozivo:\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Placeno kart.br. 9891643692 / ZARA 3540 / BEOGRAD RS / RSD 1,590.00 / Raspolozivo: RSD 41,259.06

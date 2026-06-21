@@ -1,0 +1,7 @@
+Входящий платеж:\s*(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument
+
+-----EXAMPLE-----
+Входящий платеж: 119684.22 KGS ║ O!Bank

@@ -1,0 +1,7 @@
+Sie haben\s+(\d[\d\s.,]*)\s*([^\d\s,\.]+)\s+an\s+(.+?)\s+gesendet
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Sie haben 35,00 € an Dmitrii Abramov gesendet. ║ Echtzeit-Überweisung erfolgreich
