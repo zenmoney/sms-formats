@@ -5,3 +5,6 @@ outcome;instrument;syncid;payee;balance;acc_instrument;date#Mdy
 
 -----EXAMPLE-----
 34.20GEL (*9655) CARREFOUR Nashti: 18850.72GEL    11/06/26 21:33
+
+-----EXAMPLE-----
+15.70GEL (*5364) MOZAIKA Balance: 8256.74GEL    11/06/26 16:52
