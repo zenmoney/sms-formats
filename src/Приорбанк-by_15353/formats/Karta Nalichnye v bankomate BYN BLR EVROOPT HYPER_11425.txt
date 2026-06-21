@@ -1,4 +1,4 @@
-Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+(Nalichnye\s+v\s+bankomate)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.(?:.*?Balance:\s*([\d\s.,]*\d)\s*([A-Z]{3}))?.*
+Karta\s+4\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+(Nalichnye\s+v\s+bankomate)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.(?:.*?(?:Balance|Dostupno):\s*([\d\s.,]*\d)\s*([A-Z]{3}))?.*
 
 -----COLUMNS-----
 syncid#cash;date#dMy;comment;outcome;instrument;payee;av_balance;acc_instrument
