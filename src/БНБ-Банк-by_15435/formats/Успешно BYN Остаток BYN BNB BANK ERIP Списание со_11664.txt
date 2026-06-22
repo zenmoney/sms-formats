@@ -1,7 +1,7 @@
-Успешно,\s+\*(\d{4}),\s+-([0-9][\d\s.,]*?)\s+([A-Z]{3}),\s+Остаток:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),\s+([^║]+?)\s*║
+Успешно,\s+\*(\d{4}),\s+-(\d[\d\s.,]*)\s+([A-Z]{3}),\s+Остаток:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3}),\s+(.+?)\s+║\s+(.+?)$
 
 -----COLUMNS-----
-syncid;outcome;instrument;balance;acc_instrument;payee
+syncid;outcome;instrument;av_balance;acc_instrument;payee;comment
 
 -----EXAMPLE-----
 Успешно, *7887, -66.85 BYN, Остаток: 640.07 BYN, BNB-BANK ERIP ║ Списание со счета
