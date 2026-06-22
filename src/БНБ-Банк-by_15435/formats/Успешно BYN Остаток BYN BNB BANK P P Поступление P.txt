@@ -1,0 +1,7 @@
+Успешно,\s+\*(\d{4}),\s+\+(\d[\d\s.,]*)\s+([A-Z]{3}),\s+Остаток:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3}),\s+(.+?)\s+║\s+(.+?)$
+
+-----COLUMNS-----
+syncid;income;instrument;av_balance;acc_instrument;payee;comment
+
+-----EXAMPLE-----
+Успешно, *0546, +3.00 BYN, Остаток: 3.00 BYN, BNB-BANK P2P ║ Поступление P2P перевода
