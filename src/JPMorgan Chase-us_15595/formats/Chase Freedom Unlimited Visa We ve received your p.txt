@@ -1,0 +1,7 @@
+We've received your\s+([^\d\s])(\d[\d,]*[.,]\d{2})\s+payment\.
+
+-----COLUMNS-----
+instrument;income
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: We've received your $2,009.07 payment. ║ You have received a notification
