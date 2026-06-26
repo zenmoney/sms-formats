@@ -1,0 +1,7 @@
+Оплата\s+\*(\d{4})\s+(\d[\d\s.,]*)\s+([^\s]+)\s+Платеж\s+QR\s+(.+?)(?=\.\s+Пользуйтесь)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+09:48 Оплата *6917 250 ₸ Платеж QR MINIMARKET LEMON MARKET. Пользуйтесь Halyk+ и получайте повышенные бонусы. Проверьте свою категорию Halyk+ ║
