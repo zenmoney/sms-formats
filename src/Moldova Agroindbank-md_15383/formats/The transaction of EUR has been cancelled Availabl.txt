@@ -1,4 +1,4 @@
-(?i)^.*has been cancel(?:led|ed).*$
+has\s+been\s+cancelled
 
 -----COLUMNS-----
 

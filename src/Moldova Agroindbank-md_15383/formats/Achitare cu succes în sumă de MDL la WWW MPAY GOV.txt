@@ -1,7 +1,0 @@
-Achitare cu succes în sumă de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+cu cardul\s+\*+\s*(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*)(?=\s*\.)
-
------COLUMNS-----
-outcome;instrument;payee;syncid;av_balance
-
------EXAMPLE-----
-Achitare cu succes în sumă de 332.85 MDL la WWW MPAY GOV MD cu cardul ***0563. Sold disponibil: 0 . ║
