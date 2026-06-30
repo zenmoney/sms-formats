@@ -1,0 +1,7 @@
+You sent\s+([^\d\s]+)\s*(\d[\d\s.,]*)\s+to\s+(.+?)\.
+
+-----COLUMNS-----
+instrument;outcome;payee
+
+-----EXAMPLE-----
+You sent €121.31 to Evgeny Victorov. It will arrive in seconds ║ Transfer sent ✅

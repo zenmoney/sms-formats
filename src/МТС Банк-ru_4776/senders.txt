@@ -6,3 +6,4 @@ ru.simpls.mbrd.ui
 ru.simpls.mbrd.ui.beta
 ru.mts.money
 ru.mts.bank
+mtc.dengi

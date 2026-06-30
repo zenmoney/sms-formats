@@ -1,0 +1,7 @@
+Your installment of\s+[A-Z]{3}\s+[\d\s.,]*\s+for your\s+.*?LOAN.*?is due on\s+\d{2}/\d{2}/\d{4}
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Your installment of AED 3,394.00 for your PERSONAL LOAN No. 6053XXXXXXXX0001 is due on 08/05/2026. Please ensure sufficient funds are available. Thank you for banking with us.
