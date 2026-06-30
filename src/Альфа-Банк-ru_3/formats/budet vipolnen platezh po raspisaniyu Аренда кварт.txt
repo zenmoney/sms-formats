@@ -1,4 +1,4 @@
-\d{2}\.\d{2}\.\d{4}\s+budet\s+vipolnen\s+platezh\s+po\s+raspisani[uy]\s+.*?║\s*Уведомление
+\d{2}\.\d{2}\.\d{4}\s+budet\s+vipolnen\s+platezh\s+po\s+raspisani[uy].*?║\s*Уведомление
 
 -----COLUMNS-----
 
