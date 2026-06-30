@@ -1,4 +1,4 @@
-Your installment of\s+[\d\s.,]*\s*[A-Z]{3}\s+for your\s+.*?LOAN.*?is due on\s+\d{2}/\d{2}/\d{4}
+Your installment of\s+[A-Z]{3}\s+[\d\s.,]*\s+for your\s+.*?LOAN.*?is due on\s+\d{2}/\d{2}/\d{4}
 
 -----COLUMNS-----
 
