@@ -1,0 +1,7 @@
+Paid\s+(\S+?)\s*(\d[\d\s.,]*)\s*\(\s*(\S+?)\s*(\d[\d\s.,]*[.,]\d{2})\s*\)\s+at\s+(.+?)\s+⚠️\s+(\S+)\s+Balance:\s+\S*(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+instrument;outcome;op_instrument;op_outcome;payee;acc_instrument;balance
+
+-----EXAMPLE-----
+⚒️ Paid US$10 (€8.83) at OpenAI ⚠️ EUR Balance: €1.08 ║ OpenAI
