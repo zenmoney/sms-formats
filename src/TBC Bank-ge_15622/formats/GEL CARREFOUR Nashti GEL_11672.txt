@@ -1,7 +1,7 @@
 (\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+\(\*(\d{4})\)\s+([^:]+):\s+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+(\d{2}\/\d{2}\/\d{2})\s+\d{2}:\d{2}
 
 -----COLUMNS-----
-outcome;instrument;syncid;payee;balance;acc_instrument;date#Mdy
+outcome;instrument;syncid;payee;balance;acc_instrument;date#dMy
 
 -----EXAMPLE-----
 34.20GEL (*9655) CARREFOUR Nashti: 18850.72GEL    11/06/26 21:33

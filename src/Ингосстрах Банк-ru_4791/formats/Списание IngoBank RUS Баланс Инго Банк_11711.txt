@@ -1,0 +1,7 @@
+Списание\s+(\d[\d\s.,]*)(\S+),\s+\*(\d{4})\s+(.+?)\.\s+Баланс\s+(-?\d[\d\s.,]*)(\S+)\s+║\s+(.+?)$
+
+-----COLUMNS-----
+outcome;instrument;syncid;comment;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Списание 59.00₽, *3493 IngoBank, RUS. Баланс 301213.15₽ ║ Инго Банк
