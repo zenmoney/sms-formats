@@ -1,0 +1,10 @@
+(Unlimited|Preferred)\s+[A-Za-z]+:\s*We['']ve received your\s+(\S)\s*(\d[\d,]*[.,]\d{2})\s+payment
+
+-----COLUMNS-----
+syncid;instrument;income
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: We've received your $2,009.07 payment. ║ You have received a notification
+
+-----EXAMPLE-----
+Chase Sapphire Preferred Visa: We've received your $304.78 payment.

@@ -1,7 +1,0 @@
-^(.*?)\s+.алан.*?(-?[\d\s.,]*\d).*║\s+\S+\s+(.касуван.*?)\s+([\d\s.,]*\d)\s*(\S{1,3})$
-
------COLUMNS-----
-payee;av_balance;comment;outcome;instrument
-
------EXAMPLE-----
-YouTube Баланс 78.57₴ ║ 👨‍ Скасування 10.00₴

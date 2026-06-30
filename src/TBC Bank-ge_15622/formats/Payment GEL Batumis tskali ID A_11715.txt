@@ -1,0 +1,7 @@
+Payment\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+ID:.*?\s+(\d{2}\/\d{2}\/\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Payment 6.73GEL Batumis-tskali ID:222/17A-2104 23/06/2026 02:15:44

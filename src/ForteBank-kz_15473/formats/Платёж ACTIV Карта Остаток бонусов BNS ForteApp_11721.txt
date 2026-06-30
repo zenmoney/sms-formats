@@ -1,0 +1,7 @@
+Платёж:\s*(?:[-−])?(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+Карта\s+\*(\d{4})\s+(Остаток:\s*бонусов\s+\d[\d\s.,]*\s*\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;comment
+
+-----EXAMPLE-----
+Платёж: −486.00 ₸ ACTIV Карта *7834 Остаток: бонусов 0.08 BNS ║ ForteApp

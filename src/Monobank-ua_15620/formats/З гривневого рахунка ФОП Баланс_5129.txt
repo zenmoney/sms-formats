@@ -1,7 +1,0 @@
-^(?!Від)(.*?)\s+Бала.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}|\S)\s+║\s+👉💳\s+([\d\s.,]*\d)\s*([A-Z]{3}|\S).*
-
------COLUMNS-----
-comment;av_balance;acc_instrument;income;instrument
-
------EXAMPLE-----
-З гривневого рахунка ФОП Баланс 88 886.98₴ ║ 👉💳 61 444.94₴

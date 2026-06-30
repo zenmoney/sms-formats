@@ -1,0 +1,7 @@
+has\s+been\s+cancelled
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+The transaction of 4.23 EUR has been cancelled. Available balance: 38.49 EUR. ║
