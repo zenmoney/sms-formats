@@ -1,4 +1,4 @@
-Achitare cu succes în sumă de (\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+cu cardul\s+\*+(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})
+Achitare cu succes în sumă de (\d[\d\s.,]*)\s+([A-Z]{3})\s+la\s+(.+?)\s+(?:cu cardul)\s+\*{3}(\d{4})\.\s+Sold disponibil:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})?
 
 -----COLUMNS-----
 outcome;instrument;payee;syncid;av_balance;acc_instrument
@@ -29,3 +29,6 @@ Achitare cu succes în sumă de 465 MDL la CROSTA KITCHENANDBAKER cu cardul ***9
 
 -----EXAMPLE-----
 Achitare cu succes în sumă de 80 MDL la CROSTA KITCHEN&BAKERY cu cardul ***9924. Sold disponibil: 1895.2 MDL. ║
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 332.85 MDL la WWW MPAY GOV MD cu cardul ***0563. Sold disponibil: 0 . ║
