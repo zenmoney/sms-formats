@@ -1,0 +1,7 @@
+Achitare cu succes în sumă de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+de\s+pe\s+contul\s+(\d+)\.\s+Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Achitare cu succes în sumă de 532.9 MDL de pe contul 22596462493. Sold disponibil: 911.6 MDL. ║ maibank
