@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Vozvrat\s+(.+?)\s+Karta\s+(?:\d+[*]+)?(\d{4})\s+Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
++35990  KZT  Vozvrat WILDBERRIES Karta 489993******5124  Balans 100155.69 KZT  ║ BCC.KZ

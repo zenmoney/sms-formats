@@ -1,0 +1,10 @@
+Plata retail \((.*?)\)\s+din\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\.\s*Suma:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\. Cashback:\s+(?:\d[\d\s.,]*)\s+[A-Z]{3}\.\s*Card:\s+\d{4}\D+(\d{4})\. Disponibil:\s+(-?\d[\d\s.]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;date#dMy;outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Plata retail (MOLDRETAIL GROUP SRL) din 26.06.26 17:31. Suma: 170,00 MDL. Cashback: 1,71 MDL. Card: 5188*5343. Disponibil: 15.316,70 MDL.     ║ Tranzactie reusita
+
+-----EXAMPLE-----
+Tranz. reusita: Plata retail (MAIB LINELLA 36) din 17.06.26 15:53. Suma: 149,59 MDL. Cashback: 1,50 MDL. Card: 5574*9146. Disponibil: 4.047,57 MDL.

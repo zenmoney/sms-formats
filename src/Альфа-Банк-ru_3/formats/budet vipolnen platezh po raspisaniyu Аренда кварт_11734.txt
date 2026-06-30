@@ -1,0 +1,7 @@
+\d{2}\.\d{2}\.\d{4}\s+budet\s+vipolnen\s+platezh\s+po\s+raspisani[uy].*?║\s*Уведомление
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+13.06.2026 budet vipolnen platezh po raspisaniyu Аренда квартиры, конверт, na summu 7000.00 RUR, poluchatel 408*3908.Alfa-Bank ║ Уведомление
