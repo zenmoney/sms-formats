@@ -1,7 +1,0 @@
-(.+?)\s+Баланс\s+(\d[\d\s,]*(?:[.,]\d{2})?)(\S)\s+.*?║\s*(?:\S+\s*)?(\d[\d\s,]*(?:[.,]\d{2})?)(\S)
-
------COLUMNS-----
-payee;balance;acc_instrument;outcome;instrument
-
------EXAMPLE-----
-ОККО Баланс 141 386.50₴ 🥷 ║ ⛽️ 350.00₴
