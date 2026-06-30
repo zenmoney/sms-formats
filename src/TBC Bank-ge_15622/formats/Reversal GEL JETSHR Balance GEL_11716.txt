@@ -1,0 +1,7 @@
+Reversal:\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})\s+\(\*(\d{4})\)\s+(.+?)\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{2}\/\d{2}\/\d{2})\s+\d{2}:\d{2}
+
+-----COLUMNS-----
+income;instrument;syncid;payee;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+Reversal: 5.00 GEL (*0408) JETSHR Balance: 4461.34 GEL  27/06/26 15:45
