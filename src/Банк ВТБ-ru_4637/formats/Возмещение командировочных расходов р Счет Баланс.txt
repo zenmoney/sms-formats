@@ -1,4 +1,4 @@
-(.+?)\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\s+\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*)\s*(\S+)
+(Возмещение командировочных расходов)\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\s+\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 comment;income;instrument;syncid;av_balance;acc_instrument
