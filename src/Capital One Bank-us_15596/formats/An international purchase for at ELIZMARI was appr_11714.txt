@@ -1,0 +1,7 @@
+An international purchase for (\S)(\d[\d\s.,]*[.,]\d{2}) at (.+?) was approved for your .*?ending in (\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+An international purchase for $29.61 at ELIZMARI was approved for your Venture X Card ending in 0406. ║ Credit Card Ending in 0406
