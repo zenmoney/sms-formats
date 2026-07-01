@@ -1,0 +1,7 @@
+You have a (\$)(\d[\d\s.,]*[.,]\d{2}) pending credit from ([A-Z0-9\.]+)\.
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: You have a $27.05 pending credit from KEYMELOCKSMITHS.COM. ║ You have received a notification
