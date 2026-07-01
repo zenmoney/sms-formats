@@ -3,4 +3,5 @@ alfabank
 by.alfabank.insync
 card_nova
 by.alfabank.insync3
+by.alfabank.app.insnc3
 alfabank.by
