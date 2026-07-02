@@ -1,0 +1,10 @@
+Tranz\. reusita: Alimentare cashback din\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\.\s*Suma:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\.\s*Cont:\s+\*\*(\d+)\.\s*Suma disp\.:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Tranz. reusita: Alimentare cashback din 02.07.26 11:41. Suma: 72,36 MDL. Cont: **4261. Suma disp.: 5.772,19 MDL
+
+-----EXAMPLE-----
+Tranz. reusita: Alimentare cashback din 28.05.26 23:01. Suma: 13,14 MDL. Cont: **7481. Suma disp.: 2.195,49 MDL  ║ Extragere Cash Back
