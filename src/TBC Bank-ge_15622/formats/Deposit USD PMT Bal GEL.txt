@@ -1,0 +1,7 @@
+Deposit:\s+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})\s+\(\*(\d{4})\)\s+([A-Za-z]+)\s+\$\s+Bal:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{2}\/\d{2}\/\d{2})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;balance;acc_instrument;date#Mdy
+
+-----EXAMPLE-----
+Deposit: 470.98USD (*1198) PMT $ Bal: 15258.48 GEL  03/07/26 10:54
