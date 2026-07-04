@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)\s+On account no\.\s*\d+\.\.(\d{4}).*?Available balance:\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;comment;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+-10,00 PLN Opłata za użytkowanie karty On account no. 73..1617 Available balance:+45990,15 PLN ║ Account debit
