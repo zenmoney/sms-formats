@@ -1,0 +1,7 @@
+ending\s+(\d{4}).*?transaction\s+of\s+([A-Z]{3})\s+(\d[\d\s,]*[.,]\d{2})\s+at\s+(.+?)(?=\s+on\s+(?:[^,]+?,\s*)?\d{1,2}\s+[A-Za-z\u00C0-\u017F]+\s+\d{4})\s+on\s+(?:[^,]+?,\s*)?(\d{1,2}\s+[A-Za-z\u00C0-\u017F]+\s+\d{4}).*?Available\s+limit:\s+([A-Z]{3})\s+(\d[\d\s,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#dMy;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Mashreq Credit Card ending 4147 was used for a transaction of AED 12,150.00 at ARMADA MEDICAL CENTRE on Saturday, 4 July 2026, 1:45 pm. Available limit: AED 4,432.87
