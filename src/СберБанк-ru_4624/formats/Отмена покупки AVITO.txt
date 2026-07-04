@@ -1,0 +1,8 @@
+💳\s*([\d\s.,]*)\s*(₽|\S+)\s*••\s*(\d{4})\s*║\s*➕\s*([\d\s.,]*)\s*(₽|\S+)\s+(.+?)\.\s+(.+)
+
+-----COLUMNS-----
+av_balance;acc_instrument;syncid;income;instrument;comment;payee
+
+
+-----EXAMPLE-----
+💳 78 060,90 ₽ •• 9549 ║ ➕ 18 361 ₽ Отмена покупки. AVITO
