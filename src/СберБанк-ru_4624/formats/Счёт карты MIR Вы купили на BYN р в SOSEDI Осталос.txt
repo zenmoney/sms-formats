@@ -1,0 +1,7 @@
+Счёт карты\s+\S+-(\d+).*?Вы купили на\s+(\d[\d\s.,]*)\s*(\S+?)\s*\(\s*(\d[\d\s.,]*)\s*([^\s)]+)\)\s*в\s+"([^"]+)"\s*Осталось:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s]+)
+
+-----COLUMNS-----
+syncid;op_outcome;op_instrument;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-1180 19:17 🥦 Вы купили на 7.90BYN (213.14р) в "SOSEDI" Осталось: 195 153.67р

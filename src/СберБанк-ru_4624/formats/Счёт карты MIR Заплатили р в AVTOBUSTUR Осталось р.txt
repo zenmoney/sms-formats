@@ -1,0 +1,7 @@
+Счёт карты (?:\S+)-(\d{4}).*?Заплатили\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+Осталось:\s+(\d[\d\s\u00A0.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-7004 10:57 👌 Заплатили 2400р в AVTOBUSTUR Осталось: 340 166р
