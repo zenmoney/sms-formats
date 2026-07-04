@@ -1,7 +1,7 @@
-💳\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*••\s*(\d{4})\s+"([^"]+)"\s*║\s*➕\s*(\d[\d\s.,]*)\s*(\S+)\s+по\s+СБП\s+от\s+(.+?)\s+—
+💳\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+••\s+(\d{4})\s+"(.+?)"\s+║\s+➕\s+(\d[\d\s.,]*)\s+(\S+)\s+по\s+СБП\s+от\s+(.+?)\s+—
 
 -----COLUMNS-----
-balance;acc_instrument;syncid;comment;income;instrument;payee
+av_balance;acc_instrument;syncid;comment;income;instrument;payee
 
 -----EXAMPLE-----
 💳 63 886,45 ₽ •• 5693 "Перевод денежных средств" ║ ➕ 24 000 ₽ по СБП от НАТАЛЬЯ АНАТОЛЬЕВНА М. — Альфа-Банк

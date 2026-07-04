@@ -1,7 +1,7 @@
-MIR-(\d{4}).*?Вы оплатили\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+MIR-(\d{4}).*?Вы оплатили\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s+(-?\d[\d\s.,]*)(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
+syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты MIR-8252 08:34 🍋 Вы оплатили 223.93р в TVOY MAGAZIN_4 Осталось: 6276.83р

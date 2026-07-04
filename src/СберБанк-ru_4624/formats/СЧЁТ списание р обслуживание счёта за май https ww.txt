@@ -1,7 +1,7 @@
 СЧЁТ(\d+)\s+\d{2}:\d{2}\s+списание\s+(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+https://www\.sberbank\.com/sms/obs\s+Баланс:\s+(-?\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
-syncid;outcome;instrument;comment;balance;acc_instrument
+syncid;outcome;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 СЧЁТ9482 18:02 списание 150р обслуживание счёта за май https://www.sberbank.com/sms/obs Баланс: 250р

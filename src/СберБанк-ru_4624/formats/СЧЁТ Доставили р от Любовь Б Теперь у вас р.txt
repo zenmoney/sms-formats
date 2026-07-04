@@ -1,7 +1,7 @@
-СЧЁТ(\d+)\s+\d{2}:\d{2}\s+✅\s+Доставили\s+(\d[\d[\s\u00A0]*]*(?:[.,]\d{2})?)(?=[\s\u00A0]*р)[\s\u00A0]*(р)\s+от\s+(.+?)\s+Теперь у вас:\s+(\d[\d\s\u00A0]*[.,]\d{2})(?=[\s\u00A0]*р)[\s\u00A0]*(р)
+СЧЁТ(\d{4})\s+\d{2}:\d{2}\s+✅\s+Доставили\s+(\d[\d\s.,]*)(\S+)\s+от\s+(.+?)\s+Теперь у вас:\s+(-?\d[\d\s.,]*)(\S+)
 
 -----COLUMNS-----
-syncid;income;instrument;payee;balance;acc_instrument
+syncid;income;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 СЧЁТ5100 13:20 ✅ Доставили 13 000р от Любовь Б. Теперь у вас: 26 917.49р
