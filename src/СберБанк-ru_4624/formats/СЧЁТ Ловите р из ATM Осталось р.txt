@@ -1,7 +1,0 @@
-СЧЁТ(\d+).*?Ловите\s+(\d[\d\s.,]*)(\S+).*?из\s+(.+?)\s+Осталось:\s+(-?\d[\d\s]*[.,]\d{2})(\S+)
-
------COLUMNS-----
-syncid#cash;income;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-СЧЁТ5100 10:58 🎣 Ловите 9000р из ATM 60029149 Осталось: 5113.22р
