@@ -1,0 +1,7 @@
+USPESHNOE\s+SPISANIE\s+SO\s+SCHETA\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),.*?(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},\s+(?:[\d*]+)?(\d{4}),.*?DOSTUPNO:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;date#dMy;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+USPESHNOE SPISANIE SO SCHETA 619.00 KGS, Online Bank CBS, KG, 02.07.26 20:47, 4714***8751, DOSTUPNO: 11809.62 KGS
