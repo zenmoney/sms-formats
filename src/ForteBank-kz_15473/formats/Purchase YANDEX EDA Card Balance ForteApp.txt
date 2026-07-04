@@ -1,0 +1,7 @@
+Purchase:\s+[−-]?(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+Card\s+\*(\d{4})\s+Balance:\s+(\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Purchase: −2 764.00 ₸ YANDEX.EDA Card *6005 Balance: 0.00 ₸ ║ ForteApp
