@@ -1,0 +1,7 @@
+\*(\d{4}).*?WITHDRAWAL AT\s+(.+?)\s+FOR\s+(\S+?)(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid#cash;payee;instrument;outcome
+
+-----EXAMPLE-----
+YOUR CARD *1314 WAS AUTHORISED FOR CASH WITHDRAWAL AT ATM 214 ENAERIOS II FOR €500,00 @20:11.
