@@ -1,7 +1,0 @@
-Баланс\s+(\d[\d\s.,]*[.,]\d{2})(\S+).*?║.*?👉💳\s*(\d[\d\s.,]*[.,]\d{2})(\S+)
-
------COLUMNS-----
-balance;acc_instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-З гривневого рахунку ФОП Баланс 5 360.13₴ 🥷 ║ 👉💳 5 070.00₴
