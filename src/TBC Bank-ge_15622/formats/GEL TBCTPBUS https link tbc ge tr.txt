@@ -1,0 +1,7 @@
+^(?!Reversal:)(\d[\d\s.,]*)\s+([A-Z]{3})\s+\(\*(\d{4})\)\s+(.+?)\s+(\d{2}\/\d{2}\/\d{2})(?=\s+\d{2}:\d{2}|$)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy
+
+-----EXAMPLE-----
+1.00 GEL (*3897) TBCTPBUS 29/06/26 20:25 https://link.tbc.ge/tr

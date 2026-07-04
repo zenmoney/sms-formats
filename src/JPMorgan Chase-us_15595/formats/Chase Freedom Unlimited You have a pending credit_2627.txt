@@ -1,7 +1,10 @@
-^Chase (?:acct )?(\d{4}|[A-Z][a-z]+)(?: [\w]+)?: You.*?(\$)([\d\s.,]*\d) .*credit from (.*)
+^Chase (?:[\w\s]*?\s+)?(Unlimited|Preferred)(?:\s+[\w]+)?:\s*You.*?(\$)([\d\s.,]*\d)\s+.*credit from (.*?)(?:\s*║|$)
 
 -----COLUMNS-----
 syncid;instrument;income;payee
 
 -----EXAMPLE-----
 Chase Freedom Unlimited: You have a $44.16 pending credit from Amazon.com
+
+-----EXAMPLE-----
+Chase Freedom Unlimited Visa: You have a $27.05 pending credit from KEYMELOCKSMITHS.COM. ║ You have received a notification
