@@ -1,0 +1,7 @@
+Счет\s+\*(\d+)\s+зачисление\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s*([^\s.]+)\.\s+Доступно\s+(-?\d[\d\s.,]*(?:[.,]\d{2})?)\s*([^\s.]+)\.
+
+-----COLUMNS-----
+syncid;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счет *0533 зачисление 3000р. Доступно 3542.42р. otpbank.ru/tr
