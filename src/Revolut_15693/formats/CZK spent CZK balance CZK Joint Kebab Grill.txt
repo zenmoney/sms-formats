@@ -1,0 +1,7 @@
+([A-Z]{3})(\d[\d\s.,]*)\s+spent\s+[A-Z]{3}\s+balance:\s+([A-Z]{3})(-?\d[\d\s.,]*[.,]\d{2})\s+║\s+(.+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;balance;payee
+
+-----EXAMPLE-----
+CZK338 spent CZK balance: CZK15,239.66 ║ Joint · Kebab&Grill
