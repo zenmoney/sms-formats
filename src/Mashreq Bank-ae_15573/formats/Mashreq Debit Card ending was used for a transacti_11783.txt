@@ -1,0 +1,7 @@
+Mashreq Debit Card ending (\d{4}) was used for a transaction of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+at\s+(.+?)\s+on\s+(?:[A-Za-z]+,)\s+(\d{1,2}\s+[A-Za-z]+\s+\d{4}),\s+\d{1,2}:\d{2}\s+[ap]m\.\s+Available balance:\s+([A-Z]{3})\s+(-?\d[\d\s,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#dMy;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Mashreq Debit Card ending 9936 was used for a transaction of AED 12.00 at BOARDWALK SUPERMARKET on Saturday, 4 July 2026, 4:44 pm. Available balance: AED 16,128.41
