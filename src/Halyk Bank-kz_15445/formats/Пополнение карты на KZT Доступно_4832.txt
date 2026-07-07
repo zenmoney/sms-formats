@@ -1,4 +1,4 @@
-^.*?(?:ополн|(?:еревод|erevod).*?).*?\*(\d{4})\s*(?:\+|на)?\s*([\d\s.,]*\d)\s*([A-Z]{3}|₸|\W)(?:.*?(?:стат|осту|а счет|Доступн).*?(-?[\d\s.,]*\d)\s*([A-Z]{3}|₸|\W))?.*
+^.*?(?:[Оо]полн|[Oo]poln|(?:[Ее]ревод|[Ee]revod).*?).*?\*(\d{4})\s*(?:\+|на|na)?\s*([\d\s.,]*\d)\s*([A-Z]{3}|₸|\W)(?:.*?(?:стат|осту|ostat|а счет|Доступн|Dostupn).*?(-?[\d\s.,]*\d)(?:\s+([A-Z]{3}|₸))?)?.*
 
 -----COLUMNS-----
 syncid;income;instrument;av_balance;acc_instrument
@@ -32,3 +32,18 @@ syncid;income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 14:20 Пополнение депозита KZ*5749 +50 000 KZT. ║
+
+-----EXAMPLE-----
+18:19 Пополнение карты *8231 +25000.00 KZT. ║
+
+-----EXAMPLE-----
+15:24 Пополнение карты *8231 +18 000 ₸. ║
+
+-----EXAMPLE-----
+29.04.2019 13:12 Perevod na kartu **5520 60000.00 KZT Ostatok 67172.00 Oformi kredit - vyigraj avto! www.halykauto.kz
+
+-----EXAMPLE-----
+16:05 Perevod na kartu *5170 5000.00 KZT Ostatok 5181.51
+
+-----EXAMPLE-----
+Перевод на карту *3235 8000.00 ₸ ║
