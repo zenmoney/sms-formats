@@ -1,0 +1,7 @@
+Obciazenie\s+Konto\s+[\d\.]*?(\d{4})\s+-([0-9][\d\s.,]*)\s+([A-Z]{3})\s+Przelew z konta,\s*(.+?),\s*(.+?)\s+Stan konta\s+\+([0-9][\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;comment;balance;acc_instrument
+
+-----EXAMPLE-----
+Obciazenie Konto 21..0487 -424,35 PLN Przelew z konta, LEGAL TAX LEVEL, FAKTURA FV 63/7/2026... Stan konta +6744,35 PLN

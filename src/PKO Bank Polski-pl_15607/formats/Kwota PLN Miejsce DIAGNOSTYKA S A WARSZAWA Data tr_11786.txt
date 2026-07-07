@@ -1,0 +1,7 @@
+Kwota:\s+(\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})\.\s+Miejsce:\s+(.+?)\.\s+Data transakcji:\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Karta\s+\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#yMd;syncid
+
+-----EXAMPLE-----
+Kwota: 332,00 PLN. Miejsce: DIAGNOSTYKA S.A., WARSZAWA. Data transakcji: 2026-07-07 08:55:29. Karta *2734 do konta 48..1012 ║ Autoryzacja transakcji kartą
