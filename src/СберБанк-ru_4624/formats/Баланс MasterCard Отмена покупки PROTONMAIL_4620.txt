@@ -1,7 +1,0 @@
-^\+([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\S)\s+.*алан.*?(-?[\d\s.,]*\d).*•\s*(\d{4})\s+║\s+(Отмен\w+\s+пок\w+)\s+(.*)
-
------COLUMNS-----
-income;instrument;av_balance;syncid;comment;payee
-
------EXAMPLE-----
-+1 € - Баланс: 11,83 ₽ MasterCard •• 1234 ║ Отмена покупки PROTONMAIL
