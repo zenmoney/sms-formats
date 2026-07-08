@@ -1,7 +1,7 @@
 ^.*?\*?(\d{4})(?:\s+\d{2}:\d{2})?\s+(Зачисление пенсии)\s+(\d[\d\s,]*[.,]\d{2})(\S+)\s+Баланс:\s+(\d[\d\s,]*[.,]\d{2})(\S+)
 
 -----COLUMNS-----
-syncid;comment;income;instrument;balance;acc_instrument
+syncid;comment;income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Сбер.счёт *2478 Зачисление пенсии 34 003,79р Баланс: 34 003,82р
@@ -17,4 +17,3 @@ syncid;comment;income;instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 Номинальный счет *5166 Зачисление пенсии 2571,98р Баланс: 111 772,52р
-
