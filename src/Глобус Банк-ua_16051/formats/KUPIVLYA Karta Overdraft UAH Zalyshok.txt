@@ -1,0 +1,13 @@
+([\d\s.,]*\d)\s*([A-Z]{3})\s+(.*?)\s+(\d{2}/\d{2})\s+[\d:]{5}\s+Купівля.*?Карта\s+\*(\d{4}).*?[Зз]алишок\s+(-?[\d\s.,]*\d)\s*([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#dM;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+84.5 UAH ProduktovaHatka
+04/07 11:20 Купівля
+Карта *4162
+Овердрафт 25000.00 UAH
+Використано овердрафт 1054.9 UAH
+Власні кошти 0 UAH
+Залишок 23945.10 UAH
