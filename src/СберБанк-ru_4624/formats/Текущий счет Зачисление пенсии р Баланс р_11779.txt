@@ -1,7 +1,0 @@
-Текущий счет\s+\*(\d{4})\s+(.+?)\s+(\d[\d\s.,]*)(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
-
------COLUMNS-----
-syncid;comment;income;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-Текущий счет *4872 Зачисление пенсии 2571,98р Баланс: 2621,98р
