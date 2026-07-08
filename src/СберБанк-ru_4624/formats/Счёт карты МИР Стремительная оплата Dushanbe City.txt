@@ -1,7 +1,0 @@
-(\d[\d\s\u00A0.,]*)\s*(\S)\s+Счёт карты\s+\S+\s*••\s*(\d{4})\s*║\s*(.+?)\s+([^\r\n]+)$
-
------COLUMNS-----
-outcome;instrument;syncid;comment;payee
-
------EXAMPLE-----
-4 777 ₽ Счёт карты МИР •• 0375 ║ Стремительная оплата Dushanbe City
