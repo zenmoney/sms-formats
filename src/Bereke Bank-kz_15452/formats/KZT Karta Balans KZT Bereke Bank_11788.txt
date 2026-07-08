@@ -1,0 +1,7 @@
+\+\s*(\d[\d\s\u00A0.,]*)\s+([^\s]+)\s+Karta\s+\*+(\d{4})\s+Balans\s+(\d[\d\s\u00A0.,]*)\s+([^\s]+)
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
++ 2 000.00 KZT Karta ***1381 Balans 2 000.00 KZT ║ Bereke Bank
