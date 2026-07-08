@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+с карты\s+\*(\d{4})\.\s+Баланс\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата 675р в SDEK 1 с карты *8920. Баланс 1985.36р ║ Газпромбанк
