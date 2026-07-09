@@ -1,7 +1,7 @@
-(?:MIR-|МИР-|VISA|ECMC|СЧЁТ)(\d{4})\s+\d{2}:\d{2}\s+Покупка по СБП\s+(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
+(?:MIR-|МИР-|VISA|ECMC|СЧЁТ)(\d{4})\s+\d{2}:\d{2}\s+Покупка по СБП\s+(\d[\d\s.,]*)\s*(\S+)\s+((?:(?!Баланс:).)+?)(?:Баланс:\s+(\d[\d\s.,]*)\s*(\S+))?$
 
 -----COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
+syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA4300 09:18 Покупка по СБП 453.94р Ростелеком_QR Баланс: 8008р
@@ -14,3 +14,9 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA8231 17:43 Покупка по СБП 1100р TicketNet Баланс: 58 409.32р
+
+-----EXAMPLE-----
+Счёт карты ECMC9161 10:06 Покупка по СБП 2905.40р оплата ж/д перевозок
+
+-----EXAMPLE-----
+Счёт карты MIR-0242 21:19 Покупка по СБП 3490р Сервисы Яндекса

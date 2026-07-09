@@ -1,0 +1,7 @@
+Счёт карты\s+[^\s]+?(\d+)\s+.*?Вы потратили\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты ECMC1385 17:26 😊 Вы потратили 2476р в MOREMANIYA Осталось: 573 076.13р

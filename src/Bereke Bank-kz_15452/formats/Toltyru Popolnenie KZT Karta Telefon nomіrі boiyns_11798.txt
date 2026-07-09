@@ -1,0 +1,10 @@
+Popolnenie\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Karta\s+\*+(\d{4}).*?Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie 100 000.00 KZT Karta ***1381  Telefon nomіrі boiynsha audaru/ Perevod po nomeru telefona  Balans 120 640.00 KZT ║ Bereke Bank
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie 5876,00 KZT  Karta ***4408  Balans 5876,00 KZT ║ Bereke Bank

@@ -1,0 +1,7 @@
+Inward\s+Remittance\s+Credit.*?Account\s+X+(\d{4}).*?\b([A-Z]{3})\s+(\d[\d\s.,]*)\s+Date\s+(\d{2}\/\d{2}\/\d{4}).*?Balance\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;instrument;income;date#Mdy;acc_instrument;balance
+
+-----EXAMPLE-----
+Inward Remittance  Credit   Account XXXX7001  AED 5.00 Date 08/07/2026  Balance AED 16601.83
