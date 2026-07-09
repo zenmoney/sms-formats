@@ -4,10 +4,10 @@
 outcome;instrument;payee;date#dM;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
-84.5 UAH ProduktovaHatka
-04/07 11:20 Купівля
+221.4 UAH SHOP ATB PR515
+08/07 13:03 Купівля
 Карта *4162
 Овердрафт 25000.00 UAH
-Використано овердрафт 1054.9 UAH
+Використано овердрафт 1500.9 UAH
 Власні кошти 0 UAH
-Залишок 23945.10 UAH
+Залишок 23499.10 UAH
