@@ -1,0 +1,7 @@
+Retenido importe de\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+para realizar tu pago en\s+(.+?)\s+con tu tarjeta terminada en\s+(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+Retenido importe de 150,00 EUR para realizar tu pago en US377A PLENERGY MASSANASS con tu tarjeta terminada en 2940 ║ Importe retenido
