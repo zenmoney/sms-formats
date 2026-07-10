@@ -1,7 +1,16 @@
-(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+(.+?)\s+Balance:\s*(-?\d[\d\s.,]*[.,]\d{2})(\S+)\s+(You.?ve received:.*?)\s+(\d{2}\/\d{2}\/\d{2})
+^(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+((?:(?!Balance:|Nashti:).)+?)\s+(?:(?:Balance:|Nashti:)\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+))?\s*((?:You.?ve|You have)? received:(?:(?!\d{2}\/\d{2}\/\d{2}).)*)?\s*(\d{2}\/\d{2}\/\d{2})
 
 -----COLUMNS-----
 outcome;instrument;syncid;payee;balance;acc_instrument;comment;date#dMy
 
 -----EXAMPLE-----
 10.00GEL (*8089) BoltTaxi Balance: 1792.44GEL  You’ve received: 0.07GEL In Ertguli Piggy bank you have: 25.98GEL 12/06/26 11:59
+
+-----EXAMPLE-----
+190.00GEL (*8089) RPM LLC Balance: 902.60GEL  You have received: 1.33GEL In Ertguli Piggy bank you have: 10.67GEL 10/07/26 19:21
+
+-----EXAMPLE-----
+34.20GEL (*9655) CARREFOUR Nashti: 18850.72GEL    11/06/26 21:33
+
+-----EXAMPLE-----
+15.70GEL (*5364) MOZAIKA Balance: 8256.74GEL    11/06/26 16:52
