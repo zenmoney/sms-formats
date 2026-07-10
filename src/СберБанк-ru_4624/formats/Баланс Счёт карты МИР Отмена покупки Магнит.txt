@@ -1,0 +1,10 @@
+\+\s*(\d[\d\s\u00A0.,]*)\s*(\S+)\s*[-–—]\s*Баланс:\s*(-?\d[\d\s\u00A0]*[.,]\d{2})\s*(\S+)\s+(?:Счёт карты\s+)?(?:МИР|MasterCard|VISA|ECMC|МАСТЕР)\s*••\s*(\d{4}).*?Отмена покупки\s*(.+)
+
+-----COLUMNS-----
+income;instrument;av_balance;acc_instrument;syncid;payee
+
+-----EXAMPLE-----
++ 1 ₽ — Баланс: 123 689,32 ₽ Счёт карты МИР •• 5848 ║ Отмена покупки Магнит
+
+-----EXAMPLE-----
++1 € - Баланс: 11,83 ₽ MasterCard •• 1234 ║ Отмена покупки PROTONMAIL
