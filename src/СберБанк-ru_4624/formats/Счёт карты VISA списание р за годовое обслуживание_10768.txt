@@ -1,7 +1,7 @@
 ^Сч[ёе]т карты\s+VISA(\d{4})\s+\d{2}:\d{2}\s+списание\s+([0-9][\d\s.,]*)\s*([A-Za-zА-Яа-я]{1,3})\s+(за\s+годовое\s+обслуживание\s+сч[ёе]та\s+с\s+\d{2}\.\d{2}\.\d{2}\s+по\s+\d{2}\.\d{2}\.\d{2})\s+Баланс:\s+(-?[0-9][\d\s]*[.,]\d{2})([A-Za-zА-Яа-я]{1,3})$
 
 -----COLUMNS-----
-syncid;outcome;instrument;comment;balance;acc_instrument
+syncid;outcome;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA3742 00:01 списание 450р за годовое обслуживание счёта с 23.01.26 по 22.01.27 Баланс: 103 477.01р

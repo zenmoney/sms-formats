@@ -1,7 +1,7 @@
 ^[С]ЧЁТ(\d{4})\s+Зачисление\s+средств\s+([0-9][\d\s.,]*\d)\s*([A-Za-zА-Яа-я]{1,3})(\s+на\s+сч[её]т\s+Накопительный\s+счет\s+\*\d{4})\.\s+Баланс\s+сч[её]та:\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|[^\d]|$)\s*([A-Za-zА-Яа-я]{1,3})\.?$
 
 -----COLUMNS-----
-syncid;income;instrument;comment;balance;acc_instrument
+syncid;income;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 СЧЁТ7352 Зачисление средств 7333р на счёт Накопительный счет *3735. Баланс счёта: 7385.86р.

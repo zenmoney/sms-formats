@@ -1,7 +1,7 @@
 Счёт карты .+?-(\d{4}).*?зачисление.*?(\d[\d\s.,]*)\s*([^\d\s]+)\s*Баланс:\s*(\d[\d\s.,]*)\s*([^\d\s]+)
 
 -----COLUMNS-----
-syncid;income;instrument;balance;acc_instrument
+syncid;income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты MIR-7221 13:52 зачисление по программе лояльности платежной системы МИР 125.40р  Баланс: 11 306.6р
