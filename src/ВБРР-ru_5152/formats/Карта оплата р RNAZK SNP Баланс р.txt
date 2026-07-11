@@ -1,0 +1,7 @@
+Карта\*(\d{4})\s+оплата\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Карта*4181 оплата 2031.00 р RNAZK 79 SNP Баланс: 6043.10 р
