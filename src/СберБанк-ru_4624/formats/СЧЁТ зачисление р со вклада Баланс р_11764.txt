@@ -1,7 +1,0 @@
-СЧЁТ(\d{4})\s+\d{2}:\d{2}\s+зачисление\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
-
------COLUMNS-----
-syncid;income;instrument;comment;av_balance;acc_instrument
-
------EXAMPLE-----
-СЧЁТ7248 09:14 зачисление 10 000р со вклада Баланс: 10 000р
