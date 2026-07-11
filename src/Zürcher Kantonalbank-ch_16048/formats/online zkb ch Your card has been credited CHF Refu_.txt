@@ -1,0 +1,7 @@
+^.*credited\s+([A-Z]{3}|\W)\s*([\d\s.,']*\d)\s+.*?Visa\s+Debit\s+card\s+no\.\s*x{4}\s*(\d{4})(?:,\s+(.*?))?\s*\.?\s*$
+
+-----COLUMNS-----
+instrument;income;syncid;payee
+
+-----EXAMPLE-----
+online@zkb.ch Your card has been credited CHF 32.70 Refund ZKB Visa Debit card no. xxxx 5387, digitec Galaxus (Online).
