@@ -1,0 +1,7 @@
+Online Purchase\s+Amount\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Credit Card\s+\*+(\d{4})\s+Authorized by\s+(.+?)\s+on\s+(\d{2}/\d{2}/\d{2})(?:\s+at\s+\d{2}:\d{2})?\s+Remaining limit\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#Mdy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Online Purchase  Amount 843.26 SAR Credit Card ***8045 Authorized by Amazon SA on 11/07/26 at 17:50 Remaining limit 15790.28 SAR
