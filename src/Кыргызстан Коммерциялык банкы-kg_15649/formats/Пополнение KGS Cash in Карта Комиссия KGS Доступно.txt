@@ -5,3 +5,6 @@ income;instrument;syncid;fee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Пополнение: 500 KGS Cash-in Карта: *2152 Комиссия: 0 KGS Доступно: 501,7 KGS ║
+
+-----EXAMPLE-----
+Пополнение: 9 000 KGS Cash-in Карта: *0039 Комиссия: 0 KGS Доступно: 320,39 KGS ║
