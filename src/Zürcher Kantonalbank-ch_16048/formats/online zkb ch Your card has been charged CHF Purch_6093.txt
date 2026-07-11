@@ -1,4 +1,4 @@
-^.*charged\s+([A-Z]{3}|\W)\s*([\d\s.,']*\d).*urcha.*x{4}\s*(\d{4}),\s+(.*?)\s*\.?$
+^.*charged\s+([A-Z]{3}|\W)\s*([\d\s.,']*\d)\s+.*?Visa\s+Debit\s+card\s+No\.\s*x{4}\s*(\d{4})(?:,\s+(.*?)(?:\s+PENDING)?)?\s*\.?\s*$
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee
@@ -8,3 +8,12 @@ online@zkb.ch Your card has been charged CHF 22.52 Purchase ZKB Visa Debit card 
 
 -----EXAMPLE-----
 online@zkb.ch Your card has been charged CHF 27.00 Online purchase with ZKB Visa Debit card No. xxxx 5387, SBB CFF FFS.
+
+-----EXAMPLE-----
+online@zkb.ch Your card has been charged CHF 22.50 Purchase ZKB Visa Debit card No. xxxx 5387.
+
+-----EXAMPLE-----
+online@zkb.ch Your card has been charged CHF 86.32 Reservation ZKB Visa Debit card No. xxxx 5387, UBER   * EATS PENDING  .
+
+-----EXAMPLE-----
+online@zkb.ch Your card has been charged CHF 440.00 Online purchase with ZKB Visa Debit card No. xxxx 5387.
