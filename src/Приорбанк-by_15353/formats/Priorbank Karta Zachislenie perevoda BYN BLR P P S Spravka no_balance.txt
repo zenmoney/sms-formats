@@ -1,0 +1,10 @@
+^(?!.*Balance:).*\*(\d{4}).* ([\d-]{8}) .*achislen(?!.*ostup).*?([\d\s.,]*\d)\s*([A-Z]{3})(?:\.?\s+(.*?)\.)?.*
+
+-----COLUMNS-----
+syncid;date#dd-MM-yy;income;instrument;payee
+
+-----EXAMPLE-----
+Priorbank. Karta 4***2300. 13-04-17 13:27:56. Zachislenie perevoda 466.88 BYN. BLR P2P SDBO NO FEE.  Spravka: 80172899292
+
+-----EXAMPLE-----
+Karta 4***6259 03-06-26 11:38:37. Zachislenie perevoda 22820.00 BYN. BLR DZMITRY AFANASENKA. Tel. 7299090
