@@ -1,0 +1,7 @@
+^(?!.*Balance:).*?\*(\d{4}).* ([\d-]{8}) .*erevod(?!.*ostup)([\d\s.,]*\d)\s*([A-Z]{3})(?:\.?\s+(.*?)\.)?.*
+
+-----COLUMNS-----
+syncid;date#dd-MM-yy;outcome;instrument;payee
+
+-----EXAMPLE-----
+Priorbank. Karta 4***1991. 04-04-17 11:43:34. Perevod 9.40 BYN. BLR P2P_SDBO.  Spravka: 80172899292
