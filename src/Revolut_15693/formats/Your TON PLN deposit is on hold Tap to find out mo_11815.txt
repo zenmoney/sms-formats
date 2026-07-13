@@ -1,0 +1,7 @@
+Your\s+(\d[\d\s.,]*)\s+(\S+?)\s+\(\s*(\d[\d\s.,]*)\s+(\S+?)\s*\)
+
+-----COLUMNS-----
+income;instrument;op_income;op_instrument
+
+-----EXAMPLE-----
+Your 2,32 TON (13,88 PLN) deposit is on hold. Tap to find out more ║ Receive TON ⏳
