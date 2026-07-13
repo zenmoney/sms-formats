@@ -1,0 +1,7 @@
+(?i)^.*\bNeuspeshno\b.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Card4540; Neuspeshno; Oplata v Internet: 20,00 USD; 12.07.26 14:21:36; PRO,+15102700840,US; Dostupno: 12,75 USD
