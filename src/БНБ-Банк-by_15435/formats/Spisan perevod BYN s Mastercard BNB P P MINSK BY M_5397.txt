@@ -1,4 +1,4 @@
-^Spisa.*?([\d\s.,]*\d)\s*([A-Z]{3}).*?#(\d{4}).*? (\d{2}[-./]\d{2}[-./]\d{2,4}) .*ostu.*?(-?[\d\s.,]*\d).*
+^Spisa(?!.*[Nn]euspe).*?([\d\s.,]*\d)\s*([A-Z]{3}).*?#(\d{4}).*? (\d{2}[-./]\d{2}[-./]\d{2,4}) .*ostu.*?(-?[\d\s.,]*\d).*
 
 -----COLUMNS-----
 outcome;instrument;syncid;date#dMy;av_balance
