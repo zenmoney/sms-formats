@@ -1,0 +1,7 @@
+(?i)^.*\b(mislykkedes|blev afvist|afvist)\b.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Din betaling på 19 kr. til Apple mislykkedes pga. manglende dækning på kontoen. Indsæt penge, og prøv igen. ║ Betalingen blev afvist ❌
