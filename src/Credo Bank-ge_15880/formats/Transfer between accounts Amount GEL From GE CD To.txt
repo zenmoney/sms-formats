@@ -1,0 +1,7 @@
+Amount:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})\s*;\s*From:\s+[A-Za-z0-9]*?(\d{4})\s*To:.*?Balance:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Za-z]{3})\s+Date:\s*(\d{1,2}\/\d{1,2}\/\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument;date#Mdy
+
+-----EXAMPLE-----
+Transfer between accounts Amount: 200.00 GEL; From: GE09CD1360030041212888 To: GE22CD0360000032717586 Balance: 287.38 GEL Date: 7/10/2026 10:43:03 PM Check details in MyCredo: https://mycredo.page.link/Pdkp
