@@ -1,0 +1,7 @@
+Karta\s+\d+\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Perevod\s+\+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.*?)\s+Dostupno\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 5.9704 14.07.2026 15:19:51 Perevod +300.00 BYN  ALFA P2P TRANSFER INSN MINSK BLR OK.  Dostupno 684.83 BYN .
