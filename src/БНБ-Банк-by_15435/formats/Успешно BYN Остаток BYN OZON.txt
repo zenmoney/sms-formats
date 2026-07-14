@@ -1,0 +1,10 @@
+Успешно,\s+\*(\d{4}),\s+-(\d[\d\s.,]*)\s+([A-Z]{3}),\s+Остаток:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3}),\s+([^║]+)$
+
+-----COLUMNS-----
+syncid;outcome;instrument;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Успешно, *3426, -8.48 BYN, Остаток: 122.58 BYN, OZON
+
+-----EXAMPLE-----
+Успешно, *3426, -7.65 BYN, Остаток: 114.93 BYN, OZON
