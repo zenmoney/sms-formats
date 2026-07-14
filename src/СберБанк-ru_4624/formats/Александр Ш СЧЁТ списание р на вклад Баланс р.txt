@@ -1,0 +1,7 @@
+([^:]+):\s+СЧЁТ(\d+)\s+\d{1,2}:\d{2}\s+списание\s+(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+payee;syncid;outcome;instrument;comment;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Александр Ш.: СЧЁТ9358 19:24 списание 19 500р на вклад Баланс: 12 331.74р
