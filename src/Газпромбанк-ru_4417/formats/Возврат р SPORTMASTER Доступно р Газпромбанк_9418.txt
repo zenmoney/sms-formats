@@ -1,7 +1,0 @@
-^\*(\d{4})\s+Возврат\s+([0-9][\d\s.,]*)\s*([A-Za-zА-Яа-яЁё]{1,3}|[^\w\s])\s+([A-Za-zА-ЯЁа-яё]+)\s+Доступно\s+(-?[0-9][\d\s]*[.,]\d{2})([A-Za-zА-Яа-яЁё]{1,3}|[^\w\s])(?:\s*║.*)?$
-
------COLUMNS-----
-syncid;income;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-*9787 Возврат 1120р SPORTMASTER Доступно 5738.28р ║ Газпромбанк
