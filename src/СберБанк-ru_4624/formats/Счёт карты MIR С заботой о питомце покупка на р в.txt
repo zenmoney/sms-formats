@@ -1,0 +1,7 @@
+Счёт карты MIR-(\d{4})\s+\d{2}:\d{2}\s+(.+?)\s+покупка\s+на\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)\s+Осталось:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;comment;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-3595 19:00 С заботой о питомце покупка на 653р в PETSHOP Осталось: 3682.25р
