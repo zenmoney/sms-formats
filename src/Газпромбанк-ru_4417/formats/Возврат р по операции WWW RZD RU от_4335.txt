@@ -4,7 +4,4 @@
 syncid;comment;income;instrument;payee
 
 -----EXAMPLE-----
-*8087 Возврат 2114.9р по операции WWW.RZD.RU от 02.09.2019
-
------EXAMPLE-----
 *5250 Возврат 125.96р от ALIEXPRESS поступит 31.08.2021
