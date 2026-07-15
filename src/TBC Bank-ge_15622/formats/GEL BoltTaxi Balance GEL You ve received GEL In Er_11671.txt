@@ -14,3 +14,20 @@ outcome;instrument;syncid;payee;balance;acc_instrument;comment;date#dMy
 
 -----EXAMPLE-----
 15.70GEL (*5364) MOZAIKA Balance: 8256.74GEL    11/06/26 16:52
+
+-----EXAMPLE-----
+131.00GEL
+(*3897)
+SKINUM LLC
+Balance: 7020.47GEL 
+ 
+14/07/26 19:30
+
+-----EXAMPLE-----
+82.06GEL
+(*3897)
+CARREFOUR(AXS)
+Balance: 7151.47GEL 
+You have received: 0.57GEL
+In Ertguli Piggy bank you have: 163.44GEL
+14/07/26 18:36
