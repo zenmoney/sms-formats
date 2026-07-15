@@ -5,3 +5,6 @@ syncid;income;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 *1119 Возврат 1757р OZON NON3DS Доступно 121856.64р ║ Газпромбанк
+
+-----EXAMPLE-----
+*9787 Возврат 1120р SPORTMASTER Доступно 5738.28р ║ Газпромбанк
