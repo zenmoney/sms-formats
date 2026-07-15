@@ -1,0 +1,7 @@
+Karta\s+[0-9*]*?(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+([^.]+?)\.\s+Balance:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 9***5490 15-07-26 17:40:28. Nalichnye v bankomate 90.00 BYN. BLR ATM 240. Balance: 1910.00 BYN Tel. 7299090
