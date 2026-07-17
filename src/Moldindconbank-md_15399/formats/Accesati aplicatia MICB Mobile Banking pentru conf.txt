@@ -1,0 +1,7 @@
+(?i)^.*\bconfirm.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Accesati aplicatia MICB Mobile Banking pentru confirmarea platii https://wb.micb.md/dp/ecom/Y19hPJ ║ Confirmati Operatiunea
