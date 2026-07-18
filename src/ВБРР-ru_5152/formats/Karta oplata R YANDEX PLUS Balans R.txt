@@ -1,0 +1,7 @@
+Karta\*(\d{3,6})\s+oplata\s+(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+Balans:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Karta*2856 oplata 449.00 R YANDEX*5815*PLUS Balans: 2963.29 R
