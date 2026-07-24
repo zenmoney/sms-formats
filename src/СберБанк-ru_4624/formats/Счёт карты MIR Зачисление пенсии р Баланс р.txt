@@ -1,0 +1,7 @@
+Счёт карты \S+-(\d{4})\s+\d{2}:\d{2}\s+(.+?)\s+(\d[\d\s\u00A0.,]*\d)(\S+)\s+Баланс:\s+(-?\d[\d\s\u00A0.,]*\d)(\S+)
+
+-----COLUMNS-----
+syncid;comment;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-6504 10:10 Зачисление пенсии 1694.76р Баланс: 30 783.1р
