@@ -1,0 +1,7 @@
+\*(\d{4})\s+(?:.+?)\s+(\d[\d\s.,]*)(\S+)\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;cashback;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+*7997 Кэшбэк по программе лояльности МИР 530p Доступно 842,63p
