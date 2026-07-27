@@ -1,0 +1,7 @@
+Счёт карты\s+[^\s]+-?(\d{4}).*?Потрачено\s+(-?\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+Осталось:\s*(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-4579 22:44 🥣 Потрачено 1010р в SYTYJ PAPA Осталось: 38 915.9р
