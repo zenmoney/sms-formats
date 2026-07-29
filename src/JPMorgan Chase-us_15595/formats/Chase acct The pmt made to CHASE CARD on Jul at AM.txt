@@ -1,0 +1,7 @@
+Chase acct\s+(\d+):\s+The\s+(\S)(\d[\d,]*\.\d{2})\s+pmt\s+made\s+to\s+(.+?)\s+on\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})\s+at
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#Mdy
+
+-----EXAMPLE-----
+Chase acct 2256: The $3,198.08 pmt made to CHASE CARD 8252 on Jul 21, 2026 at 10:59 AM ET was more than the $0.00 limit in your Alerts settings.
