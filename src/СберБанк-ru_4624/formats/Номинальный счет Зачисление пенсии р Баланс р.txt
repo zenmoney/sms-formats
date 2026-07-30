@@ -1,0 +1,7 @@
+Номинальный счет \*(\d{4})\s+(.+?)\s+(\d[\d\s.,]*)(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
+
+-----COLUMNS-----
+syncid;comment;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Номинальный счет *0866 Зачисление пенсии 3000р Баланс: 3000р
