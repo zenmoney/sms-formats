@@ -1,0 +1,7 @@
+Amount:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s*Account no\.:.*?(\d{4})\s+Location:\s*(?:.*?:\s*)?(.+?)\s+Available balance:.*?║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;comment
+
+-----EXAMPLE-----
+Amount: 165,94 PLN. Account no.:  45..9009 Location: BLIK INTERNET: FILCUJZAGNA.PL Available balance:  PLN ║ Amount hold for a BLIK transaction
