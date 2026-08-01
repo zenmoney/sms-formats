@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)\s+(\S+)\s+Spisanie\s+s\s+Karti\s+(?:\d*\*+)(\d{4})\s+Balans\s+(-?\d[\d\s.,]*[.,]?\d+)\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+-4880 KZT Spisanie s Karti 4**5124 Balans 70692.3 KZT  ║ BCC.KZ
