@@ -1,0 +1,7 @@
+(.+?)\s+потратил\(а\)\s+(\d[\d\s.,]*)\s*([^\d\s]+)\s+Баланс\s«[A-Z]{3}»:\s+(-?\d[\d\s.,]*[.,]\d{2})(?=\s)\s*([^\d\s]+)
+
+-----COLUMNS-----
+payee;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Дабай ❤️ потратил(а) 69,60 €  Баланс «EUR»: 623,61 € ║ Совместный счет · Casa Della Pasta
