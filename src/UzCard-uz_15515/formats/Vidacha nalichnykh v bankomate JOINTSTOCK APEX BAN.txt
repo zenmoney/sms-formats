@@ -1,0 +1,7 @@
+Vidacha nalichnykh v bankomate:\s*(?:.+?),.*?(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},karta \*\*\*(\d{4})\. summa:(\d[\d\s.,]*)\s+([A-Z]{3})\s+balans:(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Vidacha nalichnykh v bankomate: JOINTSTOCK APEX BANK, UZ,01.06.26 15:09,karta ***7552. summa:505000.00 UZS balans:25773729.73 UZS
