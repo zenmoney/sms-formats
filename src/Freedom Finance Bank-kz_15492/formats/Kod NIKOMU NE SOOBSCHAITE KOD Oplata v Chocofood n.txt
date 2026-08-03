@@ -1,7 +1,0 @@
-(?i)^\s*(?:kod|код)\b.*
-
------COLUMNS-----
-
-
------EXAMPLE-----
-Kod 821135. NIKOMU NE SOOBSCHAITE KOD! Oplata v Chocofood na summu 10.00 KZT.
