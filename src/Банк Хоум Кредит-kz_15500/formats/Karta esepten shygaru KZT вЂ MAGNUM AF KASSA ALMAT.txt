@@ -1,4 +1,4 @@
-Karta\s+\*\*(\d{4})\s*:\s*esepten shygaru\s*-(\d[\d\s.,]*)\s+([A-Z]{3})\s+вЂ–\s+(.+?)\s+Qolzhetimdi:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+Karta\s+\*\*(\d{4})\s+:\s*esepten shygaru\s+-(\d[\d\s.,]*)\s+(\S+)\s+вЂ“\s+(.+?)\s+Qolzhetimdi:\s+(-?\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;av_balance;acc_instrument

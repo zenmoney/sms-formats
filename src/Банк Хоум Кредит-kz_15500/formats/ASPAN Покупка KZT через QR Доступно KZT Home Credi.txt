@@ -1,4 +1,4 @@
-(.+?)\s+Покупка:\s*-\s*(\d[\d\s.,]*)\s+([A-Z]{3}).*?Доступно:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+([A-Z\s]+?)\s+Покупка:\s+-(\d[\d\s.,]*)\s+(\S+).*?Доступно:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
 
 -----COLUMNS-----
 payee;outcome;instrument;av_balance;acc_instrument
