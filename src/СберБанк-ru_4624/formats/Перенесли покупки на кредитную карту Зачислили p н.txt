@@ -1,7 +1,7 @@
 Зачислили\s+(\d[\d\s.,]*[.,]\d{2})(\S+)\s+на\s+[^-]+-(\d{2,6})\.\s+Комиссия\s+(\d[\d\s.,]*)\S*\.\s+Баланс кредитной карты:\s+(\d[\d\s.,]*[.,]\d{2})(\S+)\.\s+Баланс\s+[^:]+:\s+(\d[\d\s.,]*[.,]\d{2})(\S+)
 
 -----COLUMNS-----
-income;instrument;syncid;fee;balance;acc_instrument;balance;acc_instrument
+income;instrument;syncid;fee;av_balance;acc_instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 02:00 Перенесли покупки на кредитную карту. Зачислили 4801,65p на MIR-6242. Комиссия 0p. Баланс кредитной карты: 1509,92p. Баланс MIR-6242: 6900,12p
