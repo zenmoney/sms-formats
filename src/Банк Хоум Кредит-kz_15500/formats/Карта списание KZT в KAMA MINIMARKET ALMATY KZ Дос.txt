@@ -1,7 +1,0 @@
-Карта \*\*(\d{4})\s*:\s+списание\s+-(\d[\d\s.,]*)\s+(\S+)\s+в\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s+(\S+)(?=[\s.,║]|$)
-
------COLUMNS-----
-syncid;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-Карта **0410 : списание -360.00 KZT в KAMA MINIMARKET, ALMATY, KZ Доступно: 7838.64 ₸. ║ Home Credit Kazakhstan
