@@ -1,0 +1,7 @@
+Карта\s+\*{2}(\d{4})\s+:\s+списание\s+-?(\d[\d\s.,]*)\s+(\S+)\s+в\s+(.+?)\s+Доступно:\s+(-?\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта **1359 : списание -10346.78 KZT в OPENAI *CHATGPT SUBSCR, +14158799686, US Доступно: 151001.15 ₸.
