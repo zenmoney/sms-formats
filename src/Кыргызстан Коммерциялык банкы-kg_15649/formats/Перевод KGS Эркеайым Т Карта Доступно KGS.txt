@@ -1,0 +1,7 @@
+Перевод:\s+(\d[\d\s.,]*)\s+(\S+)\s+(.+?)\s+Карта:\s*\*(\d{4})\s+Доступно:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод: 200 KGS Эркеайым Т. Карта: *0462 Доступно: 649,01 KGS ║
