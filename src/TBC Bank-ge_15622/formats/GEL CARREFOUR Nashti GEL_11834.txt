@@ -1,0 +1,50 @@
+(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+(.+?)\s+(?:Balance:|Nashti:)\s*(-?\d[\d\s.,]*[.,]\d{2})(\S+)\s+(\d{2}\/\d{2}\/\d{2})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;av_balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+34.20GEL (*9655) CARREFOUR Nashti: 18850.72GEL    11/06/26 21:33
+
+-----EXAMPLE-----
+15.70GEL (*5364) MOZAIKA Balance: 8256.74GEL    11/06/26 16:52
+
+-----EXAMPLE-----
+14.00GEL
+(*1198)
+Google DramaWave Dram
+Balance: 3610.45GEL
+
+29/07/26 12:29
+
+-----EXAMPLE-----
+1002.60USD
+(*9846)
+AIR ASTANA
+Balance: 3624.66GEL
+
+28/07/26 21:17
+
+-----EXAMPLE-----
+11.50GEL
+(*1198)
+BoltTaxi
+Balance: 6200.62GEL
+
+26/07/26 20:14
+
+-----EXAMPLE-----
+105.67GEL
+(*9846)
+Wildberries
+Balance: 6212.12GEL
+
+26/07/26 18:22
+
+-----EXAMPLE-----
+11.90GEL
+(*1198)
+BoltTaxi
+Balance: 6317.79GEL
+
+26/07/26 17:59
