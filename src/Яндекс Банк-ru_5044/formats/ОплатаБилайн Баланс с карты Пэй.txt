@@ -1,7 +1,7 @@
-Оплата(.+?)\.\s*Баланс:\s*(\d[\d\s.,]*)\s*([^\s]+)\s*║\s*[-−–]\s*(\d[\d\s.,]*)\s*([^\s]+)
+Оплата(\S+)\.\s+Баланс:\s+(\d[\d\s.,]*)\s+(\S+)\s+║\s+−?(\d[\d\s.,]*)\s+(\S+)
 
 -----COLUMNS-----
-payee;balance;acc_instrument;outcome;instrument
+payee;av_balance;acc_instrument;outcome;instrument
 
 -----EXAMPLE-----
 ОплатаБилайн. Баланс: 5 ₽ ║ −3000 ₽ с карты Пэй
