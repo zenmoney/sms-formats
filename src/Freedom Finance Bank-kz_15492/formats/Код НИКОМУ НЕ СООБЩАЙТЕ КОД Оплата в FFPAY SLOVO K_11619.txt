@@ -1,7 +1,10 @@
-^Код\b.*
+(?:Kod|Код)\s+.*
 
 -----COLUMNS-----
 
 
 -----EXAMPLE-----
 Код 828144. НИКОМУ НЕ СООБЩАЙТЕ КОД! Оплата в FFPAY*4SLOVO.KZ на сумму 68580.75 KZT. ║ Freedom
+
+-----EXAMPLE-----
+Kod 821135. NIKOMU NE SOOBSCHAITE KOD! Oplata v Chocofood na summu 10.00 KZT.
