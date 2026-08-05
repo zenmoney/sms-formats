@@ -1,0 +1,7 @@
+MIR-(\d{4}).*?Покупка оплачена на\s+(\d[\d\s.,]*[.,]\d{2})(\S+)\s+в\s+(.+?)\s+Осталось:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-8829 16:46 Хоп! Покупка оплачена на 184.99р в BELORSKOE Осталось: 1568.56р
