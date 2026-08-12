@@ -1,0 +1,7 @@
+🛒 You spent\s+(€)(\d[\d\s.,]*)\s+Balance:\s*(€)(\d[\d\s.,]*[.,]\d{2})\s+║\s+(.+)
+
+-----COLUMNS-----
+instrument;outcome;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🛒 You spent €20 Balance: €279.61 ║ Dussmann Co Biotr. Svu
