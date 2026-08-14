@@ -1,0 +1,7 @@
+Взыскано\s+(\d[\d\s.,]*)\s+([^\s]+)
+
+-----COLUMNS-----
+outcome;instrument
+
+-----EXAMPLE-----
+Взыскано 17891.37 руб. Подробнее: https://www.vtb.ru/r/ar ║ ВТБ Онлайн
