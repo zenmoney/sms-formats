@@ -1,0 +1,7 @@
+Card(\d+);\s*Расчет\s*\(списание брони\):\s*(\d[\d\s.,]*)\s+(\S+);\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*([^;]+);\s*MCC:\s*(\d+);\s*Dostupno:\s*(-?\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;payee;mcc;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card1449; Расчет (списание брони): 5,30 BYN; 16.08.26 04:36:55; FASTEN,INTERNET,BY; MCC: 4121;Dostupno: 116,78 BYN ║ DailyFin
