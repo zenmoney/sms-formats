@@ -1,7 +1,0 @@
-(\d[\d\s.,]*)\s*(\S+)\s*—\s*Осталось:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*Счёт карты\s*(?:.+?)\s*••\s*(\d{4})\s*║\s*✨\s*Новая покупка в\s*(.+)
-
------COLUMNS-----
-outcome;instrument;balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
-2 998,80 ₽ — Осталось: 18 209,07 ₽ Счёт карты МИР •• 8829 ║ ✨ Новая покупка в IP Komissarova A. V

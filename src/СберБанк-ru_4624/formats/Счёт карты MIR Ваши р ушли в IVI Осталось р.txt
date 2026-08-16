@@ -1,7 +1,0 @@
-Счёт карты \S+-(\d{4}).*?Ваши[\s\u00A0]+(\d[\d\s\u00A0.,]*)(\S+)[\s\u00A0]+ушли в[\s\u00A0]+(.+?)[\s\u00A0]+Осталось:[\s\u00A0]+(-?\d[\d\s\u00A0.,]*[.,]\d{2})(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты MIR-2916 10:09 🐾 Ваши 399р ушли в IVI Осталось: 10 896.97р
