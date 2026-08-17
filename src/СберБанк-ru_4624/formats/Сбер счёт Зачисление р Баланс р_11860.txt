@@ -1,0 +1,7 @@
+Сбер\.счёт\s+\*(\d{4})\s+Зачисление\s+(\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+syncid;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Сбер.счёт *9353 Зачисление 40 000р Баланс: 40 000,19р
