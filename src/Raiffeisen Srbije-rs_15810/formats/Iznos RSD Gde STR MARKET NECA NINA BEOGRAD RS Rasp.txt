@@ -1,0 +1,7 @@
+\d{4}\*\*(\d{4}) \| Iznos (\d[\d\s.,]*[.,]\d{2}) ([A-Z]{3}) \| Gde: ([^|]+) \| Raspoloživo (-?\d[\d\s.,]*[.,]\d{2}) ([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+4054**8061 | Iznos 333,72 RSD | Gde: STR MARKET NECA & NINA 3 BEOGRAD RS | Raspoloživo 18.348,69 RSD | Kliknite za više detalja ║ Plaćanje karticom
