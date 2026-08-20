@@ -1,0 +1,7 @@
+(\d[\d\s,]*[.,]\d{2})\s+([A-Z]{3})\/(\d[\d\s,]*[.,]\d{2})\s+(\S)\s+—\s+Баланс:\s+(-?\d[\d\s,]*[.,]\d{2})\s+(\S)\s+Счёт карты\s+\S+?\s+•+\s*(\d{4})\s+║\s+Покупка\s+(.+)
+
+-----COLUMNS-----
+op_outcome;op_instrument;outcome;instrument;balance;acc_instrument;syncid;payee
+
+-----EXAMPLE-----
+28,50 BYN/816,22 ₽ — Баланс: 3 082,56 ₽ Счёт карты МИР •• 7523 ║ Покупка Art-prostranstvo
