@@ -1,0 +1,7 @@
+(.+?)\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\s+\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})(?=\s*\S)\s*(\S+)
+
+-----COLUMNS-----
+comment;income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Иные выплаты 2499р Счет *0309 Баланс 25609.99р 17:11
