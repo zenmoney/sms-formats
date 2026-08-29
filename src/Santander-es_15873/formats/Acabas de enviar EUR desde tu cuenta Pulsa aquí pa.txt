@@ -1,0 +1,7 @@
+Acabas de enviar\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+.*?desde tu cuenta\s+\*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid
+
+-----EXAMPLE-----
+Acabas de enviar 165.0 EUR desde tu cuenta **4533. Pulsa aquí para ver el detalle ║ 💸 ¡Transferencia enviada!
