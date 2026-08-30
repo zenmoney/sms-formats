@@ -1,4 +1,4 @@
-Acabas de enviar\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+.*?desde tu cuenta\s+\*\*(\d{4})
+Acabas de enviar\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+desde tu cuenta\s+\*\*(\d{4})
 
 -----COLUMNS-----
 outcome;instrument;syncid
