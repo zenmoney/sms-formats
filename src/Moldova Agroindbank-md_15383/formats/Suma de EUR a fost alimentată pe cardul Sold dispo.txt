@@ -1,0 +1,7 @@
+Suma de (\d[\d\s.,]*)\s+([A-Z]{3})\s+.*?cardul\s+\*{3}(\d{4})\.\s+Sold disponibil:\s+(\d[\d\s.,]*)(?=\s+[A-Z]{3})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Suma de 1005 EUR a fost alimentată pe cardul ***4453. Sold disponibil: 16545 EUR. ║
