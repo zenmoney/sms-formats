@@ -1,0 +1,7 @@
+VISA\s+karticom\s+\*\*(\d{4}):\s+iznos\s+(\d[\d\s.,]*)([A-Z]{3}),\s*mesto\s+(.+?)(?=,\s*dana)\s*,\s*dana\s+(\d{2}\.\d{2}\.\d{4})\s+u\s+\d{2}:\d{2}:\d{2}h\.\s+Rasp\.\:\s*([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;date#dMy;acc_instrument;balance
+
+-----EXAMPLE-----
+Placanje VISA karticom **6755: iznos 2,112.34RSD, mesto CURSOR, AI POWE, dana 07.08.2026 u 19:16:55h. Rasp.: RSD 243,882.32. Vasa ALTA banka
