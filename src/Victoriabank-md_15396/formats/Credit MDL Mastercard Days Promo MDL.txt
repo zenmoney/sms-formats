@@ -1,0 +1,7 @@
+\d+\.\.\.(\d{4})\s+(\d{4}-\d{2}-\d{2}).*?Credit;(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)\s*║
+
+-----COLUMNS-----
+syncid;date#yMd;income;instrument;payee
+
+-----EXAMPLE-----
+5...4710 2026-08-28 00:00:00 Credit;12.23 MDL Mastercard Days Promo ║ 12.23 MDL 2026-08-28 00:00:00
