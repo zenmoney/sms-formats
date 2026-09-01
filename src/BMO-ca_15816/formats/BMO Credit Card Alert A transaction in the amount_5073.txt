@@ -1,7 +1,7 @@
-^.*ransa.*?([A-Z]{3}|\W)\s*([\d\s.,]*\d) at (.*?) was ap.*nding (\d{4}).*
+^.*ransa.*?(?:[A-Z]{3}|\W)\s*([\d\s.,]*\d) at (.*?) was ap.*nding (\d{4}).*
 
 -----COLUMNS-----
-instrument;outcome;payee;syncid
+outcome;payee;syncid
 
 -----EXAMPLE-----
 BMO Credit Card Alert: A transaction in the amount of $20.27 at UBER EATS PEN was approved on card ending 9882.
