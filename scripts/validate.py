@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Validate format files: names, columns, regex match, group count, no cross-match."""
-
 import argparse
 import re
 import sys
@@ -29,6 +28,89 @@ from sms_format_repository import (
 def _is_format_file_path(file_path):
     """Check if file is a valid format file path (in /formats/ with .txt extension)."""
     return str(file_path).endswith(".txt") and "/formats/" in str(file_path)
+
+
+def _find_optional_capture_groups(regex: str) -> list[tuple[int, int]]:
+    """
+    Find all optional capture groups in regex.
+    Returns list of (open_pos, close_pos) for each optional capture group.
+    A capture group is optional if:
+    - It is followed by '?' after its closing parenthesis, OR
+    - It is inside a non-capturing group that is followed by '?'
+    """
+    stack = []  # (open_pos, is_capture, children_captures)
+    optional_captures = set()
+
+    i = 0
+    while i < len(regex):
+        ch = regex[i]
+        # Skip escaped characters
+        if ch == "\\" and i + 1 < len(regex):
+            i += 2
+            continue
+        # Skip character classes
+        if ch == "[":
+            i += 1
+            while i < len(regex) and regex[i] != "]":
+                if regex[i] == "\\" and i + 1 < len(regex):
+                    i += 2
+                else:
+                    i += 1
+            i += 1  # skip ]
+            continue
+        if ch == "(":
+            rest = regex[i + 1 :]
+            # Determine group type
+            if rest.startswith("?:"):
+                is_capture = False
+            elif rest.startswith("(?=") or rest.startswith("(?!"):
+                is_capture = False
+            elif rest.startswith("(?<"):
+                # Lookbehind (?<= or (?<! or named group (?<name>)
+                if len(rest) > 3 and rest[3] in ("=", "!"):
+                    is_capture = False
+                else:
+                    is_capture = True  # Named group
+            else:
+                is_capture = True
+            stack.append((i, is_capture, []))
+        elif ch == ")":
+            if stack:
+                open_pos, is_capture, children = stack.pop()
+                is_optional = i + 1 < len(regex) and regex[i + 1] == "?"
+                if is_optional:
+                    if is_capture:
+                        optional_captures.add((open_pos, i))
+                    # All capture children are also optional
+                    for child in children:
+                        optional_captures.add(child)
+                # Add self to parent's children if capture
+                if stack and is_capture:
+                    stack[-1][2].append((open_pos, i))
+        i += 1
+
+    return list(optional_captures)
+
+
+def _check_optional_columns(regex: str, file_path: str) -> list[ValidationError]:
+    """
+    Check if regex contains optional capture groups.
+    Optional columns are not supported by the processing engine.
+    """
+    errors = []
+    optional_groups = _find_optional_capture_groups(regex)
+    if optional_groups:
+        errors.append(
+            ValidationError(
+                kind="optional_column",
+                file_path=file_path,
+                message=(
+                    "Regex contains optional capture groups (not supported). "
+                    "Remove '?' quantifiers from capture groups or restructure regex."
+                ),
+            )
+        )
+    return errors
 
 
 def _check_file_extensions(src_dir: Path) -> list[ValidationError]:
@@ -197,7 +279,9 @@ def _collect_validation_errors():
     errors.extend(_check_bank_folder_names(src_dir))
     companies = list_companies()
     for company in companies:
-        bank_dir_name = f"{company.name}_{company.id}" if company.id is not None else company.name
+        bank_dir_name = (
+            f"{company.name}_{company.id}" if company.id is not None else company.name
+        )
         bank_path = src_dir / bank_dir_name
         bank_name = company.name
         if bank_name != clean_name(bank_name):
@@ -219,6 +303,8 @@ def _collect_validation_errors():
             try:
                 compiled = compile_regex(parsed.regex, file_path)
                 format_name = parsed.name or ""
+                # НОВАЯ ПРОВЕРКА: опциональные колонки
+                errors.extend(_check_optional_columns(parsed.regex, file_path))
                 formats.append((file_path, format_name, parsed, compiled))
                 formats_with_regex.append((parsed, compiled, file_path))
             except ValidationError as e:
@@ -249,6 +335,7 @@ def _apply_validation_fixes(errors):
     Apply fixable corrections: delete invalid_format files; remove example_no_match and
     cross_match examples; rename format files and bank dirs for invalid_name.
     Bank renames are done last so format paths stay valid.
+    Note: optional_column errors are NOT auto-fixed (require manual regex restructuring).
     """
     to_delete = set()
     to_remove_examples = {}
@@ -269,13 +356,16 @@ def _apply_validation_fixes(errors):
                 parsed = parse_name_with_id(stem)
                 id_part = parsed["id"]
                 new_stem = (
-                    f"{err.expected_name}_{id_part}" if id_part is not None else err.expected_name
+                    f"{err.expected_name}_{id_part}"
+                    if id_part is not None
+                    else err.expected_name
                 )
                 new_path = path.parent / f"{new_stem}.txt"
                 if str(new_path) != err.file_path:
                     format_rename_target[err.file_path] = str(new_path)
             else:
                 bank_renames.append((err.file_path, err.expected_name))
+        # Note: optional_column errors are not handled here (require manual fix)
     format_renames = list(format_rename_target.items())
     for file_path in to_delete:
         path_obj = Path(file_path)
