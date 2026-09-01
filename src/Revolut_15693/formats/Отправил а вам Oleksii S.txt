@@ -1,0 +1,7 @@
+Отправил\(а\)\s+вам\s+(\d[\d\s.,]*)\s*(\S+)\s*║\s*(.+)
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+Отправил(а) вам 20 € ║ Oleksii S.
