@@ -1,7 +1,7 @@
-^.*ithdraw.*?([A-Z]{3}|\W)\s*([\d\s.,]*\d) has.*nding in (\d{3,4}).*
+^.*ithdraw.*?(?:[A-Z]{3}|\W)\s*([\d\s.,]*\d) has.*nding in (\d{3,4}).*
 
 -----COLUMNS-----
-instrument;outcome;syncid#cash
+outcome;syncid#cash
 
 -----EXAMPLE-----
 BMO Withdrawal Alert: A withdrawal of $240.00 has been made from your account ending in 810.
