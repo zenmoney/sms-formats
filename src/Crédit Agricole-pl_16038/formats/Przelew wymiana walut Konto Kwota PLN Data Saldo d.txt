@@ -1,0 +1,7 @@
+Konto:[\d\s]*(\d{4}).*?Kwota:(\d[\d\s.,]*[.,]\d{2})([^\s]+).*?Data:(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}.*?Saldo dostepne:(-?\d[\d\s.,]*[.,]\d{2})([^\s]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#yMd;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Przelew - wymiana walut Konto:455634080000 Kwota:388,04PLN Data:2026-09-01 14:20 Saldo dostepne:723,85PLN
