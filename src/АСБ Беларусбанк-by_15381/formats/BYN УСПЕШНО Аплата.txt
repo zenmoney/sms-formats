@@ -1,0 +1,7 @@
+(-?\d[\d\s.,]*)\s+([A-Z]{3})(?=,|$)
+
+-----COLUMNS-----
+outcome;instrument
+
+-----EXAMPLE-----
+-3.32 BYN, УСПЕШНО ║ Аплата
