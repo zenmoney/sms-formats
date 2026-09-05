@@ -1,0 +1,7 @@
+(?i)\b3\s*[-–—]?\s*d\s*[-–—]?\s*(?:kod|код)\b
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+NIKOMU NE SOOBSHAITE 3D-kod 7992 Summa 785 000.00 KZT   (PEREVOD  BCC.KZ) ║ bcc.kz
