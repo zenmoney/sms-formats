@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([^\s]+)\s+—\s+Счёт карты\s+.+?\s+••\s+(\d{4})\s+║\s+💳\s+Сделали покупку в\s+(.+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee
+
+-----EXAMPLE-----
+10 ₽ — Счёт карты МИР •• 4623 ║ 💳 Сделали покупку в YM*OZROKOV MIHAIL
