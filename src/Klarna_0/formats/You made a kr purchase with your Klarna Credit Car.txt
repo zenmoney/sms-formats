@@ -1,0 +1,13 @@
+You\s+made\s+a\s+(\d[\d\s\u00A0.,]*)[\s\u00A0]+(\S+)[\s\u00A0]+purchase\s+with\s+your\s+Klarna\s+Credit\s+Card.*?║\s+(.+)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+You made a 131,35 kr purchase with your Klarna Credit Card and earned cashback ║ Maxi Ica Stormarknad
+
+-----EXAMPLE-----
+You made a 1 055,10 kr purchase with your Klarna Credit Card and earned cashback ║ Systembolaget
+
+-----EXAMPLE-----
+You made a 16 kr purchase with your Klarna Credit Card and earned cashback ║ Gallerian
