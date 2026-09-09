@@ -1,0 +1,7 @@
+^Mashreq Debit Card ending (\d{4}) was used for a transaction of\s+([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+at\s+(.+?)\s+on\s+<DayDdMmYYYY><HH:MM am/pm>\.\s+Available balance:\s+([A-Z]{3})\s+(-?\d[\d\s,]*[.,]\d{2})$
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Mashreq Debit Card ending 1234 was used for a transaction of AED 25.00 at TEST MERCHANT on <DayDdMmYYYY><HH:MM am/pm>. Available balance: AED 1,000.00
