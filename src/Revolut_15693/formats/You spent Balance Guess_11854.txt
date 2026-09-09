@@ -1,0 +1,7 @@
+You spent\s+(\S)(\d[\d\s.,]*[.,]\d{2})\s+Balance:\s+(\S)(-?\d[\d\s.,]*[.,]\d{2})\s+║\s+(.+)
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;av_balance;payee
+
+-----EXAMPLE-----
+🛍 You spent €47.90 Balance: €1,987.66 ║ Guess
