@@ -1,7 +1,0 @@
-^([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W)\s+/\s+([\d\s.,]*\d).*алан.*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W).*•\s*(\d{4}).*окупка\s+(.*)
-
------COLUMNS-----
-op_outcome;instrument;outcome;av_balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
-20 BYN / 599,60 ₽ - Баланс: 73 945,89 ₽ МИР •• 5908 ║ Покупка WWW.LIFE.COM.BY

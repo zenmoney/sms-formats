@@ -1,0 +1,7 @@
+([A-Z\s]+?)\s+Покупка:\s+-(\d[\d\s.,]*)\s+(\S+).*?Доступно:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+payee;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+ASPAN Покупка: -3750 KZT через QR Доступно: 220519.24 KZT ║ Home Credit Kazakhstan
