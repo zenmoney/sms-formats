@@ -1,7 +1,0 @@
-ECMC(\d+).*?Отмена покупки\s+(\d[\d\s\u00A0.,]*)(\S+)\s+(.+?)\s+Баланс:\s+(\d[\d\s\u00A0.,]*)(\S+)
-
------COLUMNS-----
-syncid;income;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-Счёт карты ECMC1325 22:14 Отмена покупки 214р OZON Баланс: 33 509.1р

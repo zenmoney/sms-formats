@@ -1,7 +1,7 @@
-Счёт карты VISA(\d{4})\s+(\d{2}\.\d{2}\.\d{2})\s+возврат покупки\s+(\d[\d\s.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
+Счёт карты VISA(\d{4})\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+возврат покупки\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
 
 -----COLUMNS-----
-syncid;date#dMy;income;instrument;payee;balance;acc_instrument
+syncid;date#dMy;income;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты VISA5902 07.09.26 возврат покупки 49 685р ВсеИнструменты Баланс: 54 703.22р

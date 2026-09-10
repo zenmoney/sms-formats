@@ -1,7 +1,7 @@
-Счёт карты (?:\S+)-(\d{4})\s+\d{2}:\d{2}\s+перечисление\s+(\d[\d\u00A0\s.,]*)\s*(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\u00A0\s.,]*[.,]\d{2})\s*(\S+)
+Счёт карты MIR-(\d{4})\s+\d{2}:\d{2}\s+перечисление\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(\S+)
 
 -----COLUMNS-----
-syncid;income;instrument;comment;balance;acc_instrument
+syncid;income;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты MIR-9888 07:08 перечисление 4000р PLATEZH PO KREDITU Баланс: 52 941.28р
