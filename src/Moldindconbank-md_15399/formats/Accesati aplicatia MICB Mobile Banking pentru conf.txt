@@ -1,4 +1,4 @@
-(?i)^.*\bconfirm.*$
+^.*║\s*[Cc]onfirmati\s+[Oo]peratiunea.*$
 
 -----COLUMNS-----
 
