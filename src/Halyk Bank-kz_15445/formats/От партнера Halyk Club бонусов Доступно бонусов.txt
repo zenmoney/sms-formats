@@ -1,0 +1,7 @@
+От партнера\s+(.+?):\s*(\d[\d\s.,]*)\s+(.+?)\.\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(.+?)\.
+
+-----COLUMNS-----
+payee;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+От партнера Halyk Club: 14,80 бонусов. Доступно 14 202,97 бонусов.  ║
