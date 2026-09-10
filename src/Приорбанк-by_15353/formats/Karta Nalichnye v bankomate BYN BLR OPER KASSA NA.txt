@@ -1,0 +1,7 @@
+Karta\s+\d\*+(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye v bankomate\s+(\d[\d\s.,]*[.,]\d{2})\s+([^\s.]+)\.?\s+(.+?)(?:\.\s+|(?=\s+Balance:))Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([^\s.]+)
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 4***9146 02-09-26 16:47:14. Nalichnye v bankomate 300.00 BYN. BLR OPER.KASSA NA ESENINA. Balance: 2353.16 BYN Tel. 7299090

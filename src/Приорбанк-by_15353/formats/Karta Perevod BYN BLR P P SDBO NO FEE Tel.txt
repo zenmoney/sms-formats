@@ -1,0 +1,7 @@
+Karta\s+(?:\*+|\d+\*+)?(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Perevod\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(.+?)(?=\s+NO FEE|\s+Tel\.|$)
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;payee
+
+-----EXAMPLE-----
+Karta 4***7054 10-08-26 21:57:42. Perevod 250.00 BYN. BLR P2P SDBO NO FEE.   Tel. 7299090

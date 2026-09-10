@@ -1,0 +1,7 @@
+Karta\s+\d\*\*\*(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Nalichnye\s+v\s+bankomate\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(.+?)(?=\.\s+Tel\.)
+
+-----COLUMNS-----
+syncid#cash;date#yMd;outcome;instrument;payee
+
+-----EXAMPLE-----
+Karta 4***7054 13-08-26 19:05:43. Nalichnye v bankomate 50.00 BYN. BLR TRAKT LOGOYSKIY, 37.   Tel. 7299090
