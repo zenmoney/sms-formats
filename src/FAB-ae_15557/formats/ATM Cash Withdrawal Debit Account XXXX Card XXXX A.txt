@@ -1,0 +1,7 @@
+Card\s+XXXX(\d{4}).*?\b([A-Z]{3})\s+(\d[\d\s.,]*[.,]\d{2})\s+(\d{2}\/\d{2}\/\d{2})\s+\d{2}:\d{2}\s+(?=Balance\s+[A-Z]{3}\s+(\d[\d\s.,]*[.,]\d{2}))Balance\s+([A-Z]{3})\s+(?:\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+ATM Cash Withdrawal / Debit Account XXXX7001  Card XXXX5121  AED 1002.00  20/08/26 06:06  Balance AED 14459.83
