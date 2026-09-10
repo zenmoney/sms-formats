@@ -1,0 +1,18 @@
+avtomaturi gadaxda carmatebit shesrulda:\s+(.+?)\s+-\s+(\d+)\s+amount:\s+(\S+)\s+(\d[\d\s.,]*),\s+account:\s+(\S+).*?(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+payee;comment;instrument;outcome;syncid;date#yyyy-MM-dd
+
+-----EXAMPLE-----
+Client,avtomaturi gadaxda carmatebit shesrulda:
+dasuptavebis mosakrebeli  - 5746035  amount: GEL 2.50, account: GE40BG0000000538250471GEL
+
+sul gadaxdili tanxa: 2.50 lari
+2026-08-01
+
+-----EXAMPLE-----
+Client,avtomaturi gadaxda carmatebit shesrulda:
+tbilisi enerji-saabonento - 566565131  amount: GEL 5.40, account: GE40BG0000000538250471GEL
+
+sul gadaxdili tanxa: 5.40 lari
+2026-07-30
