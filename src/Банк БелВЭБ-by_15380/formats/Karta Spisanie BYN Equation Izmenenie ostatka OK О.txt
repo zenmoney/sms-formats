@@ -1,0 +1,7 @@
+Karta\s+\d+\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s*-\s*(\d[\d\s.,]*)\s+(\S+).*?Остаток\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 9.3198 01.09.2026 12:31:00 Spisanie - 1.75 BYN Equation - Izmenenie ostatka   OK Остаток 2794.07 BYN
