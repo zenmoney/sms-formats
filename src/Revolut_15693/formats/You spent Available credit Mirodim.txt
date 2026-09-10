@@ -1,0 +1,7 @@
+You spent\s+(\d[\d\s.,]*[.,]\d{2})\s*(\S+).*?Available credit:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\2)
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+🚎️️ You spent 525,60 € Available credit: 1.443,68 € ║ Mirodim
