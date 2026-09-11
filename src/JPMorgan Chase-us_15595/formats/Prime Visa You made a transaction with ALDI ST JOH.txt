@@ -1,0 +1,7 @@
+Prime Visa: You made a (\$)(\d[\d\s.,]*(?:[.,]\d{2})?) transaction with (.+?) on ([A-Za-z]{3}\s\d{1,2},\s\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;date#dMy
+
+-----EXAMPLE-----
+Prime Visa: You made a $11.96 transaction with ALDI 74140 ST. JOHNS on Aug 16, 2026 at 6:27 PM ET.
