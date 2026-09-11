@@ -1,0 +1,7 @@
+^.*Transferul SEPA.*?(?:în sumă de|suma).*?\d[\d\s.,]*\s*(?:EUR|RON|USD).*?(?:procesat cu succes|Vezi detalii).*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Transferul SEPA în sumă de 552.00 EUR a fost procesat cu succes. Vezi detalii aici. ║
