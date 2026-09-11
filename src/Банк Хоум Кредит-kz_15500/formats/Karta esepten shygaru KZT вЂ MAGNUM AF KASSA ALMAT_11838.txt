@@ -1,0 +1,7 @@
+Karta\s+\*\*(\d{4})\s+:\s*esepten shygaru\s+-(\d[\d\s.,]*)\s+(\S+)\s+вЂ“\s+(.+?)\s+Qolzhetimdi:\s+(-?\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta **9589 : esepten shygaru -549.00 KZT вЂ“ MAGNUM.AF21.KASSA-5, ALMATY, KZ Qolzhetimdi: 3551.07 KZT.
