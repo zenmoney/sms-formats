@@ -1,0 +1,7 @@
+(?i)^.*\bstornir\w*\b.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Tvoja transakcija od 21.08.2026, u iznosu od 235.71 RSD, na prodajnom mestu Spotify P45E7BB6A1    Stockhol je stornirana. ║ Stornirana transakcija

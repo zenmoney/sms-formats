@@ -1,0 +1,7 @@
+Karticom\s+5574\*{4}(\d{4}),\s*iznos:\s*(\d[\d\s.,]*)\s*,\s*(\d{2}\.\d{2}\.\d{4}),\s*(\S+(?:\s+\S+){0,4})\s*\.\s*Trenutno\s+raspolozivo:\s*(-?\d[\d\s.,]*)\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;date#dMy;payee;av_balance;acc_instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Karticom  5574****6268, iznos: 5.00 , 18.07.2026, jambo coffee          Tbilisi . Trenutno raspolozivo: 0,00 EUR 286.644,96 RSD    . ║ Transakcija je izvršena
