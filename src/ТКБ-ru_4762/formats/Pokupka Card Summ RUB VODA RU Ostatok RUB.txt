@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+Pokupka\s+Card\s+\*{3}(\d{4})\.\s+Summ\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s+(.+?)\.\s+Ostatok:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+15.08.26 10:31 Pokupka Card ***6075. Summ 25.00 RUB. VODA, RU. Ostatok: 41200.59 RUB
