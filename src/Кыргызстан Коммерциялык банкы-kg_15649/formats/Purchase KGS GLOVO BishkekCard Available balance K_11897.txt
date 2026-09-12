@@ -1,0 +1,7 @@
+Purchase:\s*(\d[\d\s.,]*)\s+([^\s]+)\s+(.+?)Card:\s*\*(\d{4})\s+Available balance:\s*(\d[\d\s]*[.,]\d{1,2})\s+([^\s]+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Purchase: 1 275,71 KGS GLOVO, BishkekCard: *1726 Available balance: 174,1 KGS ║
