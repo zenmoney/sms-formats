@@ -1,0 +1,7 @@
+Kwota:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\.\s*Konto:\s*\d+\.\.(\d{4})\s+Lokalizacja:\s*(.*?)\s*:\s*(.+?)(?:\s+Stan konta po transakcji:|$)
+
+-----COLUMNS-----
+outcome;instrument;syncid;comment;payee
+
+-----EXAMPLE-----
+Kwota: 22,00 PLN.  Konto: 16..7069 Lokalizacja: BLIK INTERNET: NETLAND24.PL Stan konta po transakcji:  PLN ║ Blokada kwoty pod transakcję BLIK

@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4})\sж\.\sдепозит сомасы:\s*(\d[\d\s.,]*[.,]\d{2})\s([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;income;instrument
+
+-----EXAMPLE-----
+04.08.2026 ж. депозит сомасы: 116,095.86 KZT. ║ Home Credit Kazakhstan
