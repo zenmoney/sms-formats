@@ -1,0 +1,7 @@
+SPISANO\s+(\d[\d\s.,]*)\s+(\S+)\s+s karty\s+\*(\d{4})\s+v\s+(.+?)(?=\s*,?\s*\d{2}:\d{2})\s*,?\s*\d{2}:\d{2}(?:\s+\S+)?\s*,\s*(\d{2}\.\d{2}\.\d{4})\s+Balans\s+(-?\d[\d\s.,]*)\s+(\S+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+SPISANO 30966.00 RUR s karty *6926  v MOSCOW, MED KOD, 08:23 MSK, 03.09.2026 Balans 7834.9 RUR

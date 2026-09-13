@@ -1,0 +1,7 @@
+Частичный возврат:\s+\+(\d[\d\s.,]*[.,]\d{2})\s+(₸)(.+?)\s+Карта\s*\*(\d{4})\s+Остаток:\s+Кредитные\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(₸)
+
+-----COLUMNS-----
+income;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Частичный возврат: +487.00 ₸TOO "MAGNUM E-COMMERCE KA Карта *1392 Остаток: Кредитные 2 972 448.00 ₸ (обновится 12.09.2026) ║ ForteApp
