@@ -1,0 +1,7 @@
+Карта \*(\d{4})\s+списание\s+(-?\d[\d\s]*[.,]\d{2})([^\s]+)(.+?)\s+Доступно\s+(-?\d[\d\s]*[.,]\d{2})([^\s]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта *2066 списание 32.00pVILKA LOZHKA, EKAT Доступно 526.03р
