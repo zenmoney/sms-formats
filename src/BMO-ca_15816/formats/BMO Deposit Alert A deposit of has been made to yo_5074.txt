@@ -1,7 +1,7 @@
-^.*eposi.*?([A-Z]{3}|\W)\s*([\d\s.,]*\d) has.*nding in (\d{3,4}).*
+^.*eposi.*?(?:[A-Z]{3}|\W)\s*([\d\s.,]*\d) has.*nding in (\d{3,4}).*
 
 -----COLUMNS-----
-instrument;income;syncid
+income;syncid
 
 -----EXAMPLE-----
 BMO Deposit Alert: A deposit of $1,101.06 has been made to your account ending in 810.
