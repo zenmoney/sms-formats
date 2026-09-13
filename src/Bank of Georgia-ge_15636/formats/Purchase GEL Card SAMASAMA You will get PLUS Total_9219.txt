@@ -1,4 +1,4 @@
-Purchase:\s*([A-Za-z]{1,4})\s*([\d\s.,]+?)\s+Card:\s*\*+(\d{4})\s+(.+?)(?:\s+(?:You will get:|Balance:|Remaining balance:).+)?\s+(\d{2}\.\d{2}\.\d{4})\s*$
+Purchase:\s*([A-Za-z]{1,4})\s*([\d\s.,]+?)\s+Card:\s*\*+(\d{4})\s+(.+?)(?:\s+(?:You will get:|Balance:|Remaining balance:|you received:).+)?\s+(\d{2}\.\d{2}\.\d{4})\s*$
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee;date#dMy
@@ -23,3 +23,27 @@ Purchase: GEL49.99 Card:***1234 Zoomart Givi Kartozia str 6 Balance: GEL672.44 y
 
 -----EXAMPLE-----
 Purchase: GEL20.25 Card:***1234 I/E GEOGI BRIA Balance: GEL722.43 you received: 35.44 PLUS Total: 17,054.77 PLUS 18.05.2026
+
+-----EXAMPLE-----
+Purchase: GEL12.90
+Card:***8295
+BOLT TAXI
+you received: 29.03 PLUS
+Total: 43,349.47 PLUS
+01.08.2026
+
+-----EXAMPLE-----
+Purchase: GEL14.00
+Card:***0833
+Chika Rustaveli
+you received: 31.50 PLUS
+Total: 43,320.45 PLUS
+31.07.2026
+
+-----EXAMPLE-----
+Purchase: GEL27.00
+Card:***0833
+808
+you received: 60.75 PLUS
+Total: 43,288.95 PLUS
+31.07.2026

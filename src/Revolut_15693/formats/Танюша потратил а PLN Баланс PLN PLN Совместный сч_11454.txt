@@ -1,7 +1,10 @@
--(.+?)-\s+потратил\(а\)\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Баланс\s+«.*?»:\s+(-?\d[\d\s.,]*)\s+([A-Z]{3})\s*║\s*(.+)
+(.+?)\s+потратил\(а\)\s+(\d[\d\s.,]*)\s+(\S+)\s+Баланс\s+«[A-Z]{3}»:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+║\s+Совместный счет ·\s+(.+)
 
 -----COLUMNS-----
-comment;outcome;instrument;balance;acc_instrument;payee
+comment;outcome;instrument;av_balance;acc_instrument;payee
 
 -----EXAMPLE-----
 -Танюша- потратил(а) 254,40 PLN  Баланс «PLN»: 1 011,02 PLN ║ Совместный счет · Sushi Lovers
+
+-----EXAMPLE-----
+Дабай ❤️ потратил(а) 69,60 €  Баланс «EUR»: 623,61 € ║ Совместный счет · Casa Della Pasta

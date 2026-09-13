@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+(\S+)\s+—\s+Баланс:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+Счёт карты\s+[^\d]*?\s+••\s+(\d{4})\s+║\s+(.+?):\s+(.+)
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;syncid;payee;comment
+
+-----EXAMPLE-----
+250 ₽ — Баланс: 1 902,07 ₽ Счёт карты МИР •• 4346 ║ Ирина П.: Покупка Тип-Топ
