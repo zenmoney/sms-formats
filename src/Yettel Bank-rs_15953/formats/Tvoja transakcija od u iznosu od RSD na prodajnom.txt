@@ -1,4 +1,4 @@
-(?i)^.*\bstornir\w*\b.*$
+^.*[Ss]tornir\w*.*$
 
 -----COLUMNS-----
 
