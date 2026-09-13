@@ -1,0 +1,7 @@
+💳\s*(\d[\d\s.,]*[.,]\d{2})\s+([^\s]+)\s+••\s+(\d+)\s+║\s+➕\s+(\d[\d\s.,]*)\s+([^\s]+)\s+Зарплата\s+(.+)
+
+-----COLUMNS-----
+balance;acc_instrument;syncid;income;instrument;payee
+
+-----EXAMPLE-----
+💳 49 463,18 ₽ •• 1669 ║ ➕ 750 ₽ Зарплата ООО "ЯНДЕКС.ТЕХНОЛОГИИ"

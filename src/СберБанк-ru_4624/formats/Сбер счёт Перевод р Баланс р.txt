@@ -1,0 +1,7 @@
+(?:.+?)\s+\*(\d{4})\s+\d{2}:\d{2}\s+Перевод\s+(\d[\d\s\u00A0.,]*)(\S+)\s+Баланс:\s+(\d[\d\s\u00A0.,]*)(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Сбер.счёт *6811 10:48 Перевод 1 400 000р Баланс: 4 643 850р
