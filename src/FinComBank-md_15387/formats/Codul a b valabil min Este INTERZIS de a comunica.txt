@@ -1,0 +1,7 @@
+^Codul .*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Codul a9434b valabil 10 min. Este INTERZIS de a comunica/transmite CODUL altor persoane.
