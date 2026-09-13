@@ -1,0 +1,7 @@
+A transaction of\s+(\d[\d\s.,]*)([^\s\d]+)\s+was made on\s+(\d{2}\/\d{2}\/\d{4})
+
+-----COLUMNS-----
+outcome;instrument;date#dMy
+
+-----EXAMPLE-----
+A transaction of 600.00฿ was made on 23/08/2026 at 23:29 hrs. If you did not make the transaction, please call Bangkok Bank Call Center 1333 or +66 2645 5555 immediately. ║ Bangkok Bank
