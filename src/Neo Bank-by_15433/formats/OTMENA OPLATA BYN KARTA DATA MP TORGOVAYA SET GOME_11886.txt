@@ -1,0 +1,7 @@
+OTMENA OPLATA\s+(\d[\d\s.,]*)\s+(\S+)\s+KARTA\s+#(\d{4})\s+DATA\s+(\d{2}\.\d{2}\.\d{4}).*?MP\s+'([^']+)'.*?OSTATOK\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+OTMENA OPLATA 4.00 BYN KARTA #7022 DATA 20.07.2026 10:05:55 MP 'TORGOVAYA SET'     >GOMEL>BY OSTATOK 4936.37 BYN
