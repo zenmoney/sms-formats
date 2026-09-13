@@ -1,0 +1,7 @@
+(.+?) has received your bank transfer of\s+([^\d\s]+)\s*(\d[\d\s.,]*)(?=[\s║\.,:]|$)
+
+-----COLUMNS-----
+payee;instrument;outcome
+
+-----EXAMPLE-----
+Lucía Cecilia Caracena González has received your bank transfer of €144 ║ N26
