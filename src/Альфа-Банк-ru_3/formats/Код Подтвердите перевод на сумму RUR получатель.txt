@@ -8,3 +8,6 @@
 
 -----EXAMPLE-----
 Kod: 9971. Podtverdite oplatu na summu 1400.00 RUR
+
+-----EXAMPLE-----
+Kod: 8483. Podtverdite oplatu na summu 1560.00 RUR
