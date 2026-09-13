@@ -1,0 +1,7 @@
+Карта \*\*(\d{4})\s*:\s*есептен шығару\s+-(\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+—\s+(.+?)\s+Қолжетімді:\s+(\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Карта **2576 : есептен шығару -3170.00 KZT — GALMART-FORUM SUPERMA, ALMATY, KZ Қолжетімді: 1830.00 ₸. ║ Home Credit Kazakhstan
