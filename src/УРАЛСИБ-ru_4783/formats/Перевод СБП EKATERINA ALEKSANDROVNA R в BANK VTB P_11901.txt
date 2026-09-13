@@ -1,0 +1,7 @@
+Перевод СБП\s+(.+?)\s+в\s+.*?Сумма\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+со\s+счета\s+\*(\d{4})\.\s+Исполнен\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+payee;outcome;instrument;syncid;date#dMy
+
+-----EXAMPLE-----
+Перевод СБП EKATERINA ALEKSANDROVNA R. в BANK VTB (PAO).  Сумма 35000.00 RUR со счета *0102.  Исполнен 11.08.2026 09:12 ║ Уралсиб
