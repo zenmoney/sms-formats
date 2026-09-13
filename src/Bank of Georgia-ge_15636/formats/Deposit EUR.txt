@@ -1,0 +1,7 @@
+Deposit:\s*([A-Z]{3})\s?(\d[\d\s,]*\.\d{2})\s+(\d{1,2}\.\d{1,2}\.\d{4})
+
+-----COLUMNS-----
+instrument;income;date#dMy
+
+-----EXAMPLE-----
+Deposit: EUR3,318.92 11.08.2026
