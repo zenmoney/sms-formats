@@ -1,0 +1,7 @@
+(?!.*Автоплатёж)MIR-(\d{4})\s+\d{2}:\d{2}\s+(.+?)\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+У вас ещё:\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+syncid;comment;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-8117 03:53 Стремительная оплата! 300р CYFRAL-GROUP У вас ещё: 789.97р

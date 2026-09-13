@@ -1,0 +1,10 @@
+\*(\d{4})\s+Пoкупка\s+(\d[\d\s.,]*)(\S+)\s+(.+?)\s+Дoступно\s+(-?\d[\d\s.,]*)(\S+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+*8486 Пoкупка 1468,77р РYATEROCHKA 22457 Дoступно 410069,3р
+
+-----EXAMPLE-----
+*8486 Пoкупка 2500р VKНOD Дoступно 490331,76р
