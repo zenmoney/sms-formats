@@ -1,1 +1,2 @@
-com.bybit.app
+com.maanavan.mb_kyrgyzstan
+mbank.kg
