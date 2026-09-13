@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Przelew na telefon - odebrany.*?Nadawca:\s*(.+?)\s+Tytuł:\s*(.+?)\s+OD:.*?Na koncie:\s*\d+\.\.(\d{4}).*?Stan konta po transakcji:\s*[+-]?(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;comment;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
++1337,00 PLN Przelew na telefon - odebrany Konto nadawcy: 57..3305 Nadawca: ARTUR LEWEK    Tytuł: PRZELEW NA TELEFON  OD: 48603721430 DO: 48539330777 Na koncie: 16..7069 Stan konta po transakcji: +3551,84 PLN ║ Uznanie konta
