@@ -1,0 +1,7 @@
+^[-+]?\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3}).*?Nadawca:\s*(.+?)\s+Tytuł:.*?Na koncie:\s*[\d\.]+(\d{4})\b.*?Stan konta po transakcji:\s*[-+]?\s*(\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
++300,00 PLN Przelew na telefon - odebrany Konto nadawcy: 44..3662 Nadawca: MIKOŁAJ M SZCZYGIEŁ Tytuł: PRZELEW NA TELEFON Na koncie: 16..7069 Stan konta po transakcji: +757,28 PLN
