@@ -1,7 +1,7 @@
-^Purchase\s+(\$)(\d[\d\s.,]*)\s+at\s+(.+?)\.\s+Cashback\s+\+\$\s*(\d[\d\s.,]*)
+^Purchase\s+(\$)(\d[\d\s.,]*)\s+at\s+(.+?)\.\s+Cashback\s+\+\$\s*(\d[\d\s.,]*\d)
 
 -----COLUMNS-----
-instrument;outcome;payee;income
+instrument;outcome;payee;cashback
 
 -----EXAMPLE-----
 Purchase $27.72 at Uber Eats. Cashback +$0.27.
