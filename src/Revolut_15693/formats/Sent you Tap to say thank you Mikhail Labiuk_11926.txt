@@ -1,0 +1,7 @@
+Sent you\s*([^\d\s]+)(\d[\d\s]*(?:[.,]\d{1,2})?)\.\s*Tap to say thank you 💰\s*║\s*(.+)
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+Sent you €9. Tap to say thank you 💰 ║ Mikhail Labiuk

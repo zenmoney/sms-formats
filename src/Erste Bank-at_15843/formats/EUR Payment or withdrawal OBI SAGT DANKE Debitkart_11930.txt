@@ -1,0 +1,7 @@
+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s*\|\s*Payment or withdrawal\s*\|\s*(.*?)\s*║\s*Debitkarte\s*•\s*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+55,95 EUR | Payment or withdrawal | OBI SAGT DANKE ║ Debitkarte • 4600
