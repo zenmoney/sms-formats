@@ -1,1 +1,2 @@
-com.bybit.app
+plata
+dif.tech.plata
