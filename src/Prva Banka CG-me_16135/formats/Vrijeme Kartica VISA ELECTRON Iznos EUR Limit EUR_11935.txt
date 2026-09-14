@@ -1,0 +1,7 @@
+Iznos:\s*(\d[\d\s.,]*)\s+([A-Z]{3}).*?Raspolozivo stanje:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Lokacija:\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Vrijeme: 21:21 Kartica: VISA / ELECTRON Iznos: 155.40 EUR Limit: 0.00 EUR Raspolozivo stanje: 34.29 EUR Lokacija: english in stor
