@@ -1,0 +1,7 @@
+^.*[Pp]otvrda[\s\u00A0]+pla[cč]anja.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Iznos: 15187.00RSD | Primalac: GIGATRON ONLINE | Naziv kartice: VISA DEBIT | Vreme: 2026-08-19T13:05:14Z | Kliknite ovde i bićete preusmereni na potvrdu plaćanja. ║ Potvrda plaćanja karticom
