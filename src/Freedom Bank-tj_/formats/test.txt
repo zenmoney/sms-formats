@@ -1,7 +1,10 @@
-Sayin\s+[^,]+,\s+(\d{4})\s+ile biten\s+\w+\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s*,?\s*([^\s,]+(?:\s+[^\s,]+)*)\s+is yerinden\s+(\d[\d\s.,]*)\s*([A-Z]+)\s+islem yapilmistir
+^(?:Freedom Bank\s+)?(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Покупка\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s+по карте\s+(\d{4})\s+в терминале\s+(.+?),\s+остаток по карте\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
 
 -----COLUMNS-----
-syncid;date#dMy;payee;outcome;instrument
+date#dMy;outcome;instrument;syncid;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
-Sayin PAVEL NIKONOV, 2475 ile biten TLCard kartinizla 13.05.2026 saat 07:31'de,EKOMINI MARKET is yerinden 105,00 TL islem yapilmistir. Islem size ait degilse bankamizla iletisime gecebilirsiniz. B016
+Freedom Bank 2026-07-27 02:41:47 Покупка 14.60 CNY по карте 9186 в терминале SHANGHAI, FFTPINDUODUO4, остаток по карте 31.21 TJS За покупку будет зачислен кешбэк 0.60 TJS
+
+-----EXAMPLE-----
+Freedom Bank 2026-08-27 13:28:54 Покупка 31.00 CNY по карте 9186 в терминале SHANGHAI, FFTPINDUODUO10, остаток по карте 16.41 USD За покупку будет зачислен кешбэк 1.28 TJS
