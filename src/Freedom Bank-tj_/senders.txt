@@ -1,1 +1,2 @@
-com.bybit.app
+freedom
+tj.freedombank.app
