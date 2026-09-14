@@ -20,3 +20,6 @@ outcome;instrument;payee;syncid;balance;acc_instrument
 
 -----EXAMPLE-----
 Покупка: 470 ₽ в Freshkafe U. Карта *2407. Остаток 388280.67 ₽
+
+-----EXAMPLE-----
+Покупка: 290 ₽ в EVO_LAVASHO. Карта *2742. Остаток 282291.92 ₽
