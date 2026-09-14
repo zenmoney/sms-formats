@@ -1,7 +1,0 @@
-(\d[\d\s.,]*)\s*(\S+)\s*—\s*Осталось:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*Счёт карты\s+.+?\s*••\s*(\d{4})\s*║\s*Деньги потрачены в\s*(.+)
-
------COLUMNS-----
-outcome;instrument;balance;acc_instrument;syncid;payee
-
------EXAMPLE-----
-2 000 ₽ — Осталось: 8 541,72 ₽ Счёт карты МИР •• 4234 ║ Деньги потрачены в RK*IP PARFYONOV KIRIL
