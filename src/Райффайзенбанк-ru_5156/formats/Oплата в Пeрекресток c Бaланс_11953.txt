@@ -1,0 +1,7 @@
+Oплата\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+c\s+\*(\d{4})\.?\s+Бaланс\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Oплата 2850.53 ₽ в Пeрекресток c *2840. Бaланс 4630.68 ₽

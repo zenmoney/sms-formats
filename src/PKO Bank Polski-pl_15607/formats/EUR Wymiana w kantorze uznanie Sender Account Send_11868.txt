@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Wymiana w kantorze - uznanie[\s\S]*?Sender Account:[\s\S]*?Sender:\s*([\s\S]*?)\s+Title:[\s\S]*?-(\d[\d\s.,]*)\s+([A-Z]{3})[\s\S]*?On account no\.[\s\S]*?\.\.(\d{4})[\s\S]*?Available balance:\+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;op_outcome;op_instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
++23,55 EUR Wymiana w kantorze - uznanie Sender Account: 45..9009 Sender: VOLHA SECH  UL. ŻUPNICZA 23  M.91 03-821 WARSZAWA Title: FX98591746 EUR/PLN 4.3476  23,55 EUR -102,39 PLN On account no. 62..9041 Available balance:+700,00 EUR ║ Account credit

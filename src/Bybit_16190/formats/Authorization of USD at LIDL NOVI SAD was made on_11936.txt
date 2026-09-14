@@ -1,0 +1,7 @@
+Authorization of (\d[\d\s.,]*)\s([A-Z]{3})\s+at\s+(.+?)\s+was made on\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+outcome;instrument;payee;date#yMd
+
+-----EXAMPLE-----
+Authorization of 24.27 USD at LIDL 163 NOVI SAD was made on 2026-09-12 15:44:33. ║ Bybit Card - Authorization Successful

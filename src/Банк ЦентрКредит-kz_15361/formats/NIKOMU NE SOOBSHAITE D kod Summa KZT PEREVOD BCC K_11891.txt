@@ -1,0 +1,7 @@
+^.*3[Dd][\s\u00A0]*[-–—]?[\s\u00A0]*(?:[Kk][Oo][Dd]|[Кк][Оо][Дд])[\s\u00A0]+\d{4,}.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+NIKOMU NE SOOBSHAITE 3D-kod 7992 Summa 785 000.00 KZT   (PEREVOD  BCC.KZ) ║ bcc.kz
