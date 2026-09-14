@@ -5,3 +5,9 @@ income;instrument;payee;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 +300,00 PLN Przelew na telefon - odebrany Konto nadawcy: 44..3662 Nadawca: MIKOŁAJ M SZCZYGIEŁ Tytuł: PRZELEW NA TELEFON Na koncie: 16..7069 Stan konta po transakcji: +757,28 PLN
+
+-----EXAMPLE-----
++1337,00 PLN Przelew na telefon - odebrany Konto nadawcy: 57..3305 Nadawca: ARTUR LEWEK    Tytuł: PRZELEW NA TELEFON  OD: 48603721430 DO: 48539330777 Na koncie: 16..7069 Stan konta po transakcji: +3551,84 PLN ║ Uznanie konta
+
+-----EXAMPLE-----
++500,00 PLN Przelew na konto Konto nadawcy: 89..0941 Nadawca: DMYTRO NIKITENKO  UL. DZHEZELNA 49 67400 ROZDILNA Tytuł: BK   Na koncie: 83..8576 Stan konta po transakcji: +522,77 PLN ║ Uznanie konta
