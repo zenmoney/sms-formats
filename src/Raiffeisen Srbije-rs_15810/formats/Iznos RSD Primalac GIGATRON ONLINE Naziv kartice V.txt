@@ -1,4 +1,4 @@
-^.*[Pp]otvrda[\s\u00A0]+pla[cč]anja.*$
+^.*[Pp]otvrda[\s\u00A0]+pla[cčć]anja.*$
 
 -----COLUMNS-----
 
