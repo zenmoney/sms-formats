@@ -1,0 +1,7 @@
+Sayin\s+[^,]+,\s+(\d{4})\s+ile biten\s+\w+\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s*,?\s*([^\s,]+(?:\s+[^\s,]+)*)\s+is yerinden\s+(\d[\d\s.,]*)\s*([A-Z]+)\s+islem yapilmistir
+
+-----COLUMNS-----
+syncid;date#dMy;payee;outcome;instrument
+
+-----EXAMPLE-----
+Sayin PAVEL NIKONOV, 2475 ile biten TLCard kartinizla 13.05.2026 saat 07:31'de,EKOMINI MARKET is yerinden 105,00 TL islem yapilmistir. Islem size ait degilse bankamizla iletisime gecebilirsiniz. B016
