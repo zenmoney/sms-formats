@@ -11,3 +11,6 @@ outcome;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Со счёта списано 560000 ₽. Остаток: 16081.27 ₽.
+
+-----EXAMPLE-----
+Вы провели платёж на 1 RUB. Остаток: 1306.98 RUB

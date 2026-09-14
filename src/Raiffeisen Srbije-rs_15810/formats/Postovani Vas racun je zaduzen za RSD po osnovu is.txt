@@ -1,0 +1,10 @@
+^.*racun\s+\d+\*+(\d{4})\s+je\s+zaduzen\s+za\s+([\d.,]+)\s+([A-Z]{3}).*u\s+korist\s+(.+?)\.?$
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+Postovani, Vas racun 2650**7841 je zaduzen za 2.500,00 RSD po osnovu ispostavljenog naloga za placanje u korist Marija Polic.
+
+-----EXAMPLE-----
+Postovani, Vas racun 2650**7841 je zaduzen za 3.000,00 RSD po osnovu ispostavljenog naloga za placanje u korist MILJA BALETIC.
