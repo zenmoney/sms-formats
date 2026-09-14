@@ -1,0 +1,10 @@
+You spent\s+(\d[\d\s.,]*)\s*(\S+)\s+Available credit:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*║\s*([^\r\n]+)
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+🚎️️ You spent 150 € Available credit: 1.288,73 € ║ Plenergy
+
+-----EXAMPLE-----
+🚎️️ You spent 525,60 € Available credit: 1.443,68 € ║ Mirodim
