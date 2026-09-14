@@ -1,7 +1,7 @@
-Sayin\s+[^,]+,\s+(\d{4})\s+ile biten\s+\w+\s+kartinizla\s+(\d{2}\.\d{2}\.\d{4})\s*,?\s*([^\s,]+(?:\s+[^\s,]+)*)\s+is yerinden\s+(\d[\d\s.,]*)\s*([A-Z]+)\s+islem yapilmistir
+^(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}\s+Pokupka\s+oplachena\s+\d+(\d{4})\s+SBP\s+([\d.,]+)\s+([A-Z]{3})\s+(.+?);\s+ostatok\s+(-?[\d.,]+)\s+([A-Z]{3})
 
 -----COLUMNS-----
-syncid;date#dMy;payee;outcome;instrument
+date#dMy;syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
-Sayin PAVEL NIKONOV, 2475 ile biten TLCard kartinizla 13.05.2026 saat 07:31'de,EKOMINI MARKET is yerinden 105,00 TL islem yapilmistir. Islem size ait degilse bankamizla iletisime gecebilirsiniz. B016
+16-08-26 19:53 Pokupka oplachena 40817810501000002900 SBP 1012.00 RUB Wildberries; ostatok 308198.92 RUB

@@ -1,1 +1,2 @@
-com.bybit.app
+uralfd_bank
+ru.uralfd.newmobileoffice2
