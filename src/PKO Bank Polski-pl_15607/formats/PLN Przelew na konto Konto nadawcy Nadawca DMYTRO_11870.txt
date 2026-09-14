@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Przelew na konto.*?Nadawca:\s*([\s\S]*?)\s+Tytuł:\s*([\s\S]*?)\s+Na koncie:\s*[\d.]*?(\d{4})\s+Stan konta po transakcji:\s*[+-]?(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;comment;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
++500,00 PLN Przelew na konto Konto nadawcy: 89..0941 Nadawca: DMYTRO NIKITENKO  UL. DZHEZELNA 49 67400 ROZDILNA Tytuł: BK   Na koncie: 83..8576 Stan konta po transakcji: +522,77 PLN ║ Uznanie konta
