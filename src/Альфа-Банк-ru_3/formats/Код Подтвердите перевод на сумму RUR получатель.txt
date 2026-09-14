@@ -1,0 +1,13 @@
+^.*(?:[Кк][Оо][Дд]|[Kk]od)[\s\u00A0]*:?\s*\d{4,}.*(?:[Пп]одтверд|Podtverd).*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Код: 3429. Подтвердите перевод на сумму 500.00 RUR получатель 791*0999
+
+-----EXAMPLE-----
+Kod: 9971. Podtverdite oplatu na summu 1400.00 RUR
+
+-----EXAMPLE-----
+Kod: 8483. Podtverdite oplatu na summu 1560.00 RUR

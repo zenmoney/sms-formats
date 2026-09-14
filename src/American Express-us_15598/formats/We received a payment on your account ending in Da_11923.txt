@@ -1,0 +1,7 @@
+We received a payment on your account ending in \d*(\d{4})\. Date Received: ([A-Za-z]+\s+\d{1,2},\s+\d{4})\. Payment Amount: ([^\d\s])(\d[\d\s.,]*[.,]\d{2})(?=\s|$|║)
+
+-----COLUMNS-----
+syncid;date#Mdy;instrument;income
+
+-----EXAMPLE-----
+We received a payment on your account ending in 71007. Date Received: Jul 30, 2026. Payment Amount: $185.28 ║ Amex
