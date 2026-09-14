@@ -1,0 +1,7 @@
+Karta\s+\d+\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)(?:\.\s+|\s+)Dostupno\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 9.3198 25.08.2026 12:20:30 Spisanie - 300.00 BYN WWW.FINSTORE.BY MINSK BLR OK. Dostupno 2793.80 BYN
