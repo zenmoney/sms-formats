@@ -1,0 +1,7 @@
+^Refund of\s+([A-Z]{3})\s+([\d.,]+)\s+from\s+(.+?)\s+at\s+\d{2}:\d{2},\s+(\d{2}-[A-Za-z]{3}-\d{2})\s+on card ending\s+\*+(\d{4})\s+Available limit:\s+([A-Z]{3})\s+([\d.,]+)
+
+-----COLUMNS-----
+instrument;income;payee;date#dMy;syncid;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Refund of QAR 114.29 from Trendyol Dubai at 16:00, 06-Aug-26 on card ending **6891 Available limit: QAR 52,696.21
