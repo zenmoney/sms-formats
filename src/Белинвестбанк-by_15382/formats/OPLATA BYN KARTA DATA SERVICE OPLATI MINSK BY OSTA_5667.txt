@@ -1,4 +1,4 @@
-^\*(\d{4}) (?:OPLATA|SPISAN\w+) ([\d\s.,]*\d)\s*([A-Z]{3}).*DATA (\d{2}[-./]\d{2}[-./]\d{2,4}) [\d:]{5,} (?:(?:SERVIC|VIRTUA).*|)OSTAT.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^(?=.*KARTA\s*#(\d{4}))(?:\*\d{4}\s+)?(?:OPLATA|SPISAN\w+)\s+(-?[\d\s.,]*\d)\s*([A-Z]{3}).*?DATA\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+[\d:]{5,}\s+(?:(?:SERVIC|VIRTUA).*|)OSTAT.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
 
 -----COLUMNS-----
 syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
@@ -11,3 +11,6 @@ syncid;outcome;instrument;date#dMy;av_balance;acc_instrument
 
 -----EXAMPLE-----
 *1736 SPISANIE 0.05 BYN KARTA #1736 DATA 28.02.2023 15:50:52 OSTATOK 1270.11 BYN
+
+-----EXAMPLE-----
+SPISANIE -25.90 BYN KARTA #2958 DATA 04.09.2026 02:45:23 OSTATOK 439.41 BYN

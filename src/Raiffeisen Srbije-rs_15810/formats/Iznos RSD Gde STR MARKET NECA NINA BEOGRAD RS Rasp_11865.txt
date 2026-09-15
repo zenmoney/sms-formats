@@ -5,3 +5,9 @@ syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 4054**8061 | Iznos 333,72 RSD | Gde: STR MARKET NECA & NINA 3 BEOGRAD RS | Raspoloživo 18.348,69 RSD | Kliknite za više detalja ║ Plaćanje karticom
+
+-----EXAMPLE-----
+4054**8892 | Iznos 1.500,00 RSD | Gde: YETTEL D.O.O. BEOGRAD RS | Raspoloživo 177.585,26 RSD | Kliknite za više detalja ║ Plaćanje karticom
+
+-----EXAMPLE-----
+4054**8892 | Iznos 9.970,00 RSD | Gde: MS SASAVAC Markovac RS | Raspoloživo 161.437,73 RSD | Kliknite za više detalja ║ Plaćanje karticom
