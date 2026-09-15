@@ -1,0 +1,7 @@
+^.*?[Nn][Ii][Kk][Oo][Mm][Uu].*[Kk][Oo][Dd][\s\u00A0]*:?\s*\d{4,}.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+NIKOMU NE GOVORITE KOD! Vy sovershaete pokupku v Amtrak Mobile. na summu 1 659 USD KOD:635979
