@@ -1,7 +1,0 @@
-Оплата\s+(\d[\d\s.,]*)(?:\s*)([^\s]+)\s+в\s+(.+?)\s+с\s+\*(\d{4})
-
------COLUMNS-----
-outcome;instrument;payee;syncid
-
------EXAMPLE-----
-Оплата 11012.00 ₽ в OOO FORMAT с *3066
