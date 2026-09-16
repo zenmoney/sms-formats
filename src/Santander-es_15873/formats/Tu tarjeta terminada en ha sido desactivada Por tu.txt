@@ -1,4 +1,4 @@
-^.*[Tt]arjeta[\s\u00A0]+.*?[Dd]esactivada.*$
+[Tt]arjeta.*?[Dd]esactivada
 
 -----COLUMNS-----
 
