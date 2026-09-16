@@ -1,4 +1,4 @@
-^(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}\s+Spisanie\s+\d+(\d{4})\s+SBP\s+([\d.,]+)\s+([A-Z]{3})\s+(.+?)\s*;\s*ostatok\s+(-?[\d.,]+)\s+([A-Z]{3})
+^(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}\s+Spisanie\s+\d+(\d{4})\s+SBP\s+([\d.,]+)\s+([A-Z]{3})\s+(.+?)\s*;\s+ostatok\s+(-?[\d.,]+)\s+([A-Z]{3})
 
 -----COLUMNS-----
 date#dMy;syncid;outcome;instrument;payee;av_balance;acc_instrument
