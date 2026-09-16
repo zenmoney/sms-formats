@@ -1,4 +1,4 @@
-^.*?[Nn][Ii][Kk][Oo][Mm][Uu].*[Kk][Oo][Dd][\s\u00A0]*:?\s*\d{4,}.*$
+NIKOMU\s+NE\s+GOVORITE\s+KOD!
 
 -----COLUMNS-----
 
