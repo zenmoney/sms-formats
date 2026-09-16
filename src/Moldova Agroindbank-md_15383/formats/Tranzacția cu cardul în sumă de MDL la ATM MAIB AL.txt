@@ -1,0 +1,7 @@
+(?iu).*respins[ăâ]?.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Tranzacția cu cardul ***9478 în sumă de 5000 MDL la ATM MAIB ALECU RUSSO a fost RESPINSĂ din cauza PIN-ului introdus incorect. Dacă ai uitat PIN-ul, îl poți modifica direct în aplicația maibank din meniul cardului. ║ Tranzacție respinsă
