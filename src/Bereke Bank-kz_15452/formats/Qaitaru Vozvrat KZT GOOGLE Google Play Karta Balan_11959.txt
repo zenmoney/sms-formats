@@ -1,0 +1,7 @@
+([^/]+)\/\s*Vozvrat\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})\s+Karta:\s*\*+\s*(\d{4})\s+Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+payee;income;instrument;payee;date#dMy;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Qaitaru/ Vozvrat 9 990.00 KZT  GOOGLE *Google Play 13.09.2026  Karta: ***7648  Balans 177 706.56 KZT ║ Bereke Bank
