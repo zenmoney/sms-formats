@@ -1,4 +1,4 @@
-^.*?A\s+([A-Z]{3}|\W)\s*([\d\s.,]*\d)\s+trans.*made\s+at\s+(.*?)\s+on\s+card.*?in\s+(\d{4}).*
+Citi\s+Alert.*?(\S)(\d[\d\s.,]*)\s+transaction\s+was\s+made\s+at\s+(.*?)\s+on\s+card\s+ending\s+in\s+(\d{4})
 
 -----COLUMNS-----
 instrument;outcome;payee;syncid

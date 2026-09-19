@@ -1,0 +1,7 @@
+redeemed into ~(\d[\d\s.,]*)\s+([^\s]+)\s+in\s+[^\s]+\s+on\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+cashback;instrument;date#yMd
+
+-----EXAMPLE-----
+Your 11481 Reward Points have successfully redeemed into ~22.9620 USDT in USDT on 2026-09-17. Click to check the details ║ [Bybit Card] Your USDT Auto Cashback is successfully redeemed!

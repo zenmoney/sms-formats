@@ -1,0 +1,7 @@
+[Tt]arjeta.*?[Dd]esactivada
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Tu tarjeta terminada en 3061 ha sido desactivada. Por tu seguridad, puedes encender o apagar tu tarjeta siempre que lo necesites en la App Santander. ║ Se ha desactivado tu tarjeta
