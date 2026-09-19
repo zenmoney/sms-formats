@@ -3,3 +3,4 @@ UralFD
 ufdom
 ru.uralfd.newmobileoffice2
 BankDom.ru
+uralfd_bank
