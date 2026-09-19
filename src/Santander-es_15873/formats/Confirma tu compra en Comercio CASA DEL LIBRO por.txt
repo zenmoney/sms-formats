@@ -1,4 +1,4 @@
-(?i)^.*\bconfirma\s+tu\s+compra\b.*$
+^.*[Cc]onfirma[\s\u00A0]+[Tt][Uu][\s\u00A0]+[Cc]ompra.*$
 
 -----COLUMNS-----
 
