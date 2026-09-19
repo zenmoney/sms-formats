@@ -1,0 +1,7 @@
+transfer of (\d[\d\s.,]*)\s([A-Z]{3}) is now in (.+?)'s account
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Your transfer of 8 MYR is now in TIFFVIN 1221 ENTERPRISE's account. ║ That was fast
