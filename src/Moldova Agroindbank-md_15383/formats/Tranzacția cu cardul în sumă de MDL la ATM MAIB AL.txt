@@ -1,4 +1,4 @@
-(?iu).*respins[ăâ]?.*
+^.*[Rr][Ee][Ss][Pp][Ii][Nn][Ss][ĂăÂâ]?.*$
 
 -----COLUMNS-----
 
