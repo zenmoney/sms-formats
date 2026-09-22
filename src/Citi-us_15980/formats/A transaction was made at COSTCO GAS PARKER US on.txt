@@ -1,0 +1,7 @@
+A\s+(\S)(\d[\d\s.,]*[.,]\d{2})\s+transaction\s+was\s+made\s+at\s+(.+?)\s+on\s+card\s+ending\s+in\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+A $56.03 transaction was made at COSTCO GAS #1022 PARKER US on card ending in 5283. View details now. ║ Citi Alert: Transaction Exceeds
