@@ -1,0 +1,7 @@
+cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+ANTHROPIC a verificat dacă cardul ***1884 este activ. Nu s-a debitat nicio sumă. Sold disponibil: 24 USD. ║
