@@ -10,10 +10,10 @@ outcome;instrument;syncid;payee;av_balance;acc_instrument;comment;date#dMy
 190.00GEL (*8089) RPM LLC Balance: 902.60GEL  You have received: 1.33GEL In Ertguli Piggy bank you have: 10.67GEL 10/07/26 19:21
 
 -----EXAMPLE-----
-42.25GEL
-(*0896)
+17.83GEL
+(*4172)
 NIKORA
-Balance: 1234.56EUR 
-You have received: 0.30GEL
-In Ertguli Piggy bank you have: 20.16GEL
-24/09/26 17:10
+Balance: 3518.29EUR 
+You have received: 0.18GEL
+In Ertguli Piggy bank you have: 13.47GEL
+11/09/26 09:42
