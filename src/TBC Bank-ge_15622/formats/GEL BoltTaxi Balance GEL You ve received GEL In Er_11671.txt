@@ -1,4 +1,4 @@
-(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+(.+?)\s+(?:Balance:|Nashti:)\s*(-?\d[\d\s.,]*[.,]\d{2})(\S+)\s+((?:You.?ve|You have) received:.*?)\s+(\d{2}\/\d{2}\/\d{2})
+(\d[\d\s.,]*[.,]\d{2})(\S+)\s+\(\*(\d{4})\)\s+(.+?)\s+(?:Balance:|Nashti:)\s*(-?\d[\d\s.,]*[.,]\d{2})(\S+)\s+((?:You.?ve|You have) received:[\s\S]*?)\s+(\d{2}\/\d{2}\/\d{2})
 
 -----COLUMNS-----
 outcome;instrument;syncid;payee;av_balance;acc_instrument;comment;date#dMy
@@ -8,3 +8,12 @@ outcome;instrument;syncid;payee;av_balance;acc_instrument;comment;date#dMy
 
 -----EXAMPLE-----
 190.00GEL (*8089) RPM LLC Balance: 902.60GEL  You have received: 1.33GEL In Ertguli Piggy bank you have: 10.67GEL 10/07/26 19:21
+
+-----EXAMPLE-----
+42.25GEL
+(*0896)
+NIKORA
+Balance: 1234.56EUR 
+You have received: 0.30GEL
+In Ertguli Piggy bank you have: 20.16GEL
+24/09/26 17:10
