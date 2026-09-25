@@ -1,0 +1,7 @@
+You\s+got\s+a\s+(\d[\d\s\u00A0.,]*)[\s\u00A0]+(\S+)[\s\u00A0]+refund\s+from\s+(.+?)!
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+You got a 4 766 kr refund from Outnorth! ║ Klarna
