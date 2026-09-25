@@ -1,0 +1,7 @@
+Card(\d{4});\s*Perevod \(spisanie\):\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*(.*?)(?=;\s*Dostupno)\s*;\s*Dostupno:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card0725; Perevod (spisanie): 40,00 BYN; 25.09.26 16:56:53; STATUSBANK SDBO P2P,G. MINSK,BY; Dostupno: 0,00 BYN ║ Push-уведомление
