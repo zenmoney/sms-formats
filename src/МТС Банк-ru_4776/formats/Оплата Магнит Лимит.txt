@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)\s*([^,\s\.]+),\s+(.+?)\.\s+Лимит:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([^,\s\.]+),\s+\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+Оплата 2123.50₽, Магнит. Лимит: 17709.11₽, *5374

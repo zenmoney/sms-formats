@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)(\S+?),\s*(.+?)\.\s*Остаток:\s*(\d[\d\s.,]*[.,]\d{2})(\S+),\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+Оплата 1956₽, ВкусВилл. Остаток: 7301.88₽, *4503 ║ МТС Деньги
