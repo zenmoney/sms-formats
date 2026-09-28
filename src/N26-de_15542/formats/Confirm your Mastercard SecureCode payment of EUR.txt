@@ -1,0 +1,7 @@
+(?i)^Confirm your\s+.*?SecureCode.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Confirm your Mastercard SecureCode payment of 7.99 EUR to Google ║
