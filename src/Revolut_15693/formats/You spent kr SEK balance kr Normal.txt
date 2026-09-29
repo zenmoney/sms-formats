@@ -1,0 +1,7 @@
+You spent(?:\s|\u00A0)+(\d[\d\s\u00A0.,]*)(?:\s|\u00A0)+(\S[\S\u00A0\s]*?)(?:\s|\u00A0)+balance:(?:\s|\u00A0)+(\d[\d\s\u00A0.,]*)(?:\s|\u00A0)+(\S[\S\u00A0]*)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+🫶 You spent 115 kr SEK balance: 18 885 kr ║ Normal
