@@ -1,0 +1,7 @@
+You received ([^\d\s])(\d[\d\s.,]*(?:[.,]\d{2})?)
+
+-----COLUMNS-----
+instrument;income
+
+-----EXAMPLE-----
+You received $2646.00 with Zelle® ║ You received $2646.00 with Zelle®
