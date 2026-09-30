@@ -1,0 +1,7 @@
+(.+?)\s+spent\s+(\d[\d\s.,]*)\s*(\S+)(?:\s+[A-Z]{3})?\s+balance:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)
+
+-----COLUMNS-----
+payee;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Iuliia V spent 13,54 € EUR balance: 188,36 € ║ Joint · Kuups Supermercados
