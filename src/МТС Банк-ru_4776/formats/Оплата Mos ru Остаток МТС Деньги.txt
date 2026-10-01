@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)(\S+),\s*(.+?)(?=\.\s*Остаток:)\.\s*Остаток:\s+(-?\d[\d\s.,]*)(\S+),\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+Оплата 375₽, Mos.ru. Остаток: 5₽, *6821 ║ МТС Деньги
