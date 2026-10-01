@@ -1,0 +1,7 @@
+You(?:'|’)ve spent ([^\d\s.,]+)(\d[\d\s.,]*[.,]\d{2}) on your card today\. ║ 💳 ([^\d\s.,]+)(\d[\d\s.,]*[.,]\d{2}) at (.+)
+
+-----COLUMNS-----
+instrument;outcome;instrument;outcome;payee
+
+-----EXAMPLE-----
+You’ve spent £67.64 on your card today. ║ 💳 £16.13 at Ecovacs
