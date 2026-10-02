@@ -1,0 +1,7 @@
+retirada de efectivo de\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s+en el\s+(cajero .*?)(?=\.\s+Pulsa)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Hola Viktor, has realizado una retirada de efectivo de 260,00EUR en el cajero 0049.5448.00 situado en Centelles, 13, Valencia, 46006, Valencia. Pulsa aquí para ver el ticket. ║ Aquí tienes tu ticket del cajero

@@ -1,0 +1,7 @@
+Karta\s+9\*(\d{4})\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+SOA\s+Debit\s+-?(\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})\s+(.+?),.*?Dostupno\s+(\d[\d\s]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#yMd;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta 9*0505 2025-12-20 15:04:48 SOA Debit -68.19 BYN A1, Litcevoy schet: 5363618 IBANK BLR OK. Dostupno 3012.51 BYN
