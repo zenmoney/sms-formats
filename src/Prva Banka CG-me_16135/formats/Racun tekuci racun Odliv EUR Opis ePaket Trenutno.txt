@@ -1,7 +1,7 @@
 Odliv:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Opis:\s*(.*?)\s+Trenutno stanje:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Raspolozivo stanje:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Datum:\s*(\d{1,2}\.\d{1,2}\.\d{4}\.)
 
 -----COLUMNS-----
-outcome;instrument;comment;balance;acc_instrument;av_balance;acc_instrument;date#dMy
+outcome;instrument;payee;balance;acc_instrument;av_balance;acc_instrument;date#dMy
 
 -----EXAMPLE-----
 Racun: tekuci racun Odliv: 1,99 EUR Opis: ePaket Trenutno stanje: 96,98 EUR Raspolozivo stanje: 96,98 EUR Datum: 30.9.2026.
