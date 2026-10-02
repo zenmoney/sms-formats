@@ -2,6 +2,7 @@
 """Parser for format files and senders."""
 
 import re
+import unicodedata
 from dataclasses import dataclass
 from typing import List, Optional, Union
 
@@ -161,6 +162,11 @@ def _clean_text(text):
     return re.sub(r"[\n\r]+", " ", text).strip()
 
 
+def _normalize_example(text):
+    """Prepare matching text per https://github.com/zenmoney/sms-formats/issues/1029."""
+    return unicodedata.normalize("NFC", _clean_text(text))
+
+
 def _letters_only(text):
     """Keep word chars, strip digits, then take first 30 chars (for get_format_name)."""
     s = re.sub(r"[^\w]+", " ", text)
@@ -269,7 +275,7 @@ def validate_format_examples(fmt, file_path="", compiled_regex=None):
     expected_groups = len(fmt.regex_group_names)
     total = len(fmt.examples)
     for idx, example in enumerate(fmt.examples):
-        trimmed = _clean_text(example)
+        trimmed = _normalize_example(example)
         preview = _example_preview(example)
         ctx = f"example {idx + 1}/{total}: {preview}"
         try:
@@ -342,7 +348,7 @@ def validate_cross_match(formats_with_regex):
     errors: List[ValidationError] = []
     for idx, (fmt, compiled, file_path) in enumerate(formats_with_regex):
         for ex_idx, example in enumerate(fmt.examples):
-            trimmed = _clean_text(example)
+            trimmed = _normalize_example(example)
             for other_idx, (_, other_compiled, other_path) in enumerate(formats_with_regex):
                 if idx == other_idx:
                     continue
