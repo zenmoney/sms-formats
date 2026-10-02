@@ -1,0 +1,7 @@
+Вы оплатили\s+(\d[\d\s.,]*)(\S+)\s+в\s+(.+?)(?=\.\s)\.\s+Доступно\s+(\d[\d\s.,]*(?:[.,]\d{2})?)(\S+)
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Вы оплатили 2 230₸ в YANDEX.GO. Доступно 629.38₸ ║ Списание с карты
