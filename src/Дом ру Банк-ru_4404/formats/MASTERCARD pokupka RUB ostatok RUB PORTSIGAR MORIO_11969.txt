@@ -1,0 +1,10 @@
+^[A-Z]+-(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}\s+pokupka\s+([\d.,]+)\s+([A-Z]{3})\s+ostatok\s+(-?[\d.,]+)\s+([A-Z]{3});\s*(.+?),
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+MASTERCARD-2789 17-08-26 09:07 pokupka 185.00 RUB ostatok 307301.66 RUB; PORTSIGAR-MORION,
+
+-----EXAMPLE-----
+MASTERCARD-2789 17-08-26 20:54 pokupka 454.97 RUB ostatok 307480.69 RUB; KRASNOE BELOE,

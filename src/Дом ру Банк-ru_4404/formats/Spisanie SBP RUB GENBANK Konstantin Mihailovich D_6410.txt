@@ -1,7 +1,0 @@
-^(\d{2}[-./]\d{2}[-./]\d{2,4}).*pisan\w+\s+\d*(\d{4})\s+SBP\s+([\d\s.,]*\d)\s*([A-Z]{3}).*stat.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
-
------COLUMNS-----
-date#dMy;syncid;outcome;instrument;av_balance;acc_instrument
-
------EXAMPLE-----
-16-12-24 10:31 Spisanie 1234567890 SBP 12000.00 RUB GENBANK Konstantin Mihailovich D; ostatok 599.51 RUB

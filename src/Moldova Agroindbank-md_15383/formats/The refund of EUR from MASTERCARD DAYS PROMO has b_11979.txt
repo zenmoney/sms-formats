@@ -1,0 +1,7 @@
+The refund of (\d[\d\s.,]*)\s([A-Z]{3})\sfrom\s(.+?)\s+has been successfully processed on card \*\*\*(\d{4})\. Commission applied:\s(\d[\d\s.,]*)\s[A-Z]{3}\.\sAvailable balance:\s(\d[\d\s.,]*[.,]\d{2})\s([A-Z]{3})\.
+
+-----COLUMNS-----
+income;instrument;payee;syncid;fee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+The refund of 4.19 EUR from MASTERCARD DAYS PROMO has been successfully processed on card ***6816. Commission applied: 1.25 MDL. Available balance: 6020.57 MDL. ║

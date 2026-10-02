@@ -1,0 +1,7 @@
+^.*[Cc]onfirma[\s\u00A0]+[Tt][Uu][\s\u00A0]+[Cc]ompra.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Confirma tu compra en Comercio CASA DEL LIBRO por 1 EUR con tarjeta *6699 ║ Santander Key

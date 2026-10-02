@@ -1,0 +1,7 @@
+Transfer from your account \d*(\d{4}) to (.+?) account \d+ in the amount of (\d[\d\s.,]*)\s([A-Z]{3})\. Available: (\d[\d\s.,]*[.,]\d{2})\s([A-Z]{3})\.
+
+-----COLUMNS-----
+syncid;payee;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Transfer from your account 520032000015586957 to VAL TATIANA account 520032000014134673 in the amount of 20,00 EUR. Available: 5.008,77 EUR.

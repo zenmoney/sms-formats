@@ -1,0 +1,7 @@
+Kwota:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+do:\s*([^,]+),\s*([^,]+),\s*(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;comment;date#dMy
+
+-----EXAMPLE-----
+Kwota: 200.00 PLN do: Ruslana, Przelew na telefon BLIK, 18.09.2026 ║ Obciążenie

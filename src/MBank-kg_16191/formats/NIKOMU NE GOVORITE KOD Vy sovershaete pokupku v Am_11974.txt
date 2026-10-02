@@ -1,0 +1,7 @@
+NIKOMU\s+NE\s+GOVORITE\s+KOD!
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+NIKOMU NE GOVORITE KOD! Vy sovershaete pokupku v Amtrak Mobile. na summu 1 659 USD KOD:635979

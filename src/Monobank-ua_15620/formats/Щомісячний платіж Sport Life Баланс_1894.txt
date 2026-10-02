@@ -1,4 +1,4 @@
-^(Щомісячний\s+пл\w+)\s+(.*?)\s+Бала.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}|\S)\s+║\s+([\d\s.,]*\d)\s*([A-Z]{3}|\S).*
+^([Щщ]омісячний\s+платіж)\s+(.+?)\s+[Бб]аланс\s+(-?\d[\d\s.,]*\d)\s*(\S{1,4}).*?║\s*(\d[\d\s.,]*\d)\s*(\S{1,4})
 
 -----COLUMNS-----
 comment;payee;av_balance;acc_instrument;outcome;instrument

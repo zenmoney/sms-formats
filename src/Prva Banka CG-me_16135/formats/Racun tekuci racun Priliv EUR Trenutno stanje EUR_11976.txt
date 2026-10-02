@@ -1,0 +1,7 @@
+Priliv:\s*(\d[\d\s.,]*)\s+([A-Z]{3}).*?Trenutno stanje:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Raspolozivo stanje:\s*(-?\d[\d\s.,]*[.,]\d{2}).*?Datum:\s*(\d{1,2}\.\d{1,2}\.\d{4})
+
+-----COLUMNS-----
+income;instrument;balance;acc_instrument;av_balance;date#dMy
+
+-----EXAMPLE-----
+Racun: tekuci racun Priliv: 100 EUR Trenutno stanje: 131,96 EUR Raspolozivo stanje: 108,96 EUR Datum: 15.9.2026.

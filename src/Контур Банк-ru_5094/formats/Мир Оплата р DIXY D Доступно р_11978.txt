@@ -1,0 +1,7 @@
+Мир\s+\*(\d{4})\s+Оплата\s+(\d[\d\s.,]*)\s+([^\s]+)\s+(.+?)(?=\s+Доступно)\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})([^\s]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Мир *3392 Оплата 2769.49 р. DIXY-50017D Доступно 98565.70р.

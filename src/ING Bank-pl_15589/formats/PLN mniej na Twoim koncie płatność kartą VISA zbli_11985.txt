@@ -1,0 +1,7 @@
+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+mniej na Twoim koncie
+
+-----COLUMNS-----
+outcome;instrument
+
+-----EXAMPLE-----
+10,00 PLN mniej na Twoim koncie - płatność kartą VISA zbliżeniowa ║ Moje ING. Twój Asystent

@@ -1,0 +1,7 @@
+^(?:Freedom Bank\s+)?(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\s+Пополнение\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s+по карте\s+\*?(\d{4})\s+в терминале\s+(.+?),\s+остаток по карте\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([A-Z]{3})
+
+-----COLUMNS-----
+date#dMy;income;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Freedom Bank 2026-07-30 15:16:27 Пополнение 200.00 TJS по карте *9186 в терминале DUSHANBE, ALIF BANK VD OCT, остаток по карте 236.30 TJS.
