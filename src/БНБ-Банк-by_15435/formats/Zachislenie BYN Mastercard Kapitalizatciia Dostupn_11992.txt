@@ -1,0 +1,7 @@
+Zachislenie\s+(\d[\d\s.,]*)\s+(\S+)\s+Mastercard#(\d{4});\s+Kapitalizatciia;\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+\d{2}:\d{2}:\d{2};\s+Dostupno:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Zachislenie  3.05 BYN Mastercard#4294; Kapitalizatciia; 30/09/2026 11:20:25; Dostupno: 1194.64 BYN
