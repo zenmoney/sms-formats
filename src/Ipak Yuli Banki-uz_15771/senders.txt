@@ -1,3 +1,2 @@
 6900
-1490
 com.ipakyulibank.mobile
