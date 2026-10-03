@@ -5,3 +5,6 @@ outcome;instrument;payee;balance;acc_instrument;syncid
 
 -----EXAMPLE-----
 Оплата 375₽, Mos.ru. Остаток: 5₽, *6821 ║ МТС Деньги
+
+-----EXAMPLE-----
+Оплата 1956₽, ВкусВилл. Остаток: 7301.88₽, *4503 ║ МТС Деньги
