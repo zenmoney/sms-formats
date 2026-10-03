@@ -1,4 +1,4 @@
-^Zachi.*?([\d\s.,]*\d)\s*([A-Z]{3}).*?#(\d{4}).*? (\d{2}[-./]\d{2}[-./]\d{2,4}) .*ostu.*?(-?[\d\s.,]*\d).*
+Zachislen\s+perevod.*?([\d\s.,]*\d)\s*([A-Z]{3}).*?#(\d{4}).*? (\d{2}[-./]\d{2}[-./]\d{2,4}) .*ostu.*?(-?[\d\s.,]*\d).*
 
 -----COLUMNS-----
 income;instrument;syncid;date#dMy;av_balance
