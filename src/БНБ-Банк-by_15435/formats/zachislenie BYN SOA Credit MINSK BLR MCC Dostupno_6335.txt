@@ -1,4 +1,4 @@
-^.achislenie\s+([\d\s.,]*\d)\s*([A-Z]{3}).*(\d{2}[-./]\d{2}[-./]\d{2,4}).*ostu.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+zachislenie\s+([\d\s.,]*\d)\s*([A-Z]{3}).*(\d{2}[-./]\d{2}[-./]\d{2,4}).*ostu.*?(-?[\d\s.,]*\d)\s*([A-Z]{3}).*
 
 -----COLUMNS-----
 income;instrument;date#dMy;av_balance;acc_instrument

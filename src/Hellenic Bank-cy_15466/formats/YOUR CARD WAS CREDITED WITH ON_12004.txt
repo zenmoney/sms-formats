@@ -1,0 +1,7 @@
+YOUR CARD \*(\d{4}) WAS CREDITED WITH ([^\d\s.,]+)\s?(\d[\d\s.,]*) ON (\d{2}\/\d{2}\/\d{4})(?:\s+\d{2}:\d{2}:\d{2})?
+
+-----COLUMNS-----
+syncid;instrument;income;date#dMy
+
+-----EXAMPLE-----
+YOUR CARD *7073 WAS CREDITED WITH €138,28 ON 21/09/2026 07:00:38.
