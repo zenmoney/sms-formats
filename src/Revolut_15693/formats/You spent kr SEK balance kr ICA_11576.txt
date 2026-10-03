@@ -1,10 +1,16 @@
-You spent\s+(\d[\d\s.,]*)\s+(\S+)\s+.*?balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(.+?)\s+║\s+(.+)
+^(.*?)spent\s+(\d[\d\s.,]*)\s+(\S+)(?:\s+[A-Z]{3})?\s+balance:\s+(-?\d[\d\s.,]*)\s+(\S+)(?:\s+[A-Z]{3})?\s+║\s+(.+)
 
 -----COLUMNS-----
-outcome;instrument;av_balance;acc_instrument;payee
+comment;outcome;instrument;av_balance;acc_instrument;payee
 
 -----EXAMPLE-----
 🛒 You spent 325,69 kr SEK balance: 574,19 kr ║ ICA
 
 -----EXAMPLE-----
 🛍 You spent 130,70 kr SEK balance: 1 829,94 kr ║ Systembolaget
+
+-----EXAMPLE-----
+Iuliia V spent 13,54 € EUR balance: 188,36 € ║ Joint · Kuups Supermercados
+
+-----EXAMPLE-----
+🫶 You spent 115 kr SEK balance: 18 885 kr ║ Normal
