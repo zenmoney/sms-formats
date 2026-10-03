@@ -1,4 +1,4 @@
-cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+a verificat dacă cardul\s+\*+(\d{4}).*?Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})
 
 -----COLUMNS-----
 syncid;av_balance;acc_instrument
