@@ -5,3 +5,6 @@ instrument;outcome;payee;syncid
 
 -----EXAMPLE-----
 A $56.03 transaction was made at COSTCO GAS #1022 PARKER US on card ending in 5283. View details now. ║ Citi Alert: Transaction Exceeds
+
+-----EXAMPLE-----
+Citi Alert: A $12.63 transaction was made at CHICK-FIL-A #00676 A on card ending in 2361. View details at citi.com/citimobileapp

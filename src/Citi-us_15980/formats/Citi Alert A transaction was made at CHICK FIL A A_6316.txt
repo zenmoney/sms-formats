@@ -1,7 +1,0 @@
-Citi\s+Alert.*?(\S)(\d[\d\s.,]*)\s+transaction\s+was\s+made\s+at\s+(.*?)\s+on\s+card\s+ending\s+in\s+(\d{4})
-
------COLUMNS-----
-instrument;outcome;payee;syncid
-
------EXAMPLE-----
-Citi Alert: A $12.63 transaction was made at CHICK-FIL-A #00676 A on card ending in 2361. View details at citi.com/citimobileapp
