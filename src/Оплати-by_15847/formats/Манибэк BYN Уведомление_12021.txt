@@ -1,0 +1,7 @@
+Манибэк\s+(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+cashback;instrument
+
+-----EXAMPLE-----
+Манибэк 2.39 BYN ║ Уведомление

@@ -1,0 +1,7 @@
+Freedom Bank\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}.*?Покупка\s+(\d[\d\s]*(?:[.,]\d{2})?)\s+(\S+)\s+по карте\s+\*(\d{4})\s+в терминале\s+.*?,\s*(.+?)\s+остаток по карте\s+(-?\d[\d\s]*(?:[.,]\d{2})?)\s+(\S+).*?кешбэк\s+(\d[\d\s]*(?:[.,]\d{2})?)\s+\S+
+
+-----COLUMNS-----
+date#yMd;outcome;instrument;syncid;payee;balance;acc_instrument;cashback
+
+-----EXAMPLE-----
+Freedom Bank 2026-09-17 08:11:19 Покупка 40.33 TJS по карте *9186 в терминале 100, CHDMM "REAL TREYDING", остаток по карте 189.04 TJS За покупку будет зачислен кешбэк 1.21 TJS
