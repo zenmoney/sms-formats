@@ -1,7 +1,7 @@
-Пополнение на\s+(\d[\d\s.,]*)\s*(\S+),\s*счет\s+(?:[A-Z]{3}|\S+)\.\s*(.+?)\s+Доступно\s+(-?\d[\d\s.,]*)\s*(\S+)
+Пополнение на\s+(\d[\d\s.,]*)\s*(\S+),\s*счет\s+([A-Z]{3}|\S+)\.\s*(.+?)\s+Доступно\s+(-?\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
-income;instrument;payee;av_balance;acc_instrument
+income;instrument;syncid;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Пополнение на 4 000 ₽, счет RUB. Иван Г. Доступно 6 500 ₽ ║
