@@ -1,0 +1,7 @@
+Zachislena summa\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+klientu na schet\s+\*(?:\d*?)(\d{4})\*,\s*(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.Dostupno:(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;date#yMd;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Zachislena summa 12 711 600.67 UZS klientu na schet *68252473*, 2026-09-30 19:10:16.Dostupno:12 711 600.67 UZS

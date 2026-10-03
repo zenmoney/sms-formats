@@ -1,0 +1,7 @@
+\+(\d[\d\s.,]*)\s+([A-Za-z]{2})\s+(.+?)\s+Доступно\s+(-?\d[\d\s]*,[0-9]{2})\s+(\S+)\s+Пополнено\s+.+?\s+\*\*(\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;av_balance;acc_instrument;syncid
+
+-----EXAMPLE-----
++21 Dh BOLT,DubaiAE Доступно 17 766,64 ₸ Пополнено SuperCard **2524 ║ Возврат BOLT,DubaiAE

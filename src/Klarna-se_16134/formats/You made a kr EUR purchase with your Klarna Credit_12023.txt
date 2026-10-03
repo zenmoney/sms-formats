@@ -1,0 +1,7 @@
+You\s+made\s+a\s+(\d[\d\s\u00A0.,]*)[\s\u00A0]+(\S+)[\s\u00A0]+\((\S+)[\s\u00A0]+(\d[\d\s\u00A0.,]*)\)[\s\u00A0]+purchase\s+with\s+your\s+Klarna\s+Credit\s+Card.*?║\s+(.+)
+
+-----COLUMNS-----
+outcome;instrument;op_instrument;op_outcome;payee
+
+-----EXAMPLE-----
+You made a 5 740,82 kr (EUR 507.03) purchase with your Klarna Credit Card and earned cashback ║ Booking.com

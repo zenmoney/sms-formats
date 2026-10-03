@@ -1,4 +1,4 @@
-^.*\.(\d{3,4}) (?:su dung tai|sử dụng tại) (.*?) (?:so tien|số tiền) ([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}) (?:luc|lúc) (\d{2}[-./]\d{2}[-./]\d{2,4}).*(?:nợ tạm tính|no tam tinh).*?(\d{4}): (-?[\d\s.,]*\d)\s*([A-Z]{3}).*
+^.*\.(\d{3,4}) (?:su dung tai|sử dụng tại|sử dụng tại) (.*?) (?:so tien|số tiền|số tiền) ([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}) (?:luc|lúc|lúc) (\d{2}[-./]\d{2}[-./]\d{2,4}).*(?:nợ tạm tính|no tam tinh).*?(\d{4}): (-?[\d\s.,]*\d)\s*([A-Z]{3}).*
 
 -----COLUMNS-----
 syncid;payee;outcome;instrument;date#dMy;syncid;av_balance;acc_instrument

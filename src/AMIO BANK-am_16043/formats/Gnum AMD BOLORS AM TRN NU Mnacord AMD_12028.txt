@@ -1,0 +1,7 @@
+Gnum\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}),\s*(?:\d+\*+)?(\d{4}),\s*([^,]+?),\s*[^,]+?,\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}.*?Mnacord:\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+Gnum 9900.00 AMD, 5124***5407, BOLORS, AM, 03.10.26 15:43 TRN NU 703756247, Mnacord: 40284.40 AMD

@@ -1,7 +1,0 @@
-Karta\s+4\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s-\s?([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,5})\s+(Sber Bank),\s+Litcevoy schet:.*?Dostupno\s+(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,5})
-
------COLUMNS-----
-syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-Karta 4.5294 30.05.2025 22:57:23 Spisanie -80.00  BYN Sber Bank, Litcevoy schet: BY04BPSB3014F1234567890 Ibank BLR OK. Dostupno 15221.90 BYN
