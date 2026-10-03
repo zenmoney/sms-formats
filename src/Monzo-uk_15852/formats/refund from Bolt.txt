@@ -1,7 +1,0 @@
-🚖\s(\p{Sc})(\d[\d\s.,]*[.,]\d{2})\s(?i:refund from)\s([^║]+?)\s║
-
------COLUMNS-----
-instrument;income;payee
-
------EXAMPLE-----
-🚖 £5.30 refund from Bolt ║
