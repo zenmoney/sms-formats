@@ -1,0 +1,7 @@
+Zachislenie;\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s*;\s*[^;#]+#(\d{4})\s*;\s*(.*?)\s*;\s*MCC\s+(\d{4})\s*;\s*(\d{2}\/\d{2}\/\d{4})\s+\d{2}:\d{2}:\d{2}\s*;\s*Dostupno:\s*([0-9][\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;mcc;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Zachislenie; 900 BYN; Mastercard#4294; Zachislenie po nomeru telefona>MINSK>BLR; MCC 6012; 02/10/2026 17:53:54; Dostupno: 2454.48 BYN

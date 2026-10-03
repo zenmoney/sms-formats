@@ -1,0 +1,7 @@
+PAN:\s*\d+\*+(\d{4}).*?Amount:\s*(\d[\d\s.,]*)\s+([A-Z]{3}).*?Transfer from・(\d+).*?Balance:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+PAN: 416973******8785 Amount: 100.0 AZN Transfer from・6099 Balance: 1133.45 AZN Remaining transfer limit for today: 4 transfers ║ Card to Card

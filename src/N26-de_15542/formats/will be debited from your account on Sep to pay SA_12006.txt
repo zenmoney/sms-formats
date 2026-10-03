@@ -1,0 +1,7 @@
+([^\d\s]+)(\d[\d\s.,]*[.,]\d{2}) will be debited from your account on (\d{1,2}\s+\S+\s+\d{4}) to pay (.+?)(?=\s+║|\s+Scheduled|$)
+
+-----COLUMNS-----
+instrument;outcome;date#dMy;payee
+
+-----EXAMPLE-----
+€199.00 will be debited from your account on 16 Sep 2026 to pay SANITAS S A  DE SEGUROS ║ Scheduled payment expected on your account
