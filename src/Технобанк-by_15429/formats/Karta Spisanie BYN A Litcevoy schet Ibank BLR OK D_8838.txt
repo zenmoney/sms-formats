@@ -1,7 +1,0 @@
-Karta\s+4\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Spisanie\s+-([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,4})\s+(.*?),\s+Litcevoy schet:\s+\d+\s+Ibank BLR OK\.\s+Dostupno\s+(-?[0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,4})
-
------COLUMNS-----
-syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
-
------EXAMPLE-----
-Karta 4.8773 07.05.2025 17:59:56 Spisanie -50.00  BYN A1, Litcevoy schet: 1234567890 Ibank BLR OK. Dostupno 8468.66 BYN
