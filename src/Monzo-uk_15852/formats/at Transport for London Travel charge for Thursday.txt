@@ -1,0 +1,7 @@
+🚆\s*([^\d\s])(\d[\d\s.,]*)\s+at\s+(.+?)\.\s+Travel charge for\s+\S+\s+(\d{1,2}\s+\S+)(?=\s+║|$)
+
+-----COLUMNS-----
+instrument;outcome;payee;date#dM
+
+-----EXAMPLE-----
+🚆 £6.20 at Transport for London. Travel charge for Thursday 24 September ║

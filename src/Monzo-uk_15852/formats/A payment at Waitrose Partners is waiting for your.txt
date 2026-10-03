@@ -1,0 +1,7 @@
+^A\s*(?:[£$€]|[A-Z]{3})?\s*\d[\d\s,]*(?:[.,]\d{1,2})?\s+payment at .+? is waiting for your approval\b
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+A £130.96 payment at Waitrose & Partners is waiting for your approval ║

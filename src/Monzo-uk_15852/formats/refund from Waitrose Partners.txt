@@ -1,0 +1,10 @@
+^.*?([^\d\s]+)\s*(\d[\d\s.,]*[.,]\d{2})\s+refund\s+from\s+(.+?)\s*║
+
+-----COLUMNS-----
+instrument;income;payee
+
+-----EXAMPLE-----
+🍏 £5.72 refund from Waitrose & Partners ║
+
+-----EXAMPLE-----
+🚖 £5.30 refund from Bolt ║
