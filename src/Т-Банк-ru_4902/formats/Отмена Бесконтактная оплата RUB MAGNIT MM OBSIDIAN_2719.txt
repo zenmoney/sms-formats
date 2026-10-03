@@ -1,7 +1,0 @@
-^(?!.*(?:алан|осту|alan|ostu))((?:Chastichnaya\s+ot|Частичная\s+от|Vozvrat\s+za|Возврат\s+за|Otmena\s+(?:perevoda|oplaty)|Отмена\s*(?:перевод|оплат)?).*?).*?([\d]{4}|(?:Бесконт|Bezkont)\w+)(?:\s+\w+)?\.\s+(?:.umm\S+|.умм\S+)?([\d\s.,]*\d)\s*([A-Z]{3})\.\s+(.*?)\.\s*.*(?:limit.*)?
-
------COLUMNS-----
-comment;syncid;income;instrument;payee
-
------EXAMPLE-----
-Отмена. Бесконтактная оплата. 261 RUB. MAGNIT MM OBSIDIAN.
