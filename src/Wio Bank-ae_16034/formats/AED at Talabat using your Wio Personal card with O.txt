@@ -1,0 +1,7 @@
+([A-Z]{3})\s+(\d[\d\s.,]*)\s+at\s+(.+?)\s+using your\s+.+?\s+card\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+AED 21.8 at Talabat using your Wio Personal card 3267 with Own AED funds ║ ✅ card payment
