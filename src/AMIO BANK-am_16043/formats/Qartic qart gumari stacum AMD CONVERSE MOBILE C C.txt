@@ -1,0 +1,7 @@
+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})\s+\d{4}\*+(\d{4})\s+(.+?),\s+AM\s+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2},.*?Mnacord:\s+(\d[\d\s.,]*(?:[.,]\d{2})?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+Qartic qart gumari stacum 211883.10 AMD 5124***5407 CONVERSE MOBILE C2C, AM 07.10.26 22:01, TRN NU 706348699, Mnacord:  237647.50 AMD
