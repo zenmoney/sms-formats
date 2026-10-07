@@ -4,4 +4,4 @@
 syncid;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
-Платеж, карта *1876. 461,907.00 UZS. IP 000 ANGLESEY FOOD. Баланс: 835,943.00 UZS. надо потом удалить его
+Платеж, карта *1876. 461,907.00 UZS. IP 000 ANGLESEY FOOD. Баланс: 835,943.00 UZS.
