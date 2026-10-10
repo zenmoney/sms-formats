@@ -1,0 +1,7 @@
+Перевод\s*-\s*(\d[\d\s.,]*)\s*(\S+?)\s+на карту.*?На карте\s*\*(\d{4}).*?доступно:\s*(\d[\d\s.,]*(?:[.,]\d{1,2})?)\s*(\S+?)
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Перевод -3500 ₸ на карту другого банка. На карте *8944 доступно: 998.38 ₸ ║ Home Credit Kazakhstan
