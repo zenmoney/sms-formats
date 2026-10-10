@@ -1,4 +1,4 @@
-(?:Покупка|Pokupka)\s+\*{1,2}(\d{4}):\s+(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)\s+Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
+(?:Покупка|Pokupka)\s+(?:\*{1,2}(\d{4}):\s+)?(\d[\d\s.,]*)\s*(\S+)\s+в\s+(.+?)[.\s]*Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;balance;acc_instrument
@@ -50,3 +50,27 @@ Pokupka **1172: 129 RUR в SHEL-ZASHEL Баланс: 55 428,17 RUR
 
 -----EXAMPLE-----
 Покупка *5625: 1656р в WB WILDBERRIES Баланс: 569,55р
+
+-----EXAMPLE-----
+Покупка 1700р в KHOCHU PYSHKU. Баланс: 181204,60р
+
+-----EXAMPLE-----
+Покупка 1256р в WB WILDBERRIES Баланс: 217289,92р
+
+-----EXAMPLE-----
+Покупка 7556р в APTECHNOE UCHREZHDENIE Баланс: 65835,60р
+
+-----EXAMPLE-----
+Покупка 800р в SHAFRAN Баланс: 44957,80р
+
+-----EXAMPLE-----
+Покупка 50р в EBK_PROEZD TKPAY_TPP Баланс: 2486,53р
+
+-----EXAMPLE-----
+Покупка 221,70р в NSBAPT 25 Баланс: 308,27р
+
+-----EXAMPLE-----
+Покупка 4115р в CVETY Баланс: 554,27р
+
+-----EXAMPLE-----
+Покупка 62,99р в KRASNOE&BELOE Баланс: 9523р
