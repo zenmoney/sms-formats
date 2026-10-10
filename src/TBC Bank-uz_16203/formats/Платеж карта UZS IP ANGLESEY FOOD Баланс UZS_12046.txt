@@ -1,0 +1,7 @@
+^Платеж,\s+карта\s+\*+(\d{4})\.\s+([\d.,]+)\s+([A-Z]{3})\.\s+(.+?)\.\s+Баланс:\s+([\d.,]+)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Платеж, карта *1876. 461,907.00 UZS. IP 000 ANGLESEY FOOD. Баланс: 835,943.00 UZS.
