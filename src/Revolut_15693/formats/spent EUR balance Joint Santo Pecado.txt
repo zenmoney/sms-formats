@@ -1,0 +1,7 @@
+(\d[\d\s.,]*[.,]\d{2})\s*([^\s]+)\s+spent(?:\s+[A-Z]{3})?\s+balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s*([^\s]+)\s+║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+6,65 € spent EUR balance: 561,71 € ║ Joint · Santo Pecado
