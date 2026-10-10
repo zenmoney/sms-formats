@@ -1,0 +1,7 @@
+Payment\s+\*(\d{4}).*?for the amount:\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\s.]+)\s+Платеж\s+QR\s+(.+?)\.\s*Available:\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\s.]+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+15:10 Payment *8042 for the amount: 19 158,62 ₸ Платеж QR KOFEYNYA SIX COFFEE  WINE. Available:170 398,11 ₸. Use Halyk+ and get increased bonuses. Check your Halyk+ category ║
