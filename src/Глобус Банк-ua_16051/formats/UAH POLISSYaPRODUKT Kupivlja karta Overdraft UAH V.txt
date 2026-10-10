@@ -1,7 +1,7 @@
 (\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)\s+(\d{2}\/\d{2}).*?karta\s+\*(\d{4}).*?Zalyshok\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
 
 -----COLUMNS-----
-outcome;instrument;payee;date#dM;syncid;balance;acc_instrument
+outcome;instrument;payee;date#dM;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 226 UAH POLISSYaPRODUKT 06/10 18:22 Kupivlja karta *6211 Overdraft 50000.00 UAH Vykorystano overdraft 1822.77 UAH Vlasni koshty 0 UAH Zalyshok 48177.23 UAH
