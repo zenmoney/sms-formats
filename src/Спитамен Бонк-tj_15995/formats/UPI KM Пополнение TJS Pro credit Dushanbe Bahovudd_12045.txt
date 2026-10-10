@@ -1,0 +1,7 @@
+^UPI/[A-Za-z]+(\d{4})\s+(\d{2}/\d{2}/\d{4})\s+\d{2}:\d{2}\s+[Пп]ополнение:\s+([\d.,]+)\s+([A-Z]{3})\s+(.+)
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;payee
+
+-----EXAMPLE-----
+UPI/KM8288 07/10/2026 09:23 Пополнение: 50.00 TJS Pro credit; Dushanbe, Bahovuddinov St.
