@@ -1,0 +1,7 @@
+Toltyru\/ Popolnenie\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?(.+?)(?=\s+Shot\/ Schet)\s+Shot\/ Schet\s+KZ\*{3}(\d{4}).*?Balans\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Toltyru/ Popolnenie  269161,00 KZT  Zhalaqy/ Zarplata  Shot/ Schet KZ***0767  Balans 269161,00 KZT
