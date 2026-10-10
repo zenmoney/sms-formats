@@ -1,0 +1,7 @@
+Transaction amount:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Balance:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+Store:\s+(.*?)\s+Location:\s+.*?Date:\s+(\d{4}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}.*?Cashback amount:\s+(\d[\d\s.,]*)\s+[A-Z]{3}.*?Visa\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee;date#yMd;cashback;syncid
+
+-----EXAMPLE-----
+Transaction amount: 600 000 UZS Balance: 1 479 629.76 UZS Store: OOO CINEMATICA Location: TASHKENT, UZ Date: 2026-10-10 12:10:40 Cashback amount: 3 000 UZS will be credited within a few days. ║ Payment by card Visa *7822
