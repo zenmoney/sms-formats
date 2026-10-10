@@ -1,0 +1,7 @@
+💷\s+([^\d\s]+)(\d[\d\s.,]*)\s+cash deposited,\s+we charged a\s+\1(\d[\d\s.,]*)\s+fee\.
+
+-----COLUMNS-----
+instrument;income;fee
+
+-----EXAMPLE-----
+💷 £149 cash deposited, we charged a £1 fee. You can deposit another £601 before you hit your monthly limit. ║
