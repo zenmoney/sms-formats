@@ -1,0 +1,7 @@
+([A-Z]{3})(\d[\d\s.,]*[.,]\d{2}).*?transferred.*?from acc\. no\.\s+\S*?([0-9]{4})(?=\s).*?on\s+([A-Za-z]{3}\s+\d{1,2}\s+\d{4}).*?Avl\. bal\.\s+([A-Z]{3})\s+(-?\d[\d\s.,]*[.,]\d{2})(?=\.)
+
+-----COLUMNS-----
+instrument;outcome;syncid;date#dMy;acc_instrument;av_balance
+
+-----EXAMPLE-----
+AED740.00 transferred via ADCB Personal Internet Banking / Mobile App from acc. no. XXX920001 on Oct 10 2026 11:17AM. Avl. bal. AED 3621.97.
