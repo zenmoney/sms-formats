@@ -1,0 +1,7 @@
+Compra de\s+(\S{1,3})\s+(\d[\d\s.,]*[.,]\d{2}).*?\*(.+?)\s+para.*?final\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;payee;syncid
+
+-----EXAMPLE-----
+Compra de R$ 31,99 APROVADA em DL          *UberRides para o cartão com final 4798. ║ Compra no crédito aprovada
