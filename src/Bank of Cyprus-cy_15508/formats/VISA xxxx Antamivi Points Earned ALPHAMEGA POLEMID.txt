@@ -1,0 +1,7 @@
+VISA\s+xxxx\s+(\d{4})\s+(.*?)\s+║\s*(\S)(\d[\d\s.,]*[.,]\d{2})\s*-\s*(.+)
+
+-----COLUMNS-----
+syncid;comment;instrument;outcome;payee
+
+-----EXAMPLE-----
+VISA xxxx 1155 Antamivi Points Earned: 0 ║ €4,00 - ALPHAMEGA POLEMIDIA LIMASSOL CY
