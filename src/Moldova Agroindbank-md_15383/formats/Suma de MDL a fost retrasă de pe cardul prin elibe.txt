@@ -1,0 +1,7 @@
+Suma de (\d[\d\s.,]*)\s+([A-Z]{3})\s+a fost retrasă de pe cardul \*+(\d{4})\s+prin eliberare numerar\.\s+Sold disponibil:\s+(\d[\d\s.,]*)\s+([A-Z]{3})(?=[\.\s║]|$)
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Suma de 3000 MDL a fost retrasă de pe cardul ***1822 prin eliberare numerar. Sold disponibil: 2000 MDL. ║
