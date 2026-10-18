@@ -1,0 +1,7 @@
+([A-Z]{3})\s+(\d[\d\s.,]*)(?=\s*\()\s*\(\s*([A-Z]{3})\s+(\d[\d\s.,]*?)\s*\).*?at\s+(.+?)\s+using.*?card\s+(\d{4})
+
+-----COLUMNS-----
+instrument;outcome;op_instrument;op_outcome;payee;syncid
+
+-----EXAMPLE-----
+USD 3.8 (AED 14.06) at Trip using your Wio Personal card 5311 with Credit money ║ ✅ card payment
