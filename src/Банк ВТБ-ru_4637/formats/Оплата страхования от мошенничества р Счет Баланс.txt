@@ -1,0 +1,7 @@
+(.+?)\s+(\d[\d\s.,]*)(\S+)\s+Счет\*(\d+)\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})(\S+)
+
+-----COLUMNS-----
+comment;outcome;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата страхования от мошенничества 99р Счет*1452 Баланс 31971.31р 10:06
