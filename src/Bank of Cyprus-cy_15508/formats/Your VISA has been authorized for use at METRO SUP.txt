@@ -1,0 +1,7 @@
+Your\s+VISA(\d{4})\s+has been authorized for use at\s+(.+?)\s+on\s+(\d{2}\/\d{2}\/\d{4})\s+at\s+\d{2}:\d{2}\s+for the indicative amount of\s+(\S+?)(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+syncid;payee;date#dMy;instrument;outcome
+
+-----EXAMPLE-----
+Your VISA9379 has been authorized for use at METRO SUPERMARKET LARNACA CY on 18/10/2026 at 18:30 for the indicative amount of €31,19.
