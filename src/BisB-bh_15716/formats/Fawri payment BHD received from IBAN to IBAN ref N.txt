@@ -1,0 +1,7 @@
+Fawri\+\s+payment\s+([A-Z]{3})(\d[\d\s.,]*[.,]\d{2,3})\s+received\s+from\s+(IBAN\s\d{4})\s+to\s+IBAN\s+(\d{4}).*?on\s+(\d{4}\/\d{2}\/\d{2})\s+\d{2}:\d{2}\.\s*(?=Balance\s+[A-Z]{3}(-?\d[\d\s.,]*[.,]\d{2,3})\.) (?=Balance\s+([A-Z]{3})(?:-?\d[\d\s.,]*[.,]\d{2,3})\.)Balance\s+[A-Z]{3}-?\d[\d\s.,]*[.,]\d{2,3}\.
+
+-----COLUMNS-----
+instrument;income;payee;syncid;date#yMd;balance;acc_instrument
+
+-----EXAMPLE-----
+Fawri+ payment BHD2.215 received from IBAN 4870 to IBAN 5404 ref. NBB191026ONI51NZ on 2026/10/19 11:02. Balance BHD20124.549. Tel 17515151
