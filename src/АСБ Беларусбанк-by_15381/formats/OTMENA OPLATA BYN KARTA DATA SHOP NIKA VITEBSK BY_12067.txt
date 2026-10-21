@@ -1,0 +1,7 @@
+OTMENA OPLATA:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA\s+#(\d{4})\s+DATA\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+(.+?)\s+MCC:(\d{4})\s+OSTATOK\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy;payee;mcc;balance;acc_instrument
+
+-----EXAMPLE-----
+OTMENA OPLATA: 28.98 BYN KARTA #9260 DATA 14.10.2026 21:00:33 SHOP 'NIKA-9'>VITEBSK>BY MCC:5411 OSTATOK 522.15 BYN

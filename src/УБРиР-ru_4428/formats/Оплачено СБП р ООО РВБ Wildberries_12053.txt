@@ -1,0 +1,7 @@
+Оплачено\(СБП\)\s+(\d[\d\s.,]*)\s*([^\s║]+)\s+(.+?)(?:\s*║|$)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Оплачено(СБП) 3630р ООО "РВБ" Wildberries ║
