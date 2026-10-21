@@ -1,0 +1,7 @@
+Realizacja zlecenia\s+Konto:\d+(\d{4})\s+Kwota:(\d[\d\s.,]*)([A-Z]{3})\s+Data:(\d{4}-\d{2}-\d{2})\s+Odbiorca:(.+?)\s+Konto:\S+\s+Saldo dostepne:(-?\d[\d\s.,]*)([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#yMd;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Realizacja zlecenia Konto:455634080000 Kwota:162,69PLN Data:2026-10-12 Odbiorca:Marzena Pigalska Konto:5411...0559 Saldo dostepne:1705,15PLN
