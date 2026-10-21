@@ -5,3 +5,6 @@ outcome;instrument;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Перевод -3500 ₸ на карту другого банка. На карте *8944 доступно: 998.38 ₸ ║ Home Credit Kazakhstan
+
+-----EXAMPLE-----
+Перевод - 2000 ₸ на карту другого банка. На карте *9589 доступно: 1551.07 ₸ ║ Home Credit Kazakhstan
