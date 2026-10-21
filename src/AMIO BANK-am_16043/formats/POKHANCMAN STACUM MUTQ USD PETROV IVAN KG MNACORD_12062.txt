@@ -1,0 +1,10 @@
+POKHANCMAN STACUM MUTQ\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+\d+\*+(\d{4})\s+(.+?),\s*[A-Z]{2}\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}.*?MNACORD:\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+POKHANCMAN STACUM MUTQ 1550.00 USD 4722***8501 PETROV,IVAN, KG 01.05.2026 05:26 MNACORD: 1850.00 USD
+
+-----EXAMPLE-----
+POKHANCMAN STACUM MUTQ 300.00 USD 4722***8501 PETROV,IVAN, KG 01.05.2026 05:06 MNACORD: 300.00 USD

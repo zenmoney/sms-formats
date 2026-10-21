@@ -1,7 +1,0 @@
-^Вы\s+оплат.*?([\d\s.,]*\d)\s*([A-Z]{3})\s+за\s+ус\w+\s+(.*?)\s+с\s+кар.*?\*(\d{4}).*осту.*?(-?[\d\s.,]*\d)\s*([A-Z]{3})\W?\s+(\d{2}[-./]\d{2}[-./]\d{2,4}).*
-
------COLUMNS-----
-outcome;instrument;payee;syncid;av_balance;acc_instrument;date#dMy
-
------EXAMPLE-----
-Вы оплатили 2 378,5 KZT за услуги ИВЦ с карточки *6778. Доступно: 15 176,5 KZT. 27/05/2022 20:05:01 ║ Home Credit Kazakhstan

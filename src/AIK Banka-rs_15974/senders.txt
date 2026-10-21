@@ -1,1 +1,3 @@
 aikbanka
+aikbankinfo
+eu.newfrontier.iBanking.mobile.AIK.Retail
