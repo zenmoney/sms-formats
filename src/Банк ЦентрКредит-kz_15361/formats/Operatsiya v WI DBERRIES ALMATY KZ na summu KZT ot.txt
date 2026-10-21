@@ -5,3 +5,6 @@
 
 -----EXAMPLE-----
 Operatsiya v WI*DBERRIES ALMATY KZ na summu 117960.00 KZT otklonena. Izmenite  limit v prilozhenii BCC.kz.  ║ BCC.KZ
+
+-----EXAMPLE-----
+10798.00 KZT otklonena oplata OZON ALMATY KZ karta 4**7533 Balans 103556.94  ║ bcc.kz
