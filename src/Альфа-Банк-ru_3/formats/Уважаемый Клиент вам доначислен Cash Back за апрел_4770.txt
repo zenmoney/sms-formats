@@ -1,7 +1,0 @@
-^.*доначис\w+\s+(Cash\s*[Bb]ack.*?)\s+([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}).*
-
------COLUMNS-----
-comment;income;instrument
-
------EXAMPLE-----
-Уважаемый Клиент, вам доначислен Cash Back за апрель 113.16 руб.

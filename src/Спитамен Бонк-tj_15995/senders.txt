@@ -1,1 +1,3 @@
 BANK
+bank
+com.bank.spitamen.pay.spitamenpay
