@@ -1,0 +1,7 @@
+Пoкупка в (.+)\.\s(-?\d[\d\s.,]*)\s([A-Z]{3})\.\sБaланс\s(-?\d[\d\s.,]*[.,]\d{2})\s(\S+)
+
+-----COLUMNS-----
+payee;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Пoкупка в DОDO РIZZA ZНUKOVSKIJ-. 2422 RUR. Бaланс 59234.98 ₽
