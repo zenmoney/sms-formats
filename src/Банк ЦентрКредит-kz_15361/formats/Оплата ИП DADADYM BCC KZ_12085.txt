@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)\s+(\S+)\s+((?:ИП\s+)?[^║]+?)(?=\s*║)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Оплата 1850.00 ₸ ИП DADADYM ║ BCC.KZ
