@@ -1,7 +1,0 @@
-^Your\s+VISA(\d{4})\s+has been authorized for use at\s+(.+?\(.+?\).*?)\s+on\s+(\d{2}\/\d{2}\/\d{4})\s+at\s+\d{2}:\d{2}\s+for the indicative amount of\s+([^\d\sA-Za-z])([0-9][\d\s.,]*\d)\.$
-
------COLUMNS-----
-syncid;payee;date#dMy;instrument;outcome
-
------EXAMPLE-----
-Your VISA7730 has been authorized for use at EAC (INTERNET) Strovolos CY on 11/08/2025 at 11:43 for the indicative amount of €177,91.

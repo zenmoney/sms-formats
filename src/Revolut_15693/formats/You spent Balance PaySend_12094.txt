@@ -1,0 +1,13 @@
+You spent\s+(\S)(\d[\d\s.,]*)\s+Balance:\s+(\S)(\d[\d\s.,]*[.,]\d{2})\s*║\s*(.+)$
+
+-----COLUMNS-----
+instrument;outcome;acc_instrument;balance;payee
+
+-----EXAMPLE-----
+You spent €550 Balance: €66.13 ║ PaySend
+
+-----EXAMPLE-----
+🛍 You spent €47.90 Balance: €1,987.66 ║ Guess
+
+-----EXAMPLE-----
+🛒 You spent €20 Balance: €279.61 ║ Dussmann Co Biotr. Svu
