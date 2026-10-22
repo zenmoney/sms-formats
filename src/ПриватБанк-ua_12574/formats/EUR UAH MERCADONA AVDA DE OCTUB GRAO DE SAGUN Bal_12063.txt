@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)([A-Z]{3})\((\d[\d\s.,]*)([A-Z]{3})\)\s+(.+?)\s+\d{2}:\d{2}\s+Bal\.\s+(\d[\d\s.,]*[.,]\d{2})([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+-31.23EUR(1 593.37UAH) MERCADONA AVDA 9 DE OCTUB, GRAO DE SAGUN 4*22 18:44 Bal. 86 063.16UAH Kred. limit 150 000UAH

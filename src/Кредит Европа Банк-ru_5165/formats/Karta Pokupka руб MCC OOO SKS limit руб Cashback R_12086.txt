@@ -1,0 +1,7 @@
+Karta\s+#(\d{4}).*?Pokupka:\s+(\d[\d\s.,]*\d)\s+([^\s,]+?)\.?\s*,\s*(\d{2}\.\d{2}\.\d{4})(?=\s+\d{2}:\d{2}).*?MCC\s+(\d{4})\s+(.+?)\s+limit:\s+(\d[\d\s.,]*\d)\s+([^\s,]+?)\.+
+
+-----COLUMNS-----
+syncid;outcome;instrument;date#dMy;mcc;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Karta #5966 Pokupka: 29.38  руб., 19.10.2026 17:31 MCC 4900 OOO SKS limit: 8695.72  руб.. Cashback: 0.44 RUB
