@@ -1,0 +1,7 @@
+-?(\d[\d\s.,]*)\s+([A-Z]{3})\s+Przelew z konta.*?Odbiorca:\s*(.+?)\s+Tytuł:\s*(.+?)\s+Na koncie:\s*\d+\.\.\s*(\d{4}).*?Stan konta po transakcji:\+?(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;payee;comment;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+-70,00 PLN Przelew z konta Konto odbiorcy: 87..9980 Odbiorca: JAKUB ŻURALSKI    Tytuł: ZA KOREPETYCJE   Na koncie: 16..7069 Stan konta po transakcji:+3957,25 PLN ║ Obciążenie konta
