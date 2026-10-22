@@ -1,0 +1,7 @@
+You made a\s+(\d[\d\s.,]*)\s+([^\s]+)\s+purchase with\s+(.+?)(?=\s*\.\s*║)\s*\.\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;comment;payee
+
+-----EXAMPLE-----
+You made a 167 kr purchase with Monthly invoice. ║ FlixBus
