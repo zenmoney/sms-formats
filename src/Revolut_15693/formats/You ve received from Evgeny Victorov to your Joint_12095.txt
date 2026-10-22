@@ -1,0 +1,7 @@
+You've received\s+(\d[\d\s.,]*)\s+(.+?)\s+from\s+(.+?)\s+to\s+your
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+You've received 300 € from Evgeny Victorov to your Joint account ║ Money received · Joint ✅

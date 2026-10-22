@@ -1,0 +1,7 @@
+Возврат на (\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(.+?\.)\s+Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Возврат на 1880.00 RUB. Маркет. Доступно 25352.00 RUB ║ Карта Пэй

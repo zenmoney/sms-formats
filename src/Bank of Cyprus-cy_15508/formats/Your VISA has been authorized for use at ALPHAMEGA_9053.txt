@@ -1,7 +1,0 @@
-^Your VISA(\d{4}) has been authorized for use at (.*?) on (14\/06\/2025) (at) (13):28 for the indicative amount of (?![A-Za-z]).*$
-
------COLUMNS-----
-syncid;payee;date#dMy;instrument;outcome
-
------EXAMPLE-----
-Your VISA6650 has been authorized for use at ALPHAMEGA KAPSALOS LIMASSOL CY on 14/06/2025 at 13:28 for the indicative amount of €57,33.
