@@ -5,3 +5,6 @@ outcome;instrument;payee;av_balance;acc_instrument;syncid
 
 -----EXAMPLE-----
 Покупка на 17342.00 ₽. SC KIA NCH AD 1. Доступно 171932.1 ₽ ║ Платежи, карта *6898
+
+-----EXAMPLE-----
+Покупка на 2231.76 ₽. MAGNIT MM MUZHCHINA. Доступно 465131.45 ₽ ║ Платежи, карта *8232
