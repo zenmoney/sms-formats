@@ -1,0 +1,7 @@
+Your\s+BLIK\s+payment\s+for\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+to\s+(.+?)\s+is complete!
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Your BLIK payment for 49,95 PLN to www.dominospizza.pl is complete! Tap for details ║ BLIK payment successful ✅
