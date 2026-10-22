@@ -1,7 +1,0 @@
-.*?(?:Suma|Sum[aă]).*?([0-9][\d\s.,]*)\s*([A-Za-z]{1,5}).*?(?:retras\w*|eliberare\s+numerar).*?(?:cardul|card|карт\w*).*?\*+(\d{4}).*?(?:Sold\s+disponibil|Disponibil\w*|Sold).*?:?\s*(-?[0-9][\d\s]*[.,]\d{2})(?=\s|$)\s*([A-Za-z]{1,5}).*
-
------COLUMNS-----
-outcome;instrument;syncid#cash;av_balance;acc_instrument
-
------EXAMPLE-----
-Suma de 1000 MDL a fost retrasă de pe cardul ***3446 prin eliberare numerar. Sold disponibil: 38.95 USD. ║
