@@ -1,0 +1,7 @@
+Покупка\s+(\d[\d\s.,]*)\s*(\S+).*?Карта•(\d{4}).*?Доступно\s+(-?\d[\d\s.,]*[.,]\d{2})\s*(\S+)\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Покупка 100 ₽ Карта•1100 Доступно 109 962,19 ₽ ║ GORZDRAV_2079
