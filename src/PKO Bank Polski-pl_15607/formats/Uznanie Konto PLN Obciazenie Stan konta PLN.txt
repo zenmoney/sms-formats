@@ -1,0 +1,7 @@
+Uznanie\s+Konto\s+41\.\.(\d{4}).*?\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?Stan\s+konta\s+\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Uznanie Konto 41..0809 +3884,90 PLN Obciazenie Stan konta +13093,13 PLN
