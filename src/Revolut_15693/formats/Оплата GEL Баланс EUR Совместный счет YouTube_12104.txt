@@ -1,0 +1,7 @@
+Оплата\s+(\d[\d\s.,]*)\s*([A-Z]{3})\s*\(\s*(\d[\d\s.,]*)\s*(€)\s*\)\s*Баланс\s*«[^»]+»:\s*(-?\d[\d\s.,]*[.,]\d{2})\s*(€)\s*║\s*Совместный счет\s·\s*([A-Za-z]+)
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Оплата 33,29 GEL (11,58 €) Баланс «EUR»: 89,06 € ║ Совместный счет · YouTube 🍿
