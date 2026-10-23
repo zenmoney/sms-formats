@@ -1,0 +1,11 @@
+Fund\s+Transfer\s+Credited.*?From:\s*(.*?)\s+To:\s*\*+(\d{3,4}).*?Amount:\s*([A-Z]{3})\s+(\d[\d\s.,]*).*?On:\s*(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+payee;syncid;instrument;income;date#yMd
+
+-----EXAMPLE-----
+Fund Transfer Credited
+From: KARIMOV RUSTAM
+To: **123
+Amount: SAR 600.00
+On: 2026-01-18 11:04:04

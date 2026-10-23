@@ -1,0 +1,14 @@
+PoS\s+International\s+Purchase.*?SAB\s+Visa\s+Emirates\s+Credit\s+Card\s+\((\d{4})\).*?was\s+used\s+at\s+(.*?)\s+for\s+([A-Z]{3})\s+(\d[\d\s.,]*)\s+in.*?International\s+Fees:\s+(\d[\d\s.,]*).*?Date:\s*(\d{4}-\d{2}-\d{2}).*?Balance:\s*([A-Z]{3})\s+(\d[\d\s.,]*)
+
+-----COLUMNS-----
+syncid;payee;instrument;outcome;fee;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+PoS International Purchase
+SAB Visa Emirates Credit Card (1111) was used at SOFTWARE SUBSCRIPTION for SAR 500.00 in UNITED STATES
+Exchange rate: 1.00000
+Amount in SAR: 500.00
+International Fees: 15.50
+Total amount: 515.50
+Date: 2026-01-16 16:55:04
+Balance: SAR 130000.00
