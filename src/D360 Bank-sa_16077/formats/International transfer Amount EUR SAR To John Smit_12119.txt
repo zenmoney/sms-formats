@@ -1,0 +1,31 @@
+International\s+transfer.*?Amount:\s+(\S+)\s+(\d[\d\s.,]*)\s+\((\S+)\s+(\d[\d\s.,]*)\).*?To:\s+(.+?)\s+[A-Z]{2}\d{2}.*?On:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+op_instrument;op_outcome;instrument;outcome;payee;date#yMd
+
+-----EXAMPLE-----
+International transfer
+Amount: EUR 500.00 (SAR 2,120.50)
+To: John Smith
+LT123456789012345678
+Country:Lithuania
+Through:SWIFT
+On: 2026-01-23 10:41
+
+-----EXAMPLE-----
+International transfer
+Amount: EUR 150.00 (SAR 636.30)
+To: John Smith
+LT123456789012345678
+Country:Lithuania
+Through:SWIFT
+On: 2026-01-12 21:06
+
+-----EXAMPLE-----
+International transfer
+Amount: EUR 2,000.00 (SAR 8,480.00)
+To: Acme Trading Ltd
+CY12345678901234567890123456
+Country:Cyprus
+Through:SWIFT
+On: 2026-01-09 09:17

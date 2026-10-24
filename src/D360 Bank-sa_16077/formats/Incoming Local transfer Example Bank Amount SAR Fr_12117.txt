@@ -1,0 +1,11 @@
+Incoming\s+Local\s+transfer.*?Amount:\s+(\S+)\s+(\d[\d\s.,]*).*?From:\s+(.+?)\s+:\*\d{4}.*?On:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+instrument;income;payee;date#yMd
+
+-----EXAMPLE-----
+Incoming Local transfer: Example Bank
+Amount: SAR 35,000.00
+From: ALEXEY IVANOV
+:*5678
+On: 2026-01-20 14:04

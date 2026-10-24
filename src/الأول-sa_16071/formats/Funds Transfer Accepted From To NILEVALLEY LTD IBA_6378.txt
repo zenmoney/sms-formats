@@ -1,7 +1,43 @@
-^Funds\s+Tran.*ccepted.*From.*?(\d{4})\s+To:\s+(.*?)\s+IBAN:.*mount.*?([A-Z]{3})\s*([\d\s.,]*\d)\s+Fees.*?([\d\s.,]*\d)\s+Date.*([\d]{4}-\d{2}-\d{2})\s+.*
+^Funds?\s+Tran.*ccepted.*From.*?(\d{3,4})\s+To:\s+(?:\d+\s+)?(.*?)\s+(?:IBAN:.*)?Amount.*?([A-Z]{3})\s*([\d\s.,]*\d)\s+Fees.*?([\d\s.,]*\d)\s+(?:Date|On).*([\d]{4}-\d{2}-\d{2})\s+.*
 
 -----COLUMNS-----
 syncid;payee;instrument;outcome;fee;date#yMd
 
 -----EXAMPLE-----
 Funds Transfer Accepted From: *****7001 To: NILEVALLEY LTD IBAN: *****0136 Alrajhi Bank Amount: SAR 138.00 Fees: SAR 0.57 Date: 2024-09-24 09:39:11 Ref: 20240924SASABBSABB2BMOB10938036321
+
+-----EXAMPLE-----
+Fund Transfer Accepted 
+From: **123
+To: 456 ALEXEY IVANOV
+Amount: SAR 12,000.00
+Fees: .00
+On: 2026-01-20 13:20:56
+
+-----EXAMPLE-----
+Fund Transfer Accepted 
+From: **123
+To: 789 ALEXEY IVANOV
+Amount: SAR 15,000.00
+Fees: .00
+On: 2026-01-20 13:22:00
+
+-----EXAMPLE-----
+Funds Transfer Accepted (sarie)
+From: 4321
+To: ALEXEY IVANOV
+IBAN: 8765
+Example Bank
+Amount: SAR 3000.00
+Fees: SAR 0.00
+On: 2026-01-20 13:22:54
+
+-----EXAMPLE-----
+Funds Transfer Accepted (sarie)
+From: 4321
+To: ALEXEY IVANOV
+IBAN: 8765
+Example Bank
+Amount: SAR 2500.00
+Fees: SAR 0.00
+On: 2026-01-10 10:55:37
