@@ -1,0 +1,10 @@
+Credit\s+Card:\s+Refund.*?Amount\s+of\s+(\S+)\s+(\d[\d\s.,]*)\s+from\s+(.+?)\s+to\s+SAB\s+Visa\s+Emirates\s+Credit\s+Card\s+\((\d{4})\).*?Date:\s+(\d{4}-\d{2}-\d{2}).*?Balance:\s+(\S+)\s+(-?\d[\d\s.,]*)
+
+-----COLUMNS-----
+instrument;income;payee;syncid;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+Credit Card: Refund
+An Amount of SAR 150.00 from SHOPNOW to SAB Visa Emirates Credit Card (1111)
+Date: 2026-01-27 08:19:40
+Balance: SAR 110000.00

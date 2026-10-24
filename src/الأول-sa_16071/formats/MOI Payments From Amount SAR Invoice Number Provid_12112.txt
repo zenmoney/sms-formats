@@ -1,0 +1,13 @@
+MOI\s+Payments.*?From:\s+\*{3}(\d+).*?Amount:\s+(\S+)\s+(\d[\d\s.,]*).*?Provider:\s+(.+?)\s+Service:\s+(.+?)\s+Date:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;comment;date#yMd
+
+-----EXAMPLE-----
+MOI Payments
+From: ***123
+Amount: SAR 5,000.00
+Invoice Number: 1234567890
+Provider: Residents Services
+Service: Associate Fees for All Registered Associates on He
+Date: 2026-01-19 10:16:39
