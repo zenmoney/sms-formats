@@ -1,0 +1,7 @@
+(\d{2}\/\d{2}\/\d{2})\s+\d{2}:\d{2}\s+TK\s+\d*(\d{4}).*?\+(\d[\d\s,\.]*)\s*([A-Z]{3})\.\s*SD:\s*(\d[\d\s,\.]*)\s*([A-Z]{3})\.\s*ND:\s*(?=[^║]*\b([A-Za-z0-9]+)\b)([^║]+?)\s*║
+
+-----COLUMNS-----
+date#yMd;syncid;income;instrument;balance;acc_instrument;payee;comment
+
+-----EXAMPLE-----
+23/10/26 18:07 TK 0332723157 phat sinh +553,732VND. SD: 1,470,011VND. ND: HOAN TRA GD Shopee NGD   STIEN 5537 32 VND ST 437421xxxxxx8664 BK 2210. 26 ARN 753455 ║ Dịch vụ biến động số dư TKTT
