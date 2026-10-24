@@ -1,0 +1,10 @@
+Credit\s+Card:\s+Credited.*?\(\*{2,4}(\d{4})\).*?credited\s+with\s+(\S+)\s+(\d[\d\s.,]*)\s+on:\s+(\d{4}-\d{2}-\d{2}).*?Balance:\s+(\S+)\s+(-?\d[\d\s.,]*)
+
+-----COLUMNS-----
+syncid;instrument;income;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+Credit Card: Credited
+Dear Customer,
+SAB Visa Emirates Credit Card (***1111) was credited with SAR 3500.00 on: 2026-01-01 07:04:14
+Balance: SAR 120000.00

@@ -1,0 +1,20 @@
+Outgoing\s+Local\s+Transfer.*?From\s+:\s+\*{2,4}(\d{4}).*?Amount:\s+(\S+)\s+(\d[\d\s.,]*).*?To:\s+(.+?)\*{4}\s+IBAN:.*?On:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#yMd
+
+-----EXAMPLE-----
+Outgoing Local Transfer
+From : ****1234
+Amount: SAR 25.00
+To: MOHAMMED AHMED****
+IBAN: ****5678 - Example Bank
+On: 2026-01-22 09:42
+
+-----EXAMPLE-----
+Outgoing Local Transfer
+From : ****9012
+Amount: SAR 150.00
+To: ALI HASSAN****
+IBAN: ****8765 - Example Bank
+On: 2026-01-08 18:38

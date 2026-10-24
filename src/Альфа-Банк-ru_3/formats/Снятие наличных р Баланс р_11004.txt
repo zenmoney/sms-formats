@@ -1,4 +1,4 @@
-Снятие наличных \*(\d{4}):\s+(\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
+Снятие наличных\s+(?:\*(\d{4}):\s+)?(\d[\d\s.,]*)\s*(\S+)\s+Баланс:\s*(\d[\d\s.,]*)\s*(\S+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;balance;acc_instrument
@@ -8,3 +8,6 @@ syncid;outcome;instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 Снятие наличных *7902: 5000р Баланс: 48434,25р
+
+-----EXAMPLE-----
+Снятие наличных 3000р Баланс: 192234,02р

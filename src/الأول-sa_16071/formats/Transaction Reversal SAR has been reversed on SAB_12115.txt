@@ -1,0 +1,11 @@
+Transaction\s+Reversal.*?(\S+)\s+(\d[\d\s.,]*)\s+has\s+been\s+reversed\s+on\s+SAB\s+Visa\s+Emirates\s+Credit\s+Card\s+\((\d{4})\).*?At:\s+(.+?)\s+Date:\s+(\d{4}-\d{2}-\d{2}).*?Balance:\s+(\S+)\s+(-?\d[\d\s.,]*)
+
+-----COLUMNS-----
+instrument;income;syncid;payee;date#yMd;acc_instrument;balance
+
+-----EXAMPLE-----
+Transaction Reversal
+SAR 250.00 has been reversed on SAB Visa Emirates Credit Card (1111)
+At: FOOD DELIVERY CO
+Date: 2026-01-22 15:09:23
+Balance: SAR 150000.00
