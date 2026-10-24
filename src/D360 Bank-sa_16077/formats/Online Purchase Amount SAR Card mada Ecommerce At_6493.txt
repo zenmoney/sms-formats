@@ -1,4 +1,4 @@
-^.*urchas.*moun.*?(\W+|[A-Z]{2,3})\s*([\d\s.,]*\d).*ard.*?\*(\d{4}).*At:\s+(.*?)\s+On:\s+(\d{4}-\d{2}-\d{2}).*
+(?!.*Fee:)Purchase\s+Amount:\s+(\S+)\s+(\d[\d\s.,]*)\s+Card:\s+\*(\d{4}).*At:\s+(.+?)\s+On:\s+(\d{4}-\d{2}-\d{2})
 
 -----COLUMNS-----
 instrument;outcome;syncid;payee;date#yMd
