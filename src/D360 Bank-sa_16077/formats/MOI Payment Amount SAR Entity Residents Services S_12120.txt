@@ -1,0 +1,12 @@
+MOI\s+Payment.*?Amount:\s+(\S+)\s+(\d[\d\s.,]*).*?Entity:(.+?)\s+Service\s+Type:\s+(.+?)\s+Bill\s+No:.*?On:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+instrument;outcome;payee;comment;date#yMd
+
+-----EXAMPLE-----
+MOI Payment
+Amount: SAR 300.00
+Entity:Residents Services
+Service Type: Issue Exit Re-Entry Visa (Single)
+Bill No: 1234567890
+On: 2026-01-09 22:09
