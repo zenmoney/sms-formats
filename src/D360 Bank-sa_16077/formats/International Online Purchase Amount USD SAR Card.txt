@@ -1,0 +1,14 @@
+International\s+Online\s+Purchase.*?Amount:\s+(\S+)\s+(\d[\d\s.,]*)\s*\((\S+)\s+(\d[\d\s.,]*)\).*?Card:\s+\*(\d{4}).*?Fee:\s+\S+\s+(\d[\d\s.,]*).*?At:\s+(.+?)\s+Account\s+number:.*?On:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+op_instrument;op_outcome;instrument;outcome;syncid;fee;payee;date#yMd
+
+-----EXAMPLE-----
+International Online Purchase
+Amount: USD 15.00 (SAR 56.33)
+Card: *1234 - VISA (Ecommerce)
+Fee: SAR 0.00
+At: EXAMPLE CLOUD CO
+Account number: *5678
+Country: United States
+On: 2026-01-15 13:24
