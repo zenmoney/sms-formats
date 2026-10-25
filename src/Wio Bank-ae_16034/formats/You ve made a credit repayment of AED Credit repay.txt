@@ -1,0 +1,7 @@
+credit repayment of ([A-Z]{3}) (\d[\d\s,]*\.\d{2})
+
+-----COLUMNS-----
+instrument;outcome
+
+-----EXAMPLE-----
+You’ve made a credit repayment of AED 1,737.67. ║ Credit repayment done ✅
