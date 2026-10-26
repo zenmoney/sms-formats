@@ -1,0 +1,7 @@
+You made a\s+(\d[\d\s.,]*)\s*([^\s()]+)\s*\(\s*(\d[\d\s.,]*)\s*([^\s)]+)\s*\)\s*purchase.*?║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;op_outcome;op_instrument;payee
+
+-----EXAMPLE-----
+You made a 140,51 kr (700,00 TRY) purchase with your Klarna Credit Card and earned cashback ║ Marmaris Bufe

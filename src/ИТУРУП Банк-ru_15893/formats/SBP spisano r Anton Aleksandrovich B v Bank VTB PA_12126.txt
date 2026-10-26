@@ -1,0 +1,7 @@
+SBP\s+\*(\d{4})\s+spisano\s+(\d[\d\s.,]*)\s+([^\s]+)\s+(.+)
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+SBP *3050 spisano 60000 r. Anton Aleksandrovich B v Bank VTB (PAO)

@@ -1,0 +1,7 @@
+Uznanie\s+Konto\s+\d{2}\.\.(\d{4}).*?\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3}).*?odebrany,\s*([^,]+),.*?Stan konta\s+\+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Uznanie Konto 46..7302 +2000,00 PLN Przelew na telefon - odebrany, PALINA TACHONAYA, PEREVOD NA TELEFON... Stan konta +21176,43 PLN

@@ -56,10 +56,8 @@ class RegexRetryResult:
 async def run_prompt(
     prompt: str,
     system_message: str,
-    model="gpt-5-mini",
+    model="gpt-6-luna",
     output_format="text",
-    max_tokens=4096,
-    temperature=0,
 ):
     """
     Use for one-off responses
@@ -77,10 +75,8 @@ async def run_prompt(
             {"role": "system", "content": system_message},
             {"role": "user", "content": prompt},
         ],
-        # "temperature": temperature,
-        # "max_tokens": max_tokens,
     }
-    if model == "gpt-5-mini":
+    if model == "gpt-6-luna":
         request_payload["reasoning_effort"] = "low"
         request_payload["verbosity"] = "low"
 
@@ -107,9 +103,9 @@ async def run_prompt(
         raise RuntimeError(f"Error during OpenAI API call: {e}")
 
 
-DEFAULT_ENTITY_EXTRACTION_MODEL = "gpt-5-mini"
-DEFAULT_REGEX_GENERATION_MODEL = "gpt-5-mini"
-DEFAULT_REGEX_VALIDATION_MODEL = "gpt-5-mini"
+DEFAULT_ENTITY_EXTRACTION_MODEL = "gpt-6-luna"
+DEFAULT_REGEX_GENERATION_MODEL = "gpt-6-luna"
+DEFAULT_REGEX_VALIDATION_MODEL = "gpt-6-luna"
 DEFAULT_SMS_CLASSIFICATION_MODEL = "gpt-4.1"
 ENTITY_GUIDE_PATH = Path("docs/transaction_sms_entities_extraction_guide.md")
 REGEX_GUIDE_PATH = Path("docs/transaction_sms_regex_writing_guide.md")

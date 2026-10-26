@@ -1,0 +1,11 @@
+Credit\s+Card:\s+Payment.*?Amount:\s+(\S+)\s+(\d[\d\s.,]*).*?From:\s+\*{3}(\d+).*?Date:\s+(\d{4}-\d{2}-\d{2})
+
+-----COLUMNS-----
+instrument;outcome;syncid;date#yMd
+
+-----EXAMPLE-----
+Credit Card: Payment
+Card: ***1111;VISA
+Amount: SAR 3,500.00
+From: ***123
+Date: 2026-01-01 07:04:06
