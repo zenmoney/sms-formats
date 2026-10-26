@@ -1,0 +1,7 @@
+(\d{1,2}/\d{1,2}/\d{4})\s+TK:\s+\d*(\d{4})\s+Phat sinh:\s*-(\d[\d\s.,]*?)\s+([A-Z]{3})\.\s+So du:\s*(\d[\d\s.,]*?)\s+([A-Z]{3})\.\s+ND:\s+Giao dich tai\s+(.+?)\.\s+LH
+
+-----COLUMNS-----
+date#dMy;syncid;outcome;instrument;balance;acc_instrument;payee
+
+-----EXAMPLE-----
+26/10/2026 TK: 0332723157 Phat sinh: -260,600 VND. So du: 1,647,693 VND. ND: Giao dich tai lotte mart gold coast n. LH 1900555587 ║ Dịch vụ biến động số dư TKTT
