@@ -1,7 +1,0 @@
-^Succes+ful?l\s+Payment\s+(.+?)\s+Amount:\s+(\d[\d.,]*)\s+([A-Z]{3})\s+Balance:\s+(\d[\d.,]*)\s+([A-Z]{3})\s+Date:\s+(\d{2}-\d{2}-\d{4})\s+\d{2}:\d{2}\s+Account:\d+\s+Details:\s*\d+\*+(\d{4}).*
-
------COLUMNS-----
-payee;outcome;instrument;balance;acc_instrument;date#dMy;syncid
-
------EXAMPLE-----
-Succesfull Payment Banana kids Amount: 80.00 MDL Balance: 492.64 MDL Date: 21-10-2026 17:49 Account:101120000010713 Details:438930***4071 Support: 022 444 444
