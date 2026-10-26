@@ -1,0 +1,7 @@
+(.+?)\s+—\s*(\d[\d\s.,]*)\s+(.+?)\s+║\s+Отмена кешбэка
+
+-----COLUMNS-----
+payee;outcome;instrument
+
+-----EXAMPLE-----
+YANDEX.EDA —63,29 ₸ ║ Отмена кешбэка
