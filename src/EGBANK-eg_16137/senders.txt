@@ -1,1 +1,2 @@
 egbank
+com.egbank.mobile.banking
