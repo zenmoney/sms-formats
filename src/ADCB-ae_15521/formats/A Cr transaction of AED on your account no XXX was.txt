@@ -1,0 +1,7 @@
+Cr\.\s+transaction of ([A-Z]{3})\s+(\d[\d\s,]*[.,]\d{2}) on your account no\.\s+XXX\d*(\d{4}) was successful\.(?=Available balance is [A-Z]{3}(\d[\d\s,]*[.,]\d{2})(?=\.))Available balance is ([A-Z]{3})\d[\d\s,]*[.,]\d{2}\.
+
+-----COLUMNS-----
+instrument;income;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+A Cr. transaction of AED 5150.00 on your account no. XXX920001 was successful.Available balance is AED5150.00.
