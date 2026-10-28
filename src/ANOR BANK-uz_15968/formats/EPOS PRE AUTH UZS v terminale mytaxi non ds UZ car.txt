@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}\s+EPOS\s+PRE-AUTH\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+v\s+terminale\s+(.+?)\s+non3ds,.*?card:\s+\d+\*+(\d{4})
+
+-----COLUMNS-----
+date#dMy;outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+28.10.26 18:43 EPOS PRE-AUTH 58950.00 UZS  v terminale mytaxi non3ds, UZ  card: 5217***0003  KHASILOV ILKHOM auth code: 7M2170
