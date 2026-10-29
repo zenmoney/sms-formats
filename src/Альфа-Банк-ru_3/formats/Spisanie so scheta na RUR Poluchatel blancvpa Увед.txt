@@ -1,0 +1,7 @@
+Spisanie so scheta \d+\*\d*(\d{4}) na (\d[\d\s.,]*) ([A-Z]{3})\. Poluchatel: (.+?) (\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Spisanie so scheta 408*93441 na 5344.00 RUR. Poluchatel: blancvpa 29.10.2026 12:43:00. ║ Уведомление
