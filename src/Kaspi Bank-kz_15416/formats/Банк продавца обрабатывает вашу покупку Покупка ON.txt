@@ -1,0 +1,7 @@
+Покупка:\s*(\d[\d\s.,]*)\s*([^\w\s])\s*(.+?)\s+Доступно:\s*(\d[\d\s]*[.,]\d{2})\s*([^\w\s])
+
+-----COLUMNS-----
+outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Банк продавца обрабатывает вашу покупку Покупка: 200 ₸ ONESHOT Доступно: 61 543,45 ₸ ║ Kaspi Gold
