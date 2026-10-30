@@ -1,0 +1,7 @@
+Card(\d{4}); Обработка возврата WEB:\s*(\d[\d\s.,]*)\s*([A-Z]{3});\s*(\d{2}\.\d{2}\.\d{2})\s+\d{2}:\d{2}:\d{2};\s*([^;]+);\s*MCC:\s*(\d+);Dostupno:\s*(\d[\d\s.,]*)\s*([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee;mcc;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Card3012; Обработка возврата WEB: 22,27 BYN; 30.10.26 17:43:08; OZON,MINSKIY R-N,BY; MCC: 5262;Dostupno: 108,66 BYN ║ DailyFin
