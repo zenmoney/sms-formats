@@ -1,0 +1,7 @@
+Відправка P2P переказу по \d+\*{6}(\d{4}) на суму:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?),\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+\(at Kyiv time\).*?Доступно:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Відправка P2P переказу по 412717******5005 на суму: 1950.00 UAH  POS AMOP2P01 AMO P2P UA, 28.10.2026 11:13:42 (at Kyiv time) Доступно: 34070.45 UAH ║ amobank
