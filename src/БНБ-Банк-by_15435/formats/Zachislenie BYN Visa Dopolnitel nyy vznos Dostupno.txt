@@ -1,0 +1,7 @@
+Zachislenie\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Visa#(\d{4});.*?;\s*(\d{2}/\d{2}/\d{4})
+
+-----COLUMNS-----
+income;instrument;syncid;date#dMy
+
+-----EXAMPLE-----
+Zachislenie  844 BYN Visa#5072; Dopolnitel'nyy vznos; 30/10/2026 09:30:11; Dostupno: 860.5 BYN
