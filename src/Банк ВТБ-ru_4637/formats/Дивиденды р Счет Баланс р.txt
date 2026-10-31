@@ -1,0 +1,7 @@
+Дивиденды\s+(\d[\d\s.,]*)\s*(\S+)\s+Счет\s+\*(\d+).*?Баланс\s+(\d[\d\s.,]*)\s*(\S+)
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Дивиденды 191250р Счет *2660 Баланс 198640р 18:38
