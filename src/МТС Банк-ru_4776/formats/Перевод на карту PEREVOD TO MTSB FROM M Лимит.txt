@@ -1,0 +1,7 @@
+Перевод на карту\s+(\d[\d.,]*)([^\d\s,]+),\s*(.+?)\.\s*Лимит:.*?,\s*\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid
+
+-----EXAMPLE-----
+Перевод на карту 2517.71₽, PEREVOD TO MTSB FROM M. Лимит: 7494.38₽, *5374
