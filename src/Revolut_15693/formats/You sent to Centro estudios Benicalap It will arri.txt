@@ -1,0 +1,7 @@
+You sent\s+(\d[\d\s.,]*)\s+([^\w\s]+)\s+to\s+(.+?)(?=\.\s+It will arrive)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+You sent 68 € to Centro estudios Benicalap. It will arrive in seconds ║ Transfer sent ✅
