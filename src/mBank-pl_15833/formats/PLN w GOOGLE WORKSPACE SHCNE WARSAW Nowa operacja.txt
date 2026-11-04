@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+w\s+(.+?)\s+║
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+46,49 PLN w GOOGLE WORKSPACE_SHCNE WARSAW ║ Nowa operacja kartą
