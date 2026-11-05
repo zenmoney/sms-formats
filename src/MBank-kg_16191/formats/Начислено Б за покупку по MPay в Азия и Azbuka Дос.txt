@@ -1,0 +1,7 @@
+Начислено:\s*(\d[\d\s.,]*)\s+\S+\s+за покупку по MPay в\s+(.+?)(?=\s🎉)\s🎉\s+Доступно:\s*(\d[\d\s.,]*)\s+([А-ЯЁ])
+
+-----COLUMNS-----
+cashback;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Начислено: 3,04 Б за покупку по MPay в Азия и Azbuka 🎉 Доступно: 5,95 Б ║
