@@ -1,0 +1,7 @@
+Списание,\s+карта\s+\*(\d{4})\.\s+(\d[\d,]*\.\d{2})\s+([A-Z]{3})\.\s+Баланс:\s+(\d[\d,]*\.\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Списание, карта *8350. 12,000.00 UZS. Баланс: 216,380.17 UZS. ║ TBC UZ
