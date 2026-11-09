@@ -1,0 +1,7 @@
+Покупка\s+(\d[\d\s.,]*?)\s+([A-Z]{3})\s+Баланс\s+(\d[\d\s.,]*?)\s+([A-Z]{3})\s+(.+?)\s+(\d{1,2}\s+[А-Яа-я]+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;payee;date#dM
+
+-----EXAMPLE-----
+Покупка 974,48 RUB Баланс 408,51 RUB МТС Флекс 3 ноября 09:55 ║ -974,48 ₽. МТС Флекс
