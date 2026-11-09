@@ -1,0 +1,7 @@
+Перевод\s+(\d[\d\s]*)\s+([^\s\d]+)\s+Счет•(\d+)\s+Доступно\s+(\d[\d\s]*)\s+([^\s\d]+)\s+║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Перевод 8 000 ₽ Счет•2952 Доступно 249 ₽ ║ Александр П.
