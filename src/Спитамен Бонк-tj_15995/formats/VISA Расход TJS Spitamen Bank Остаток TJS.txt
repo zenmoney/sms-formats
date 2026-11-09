@@ -4,4 +4,4 @@
 syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
-VISA5215 12/03/2023 16:24 Расход: 425.00 TJS Spitamen Bank Остаток: 4 589,01 TJS
+UPI/KM8288 24/10/2026 15:06 Оплата: 18.90 CNY pinduoduo Остаток: 59,05 TJS
