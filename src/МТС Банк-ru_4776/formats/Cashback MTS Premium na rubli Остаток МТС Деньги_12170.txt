@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)[^\w\d\s,]+,\s*Cashback.*?Остаток:\s*(\d[\d\s.,]*)([^\w\d\s,]+),\s*\*(\d{4})
+
+-----COLUMNS-----
+cashback;balance;acc_instrument;syncid
+
+-----EXAMPLE-----
+600₽, Cashback MTS Premium na rubli. Остаток: 1204.79₽, *0522 ║ МТС Деньги
