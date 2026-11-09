@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s*([^\w\s\d]).*?Осталось:\s*(\d[\d\s\u00A0.,]*\d)\s*([^\w\s\d]).*?Счёт карты МИР\s+••\s*(\d{4}).*?Всё получилось в\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument;syncid;payee
+
+-----EXAMPLE-----
+140 ₽ — Осталось: 475 302,10 ₽ Счёт карты МИР •• 2467 ║ Всё получилось в Artezianskaja voda
