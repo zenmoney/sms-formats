@@ -1,0 +1,7 @@
+Payment\s+(.+?)\.\s+Balance:\s+(\d[\d\s.,]*)\s*([^\s\d]+)\s*║\s*−\s*(\d[\d\s.,]*)\s*([^\s\d]+)\s+from Pay card
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+Payment Мегафон. Balance: 898,41 ₽ ║ −100 ₽ from Pay card
