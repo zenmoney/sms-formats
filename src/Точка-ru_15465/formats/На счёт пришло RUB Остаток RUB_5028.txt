@@ -5,6 +5,3 @@ income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 На счёт пришло 1325.94 RUB Остаток: 13394.67 RUB
-
------EXAMPLE-----
-Вам перевели 135000 RUB. Остаток: 734664.17 Rub.

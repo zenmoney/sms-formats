@@ -1,0 +1,7 @@
+Płatność\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s*║\s*BLIK zbliżeniowy
+
+-----COLUMNS-----
+outcome;instrument
+
+-----EXAMPLE-----
+Płatność 12,99 PLN. ║ BLIK zbliżeniowy
