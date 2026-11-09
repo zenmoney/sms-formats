@@ -1,0 +1,7 @@
+Оплата:\s*([^\d\s]+)(\d[\d\s.,]*[.,]\d{2})\s+в\s+(.+?)\s+Баланс\s+([A-Z]{3}):\s*[^\d\s]*(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+instrument;outcome;payee;acc_instrument;balance
+
+-----EXAMPLE-----
+💳 Оплата: €67.25 в Wolt Баланс EUR: €858.51 ║ Wolt
