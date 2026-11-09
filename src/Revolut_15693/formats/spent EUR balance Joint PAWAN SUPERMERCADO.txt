@@ -5,3 +5,6 @@ outcome;instrument;acc_instrument;balance;payee
 
 -----EXAMPLE-----
 2 € spent EUR balance: 199,23 € ║ Joint · PAWAN SUPERMERCADO
+
+-----EXAMPLE-----
+6,65 € spent EUR balance: 561,71 € ║ Joint · Santo Pecado
