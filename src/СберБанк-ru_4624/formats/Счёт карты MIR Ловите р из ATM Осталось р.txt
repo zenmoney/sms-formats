@@ -1,0 +1,7 @@
+MIR-(\d{4}).*?Ловите\s+(\d+)(\S+)\s+из ATM.*?Осталось:\s+(\d+\.\d{2})(\S+)
+
+-----COLUMNS-----
+syncid#cash;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Счёт карты MIR-7371 11:02 🎣 Ловите 100р из ATM 60032502 Осталось: 238.99р
