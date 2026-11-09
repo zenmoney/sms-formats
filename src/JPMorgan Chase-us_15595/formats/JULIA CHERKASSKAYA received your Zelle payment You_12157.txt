@@ -1,0 +1,7 @@
+(.+?) received your ([^\w\s\d.,])(\d[\d\s.,]*?) Zelle® payment.
+
+-----COLUMNS-----
+payee;instrument;income
+
+-----EXAMPLE-----
+JULIA CHERKASSKAYA received your $77.50 Zelle® payment. ║ You have received a notification
