@@ -1,0 +1,7 @@
+^Dear Customer,\s+Amount of\s+([A-Z]{3})\s+([\d.,]+)\s+from\s+(.+?)\s+has been credited to your card ending\s+(\d{4})\.\s+Available Limit is\s+([A-Z]{3})\s+([\d.,]+)
+
+-----COLUMNS-----
+instrument;income;payee;syncid;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Dear Customer, Amount of AED 44.99 from Amazon.ae has been credited to your card ending 6268. Available Limit is AED 17,418.16.
