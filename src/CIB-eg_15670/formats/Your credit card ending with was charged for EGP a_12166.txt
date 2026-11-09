@@ -1,0 +1,7 @@
+Your credit card ending with#(\d{4}) was charged for ([A-Z]{3})\s+(\d[\d,]*\.\d{2}) at (.+?) on (\d{2}/\d{2}/\d{2})\s+at\s+\d{2}:\d{2}\. Card available limit is (?=[A-Z]{3}\s+(\d[\d,]*\.\d{2}))([A-Z]{3})\s+\d[\d,]*\.\d{2}\.
+
+-----COLUMNS-----
+syncid;instrument;outcome;payee;date#Mdy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Your credit card ending with#7010 was charged for EGP 245.00 at waffarha on 04/11/26  at 23:40. Card available limit is EGP  21959.25. For more details, please visit https://cib.eg/mb

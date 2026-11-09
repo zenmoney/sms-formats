@@ -1,4 +1,4 @@
-(.+?)\s+потратил\(а\)\s+(\d[\d\s.,]*)\s+(\S+)\s+Баланс\s+«[A-Z]{3}»:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+║\s+Совместный счет ·\s+(.+)
+^(.+?)\s+потратил\(а\)\s+(\d[\d\s.,]*[.,]?\d*)\s+(\S+)\s+(?:⚠️\s+)?Баланс\s+«[A-Z]{3}»:\s+(-?\d[\d\s.,]*[.,]?\d*)\s+(\S+)\s*║\s+Совместный счет\s*·\s*(.+)
 
 -----COLUMNS-----
 comment;outcome;instrument;av_balance;acc_instrument;payee
@@ -8,3 +8,6 @@ comment;outcome;instrument;av_balance;acc_instrument;payee
 
 -----EXAMPLE-----
 Дабай ❤️ потратил(а) 69,60 €  Баланс «EUR»: 623,61 € ║ Совместный счет · Casa Della Pasta
+
+-----EXAMPLE-----
+-Танюша- потратил(а) 110,34 PLN  ⚠️ Баланс «PLN»: 109,01 PLN ║ Совместный счет · Auchan

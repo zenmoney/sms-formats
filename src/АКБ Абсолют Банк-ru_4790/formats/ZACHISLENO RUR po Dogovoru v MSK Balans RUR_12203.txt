@@ -1,0 +1,7 @@
+ZACHISLENO\s+(\d[\d\s.,]*?)\s+([A-Z]{3}).*?MSK,\s*(\d{2}\.\d{2}\.\d{4})\.\s*Balans\s+(\d[\d\s.,]*?)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+ZACHISLENO 193586.00 RUR po Dogovoru 30000000000000186100 v 11:06 MSK, 03.11.2026. Balans 193795.82 RUR

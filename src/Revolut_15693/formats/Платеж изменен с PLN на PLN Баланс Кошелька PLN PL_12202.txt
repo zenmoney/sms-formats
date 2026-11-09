@@ -1,0 +1,7 @@
+🚌\s+Платеж изменен с\s+(\d+(?:[ \u00A0]\d{3})*[.,]\d{2})\s+([A-Z]{3})\s+на\s+(\d+(?:[ \u00A0]\d{3})*[.,]\d{2})\s+([A-Z]{3})\s+Баланс Кошелька «[A-Z]{3}»:\s+(\d+(?:[ \u00A0]\d{3})*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+op_outcome;op_instrument;outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+🚌 Платеж изменен с 12,15 PLN на 16,15 PLN Баланс Кошелька «PLN»: 6,22 PLN ║ Bolt

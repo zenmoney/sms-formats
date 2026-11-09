@@ -1,0 +1,7 @@
+Отримання P2P переказу по \d{6}\*{6}(\d{4}) на суму:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?),\s*(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}.*?Доступно:\s*(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;income;instrument;payee;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Отримання P2P переказу по 412717******7614 на суму: 57.47 UAH  POS 99999999 ASVIO PSP UA, 01.11.2026 07:08:46 (at Kyiv time) Доступно: 200101.00 UAH ║ amobank
