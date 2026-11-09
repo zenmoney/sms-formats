@@ -1,0 +1,7 @@
+^UPI/[A-Za-z]+(\d{4})\s+(\d{2}/\d{2}/\d{4})\s+\d{2}:\d{2}\s+[Оо]плата:\s+([\d.,]+)\s+([A-Z]{3})\s+(.+?)\s+[Оо]статок:\s+([\d.,]+)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+VISA5215 12/03/2023 16:24 Расход: 425.00 TJS Spitamen Bank Остаток: 4 589,01 TJS
