@@ -1,0 +1,7 @@
+Placeno kart\.br\.\s+\d+_(\d{4})\s*/\s*(.*?)\s+BAPB\s*/.*?/\s*(\d{3})\s+(\d+\.\d{2})\s*/\s*Raspolozivo:\s*(?=.*?(\d+\.\d{2}))([A-Z]{3})
+
+-----COLUMNS-----
+syncid;payee;mcc;outcome;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Placeno kart.br. 487077_9718 / SUPERMARKET "GREEN" BAPB / MOGILEV BY / 933 24.24 / Raspolozivo: EUR 113.67
