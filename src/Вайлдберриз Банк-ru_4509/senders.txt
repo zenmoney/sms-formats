@@ -1,1 +1,2 @@
 ru.ftc.faktura.jur.wildberries
+com.wildberries.ru
