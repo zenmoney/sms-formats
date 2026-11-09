@@ -1,4 +1,4 @@
-Amount of ([A-Z]{3}) (\d[\d\s.,]*) from (.+?) has been credited to your card ending (\d{4})\. Available Limit is (?=[A-Z]{3} (\d[\d\s.,]*[.,]\d{2})\.)[A-Z]{3} ([A-Z]{3})\s+\d[\d\s.,]*[.,]\d{2}\.
+^Dear Customer,\s+Amount of\s+([A-Z]{3})\s+([\d.,]+)\s+from\s+(.+?)\s+has been credited to your card ending\s+(\d{4})\.\s+Available Limit is\s+([A-Z]{3})\s+([\d.,]+)
 
 -----COLUMNS-----
 instrument;income;payee;syncid;av_balance;acc_instrument
