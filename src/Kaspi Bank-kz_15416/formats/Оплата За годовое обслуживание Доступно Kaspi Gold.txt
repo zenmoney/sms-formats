@@ -5,3 +5,6 @@ outcome;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Оплата: 1 995 ₸ За годовое обслуживание Доступно: 8 385 ₸ ║ Kaspi Gold
+
+-----EXAMPLE-----
+Оплата: 1 995 ₸ За годовое обслуживание Доступно: 106 233,74 ₸ ║ Kaspi Gold
