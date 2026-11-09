@@ -1,0 +1,7 @@
+You bought\s+[\d,.]+\s+([A-Z]+)\s+for a total of\s+(\d[\d,.]*)\s+([A-Z]{2}\$)
+
+-----COLUMNS-----
+payee;outcome;instrument
+
+-----EXAMPLE-----
+You bought 1,118 INTC for a total of 66,83 US$ ║ Order executed ✅

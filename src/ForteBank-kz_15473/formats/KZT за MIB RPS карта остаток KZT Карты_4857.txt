@@ -5,6 +5,3 @@ outcome;instrument;comment;date#dMy;syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 8 120.20 KZT за MIB2_RPS 13.11.2020 12:00 карта 1079 остаток 20 305.00 KZT ║ Карты
-
------EXAMPLE-----
-Платеж 2 000.00 KZT за ALTEL 4G GSM 31.07.2021 20:06 карта 2174 остаток 345 481.67 KZT ║ Карты
