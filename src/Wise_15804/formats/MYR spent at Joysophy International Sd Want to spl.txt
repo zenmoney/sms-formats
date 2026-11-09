@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+spent at\s+(.+?)(?=\. Want to split this bill)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+71.30 MYR spent at Joysophy International Sd. Want to split this bill? Tap to get started. ║ Card payment
