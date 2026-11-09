@@ -1,0 +1,7 @@
+Transfer in the amount of\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+from\s+(.+?)\s+received on account\s+[A-Z]{2}\d*(\d{4})
+
+-----COLUMNS-----
+income;instrument;payee;syncid
+
+-----EXAMPLE-----
+Transfer in the amount of 600.00 USD from YEDYGE KAKIMZHANOV received on account KZ196016903000010110. ║

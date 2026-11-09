@@ -1,0 +1,7 @@
+ოპერაციის დაბრუნება:\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Visa Classic\s+\*{3}(\d{4})\s+(.+?)\s+ნაშთი:\s+(-?\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+(\d{2}\.\d{2}\.\d{4})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;balance;acc_instrument;date#dMy
+
+-----EXAMPLE-----
+ოპერაციის დაბრუნება: 1.17 USD Visa Classic ***3369 PAYPAL *TELEKOMDEUT ნაშთი: 2155.79 GEL 07.11.2026
