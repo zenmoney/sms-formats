@@ -1,7 +1,0 @@
-^(Возврат)\s+([\d\s.,]*\d)\s*([A-Z]{3}).*\*(\d{4})\s+за\s+опер\w+\s+(.*?)\.\s+.*
-
------COLUMNS-----
-comment;income;instrument;syncid;payee
-
------EXAMPLE-----
-Возврат 1324.6 KZT по карте *1013 за операцию aliexpress Luxembourg LU. Деньги будут доступны 11/02/2023 ║ Forte

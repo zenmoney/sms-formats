@@ -1,0 +1,7 @@
+Снятие:\s*(\d[\d\s.,]*)\s*([^\w\s])\s*(.+?)\s+\*(\d{4})\.\s*Доступно:\s*(\d[\d\s.,]*[.,]\d{2})
+
+-----COLUMNS-----
+outcome;instrument;payee;syncid#cash;av_balance
+
+-----EXAMPLE-----
+Снятие:100 000 ₸ MIR VKUSA SUPERMARKET *0750. Доступно: 3 566,53. ║

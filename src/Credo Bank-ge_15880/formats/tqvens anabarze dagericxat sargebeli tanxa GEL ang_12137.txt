@@ -1,0 +1,7 @@
+tqvens anabarze \d*(\d{4}) dagericxat sargebeli (\d{1,2}/\d{1,2}/\d{4}); tanxa: (\d[\d\s]*[.,]\d{2}) ([A-Z]{3}); angarishze xelmisawvdomi nashti: (\d[\d\s]*[.,]\d{2}) ([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+tqvens anabarze 74760848 dagericxat sargebeli 25/10/2026; tanxa: 35.90 GEL; angarishze xelmisawvdomi nashti: 43.88 GEL

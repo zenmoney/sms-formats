@@ -1,1 +1,2 @@
 bisbank
+ua.bis.bis24.bank.release

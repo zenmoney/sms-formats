@@ -1,0 +1,7 @@
+Evidentirana je uplata u iznosu od\s*(\d[\d\s.,]*)\s*([A-Z]{3}), na Vas racun\s+\d+(\d{4})\.\s*Nalogodavac uplate je\s+(.+?)\.\s*Raspolozivo stanje:\s*(\d[\d\s.,]*)\s*([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Evidentirana je uplata u iznosu od 36,00 EUR, na Vas racun  200000013221717330. Nalogodavac uplate je Andrii Butakov, 39,rue Trachel. Raspolozivo stanje: 80,95 EUR.

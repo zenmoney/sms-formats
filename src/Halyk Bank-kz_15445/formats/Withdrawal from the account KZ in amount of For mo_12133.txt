@@ -1,0 +1,7 @@
+Withdrawal from the account KZ\*(\d{4}) in amount of -(\d[\d\s.,]*)\s+([^\w\s])
+
+-----COLUMNS-----
+syncid;outcome;instrument
+
+-----EXAMPLE-----
+Withdrawal from the account KZ*0110 in amount of -11,06 $. For more details, please refer to My bank section https://homebank.kz/accounts ║

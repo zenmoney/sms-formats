@@ -1,1 +1,2 @@
 prvabanka
+hr.asseco.android.jimba.prvabanka
