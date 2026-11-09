@@ -1,0 +1,7 @@
+E-POS PURCHASE\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+\d{4}\*{3}(\d{4}),\s+(.+?)\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}\s+BALANCE:\s+(\d[\d\s.,]*[.,]\d{2})(?=\s)\s+([A-Z]{3})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy;balance;acc_instrument
+
+-----EXAMPLE-----
+E-POS PURCHASE 8,480,000.00 VND 4454***9571, SHAMROCK EVENTS, AE 27.10.2026 20:04 BALANCE: 561.60 USD ║ New notification

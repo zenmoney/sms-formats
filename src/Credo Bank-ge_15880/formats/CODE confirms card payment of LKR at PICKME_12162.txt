@@ -1,0 +1,7 @@
+^CODE: .* confirms.*$
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+CODE: 206490 confirms card ***5085 payment of 5.00 LKR at PICKME
