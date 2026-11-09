@@ -1,0 +1,7 @@
+^Card: .*; OTP:.*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Card: 471424******8082; Amount: 72.01 EUR; Date: 24-10-26 02:40; Merchant: Hetzner Online GmbH; OTP:925353

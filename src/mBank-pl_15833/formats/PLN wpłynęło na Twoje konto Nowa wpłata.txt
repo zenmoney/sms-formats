@@ -1,0 +1,7 @@
+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\s+wpłynęło na Twoje konto
+
+-----COLUMNS-----
+income;instrument
+
+-----EXAMPLE-----
+2 910,00 PLN wpłynęło na Twoje konto. ║ Nowa wpłata
