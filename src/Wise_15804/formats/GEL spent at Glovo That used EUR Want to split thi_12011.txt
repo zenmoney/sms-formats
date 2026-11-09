@@ -1,7 +1,10 @@
-(\d[\d\s.,]*)\s([A-Z]{3})\sspent at\s([^\.]+?)\.\sThat used\s(\d[\d\s.,]*)\s([A-Z]{3})\.
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+spent at\s+(.+?)\.(?:\s+That used\s+(\d[\d\s.,]*)\s+([A-Z]{3}))?.*
 
 -----COLUMNS-----
 outcome;instrument;payee;op_outcome;op_instrument
 
 -----EXAMPLE-----
 45.30 GEL spent at Glovo. That used 15.53 EUR. Want to split this bill? Tap to get started. ║ Card payment
+
+-----EXAMPLE-----
+71.30 MYR spent at Joysophy International Sd. Want to split this bill? Tap to get started. ║ Card payment
