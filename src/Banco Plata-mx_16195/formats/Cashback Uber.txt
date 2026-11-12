@@ -1,0 +1,7 @@
+^\$(\d[\d.,]*)\.\s+Cashback\s+\+\$(\d[\d.,]*)\s+║\s+(.+?)\s+[🚖🍔🛒].*$
+
+-----COLUMNS-----
+outcome;cashback;payee
+
+-----EXAMPLE-----
+$10. Cashback +$0.10 ║ Uber 🚖

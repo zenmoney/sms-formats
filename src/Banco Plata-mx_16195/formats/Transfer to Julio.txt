@@ -1,0 +1,7 @@
+^Transfer\s+\$?(\d[\d.,]*)\s+to\s+(.+?)\.?$
+
+-----COLUMNS-----
+outcome;payee
+
+-----EXAMPLE-----
+Transfer $500 to Julio.
