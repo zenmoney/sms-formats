@@ -1,4 +1,4 @@
-^Account No\.\s+\S*?(\d{4})-\S*\s+Amount\s+([\d.,]+)\s+(\w+)\s+Date\s+(\d{1,2}\s+\w+\s+\d{2})\s+\d{1,2}:\d{2}\s+[AP]M\s*║\s+(?!Deposit).+
+^Account No\.\s+\S*?(\d{4})-\S*\s+Amount\s+([\d.,]+)\s+(\w+)\s+Date\s+(\d{1,2}\s+\w+\s+\d{2})\s+\d{1,2}:\d{2}\s+[AP]M\s*║\s+((?!Deposit).+)
 
 -----COLUMNS-----
 syncid;outcome;instrument;date#dMy;comment
