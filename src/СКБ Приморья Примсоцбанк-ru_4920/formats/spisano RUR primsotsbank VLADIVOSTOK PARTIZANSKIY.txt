@@ -1,0 +1,7 @@
+\*(\d{4})\s+\d{2}:\d{2},\s*spisano\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+(.+?)\s+Balans\s+(-?\d[\d\s.,]*[.,]\d{2})(?=\s|$)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+*5004 08:42, spisano 800.00 RUR primsotsbank, VLADIVOSTOK, 44, PARTIZANSKIY AV.. Balans 37.02 RUR
