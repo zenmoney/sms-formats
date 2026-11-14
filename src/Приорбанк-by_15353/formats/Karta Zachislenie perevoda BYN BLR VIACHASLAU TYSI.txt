@@ -1,0 +1,7 @@
+Karta\s+\d\*{3}(\d{4})\s+(\d{2}-\d{2}-\d{2})\s+\d{2}:\d{2}:\d{2}\.\s+Zachislenie perevoda\s+(\d[\d\s.,]*)\s+([A-Z]{3})\.\s+(.+?)\.\s+Tel\.
+
+-----COLUMNS-----
+syncid;date#dMy;income;instrument;payee
+
+-----EXAMPLE-----
+Karta 4***4801 03-11-26 12:40:44. Zachislenie perevoda 700.00 BYN. BLR VIACHASLAU TYSIANCHUK.   Tel. 7299090
