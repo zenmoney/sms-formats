@@ -1,0 +1,7 @@
+Obciazenie rachunku \d{4}\.\.\.(\d{4}),\s*(\d[\d\s.,]*)\s+([A-Z]{3}),\s*(.+?),\s*Transakcja BLIK
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee
+
+-----EXAMPLE-----
+Obciazenie rachunku 0216...0001, 77,20 PLN, DINO WYSZYNY 1 K.1UL.CHODZIELSKA 22, Transakcja BLIK, Płatność BLIK w terminalu płatniczym, Nr 95374426777, DINO WYSZYNY 1 K.1 ║ Obciążenie rachunku
