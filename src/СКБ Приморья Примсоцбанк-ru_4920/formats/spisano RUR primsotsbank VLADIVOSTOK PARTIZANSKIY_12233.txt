@@ -8,4 +8,3 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 *5757 14:43, spisano 180.00 RUR CAFERA, Krasnogorsk. Balans 1942.30 RUR
-
