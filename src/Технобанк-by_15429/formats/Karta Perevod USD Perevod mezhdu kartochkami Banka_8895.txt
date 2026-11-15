@@ -1,7 +1,0 @@
-Karta\s+\d+\.(\d{4})\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+Perevod\s+-([0-9][\d\s.,]*\d)\s+([A-Za-z]{1,3})\s+(Perevod.*?OK\.)\s+Dostupno\s+(-?[0-9][\d\s.,]*[.,]\d{2})(?=\s|$)\s+([A-Za-z]{1,3})
-
------COLUMNS-----
-syncid;date#dMy;outcome;instrument;comment;av_balance;acc_instrument
-
------EXAMPLE-----
-Karta 4.4810 18.05.2025 01:56:22 Perevod -200.00  USD Perevod mezhdu kartochkami Banka IB SBS BLR OK. Dostupno 5798.83 USD
