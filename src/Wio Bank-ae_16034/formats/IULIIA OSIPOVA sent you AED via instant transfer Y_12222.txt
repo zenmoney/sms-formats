@@ -1,0 +1,7 @@
+(.+?) sent you ([A-Z]{3}) (\d[\d\s.,]*) via instant transfer
+
+-----COLUMNS-----
+payee;instrument;income
+
+-----EXAMPLE-----
+IULIIA OSIPOVA sent you AED 620 via instant transfer. ║ You've received a transfer 💸
