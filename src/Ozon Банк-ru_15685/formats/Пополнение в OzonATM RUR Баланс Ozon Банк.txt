@@ -5,3 +5,6 @@ payee;income;instrument;balance;acc_instrument
 
 -----EXAMPLE-----
 Пополнение в OzonATM. 3060 RUR. Баланс 3060 ₽ ║ Ozon Банк
+
+-----EXAMPLE-----
+Пополнение в OzonATM. 3000 RUR. Баланс 3246.85 ₽ ║ Ozon Банк
