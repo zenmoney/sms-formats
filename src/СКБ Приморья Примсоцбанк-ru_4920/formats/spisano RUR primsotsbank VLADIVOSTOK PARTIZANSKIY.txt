@@ -5,3 +5,7 @@ syncid;outcome;instrument;payee;balance;acc_instrument
 
 -----EXAMPLE-----
 *5004 08:42, spisano 800.00 RUR primsotsbank, VLADIVOSTOK, 44, PARTIZANSKIY AV.. Balans 37.02 RUR
+
+-----EXAMPLE-----
+*5757 14:43, spisano 180.00 RUR CAFERA, Krasnogorsk. Balans 1942.30 RUR
+
