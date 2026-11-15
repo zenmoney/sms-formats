@@ -4,9 +4,6 @@
 syncid;date#dMy;income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
-Карта 1234: 01.01.2016 05:12, пополнение 100.00 RUR. Доступно 1000.00 RUR.
-
------EXAMPLE-----
 *9069: 17.09.2019 07:11 Popolnenie 20500.00 RUR. Dostupno 300278.78 RUR.
 
 -----EXAMPLE-----
