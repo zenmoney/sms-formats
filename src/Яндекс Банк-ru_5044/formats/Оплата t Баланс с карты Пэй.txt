@@ -1,0 +1,7 @@
+Оплата\s+([^.]+?)\.\s+Баланс:\s*(\d[\d\s.,]*)\s*(\S+)\s*║\s*−\s*(\d[\d\s.,]*)\s*(\S+)\s+с карты Пэй
+
+-----COLUMNS-----
+payee;balance;acc_instrument;outcome;instrument
+
+-----EXAMPLE-----
+Оплата t2. Баланс: 20,93 ₽ ║ −500 ₽ с карты Пэй
