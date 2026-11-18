@@ -1,0 +1,7 @@
+-(\d[\d\s.,]*)([^\d\s(),.]+)\((\d[\d\s.,]*)([^\d\s(),.]+)\)\s+(.*?)\s+\d{1,2}:\d{2}\s+Кешбек\s+(\d[\d\s.,]*)([^\d\s(),.]+)\s+Бал\.\s+(\d[\d\s.,]*)([^\d\s(),.]+)
+
+-----COLUMNS-----
+op_outcome;op_instrument;outcome;instrument;payee;cashback;acc_instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+-6€(303.03₴) BIP BIP BUSINESS S.L., ALMARDA 4*22 18:12 Кешбек 9.09₴ Бал. 82 012.64₴ Кред. ліміт 150 000₴
