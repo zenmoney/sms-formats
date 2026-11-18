@@ -1,0 +1,7 @@
+Payment:\s*(\d[\d\s.,]*)\s+([A-Z]{3})\s+\(Card ending:\s*(\d{4})\)\s+(.+?)\s+GE\s+(\d{2}/\d{2}/\d{4})
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;date#dMy
+
+-----EXAMPLE-----
+Payment: 1.00 GEL (Card ending: 7769) bus_tbilisi>Tbilisi                   GE 18/11/2026 11:25:10 https://credobank.ge/products/public-transport
