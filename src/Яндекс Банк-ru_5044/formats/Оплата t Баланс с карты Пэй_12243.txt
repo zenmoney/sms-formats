@@ -11,4 +11,3 @@ payee;balance;acc_instrument;outcome;instrument;syncid
 
 -----EXAMPLE-----
 Оплата интернета и ТВ Telecoma. Баланс: 867,92 ₽ ║ −100 ₽ с карты Пэй
-
