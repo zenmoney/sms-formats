@@ -1,0 +1,7 @@
+\*(\d{4})\s+Баланс\s+(\d[\d' ]*[.,]\d{2})(.+)$
+
+-----COLUMNS-----
+syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+*7122 Баланс 14'881.60p
