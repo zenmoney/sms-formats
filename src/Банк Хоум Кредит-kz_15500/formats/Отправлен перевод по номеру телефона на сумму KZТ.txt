@@ -1,0 +1,7 @@
+Отправлен перевод.*?на сумму\s+(\d[\d\s.,]*)\s+([A-ZА-Я]{3})\s+([^,]+),\s+АО
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Отправлен перевод по номеру телефона на сумму 58000.00 KZТ Аманали У., АО «Kaspi Bank» ║ Home Credit Kazakhstan
