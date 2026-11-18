@@ -1,0 +1,7 @@
+Available balance for account\s+(\d+)\s+is at or below\s+([^\d\s]+)(\d[\d,]*\.\d{2})
+
+-----COLUMNS-----
+syncid;acc_instrument;av_balance
+
+-----EXAMPLE-----
+Available balance for account 1671 is at or below $5,568.74 on 11/16/2026. ║ BofA
