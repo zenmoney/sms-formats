@@ -5,3 +5,6 @@ outcome;instrument;syncid#cash;date#dMy;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Debit Card Cash Withdrawal:  Amount: -1.000,00 PLN  Card: 487474******0956     Date: 18/11/26, 13:51  Available balance: 3.455,35 PLN
+
+-----EXAMPLE-----
+Debit Card Cash Withdrawal: Amount: -800,00 PLN Card: 487474******0956    Date: 24/03/26, 13:15 Available balance: 9.681,98 PLN
