@@ -1,0 +1,7 @@
+(\d[\d\s.,]*)\s+([A-Z]{3})\s+do\s+([^║]+?)\s*║\s*Przelew z konta
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+2 618,87 PLN do ZUS ║ Przelew z konta
