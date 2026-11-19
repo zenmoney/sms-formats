@@ -1,0 +1,7 @@
+^UPI/[A-Za-z]+(\d{4})\s+(\d{2}/\d{2}/\d{4})\s+\d{2}:\d{2}\s+[Оо]плата:\s+([\d.,]+)\s+([A-Z]{3})\s+(.+?)\s+[Оо]статок:\s+([\d.,]+)\s+([A-Z]{3})
+
+-----COLUMNS-----
+syncid;date#dMy;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+UPI/KM8288 24/10/2026 15:06 Оплата: 18.90 CNY pinduoduo Остаток: 59,05 TJS

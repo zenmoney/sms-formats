@@ -1,7 +1,0 @@
-\*(\d{4})\s+\d{2}:\d{2},\s*spisano\s+([0-9][\d\s.,]*\d(?:[.,]\d{2})?)\s+([A-Za-z]{1,3})\s+([^,]+?),\s*[A-Za-zА-Яа-я\-\s]+\.\s+Balans\s+(-?[0-9][\d\s]*[.,]\d{2})\s+([A-Za-z]{1,3})
-
------COLUMNS-----
-syncid;outcome;instrument;payee;balance;acc_instrument
-
------EXAMPLE-----
-*5757 14:43, spisano 180.00 RUR CAFERA, Krasnogorsk. Balans 1942.30 RUR

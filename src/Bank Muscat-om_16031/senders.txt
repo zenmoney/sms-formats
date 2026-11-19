@@ -1,1 +1,3 @@
 bank muscat
+bankmuscat
+com.ducont.muscatbank
