@@ -1,0 +1,7 @@
+Оплата\..*?(\d[\d\s.,]*?)\s+([^\w\s\d.,]+)\.\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})(?=\s)\s+([^\w\s\d.,]+)
+
+-----COLUMNS-----
+outcome;instrument;balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата. Счет RUB. 136028 ₽. Баланс 30386,13 ₽
