@@ -1,7 +1,7 @@
-^(?:[\w\.\*-]+|.*\*)(\d{4})\D?\s+[\d:]+\s+(.*?)\s+перев.*?([\d\s.,]*\d)\s*([а-яA-Z]{1,3}).*?(-?[\d\s.,]*\d).*
+(\d{4})\s+\d{2}:\d{2}\s+(.+?)\s+перевел\(а\)\s+вам\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
-syncid;payee;income;instrument;av_balance
+syncid;payee;income;instrument;av_balance;acc_instrument
 
 -----EXAMPLE-----
 VISA7125 14:33 НИНА НИКОЛАЕВНА К. перевел(а) вам 2900.00р Баланс: 7840р

@@ -1,7 +1,7 @@
-^(?:Счёт карты\s+(?:ECMC|VISA|MIR|МИР)|СЧЁТ)(\d{4})\s+\d{2}:\d{2}\s+списание\s+(\d[\d\s.,]*)(\S+)\s+([^\(]+?)\s*\(по номеру карты\)\s+Баланс:\s+(-?\d[\d\s.,]*)\s*(\S+)
+(\d{4})\s+\d{2}:\d{2}\s+списание\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+(.+?)\s+\(по\s+номеру\s+карты\)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
-syncid;outcome;instrument;payee;av_balance;acc_instrument
+syncid;outcome;instrument;comment;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Счёт карты ECMC5701 23:16 списание 6271р Турция (по номеру карты) Баланс: 21 728.02р

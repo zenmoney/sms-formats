@@ -1,7 +1,0 @@
-СЧЁТ(\d+)\s+\d{2}:\d{2}\s+списание\s+(\d[\d\s.,]*)(\S+)\s+Баланс:\s+(\d+[.,]\d{2})(\S+)
-
------COLUMNS-----
-syncid;outcome;instrument;balance;acc_instrument
-
------EXAMPLE-----
-СЧЁТ8621 07:02 списание 9626р Баланс: 947.38р
