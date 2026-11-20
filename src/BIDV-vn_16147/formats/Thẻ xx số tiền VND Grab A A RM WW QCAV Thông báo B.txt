@@ -1,0 +1,7 @@
+Thẻ\s+\d{4}xx(\d{4}),\s+số tiền\s+(\d[\d,. ]*)\s+([A-Z]{3});\s+(.+?)\s*;\s+(\d{2}/\d{2}/\d{4})
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;date#dMy
+
+-----EXAMPLE-----
+Thẻ 5119xx5218, số tiền 14,000 VND; Grab* A-A3RM278WW7QCAV ; 20/11/2026 19:52:07 ║ Thông báo BIDV
