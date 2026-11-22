@@ -1,0 +1,7 @@
+Оплата\s+СБП\s+(\d[\d\s.,]*?)(?=[А-Яа-я])([А-Яа-я])\s+Счет\*(\d{4})\s+(.+?)\s+Баланс\s+(\d[\d\s.,]*?)(?=[А-Яа-я])([А-Яа-я])(?=\s|$)
+
+-----COLUMNS-----
+outcome;instrument;syncid;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Оплата СБП 84р Счет*8533 wildberries Баланс 16716р 11:34
