@@ -1,7 +1,7 @@
-^([\d\s.,]*\d)\s*(\S{1,3}?)\W?.*омис.*?([\d\s.,]*\d).*алан.*?(-?[\d\s.,]*\d).*•\s*(\d{4}).*ыдача.*
+(?<![\d.,:/])(?<![\d:/]\s)(?<!Комиссия\s)(\d[\d\s.,]*)\s+(\S+),\s+Комиссия\s+(\d[\d\s.,]*)\s+\S+\s+[-—]\s+Баланс:\s+(-?\d[\d\s.,]*)\s+(\S+)\s+.+?\s+••\s+(\d{4})\s+║\s+Выдача\s+(.+?)(?=\s+║|$)
 
 -----COLUMNS-----
-outcome;instrument;fee;av_balance;syncid#cash
+outcome;instrument;fee;av_balance;acc_instrument;syncid#cash;payee
 
 -----EXAMPLE-----
 121,72 $, Комиссия 100 ₽ - Баланс: 20 352,37 ₽ VISA •• 4839 ║ Выдача TATRABANKA

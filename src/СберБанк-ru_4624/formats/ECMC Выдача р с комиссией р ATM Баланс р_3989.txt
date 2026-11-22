@@ -1,7 +1,7 @@
-^(?:[\w\.\*-]+|.*\*)(\d{4})\D?\s+(?![\d.]{8}).*ыдача.*?([\d\s.,]*\d)\s*(\S+).*комис.*?([\d\s.,]*\d).*алан.*?(-?[\d\s.,]*\d).*
+(\d{4})\s+\d{2}:\d{2}\s+Выдача\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+с\s+комиссией\s+(\d[\d\s.,]*)\S+\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
-syncid#cash;outcome;instrument;fee;av_balance
+syncid#cash;outcome;instrument;fee;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 ECMC7619 21:24 Выдача 8000р с комиссией 390р ATM 11615476 Баланс: 145766.59р

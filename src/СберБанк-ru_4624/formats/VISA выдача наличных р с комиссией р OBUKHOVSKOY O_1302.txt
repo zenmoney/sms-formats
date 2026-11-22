@@ -1,7 +1,7 @@
-^(?:[\w\.\*-]+|.*\*)(\d{4}).*([\d.]{8}).*ыдача.*?([\d\s.,]*\d)\s*(\S+).*комис.*?([\d\s.,]*\d).*алан.*?(-?[\d\s.,]*\d).*
+(\d{4})\s+(\d{2}[-./]\d{2}[-./]\d{2,4})\s+\d{2}:\d{2}\s+выдача\s+(?:наличных\s+)?(\d[\d\s.,]*)(?![\d.,])(\S+)\s+с\s+комиссией\s+(\d[\d\s.,]*)\S+\s+(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
-syncid#cash;date#dd.MM.yy;outcome;instrument;fee;av_balance
+syncid#cash;date#dMy;outcome;instrument;fee;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 VISA0939 14.01.16 08:26 выдача наличных 3000р с комиссией 100р OBUKHOVSKOY OBORONY,305A Баланс: 1241.48р
