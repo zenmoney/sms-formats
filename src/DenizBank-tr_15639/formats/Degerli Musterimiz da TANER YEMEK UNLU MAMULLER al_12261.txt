@@ -1,0 +1,7 @@
+(\d{2}\.\d{2}\.\d{4}).*?'da (.*?) alicisina \d+-\d+\d?-(\d{3}) numarali hesabinizdan (\d[\d\s.,]*) ([A-Z]{2}) tutarinda FAST islemi gerceklesmistir
+
+-----COLUMNS-----
+date#dMy;payee;syncid;outcome;instrument
+
+-----EXAMPLE-----
+Degerli Musterimiz, 19.11.2026 12:27:05'da TANER YEMEK UNLU MAMULLER alicisina 3235-24065783-351 numarali hesabinizdan 250,00 TL tutarinda FAST islemi gerceklesmistir. Bilgi:08502220800 Mersis:0292008449600341 B002

@@ -1,7 +1,7 @@
-^Баланс\s+по\s+.*?(\d{4})\D?\s+(-?[\d\s.,]*\d).*
+Баланс\s+по\s+карте\s+\S*?(\d{4}):?\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)\s+Подробнее\s+в\s+приложении
 
 -----COLUMNS-----
-syncid;av_balance
+syncid;av_balance;acc_instrument
 
 -----EXAMPLE-----
 Баланс по карте VISA7052 1500.00р Подробнее в приложении sberbank.ru/sms/
