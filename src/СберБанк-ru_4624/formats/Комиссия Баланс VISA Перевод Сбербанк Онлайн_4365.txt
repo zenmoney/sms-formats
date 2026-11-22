@@ -1,7 +1,7 @@
-^([\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W).*омис.*?([\d\s.,]*\d).*алан.*?(-?[\d\s.,]*\d)\s*([а-яa-zA-Z]{1,3}|\W).*•\s*(\d{4}).*(?:еревод|плата).*
+(?<![\d.,:/])(?<![\d:/]\s)(?<!Комиссия\s)(\d[\d\s.,]*)\s+(\S+),\s+Комиссия\s+(\d[\d\s.,]*)\s+\S+\s+[-—]\s+Баланс:\s+(-?\d[\d\s.,]*)\s+(\S+)\s+.+?\s+••\s+(\d{4})\s+║\s+(?:Перевод|Оплата\s+в)\s+(.+?)(?=\s+║|$)
 
 -----COLUMNS-----
-outcome;instrument;fee;av_balance;acc_instrument;syncid
+outcome;instrument;fee;av_balance;acc_instrument;syncid;payee
 
 -----EXAMPLE-----
 3 500 ₽, Комиссия 390 ₽ - Баланс: 3 323,09 ₽ VISA •• 2162 ║ Перевод Сбербанк Онлайн
