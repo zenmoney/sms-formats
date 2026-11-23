@@ -1,0 +1,7 @@
+Пополнение\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+Счёт\s+KZ\*\*(\d{4})\s+От:\s*([^,]+?)\s*,.*?Доступно\s+(\d[\d\s.,]*[.,]\d{2})(?=\s)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Пополнение 500000.00 KZT Счёт KZ**8168 От: Тимур Ш., АО «Kaspi Bank» Доступно 642122.93 KZT ║ bcc.kz
