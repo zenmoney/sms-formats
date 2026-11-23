@@ -1,0 +1,7 @@
+thanh toán thành công số tiền\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+cho\s+([^,]+)
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Quý khách đã thanh toán thành công số tiền 201,200 VND cho GO DA LAT, số hóa đơn SPOS31002843. Số điện thoại hỗ trợ: 1900555577. ║ Thông báo BIDV
