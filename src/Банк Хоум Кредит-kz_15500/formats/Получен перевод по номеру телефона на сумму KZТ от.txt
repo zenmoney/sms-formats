@@ -1,0 +1,7 @@
+Получен перевод.*?на сумму\s+(\d[\d\s.,]*)([A-ZА-Я]{3})\s+от\s+(.+?)(?=,\s*АО)
+
+-----COLUMNS-----
+income;instrument;payee
+
+-----EXAMPLE-----
+Получен перевод по номеру телефона на сумму 20000.00KZТ от Аманали У., АО «Kaspi Bank» ║ Home Credit Kazakhstan
