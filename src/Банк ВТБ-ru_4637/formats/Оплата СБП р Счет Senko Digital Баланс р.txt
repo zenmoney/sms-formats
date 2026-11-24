@@ -1,7 +1,0 @@
-Оплата СБП\s+(\d[\d\s.,]*)(\S+)\s+Счет\*(\d{4})\s+(.+?)\s+Баланс\s+(-?\d[\d\s.,]*[.,]\d{2})(\S+)
-
------COLUMNS-----
-outcome;instrument;syncid;payee;balance;acc_instrument
-
------EXAMPLE-----
-Оплата СБП 666,67р Счет*6515 Senko Digital Баланс 12935,27р 12:42
