@@ -1,4 +1,4 @@
-MIR-(\d{4}).*?покупка с выдачей\s+(\d[\d\s\u00A0.,]*)(\S+)\s+(.+?)\s+покупка\s+(\d[\d\s\u00A0.,]*)(\S+)\s+выдача\s+(\d[\d\s\u00A0.,]*)(\S+)\s+Баланс:\s+(-?\d[\d\s\u00A0.,]*(?:[.,]\d{1,2})?)(\S+)
+(\d{4})\s+\d{2}:\d{2}\s+покупка\s+с\s+выдачей\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+(.+?)\s+покупка\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+выдача\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
 syncid;outcome;instrument;payee;op_outcome;op_instrument;op_outcome;op_instrument;av_balance;acc_instrument

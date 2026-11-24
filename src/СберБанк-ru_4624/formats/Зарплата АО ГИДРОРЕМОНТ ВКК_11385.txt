@@ -1,4 +1,4 @@
-💳\s*(-?\d[\d\s.,]*[.,]\d{2})\s+([^\s]+)\s+••\s*(\d{4})\s+║\s+➕\s*(\d[\d\s.,]*)\s+([^\s]+)\s+Зарплата\s+(.+)
+(?:📉|💳)\s+(-?\d[\d\s.,]*)\s+(\S+)\s+••\s+(\d{4})\s+║\s+➕\s+(\d[\d\s.,]*)\s+(\S+)\s+(?:Зарплата\s+|Отмена\s+покупки\.\s+)(.+?)(?=\s+║|$)
 
 -----COLUMNS-----
 av_balance;acc_instrument;syncid;income;instrument;payee
@@ -8,3 +8,6 @@ av_balance;acc_instrument;syncid;income;instrument;payee
 
 -----EXAMPLE-----
 💳 49 463,18 ₽ •• 1669 ║ ➕ 750 ₽ Зарплата ООО "ЯНДЕКС.ТЕХНОЛОГИИ"
+
+-----EXAMPLE-----
+💳 78 060,90 ₽ •• 9549 ║ ➕ 18 361 ₽ Отмена покупки. AVITO
