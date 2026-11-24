@@ -1,0 +1,7 @@
+Покупка\s+на\s+(\d[\d\s.,]*?)\s+([A-Z]{3}),\s+карта\s+\*(\d{4}).*?Доступно\s+(\d[\d\s.,]*[.,]\d{2})\s+([A-Z]{3})\.\s*║\s*(.+)
+
+-----COLUMNS-----
+outcome;instrument;syncid;av_balance;acc_instrument;payee
+
+-----EXAMPLE-----
+Покупка на 1310.00 RUB, карта *7043. Начислим баллов +39. Доступно 110998.37 RUB. ║ Ozon
