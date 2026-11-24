@@ -1,0 +1,7 @@
+Zachislenie;\s*(\d[\d\s.,]*)\s+([A-Z]{3});\s+Visa#(\d{4});.*?MCC\s+(\d+);.*?(\d{1,2}/\d{1,2}/\d{4}).*?Dostupno:\s*(\d[\d\s.,]*)\s+([A-Z]{3})
+
+-----COLUMNS-----
+income;instrument;syncid;mcc;date#dMy;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Zachislenie; 50 BYN; Visa#5072; Zachislenie po nomeru telefona>MINSK>BLR; MCC 6012; 19/11/2026 18:30:11; Dostupno: 69.9 BYN
