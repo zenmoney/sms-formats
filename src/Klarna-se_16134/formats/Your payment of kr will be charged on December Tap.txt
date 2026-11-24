@@ -1,0 +1,7 @@
+^Your payment of\s+[\d.,]+\s+\w+\s+will be charged on\s+\d+\s+\w+\s+\d{4}\..*
+
+-----COLUMNS-----
+
+
+-----EXAMPLE-----
+Your payment of 630,92 kr will be charged on 28 December 2026. Tap to view details. ║ AliExpress

@@ -5,3 +5,6 @@ syncid;date#dMy;outcome;instrument;payee
 
 -----EXAMPLE-----
 KB국민체크(9*6*) K*A님 02/26 18:09 1,500원 지에스25 남산조 사용
+
+-----EXAMPLE-----
+[Web발신] KB국민체크(1169) G*K님 11/14 11:36 68,990원 쿠팡(쿠페이) 사용
