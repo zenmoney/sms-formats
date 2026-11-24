@@ -1,4 +1,4 @@
-💳\s+(-?\d[\d\s.,]*[.,]\d{2})\s+(\S+)\s+••\s+(\d{4})\s+"(.+?)"\s+║\s+➕\s+(\d[\d\s.,]*)\s+(\S+)\s+по\s+СБП\s+от\s+(.+?)(?=\s+—|$)
+(?:📉|💳)\s+(-?\d[\d\s.,]*)\s+(\S+)\s+••\s+(\d{4})\s+"(.+?)"\s+║\s+➕\s+(\d[\d\s.,]*)\s+(\S+)\s+по\s+СБП\s+от\s+(.+?)(?=\s+—\s+|$)
 
 -----COLUMNS-----
 av_balance;acc_instrument;syncid;comment;income;instrument;payee

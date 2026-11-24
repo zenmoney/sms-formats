@@ -1,0 +1,7 @@
+VOZVRAT SREDSTV(?=.*?KARTA #(\d{4}))\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+KARTA #\d{4}\s+DATA\s+(\d{2}\.\d{2}\.\d{4})\s+\d{2}:\d{2}:\d{2}\s+MP\s+'([^']+)'
+
+-----COLUMNS-----
+syncid;income;instrument;date#dMy;payee
+
+-----EXAMPLE-----
+VOZVRAT SREDSTV 54.40 BYN KARTA #7022 DATA 19.11.2026 15:29:18 MP 'DZYAKUY' BAPB>80172333333>BY

@@ -1,7 +1,7 @@
-(?:MIR-|МИР-|VISA|ECMC|СЧЁТ)(\d{4})\s+\d{2}:\d{2}.*(?:ачислен|тмена\s+в|знос\s+н).*?(\d[\d\s.,]*)\s*(\S+)\s+(?:(?:ITT|ATM).*?)\s*Баланс:\s+(\d[\d\s.,]*)\s*(\S+)
+(\d{4})\s+\d{2}:\d{2}\s+[Зз]ачисление\s+(\d[\d\s.,]*)(?![\d.,])(\S+)\s+(?!.*\s+s\s+karty\s+)(?=(?:ATM\s+|ATM-))(.+?)\s+Баланс:\s+(-?\d[\d\s.,]*)(?![\d.,])(\S+)(?=\s|$)
 
 -----COLUMNS-----
-syncid#cash;income;instrument;av_balance;acc_instrument
+syncid#cash;income;instrument;payee;av_balance;acc_instrument
 
 -----EXAMPLE-----
 VISA1234 14:09 зачисление 4000р ATM 272744 Баланс: 8501.55р
