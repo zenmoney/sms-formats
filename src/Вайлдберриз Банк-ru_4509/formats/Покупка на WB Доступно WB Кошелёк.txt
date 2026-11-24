@@ -1,0 +1,7 @@
+Покупка на\s+(.+?)\s+(\d[\d\s.,]*)\s*([^\w\s\d])\.\s+Доступно\s+(\d[\d\s.,]*)\s*([^\w\s\d])
+
+-----COLUMNS-----
+payee;outcome;instrument;av_balance;acc_instrument
+
+-----EXAMPLE-----
+Покупка на WB 2 270 ₽. Доступно 4 ₽ ║ WB Кошелёк
