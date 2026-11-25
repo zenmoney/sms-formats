@@ -1,0 +1,7 @@
+Payment\s+\*(\d{4})\s+for the amount:\s*(\d[\d\s.,]*?)\s*([^\w\s])\s+Оплата услуг связи\s+(.+?)\.\s+Available:\s*(\d[\d\s.,]*[.,]\d{2})\s*([^\w\s])
+
+-----COLUMNS-----
+syncid;outcome;instrument;payee;av_balance;acc_instrument
+
+-----EXAMPLE-----
+11:50 Payment *1678 for the amount: 6 000 ₸ Оплата услуг связи TELE2. Available:9 864,62 ₸. Use Halyk+ and get increased bonuses. Check your Halyk+ category ║
