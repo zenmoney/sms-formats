@@ -1,0 +1,7 @@
+Зарплата\s+(\d[\d\s.,]*)([^\s]+)\s+Cчет\s+\*(\d{4})\s+Баланс\s+(\d[\d\s.,]*[.,]\d{2})([^\s]+)(?=\s|$)
+
+-----COLUMNS-----
+income;instrument;syncid;balance;acc_instrument
+
+-----EXAMPLE-----
+Зарплата 21715р Cчет *5577 Баланс 24097,71р 03:52
