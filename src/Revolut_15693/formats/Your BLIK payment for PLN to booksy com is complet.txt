@@ -1,0 +1,7 @@
+BLIK payment for\s+(\d[\d\s.,]*)\s+([A-Z]{3})\s+to\s+(.+?)\s+is complete
+
+-----COLUMNS-----
+outcome;instrument;payee
+
+-----EXAMPLE-----
+Your BLIK payment for 120 PLN to booksy.com is complete! Tap for details ║ BLIK payment successful ✅
