@@ -1,0 +1,7 @@
+Сумма операции:\s*(\d(?:[\d ]*\d)?(?:[.,]\d{2})?)\s+([A-Z]{3})\s+Доступно:\s*(\d(?:[\d ]*\d)?(?:[.,]\d{2})?)\s+([A-Z]{3})\s+Магазин:\s*(.+?)\s+Место:.*?\s+Дата:\s*(\d{4}-\d{2}-\d{2})(?=\s+\d{2}:\d{2}:\d{2}).*?Оплата по карте Visa\s+\*(\d{4})
+
+-----COLUMNS-----
+outcome;instrument;av_balance;acc_instrument;payee;date#yMd;syncid
+
+-----EXAMPLE-----
+Сумма операции: 2 000 UZS Доступно: 5 000 UZS Магазин: OOO AVTOMATLASHTIRILGAN T Место: Tashkent, UZ Дата: 2026-11-25 17:27:48 ║ Оплата по карте Visa *6157
