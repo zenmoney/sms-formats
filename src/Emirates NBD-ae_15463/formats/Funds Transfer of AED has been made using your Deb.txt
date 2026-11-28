@@ -1,0 +1,7 @@
+Funds Transfer of ([A-Z]{3}) (\d[\d,]*\.\d{2}) has been made using your Debit Card ending (\d{4}) at (.*?)\. Your current balance is (?=[A-Z]{3} (\d[\d,]*\.\d{2}))([A-Z]{3}) \d[\d,]*\.\d{2}
+
+-----COLUMNS-----
+instrument;outcome;syncid;payee;balance;acc_instrument
+
+-----EXAMPLE-----
+Funds Transfer of AED 386.72 has been made using your Debit Card ending 8923 at BINANCE.COM. Your current balance is AED 1,328.58.
